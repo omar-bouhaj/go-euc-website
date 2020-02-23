@@ -50,12 +50,12 @@ It is expected when increasing the resources of a VM, the user density increases
 
 The metric to measure the scalability of a system is the Login VSI VSImax.
 
-![vsimax]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-vsimax.png)
+![vsimax]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-vsimax.png)
 
 Please note, the Login VSI VSImax results are published in absolute numbers instead of percentages as the session launched various per VM size. The results are as expected when the VM size with the resources increases this is reflected in the scalability.
 
 Another interesting metric is the Login VSI baseline, which provides an indication of the responsiveness of the session.
-![baseline]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-baseline.png)
+![baseline]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -65,27 +65,27 @@ Results are similar to the Login VSI VSImax, when the resources increase the res
 It is interesting to see that D4_v2 has the best response times. This could indicate a sweet spot for the Login VSI baseline calculations.
 
 Besides the Login VSI baseline, the frames per second (FPS) is another metric that provides an indication about the user experience.
-![fps]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-session-fps.png)
+![fps]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-session-fps.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
-![fps compare]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-session-fps-compare.png)
+![fps compare]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-session-fps-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 Both D4_v2 and D5_v2 have the highest frame rate during the workload. In reference to the Login VSI baseline results, the D4_v2 has the best “user experience” with the configured workload.
 
 Based on the Login VSI VSImax results it possible to create a calculation for a use case. In order to provide 1000 users a desktop, how many VMs are required?
-![sizing]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-vms.png)
+![sizing]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-vms.png)
 
 Most cloud-based services like Azure and AWS have a pay-per-use model. Within this model, the running costs consist of primarily compute costs. Therefore, it is important to follow the scale up, and scale out principle. Based on the Login VSI VSImax we know using a D5_v2 has more capacity and therefore can host more users. Using this size of VM does make it harder to deallocated as it is harder to drain the VM of users.
 
 Based on the estimated cost a month and the amount of VMs required to host 1000 users, it is possible to get an estimate compute cost as well.
-![cost]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-cost.png)
+![cost]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-cost.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
-![cost compare]({{site.baseurl}}assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-cost-compare.png)
+![cost compare]({{site.baseurl}}/assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-cost-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
