@@ -1,0 +1,32 @@
+---
+layout: page
+title: Members
+comments: false
+---
+
+<div>
+
+    {% for author in site.authors %}
+    {% assign name = author[0] %}
+    {% assign info = site.authors[name] %}
+        <div style="width: 49%; margin-bottom: 20px; text-align: center; float: left; display: inline" >
+            <diV>
+                <img style="height: 150px; box-shadow: none" src="{{ site.baseurl }}/{{ info.picture }}" alt="{{ info.display_name }}">
+            </diV>
+            <div>
+                <b>{{ info.display_name }}</b>
+            </div>
+            <div>
+                {{ info.title }} at {{ info.company }}
+            </div>
+            
+
+        </div>
+        
+        
+    
+    
+    {% endfor %}
+
+
+</div>

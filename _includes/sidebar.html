@@ -1,0 +1,61 @@
+<div class="sidebar">
+        
+        <div class="sidebar-section">
+            <h5><span>Join the community</span></h5>
+            <div>Get involved by joining the {{site.title}} Slack channel.</div>
+            <a href="{{ site.slack }}" target="_blank">
+                <button type="button" class="btn btn-primary" id="mc-embedded-subscribe" style="width: 100%;"><b>Join Slack here</b></button>  
+            </a>        
+        </div>
+    
+        <div class="sidebar-section">
+                <h5><span>Categories</span></h5>
+   
+               {% assign categories = '' %}
+   
+               {% for post in site.categories.posts %}
+                   
+                   {% assign sortedPostCategories = post.categories | sort %}
+   
+                   {% for postCategorgy in sortedPostCategories %}
+                       {% unless categories contains postCategorgy %}
+                           {% if postCategorgy != "posts" and postCategorgy != "events" %}
+                               {% assign categories =  categories | append: postCategorgy | append: ';' %}
+                           {% endif %}
+                       {% endunless %}
+                   {% endfor %}
+               {% endfor %}
+   
+               {% assign finalCategories = categories | remove_last: ';' | split: ';' %}
+   
+               <div class="after-post-tags">
+                   <ul class="tags">
+                       {% for cat in finalCategories %}
+                       <li>
+                           <a style="color: white;" href="{{ site.baseurl }}/category/{{ cat | slugify }}/"><b>{{ cat }}</b></a>
+                       </li>
+                       {% endfor%}
+                   </ul>
+               </div>  
+           </div>
+            
+        <div class="sidebar-section">
+            <h5><span>Upcoming Events</span></h5>
+
+            {% for event in site.categories.events %}
+                
+                {% assign today_date = 'now' | date: "%b %d, %y" %}
+                {% assign event_date =  event.eventdate | date: "%b %d, %y" %}
+
+                {% if event_date >= today_date %}
+                <div><img class="featured-image img-fluid" style="margin-bottom: 0px;" src="{{ site.baseurl }}/{{ event.image }}" alt="{{ event.title }}"></div>
+                <div>{{ event.title }}</div>
+                <div>{{ event.location }}</div>
+                <div style="margin-bottom: 10px;">{{ event.eventdate | date_to_string }}</div>
+                {% endif %} 
+                
+            {% endfor %}
+        </div>
+            
+            
+</div>

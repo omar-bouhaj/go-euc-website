@@ -1,0 +1,173 @@
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+
+	<div class="row">
+
+		<!-- Post -->               
+		<div class="col-sm-8">
+			<div class="mainheading">              
+                
+                
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1> 
+                
+			</div>
+
+
+            <!-- Post Date -->
+            <p>
+                <small>
+                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                    {% if page.authors %}
+                    {% assign count = 0 %}
+                     by
+                    {% for page_author in page.authors %}
+                    {% assign author = site.authors[page_author] %}
+                         {{ author.display_name }}
+                         {% if page.authors.size > 1 %}
+                        
+                         {% assign temp = count | plus: 1 %}
+                         {% if temp < page.authors.size %}
+                             and
+                        {% endif %}
+ 
+                        {% endif %}
+                        {% assign count = count | plus: 1 %}
+                    {% endfor %}
+                    {% endif %}
+                    </span>           
+                    {% if page.last_modified_at %}
+                    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                    {% endif %}
+                </small>
+            </p>
+
+			<!-- Post Featured Image -->
+			{% if page.image %}<img class="featured-image img-fluid" style="height: 200px; width:100%" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				{{content}}
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+            
+            <!-- Post Categories -->
+            <div class="after-post-tags">
+                    <ul class="tags">
+                        {% assign sortedCategories = page.categories | sort %}
+                        {% for category in sortedCategories %}
+
+                        {% if category != "posts" and category != "events" %}
+
+                        <li>
+                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
+                        </li>
+                        {% endif %}
+
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- End Categories -->
+            
+            <!-- Prev/Next -->
+            <!-- <div class="row PageNavigation mt-4 prevnextlinks">
+              {% if page.previous.url %}
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
+                </div>
+              {% endif %}
+              {% if page.next.url %}
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+                </div>
+              {% endif %}
+            </div> -->
+            <!-- End Prev/Next -->
+            
+            
+             <!-- Author Box -->
+                {% if page.authors %}	
+                {% for page_author in page.authors %}
+                {% assign author = site.authors[page_author] %}
+                
+				<div class="row post-top-meta" >
+					<div class="col-md-3">
+                        <img class="author-thumb" style="width:150px; height:150px" src="{{ site.baseurl }}/{{ author.picture }}" alt="{{ author.display_name }}">
+					</div>
+					<div class="col-md-7">
+                        {{ author.display_name }}
+						
+                        <span class="author-description">{{ author.description }}</span>			
+                        <span style="float: left; width: 100%; margin: 5px; height: 38px">
+                                {% if author.linkedin %}
+                                <a href="{{author.linkedin}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/027-linkedin.png" alt="linkedin"></a>
+                                {% endif %}
+        
+                                {% if author.twitter %}
+                                <a href="{{author.twitter}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/008-twitter.png" alt="twitter"></a>
+                                {% endif %}
+        
+                                {% if author.web %}
+                                <a href="{{author.web}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/030-html-5.png" alt="website"></a>
+                                {% endif %}
+        
+                                {% if author.github %}
+                                <a href="{{author.github}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/050-github.png" alt="github"></a>
+                                {% endif %}
+
+                                {% if author.reddit %}
+                                <a href="{{author.reddit}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/018-reddit.png" alt="reddit"></a>
+                                {% endif %}
+                        </span>
+
+                        
+					</div>
+                </div>
+                {% endfor %}				
+                {% endif %}
+
+                
+            
+            
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">                          
+                {% include disqus.html %} 
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+            
+            
+
+		</div>
+		<!-- End Post -->
+        
+        <!-- Sidebar -->
+        <div class="col-sm-4">
+            {% include sidebar.html %}
+        </div>
+
+	</div>
+
+<!-- End Article
+================================================== -->

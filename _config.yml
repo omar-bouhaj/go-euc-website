@@ -1,0 +1,115 @@
+# Site
+name: "GO-EUC"
+title: "GO-EUC"
+description: "The research platform for the EUC space"
+meta_description: "The research platform for the EUC space"
+logo: 'assets/images/logo-white.png'
+favicon: 'assets/images/favicon.ico'
+paginate: 10
+baseurl: ''
+email: 'info@logitblog.com'
+slack: 'https://join.slack.com/t/go-euc/shared_invite/enQtNTQxNTUxMTk5MzE5LTA0NzIzMDUzYmZjMTFiMTc4YmQ4M2Y1MGRjYzkyNjk2ZjkzOGVhNDliZjVkZjM5MzlkNjVlNjVlZTYwYTVmNWE'
+google_analytics: ''
+disqus: ''
+#sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+permalink: /:title
+
+# Authors
+authors:
+  ryan:
+    name: Ryan
+    display_name: Ryan Ververs-Bijkerk
+    company: ICT-Partners
+    title: 'Technical Evangelist'
+    picture: 'assets/images/authors/ryan.png'
+    web: https://www.logitblog.com
+    twitter: https://twitter.com/logitblog
+    linkedin: https://www.linkedin.com/in/ryanbijkerk
+    github: https://github.com/RyanBijkerk
+    reddit: https://www.reddit.com/u/ryanbijkerk
+    description: "Ryan is currently a Technical Evangelist at ICT-Partners focused on the End-User Computing area. Ryan is primarily focusing on the user experience in centralized desktop environments."
+  eltjo:
+    name: Eltjo
+    display_name: Eltjo van Gulik
+    company: ICT-Partners
+    title: 'Workspace Consultant'
+    picture: 'assets/images/authors/eltjo.png'
+    web: https://www.netwerkhelden.nl/cms/
+    twitter: https://twitter.com/eltjovg
+    linkedin: https://www.linkedin.com/in/eltjovangulik/
+    description: "Eltjo van Gulik is a Workspace Consultant and enthusiast. In 2019 Eltjo was one of the 21 new Citrix Technology Advocate (CTA) awardees."
+  omar:
+    name: Omar
+    display_name: Omar Bouhaj
+    company: ICT-Partners
+    title: 'Consultant'
+    picture: 'assets/images/authors/omar.png'
+    twitter: https://twitter.com/omar_bouhaj
+    linkedin: https://www.linkedin.com/in/omarbouhaj/
+    description: "Dedicated, passionate and innovative IT professional. Omar is an enthusiastic and driven technical consultant and currently a consultant at ICT-Partners West, focused on the End-User Computing (EUC) area. With the primary focus on the user experience in centralized desktop environments."
+  sven:
+    name: Sven
+    display_name: Sven Huisman
+    company: Nutanix
+    title: Solutions Architect
+    picture: 'assets/images/authors/sven.png'
+    web: https://svenhuisman.com/
+    twitter: https://twitter.com/svenh
+    linkedin: https://www.linkedin.com/in/svenhuisman/
+    description: "Sven is working as a solutions architect at Nutanix with the focus on End User Computing. The opinions expressed here represent his own and not those of his employer."
+  krishan:
+    name: Krishan
+    display_name: Krishan Khoesial
+    company: KPN ICT Consulting
+    title: Consultant
+    picture: 'assets/images/authors/sven.png'
+    linkedin: https://www.linkedin.com/in/kvkhoesial/
+    description: "Krishan is a consultant at KPN ICT Consulting. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international."
+  marcel:
+    name: Marcel
+    display_name: Marcel Beck
+    company: ICT-Partners
+    title: Workspace Consultant
+    picture: 'assets/images/authors/marcel.png'
+    linkedin: https://www.linkedin.com/in/msbeck/
+    description: "Marcel is a full-time Workspace Consultant/Architect and part-time beer drinker from the north of The Netherlands."
+  ruud:
+    name: Ruud
+    display_name: Ruud Hund
+    company: KPN ICT Consulting
+    title: Thought Leader Connected Workspace
+    picture: 'assets/images/authors/ruud.png'
+    twitter: https://twitter.com/RuudHund
+    linkedin: https://www.linkedin.com/in/ruudhund/
+    description: "Ruud is a Thought Leader Connected Workspace at KPN ICT Consulting. Ruud has over 10+ years experience in designing and building network infrastructures."
+  bas:
+    name: Bas
+    display_name: Bas Stapelbroek
+    company: KPN ICT Consulting
+    title: Workspace Consultant
+    picture: 'assets/images/authors/bas.png'
+    web: http://www.basstapelbroek.com/
+    twitter: https://twitter.com/hapster84
+    linkedin: https://www.linkedin.com/in/basstapelbroek/
+    description: "Bas Stapelbroek is a workspace consultant and works for KPN in the Netherlands. Within the consulting services he is responsible for designing and implementing enterprise workspace solutions for the largest KPN customers"
+   
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Other
+markdown: kramdown
+highlighter: rouge
