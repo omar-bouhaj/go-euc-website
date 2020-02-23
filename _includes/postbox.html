@@ -28,7 +28,7 @@
                 {% endfor %}
                 {% endif %}
                 
-                <span class="post-read-more"><button type="button" class="btn btn-primary" style="float: right;" onclick="window.location.href='{{ post.url | absolute_url }}'" ><b>read more ></b></button></span>
+                <span class="post-read-more"><a href="{{ post.url | absolute_url }}"><button type="button" class="btn btn-primary" style="float: right;"><b>read more ></b></button></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
