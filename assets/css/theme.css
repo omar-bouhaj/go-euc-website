@@ -258,18 +258,6 @@ span.post-date,span.post-read {
 	color:rgba(0,0,0,.44);
 }
 
-span.post-read-more a {
-	color:rgba(0,0,0,.44);
-     align-items: center;
-    display: inline-block;
-    float: right;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border: 1px solid #d0d0d0;
-    border-radius: 50%;
-}
 span.post-name a,span.post-read-more a:hover {
 	color:rgba(0,0,0,.8);
 }
