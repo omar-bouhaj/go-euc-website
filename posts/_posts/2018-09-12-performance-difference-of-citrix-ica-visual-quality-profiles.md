@@ -81,29 +81,29 @@ Windows 10 image is optimized using the Citrix Optimizer with the 1803 template.
 ## The results
 The primary benchmark solution is Login VSI which reports a baseline result and of course the VSImax. Results are published in percentages compared to the high scenario.
 
-![vsimax]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-vsimax.png)
+![vsimax]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![baseline]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-baseline.png)
+![baseline]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 As you can see there is no difference between the 4 scenarios from a Login VSI perspective. Based on the Login VSI results, the same pattern from the hypervisor perspective is expected. Results are published over time with the absolute number.
 
-![host-cpu]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-cpu-util.png)
+![host-cpu]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-cpu-util.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-reads]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-reads.png)
+![host-reads]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-reads.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-writes]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-writes.png)
+![host-writes]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-host-writes.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -114,12 +114,12 @@ To get an idea from the user perspective we use the tool Remote Display Analyzer
 
 Within the Citrix ICA protocol, the metric framerate is reported. These are the number of frames per second send over the protocol from the desktop perspective. A high framerate will increase the user experience as it feels smooth. But please note, the metric is difficult to read as the amount of frames is depending on the activity within the session. When a user is idle no updated frames will be sent over the protocol.
 
-![session-fps]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-fps.png)
+![session-fps]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-fps.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![session-fps-compare]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-fps-bar.png)
+![session-fps-compare]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-fps-bar.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -128,12 +128,12 @@ The results show there is no difference in the framerate in the scenarios. This 
 
 Another important metric is the Round Trip Time also known as the latency. Even when the framerate is good, a high latency can kill the user experience. A high latency will result in delayed keystrokes from the endpoint to the sessions.
 
-![session-rtt]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-rtt.png)
+![session-rtt]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-rtt.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![session-rtt-compare]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-rtt-bar.png)
+![session-rtt-compare]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-rtt-bar.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -142,12 +142,12 @@ The difference between the High, Medium and Low scenarios are minimal but switch
 
 During an open session, it will consume bandwidth in order to send and receive data between the session and the endpoint. Lower bandwidth will have an effect on the user experience as there is less room to send and receive information.
 
-![session-bandwidth]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-bandwidth.png)
+![session-bandwidth]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-bandwidth.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![session-bandwidth-compare]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-bandwidth-bar.png)
+![session-bandwidth-compare]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-rda-bandwidth-bar.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -156,12 +156,12 @@ The visual quality has an effect on the used bandwidth which is as expected. Whe
 
 Of course, it is also interesting to look from the endpoint perspective. Please note, a launcher hosts multiple sessions and this scenario there are 8 – 9 sessions on each launcher.
 
-![launcher-cpu]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-cpu-util.png)
+![launcher-cpu]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-cpu-util.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![launcher-cpu-compare]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-cpu-util-bar.png)
+![launcher-cpu-compare]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-cpu-util-bar.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -170,12 +170,12 @@ Between the 3 scenarios, there is a minimal difference but comparing the UDP hig
 
 From the launcher perspective, the total traffic sent through the network adapter is measured. Please note the following chart is not comparable to the ICA bandwidth as there are multiple sessions active in a single launcher and this includes traffic to the Login VSI share, Citrix Storefront etc.
 
-![launcher-nic]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-nic-kbps.png)
+![launcher-nic]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-nic-kbps.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![launcher-nic-compare]({{site.baseurl}}assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-nic-kbps-bar.png)
+![launcher-nic-compare]({{site.baseurl}}/assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-launcher-nic-kbps-bar.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

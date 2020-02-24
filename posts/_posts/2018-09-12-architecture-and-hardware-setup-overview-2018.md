@@ -16,13 +16,13 @@ For more information on OVH, please visit their website at [https://www.ovh.com]
 
 As of writing, we are renting two dedicated servers from their Western European datacenter in Germany.
 
-![ovh-controls]({{site.baseurl}}assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-ovh-control.png)
+![ovh-controls]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-ovh-control.png)
 
 The two hosts are broken down in an Infrastructure Host, the esx-01 and a separate host dedicated for the workloads surprisingly called esx-02. Because we’ve separated out the infrastructure platform from the host hosting the VDI’s we can assure that spikes in the infrastructure host will never interfere with the actual workloads and influence our results.
 
 First off the infrastructure hosts is a midrange EG-128 Server. This model has a single Intel® Xeon® Processor E5-1660 processor and 128GB of internal memory. See [https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml](https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml) for additional specifications.
 
-![esx-01]({{site.baseurl}}assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-esx-01.png)
+![esx-01]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-esx-01.png)
 
 As the name implies, the infrastructure host, houses al the infrastructural components such as the AD, databases and Citrix components as well as our management jump host. The Login VSI launchers are also installed on the infra host.
 
@@ -30,7 +30,7 @@ For the dedicated workloads host, we’ve chosen the EG-384-H model ([https://ww
 
 This configuration has two Intel® Xeon® E5-2687W v4 processors with 12 cores each, totaling to 48 hyperthreading cores and is equipped with 384 Gigabytes of internal memory.
 
-![esx-02]({{site.baseurl}}assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-esx-02.png)
+![esx-02]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-esx-02.png)
 
 Most importantly with these specifications, the hosts are capable of running realistic scenarios comparable to production environments.
 
@@ -45,7 +45,7 @@ So at the moment, we decided to switch to VMware vSphere and both hosts are runn
 
 But we are not bound to VMware as the hypervisor platform. By using OVH we have the flexibility to switch hypervisors without much effort and this allows us to test the other vendors like Microsoft, Citrix and Nutanix if the need arises.
 
-![vsphere]({{site.baseurl}}assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-vsphere.png)
+![vsphere]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-vsphere.png)
 
 On the Hypervisor level, the environment is checked against best practices defined and outlined in the VMware performance best practices guide. Most notably this means for example that the power profile for the hosts is set to static – high performance and that all VM’s are using paravirtualized network and storage adapters.
 

@@ -15,19 +15,19 @@ Before dealing with the results, it is important to understand what has been add
 ### Taskbar calendar
 The new calendar, located in the taskbar, has to ability to create calendar events without the need to open the calendar app.
 
-![calander]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-calander.png)
+![calander]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-calander.png)
 
 
 ### Start menu
 Once the start menu is opened, no noticeable changes are visible. Until the moment you float over the left rail.  Namely, there is a new menu for accessing the profile, documents, photos, settings and power switches. This new menu applies to all users.
 
-![start-menu]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-startmenu.png)
+![start-menu]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-startmenu.png)
 
 
 ### File Explorer and search
 Within the file explorer, the search bar is now controlled by Windows search. Searches will now include online content from OneDrive, similar to the search bar.
 
-![file-explorer]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-search.png)
+![file-explorer]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-search.png)
 
 
 Other improvements
@@ -64,12 +64,12 @@ When executing these kinds of researches there is always an expectation. Based u
 
 To validate the difference in user capacity the Login VSI VSImax metric is used. The Login VSI baseline provides an indication of the difference in response times within the virtual desktop.
 
-![vsimax]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-vsimax.png)
+![vsimax]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![baseline]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-baseline.png)
+![baseline]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -78,12 +78,12 @@ The pattern between the different Windows 10 versions are changing. Previous res
 
 It is always important to validate the Login VSI VSImax with other metrics from the hypervisor’s perspective.
 
-![host-cpu]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-cpu.png)
+![host-cpu]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-cpu.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-cpu-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-cpu-compare.png)
+![host-cpu-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-cpu-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -92,17 +92,17 @@ As the {{site.title}} lab environment is CPU limited, the Login VSI VSImax patte
 
 Next to CPU utilization, it is also important to take the storage resources into account. An unexpected switch in storage load could result in bad performance issues.
 
-![host-reads]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-reads.png)
+![host-reads]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-reads.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-writes]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-writes.png)
+![host-writes]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-writes.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-storage-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-storage-compare.png)
+![host-storage-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-host-storage-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -111,23 +111,23 @@ As noted, there are fewer read activities in the newer Windows 10 releases. Wher
 
 One of the most common user experience indicators are the logon times. This is the first thing a user is experiencing when using a virtual desktop. Therefore, it is important to keep the logon times as low as possible. Based on the previous Windows 10 researches and metrics, it is expected to see an increase in logon times.
 
-![user-logon]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon.png)
+![user-logon]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![user-logon-24min]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-24min.png)
+![user-logon-24min]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-24min.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![user-logon-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-compare.png)
+![user-logon-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 
-![user-logon-24min-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-24min-compare.png)
+![user-logon-24min-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-logon-24min-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -136,71 +136,71 @@ The logon times are stable between Windows 10 1903 and 1909, but still, way high
 
 All this extra load can be caused by the new added features, functionalities and improvements which is reflected in more apps, services and tasks.
 
-![apps-task-services]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-apps-services-tasks.png)
+![apps-task-services]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-apps-services-tasks.png)
 
 There is no difference between 1903 and 1909 in comparison to the different apps, services or tasks, which is also reflected in the other metric results, such as CPU, disk IO and logon times.
 
 ## Out-of-the-box Windows 10 1909
 Applying the right optimizations is one of the best practices when deploying a Windows VDI environment. Using an out-of-the-box Windows 10 deployment in a VDI environment will have a dramatic impact on capacity and user experience.
 
-![vsimax]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-vsimax.png)
+![vsimax]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![baseline]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-baseline.png)
+![baseline]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The Login VSI VSImax shows a big reduction in user capacity with the out-of-the-box deployment. The user experience is also affected as the Login VSI baseline increases, resulting in slower response times.
 
-![host-cpu]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-cpu.png)
+![host-cpu]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-cpu.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-cpu-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-cpu-compare.png)
+![host-cpu-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-cpu-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 With the out-of-the-box deployment, both the Login VSI VSImax and Login VSI baseline are reflected in a higher CPU utilization. As learned from a previous research the main cause, next to the OneDrive setup, are the Windows 10 UWP apps. These are provisioned for each user at logon.
 
-![host-reads]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-reads.png)
+![host-reads]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-reads.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-writes]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-writes.png)
+![host-writes]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-writes.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-storage-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-storage-compare.png)
+![host-storage-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-host-storage-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The footprint on storage is dramatic when using the out-of-the-box deployment. Of course, this is also related to the OneDrive setup and UWP apps. On that note, the OneDrive setup is removed via GPO in the {{site.title}} lab.
 
-![user-logon]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon.png)
+![user-logon]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![user-logon-24min]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-24min.png)
+![user-logon-24min]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-24min.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![user-logon-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-compare.png)
+![user-logon-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 
-![user-logon-24min-compare]({{site.baseurl}}assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-24min-compare.png)
+![user-logon-24min-compare]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-default-logon-24min-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
