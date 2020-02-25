@@ -3,11 +3,11 @@
 
 <div class="grid-item">
 <div class="card">
-    <a href="{{ site.baseurl }}/{{ post.url }}">
-        {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+    <a href="{{ site.url }}/{{ post.url }}">
+        {% if post.image %} <img class="img-fluid" src="{{ site.url }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
     </a>
     <div class="card-block">
-        <h2 class="card-title"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="card-title"><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></h2>
         <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:50 }}</h4>
         <div class="metafooter">
             <div class="wrapfooter">
@@ -17,7 +17,7 @@
 
                 {% assign author = site.authors[post_author] %}
                 
-                <img class="author-thumb" style="margin-top: -30px;" src="{{ site.baseurl }}/{{ author.picture }}" alt="{{ author.display_name }}">
+                <img class="author-thumb" style="margin-top: -30px;" src="{{ site.url }}/{{ author.picture }}" alt="{{ author.display_name }}">
                 </span>                
                 <span class="author-meta" style="margin-right: 15px;">
                 <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
@@ -28,7 +28,7 @@
                 {% endfor %}
                 {% endif %}
                 
-                <span class="post-read-more"><a href="{{ site.baseurl }}/{{ post.url }}"><button type="button" class="btn btn-primary" style="float: right;"><b>read more ></b></button></a></span>
+                <span class="post-read-more"><a href="{{ site.url }}/{{ post.url }}"><button type="button" class="btn btn-primary" style="float: right;"><b>read more ></b></button></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
