@@ -109,37 +109,47 @@ post_class: post-template
                 {% assign author = site.authors[page_author] %}
                 
 				<div class="row post-top-meta" >
-					<div class="col-md-3">
-                        <img class="author-thumb" style="width:150px; height:150px" src="{{ site.baseurl }}/{{ author.picture }}" alt="{{ author.display_name }}">
-					</div>
-					<div class="col-md-7">
-                        {{ author.display_name }}
-						
-                        <span class="author-description">{{ author.description }}</span>			
-                        <span style="float: left; width: 100%; margin: 5px; height: 38px">
-                                {% if author.linkedin %}
-                                <a href="{{author.linkedin}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/027-linkedin.png" alt="linkedin"></a>
-                                {% endif %}
-        
-                                {% if author.twitter %}
-                                <a href="{{author.twitter}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/008-twitter.png" alt="twitter"></a>
-                                {% endif %}
-        
-                                {% if author.web %}
-                                <a href="{{author.web}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/030-html-5.png" alt="website"></a>
-                                {% endif %}
-        
-                                {% if author.github %}
-                                <a href="{{author.github}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/050-github.png" alt="github"></a>
-                                {% endif %}
+                    <div class="author-box">
 
-                                {% if author.reddit %}
-                                <a href="{{author.reddit}}" target="_blank"><img style="width: 32px;" src="{{ site.baseurl }}/assets/images/social/018-reddit.png" alt="reddit"></a>
-                                {% endif %}
-                        </span>
+                        <!-- image -->
+                        <div class="author-box-picture">
+                            <img class="author-box-picture-image" src="{{ site.baseurl }}/{{ author.picture }}" alt="{{ author.display_name }}">
+                        </div>
 
+                        <!-- name -->
+                        <div class="author-box-name">
+                            {{ author.display_name }}
+                        </div>
                         
-					</div>
+                        <!-- description -->
+                        <div class="author-box-description">
+                            {{ author.description }}
+                        </div>
+
+                        <div class="author-box-clearfix"> </div>
+
+                        <div class="author-box-socials">
+                            {% if author.linkedin %}
+                            <a href="{{author.linkedin}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/027-linkedin.png" alt="linkedin"></a>
+                            {% endif %}
+    
+                            {% if author.twitter %}
+                            <a href="{{author.twitter}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/008-twitter.png" alt="twitter"></a>
+                            {% endif %}
+    
+                            {% if author.web %}
+                            <a href="{{author.web}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/030-html-5.png" alt="website"></a>
+                            {% endif %}
+    
+                            {% if author.github %}
+                            <a href="{{author.github}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/050-github.png" alt="github"></a>
+                            {% endif %}
+
+                            {% if author.reddit %}
+                            <a href="{{author.reddit}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/018-reddit.png" alt="reddit"></a>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
                 {% endfor %}				
                 {% endif %}

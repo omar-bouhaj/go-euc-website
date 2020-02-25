@@ -218,6 +218,62 @@ section.recent-posts {
 	font-size:12px;
 	margin-top:30px;
 }
+
+.author-box {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    width: 100%;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: relative
+}
+
+.author-box-name {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0 0 20px;
+    display: block;
+    color:#0f0f0f;
+}
+
+.author-box-description {
+    margin: 5px 0 12px;
+    font-size: 14px;
+    min-height: 78px;
+}
+
+.author-box-picture {
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+.author-box-picture-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.author-box-clearfix {
+    display: block;
+}
+
+.author-box-socials {
+    position: relative;
+    display: block;
+    background: #fcfcfc;
+    padding: 5px;
+    border-top: 1px solid #eee
+}
+
+.author-box-socials-icon {
+    width: 30px;
+    box-shadow: none;
+    display: inline-block;
+    margin: 3px;
+}
+
 .author-thumb {
 	width:40px;
     height:40px;
