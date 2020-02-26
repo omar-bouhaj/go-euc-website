@@ -19,7 +19,7 @@ A Software-defined wide area network (SD-WAN) is defined as a virtual WAN archit
 SD-WAN is a powerful solution for organizations with multiple sites or a hybrid datacenter (aren’t we all hybrid?). An example of a hybrid solution is Microsoft Office 365 that benefits greatly from a local breakout. WAN is crucial for the modern workplace.
 
 ## What do we investigate?
-The research is done on the Citrix SD-WAN research environment which is described here. This research focuses on the performance differences between backhauling Microsoft Office 365 OneDrive (SharePoint) traffic through the datacenter over Citrix SD-WAN (note: this is an already, partially optimized virtual path – UDP) and using the Office365 optimization feature in Citrix SD-WAN. This feature will enable Citrix SD-WAN to recognize, prioritize and directly breakout this traffic to the internet and subsequently to the nearest Microsoft Office365 front door.
+The research is done on the Citrix SD-WAN research environment which is described [here]({{site.url}}/2019-12-19-sd-wan-network-architecture-setup-2019). This research focuses on the performance differences between backhauling Microsoft Office 365 OneDrive (SharePoint) traffic through the datacenter over Citrix SD-WAN (note: this is an already, partially optimized virtual path – UDP) and using the Office365 optimization feature in Citrix SD-WAN. This feature will enable Citrix SD-WAN to recognize, prioritize and directly breakout this traffic to the internet and subsequently to the nearest Microsoft Office365 front door.
 
 The research scenarios are as following:
 
