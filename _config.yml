@@ -6,7 +6,7 @@ meta_description: "The research platform for the EUC space"
 logo: 'assets/images/logo-white.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 10
-baseurl: 'https://ryanbijkerk.github.io/go-euc-website'
+baseurl: '/go-euc-website'
 email: 'info@logitblog.com'
 slack: 'https://join.slack.com/t/go-euc/shared_invite/enQtNTQxNTUxMTk5MzE5LTA0NzIzMDUzYmZjMTFiMTc4YmQ4M2Y1MGRjYzkyNjk2ZjkzOGVhNDliZjVkZjM5MzlkNjVlNjVlZTYwYTVmNWE'
 google_analytics: ''
