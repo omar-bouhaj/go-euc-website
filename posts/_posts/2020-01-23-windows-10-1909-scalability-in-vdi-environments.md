@@ -29,8 +29,7 @@ Within the file explorer, the search bar is now controlled by Windows search. Se
 
 ![file-explorer]({{site.baseurl}}/assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-search.png)
 
-
-Other improvements
+### Other improvements
 Besides the visible changes there are more improvements under the hood in Windows 10 1909:
 
 The digital assistant Cortana provides the ability to support third-party digital assistants to voice activate above the Lock screen;
