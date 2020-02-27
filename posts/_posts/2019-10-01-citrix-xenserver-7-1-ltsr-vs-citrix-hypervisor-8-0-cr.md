@@ -27,7 +27,7 @@ Besides improvements and new added functionality, a major change has been done u
 | :--------------------: | :----------------------: | :-------------------: |
 | Kernel Version         | 4.4                      | 4.19                  |
 | Xen Hypervisor version | 4.7.1                    | 4.11                  |
-| DOM0 OS	             | CentOS 7.4               | CentOS 7.5            |
+| DOM0 OS	               | CentOS 7.4               | CentOS 7.5            |
 
 ## DOM0
 DOM0 is an abbrevation for “Domain 0 or Control Domain” and is a special VM that has access to the underlaying hardware. Without DOM0 the Citrix Hypervisor is useless. Via DOM0 it is possible to manage and configure networking, VM’s, storage, configuration etc. The usual day-to-day administration is not performed directly via DOM0, but instead this is done through a central management interface called Citrix XenCenter. This is the management tool that is used to manage a Citrix XenServer / Citrix Hypervisor environment with.
