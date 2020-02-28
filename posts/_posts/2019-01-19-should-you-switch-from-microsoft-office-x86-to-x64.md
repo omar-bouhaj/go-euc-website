@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Should you switch from Microsoft Office x86 to x64?s"
+title:  "Should you switch from Microsoft Office x86 to x64?"
 authors: [ryan]
 categories: [ 'microsoft', 'office', 'x86', 'x64' ]
 image: assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-to-x64-feature-image.png
@@ -9,7 +9,7 @@ A couple weeks ago Microsoft announced the switch for the default installation o
 
 ## Microsoft announcement
 As mentioned in the introduction Microsoft announced they are switching the default installation to x64 architecture.
-![office-installation]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/017-office-x86-x64-default-installation-settings-microsoft.png)
+![office-installation]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-default-installation-settings-microsoft.png)
 
 Twitter message from Jesper Nielsen (MVP):
 
