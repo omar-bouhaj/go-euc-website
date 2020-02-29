@@ -12,6 +12,7 @@
                 <h5><span>Categories</span></h5>
    
                {% assign categories = '' %}
+               {% assign shownCategories = ['Microsoft','Azure', 'AWS', 'VMware', 'Citrix', 'Windows'] %}
    
                {% for post in site.categories.posts %}
                    
@@ -20,7 +21,9 @@
                    {% for postCategorgy in sortedPostCategories %}
                        {% unless categories contains postCategorgy %}
                            {% if postCategorgy != "posts" and postCategorgy != "events" %}
-                               {% assign categories =  categories | append: postCategorgy | append: ';' %}
+
+                                {% assign categories =  categories | append: postCategorgy | append: ';' %}
+
                            {% endif %}
                        {% endunless %}
                    {% endfor %}
