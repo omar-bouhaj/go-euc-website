@@ -377,7 +377,7 @@ span.post-name a,span.post-read-more a:hover {
 .intro {
     background-image:url(../images/head.jpg);
     background-size:cover;
-    padding: 9rem 0;
+    padding: 10rem 0;
     margin-top:-87px;
     margin-bottom:3.5rem;
     z-index: 1;
@@ -510,7 +510,7 @@ blockquote {
     position: relative;
     left: 50%;
     right: 50%;
-    margin-top: -160px;
+    margin-top: -140px;
     margin-left: -50vw;
     margin-right: -50vw;
 }
