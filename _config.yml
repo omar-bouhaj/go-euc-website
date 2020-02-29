@@ -10,7 +10,7 @@ baseurl: '/go-euc-website'
 email: 'info@logitblog.com'
 slack: 'https://join.slack.com/t/go-euc/shared_invite/enQtNTQxNTUxMTk5MzE5LTA0NzIzMDUzYmZjMTFiMTc4YmQ4M2Y1MGRjYzkyNjk2ZjkzOGVhNDliZjVkZjM5MzlkNjVlNjVlZTYwYTVmNWE'
 google_analytics: ''
-disqus: ''
+disqus: 'ict-r'
 permalink: /:title
 
 # Authors
