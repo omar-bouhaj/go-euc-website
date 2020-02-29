@@ -18,7 +18,7 @@ Windows 10 Enterprise multi-session can’t run in on-premises production enviro
 Source: [https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq](https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq)
 
 ## Infrastructure and configuration
-As Windows 10 Enterprise multi-session is only supported on Microsoft Azure, the setup and approach are a bit different compared to standard researches. The easiest way to test Windows 10 Enterprise multi-session running in Azure, is to create a hybrid-cloud configuration. This is realized using a site-to-site VPN which allows using both on-premises as cloud resources. Besides the Gateway VPN, a single Windows 10 Enterprise multi-session VM is hosted in Azure. All other required infrastructure components, like Active Directory, DNS and DHCP, Login VSI and file servers are hosted on-premises. The on-premises infrastructure is described here.
+As Windows 10 Enterprise multi-session is only supported on Microsoft Azure, the setup and approach are a bit different compared to standard researches. The easiest way to test Windows 10 Enterprise multi-session running in Azure, is to create a hybrid-cloud configuration. This is realized using a site-to-site VPN which allows using both on-premises as cloud resources. Besides the Gateway VPN, a single Windows 10 Enterprise multi-session VM is hosted in Azure. All other required infrastructure components, like Active Directory, DNS and DHCP, Login VSI and file servers are hosted on-premises. The on-premises infrastructure is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/).
 
 Windows 10 Enterprise 1909 multi-session is used as the default operating system using the Azure Marketplace. All required Login VSI applications including, Microsoft Office 2016 x64 are installed using a post-OS installation task sequence in MDT.
 
@@ -43,7 +43,7 @@ All specifications of the virtual machines can be found in the following table:
 
 Source: [https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
 
-Our testing methodology, as described here, applies to this research. Because of limited credits in Azure 4 test runs are configured. As the VM is a persistent machine, the first initial run is marked as a profile creation run. The profile creation run is not included in the data for this research.
+Our testing methodology, as described [here]({{site.baseurl}}/insight-in-the-testing-methodology/), applies to this research. Because of limited credits in Azure 4 test runs are configured. As the VM is a persistent machine, the first initial run is marked as a profile creation run. The profile creation run is not included in the data for this research.
 
 ## Expectations and results
 
