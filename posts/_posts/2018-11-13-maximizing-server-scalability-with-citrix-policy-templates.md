@@ -12,13 +12,13 @@ As Ryan concluded in his research post “Performance difference of Citrix ICA V
 
 > The Visual Quality Policy setting allows you to improve the quality of the image sent through the ICA protocol. The overall impact on capacity is none which means switching from a Low to High Visual Quality setting does not affect the overall user density on the servers.
 > 
-> Source: [{{site.baseurl}}performance-difference-of-citrix-ica-visual-quality-profiles/]({{site.baseurl}}performance-difference-of-citrix-ica-visual-quality-profiles/)
+> Source: [{{site.baseurl}}performance-difference-of-citrix-ica-visual-quality-profiles/]({{site.baseurl}}performance-difference-of-citrix-ica-visual-quality-profiles)
 
 But what if wanted to boost server side scalability? How much would using the built in Citrix policy template “High server scalability” gain us in terms of user density per server?
 
 This blog post explores the performance differences between the two Citrix supplied policy templates “Very high definition user experience” and “High Server scalability”.
 
-> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results/).
+> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results).
 
 ## Testing scenario
 We suspected that the “Use videocodec for compression” within the HDX Graphics Encoder policy setting would have the biggest impact on the server side scalability. This settings is enabled by default, and with the “Very high definition user experience” policy template, but is disabled in the “High Server scalability” policy template.
@@ -198,7 +198,7 @@ When using the “High Server scalability”  instead of the “Very high defini
 
 The host CPU statistics confirm these findings and show, on average, that there is a 11 percent drop in the hosts CPU usage with the “High Server scalability”  policy template. Most likely the difference will be in the CPU encoding of the h.264 encoding. We’ll dive into that in a follow up post in the near future (see “What’s next” for more details).
 
-Daniel Feller did a similar test back in 2016 with XenDesktop 7.7 and Windows 10 and concluded a 7 to 8% increase in user density between the two tested templates: [here](https://virtualfeller.com/2016/01/27/xendesktop-7-7-and-windows-10/), whereas our research show a slighly higher impact on the hosts.
+Daniel Feller did a similar test back in 2016 with XenDesktop 7.7 and Windows 10 and concluded a 7 to 8% increase in user density between the two tested templates: [here](https://virtualfeller.com/2016/01/27/xendesktop-7-7-and-windows-10), whereas our research show a slighly higher impact on the hosts.
 
 The biggest differences though are seen on the endpoints. Here there is drop of 40 percent when switching from the “Very high definition user experience” to the “High Server scalability” policy template. In the case where the resource on the endpoint are limited or constrained, this will significantly impact the user experience in a negative fashion.
 
@@ -216,7 +216,7 @@ Also we ran these scenario’s with XenDesktop 7.15 CU2. Citrix has stated in a 
 > 
 > No: Don’t set any graphics policies — leave everything at their defaults (I know that might be difficult for some of you who love to know what all the knobs and buttons do!).
 > 
-> Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when/](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when/)
+> Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when/](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when)
 
 For questions you can always reach out or leave a comment below.
 

@@ -27,7 +27,7 @@ We had the opportunity to test the beta version of CTXO on our {{site.baseurl}} 
 A follow-up post is also scheduled with the results for a Windows Server 2019 workload with Citrix Virtual Apps 1808.2.
 
 ## Infrastructure and configuration
-The {{site.baseurl}} platform used for conducting this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology/). The default desktop delivery solution used is Citrix Virtual Desktops version 1808.2.
+The {{site.baseurl}} platform used for conducting this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology). The default desktop delivery solution used is Citrix Virtual Desktops version 1808.2.
 
 The Machine Catalog for the VDI’s is created using MCS with a stateless configuration using local profiles. At user logoff, the virtual machine is restored to the original state.
 
@@ -89,7 +89,7 @@ The other metrics show the same solid trend as the previous metrics; whether it�
   <i>Higher is better</i>
 </p>
 
-During the tests, Remote Display Analyzer (RDA) is used to capture additional protocol data that we cannot collect with login VSI such as the frames per second and ICA round trip time. This data is captured for each individual user. It’s important to know different users cannot be compared because the duration of the Login VSI workload is different for each user. Therefore, the results published are from a single user, in these cases the first user that is logged on during the workload. More information about RDA can be found [here](https://www.rdanalyzer.com/).
+During the tests, Remote Display Analyzer (RDA) is used to capture additional protocol data that we cannot collect with login VSI such as the frames per second and ICA round trip time. This data is captured for each individual user. It’s important to know different users cannot be compared because the duration of the Login VSI workload is different for each user. Therefore, the results published are from a single user, in these cases the first user that is logged on during the workload. More information about RDA can be found [here](https://www.rdanalyzer.com).
 
 ![fps]({{site.baseurl}}/assets/images/posts/011-citrix-optimizer-version-2-windows-10-1809/011-ctxo-win10-rda-fps.png)
 <p align="center" style="margin-top: -30px;" >
@@ -117,7 +117,7 @@ Where CTXO really shines is when it comes to the ICA Round Trip Time or RTT. The
 The average reduction of the ICA round trip time is almost 10% dropping from an average of 43 milliseconds to an average of 39 milliseconds.
 
 ## Conclusion
-Without any optimization Windows 10 1809 has 276 running services, as shown in Ryan’s post about the [Windows 10 1809 Performance Impact]({{site.baseurl}}/windows-10-1809-performance-impact/). After optimizing the number of running services is reduced significantly. Aside from disabling unneeded services CTXO also significantly trims the amount of enabled scheduled tasks on the system based on the recommendations from the selected template. All these optimizations have resulted in a better performing VDI and in a substantial increase in overall server scalability.
+Without any optimization Windows 10 1809 has 276 running services, as shown in Ryan’s post about the [Windows 10 1809 Performance Impact]({{site.baseurl}}/windows-10-1809-performance-impact). After optimizing the number of running services is reduced significantly. Aside from disabling unneeded services CTXO also significantly trims the amount of enabled scheduled tasks on the system based on the recommendations from the selected template. All these optimizations have resulted in a better performing VDI and in a substantial increase in overall server scalability.
 
 ![conclusion]({{site.baseurl}}/assets/images/posts/011-citrix-optimizer-version-2-windows-10-1809/011-ctxo-win10-conclusion.png)
 

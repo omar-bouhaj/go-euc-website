@@ -43,7 +43,7 @@ While adding new features can improve the work productivity and user experience 
 More information can be found [here](https://products.office.com/en-us/office-system-requirements?ms.officeurl=systemrequirement).
 
 # Infrastructure and configuration
-The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/) and uses {{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018) and uses {{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 Three different scenarios were tested:
 

@@ -19,8 +19,8 @@ The following posts contain more information about MSIX:
 
   * [Microsoft.com](https://docs.microsoft.com/en-us/windows/msix/overview)
   * [Tmurgent.com](http://www.tmurgent.com/TmBlog/?p=2778)
-  * [Logitblog.com](https://www.logitblog.com/hands-on-msix/)
-  * [Rorymon.com](https://www.rorymon.com/blog/how-to-create-an-msix-package-with-the-msix-packaging-tool/)
+  * [Logitblog.com](https://www.logitblog.com/hands-on-msix)
+  * [Rorymon.com](https://www.rorymon.com/blog/how-to-create-an-msix-package-with-the-msix-packaging-tool)
 
 ## Configuration and infrastructure
 This research will focus on the impact of MSIX. As MSIX has a similar container technology as Microsoft App-V and therefore it is interesting to include Microsoft App-V in the research. The following scenarios are tested:
@@ -31,13 +31,13 @@ This research will focus on the impact of MSIX. As MSIX has a similar container 
 
 MSXI does not have a distribution solution like Microsoft App-V so therefore the streaming methods are not included.
 
-This research has taken place on the {{site.title}} platform which is described [here]({{site.title}}/architecture-and-hardware-setup-overview-2018/). Both MSIX and App-V have no additional infrastructure requirements for the defined scenarios.
+This research has taken place on the {{site.title}} platform which is described [here]({{site.title}}/architecture-and-hardware-setup-overview-2018). Both MSIX and App-V have no additional infrastructure requirements for the defined scenarios.
 
-One application will be delivered in the different formats. The PDF Reader is used as the default application as these are started multiple times during the workload. Now usually Adobe Reader DC is used but this application is not working properly with this version of MSIX. Therefore, Sumatra PDF is used as the default PDF Reader. More information about the issues with Adobe Reader DC are described on my personal blog [here](https://www.logitblog.com/hands-on-msix/).
+One application will be delivered in the different formats. The PDF Reader is used as the default application as these are started multiple times during the workload. Now usually Adobe Reader DC is used but this application is not working properly with this version of MSIX. Therefore, Sumatra PDF is used as the default PDF Reader. More information about the issues with Adobe Reader DC are described on my personal blog [here](https://www.logitblog.com/hands-on-msix).
 
 Microsoft Windows 1809 is used as this is required for MSIX. The virtual desktops are configured with 2vCPUs and 4GB memory. Optimizations are applied using the Citrix Optimizer template 1803. Unfortunately, the optimizations applied in the virtual desktops were inefficient and therefore the Login VSI results cannot be used. This behavior is the same for all scenarios so still valid to compare the other collected metrics.
 
-As always, the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+As always, the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Results
 It is known from my previous publication at Project VRC that Microsoft App-V comes with an additional load on CPU which causes higher CPU utilization. As MSIX is based on the same technology it is expected to see a higher CPU utilization compared to a traditionally installed application.

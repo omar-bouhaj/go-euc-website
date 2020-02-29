@@ -63,7 +63,7 @@ The default detected template is used for both scenarios which is the VMware Win
 
 To get consistent and reliable results Windows Defender was disabled and OneDrive removed in all scenarios.
 
-The research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). All scenarios are tested using the default testing methodology which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). All scenarios are tested using the default testing methodology which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Results
 It is expected there is a performance gain using an optimizer. This should result in a higher VSImax and lower host resource utilization on any level.

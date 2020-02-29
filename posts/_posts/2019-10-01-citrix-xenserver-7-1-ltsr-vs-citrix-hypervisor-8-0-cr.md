@@ -143,7 +143,7 @@ Based on these results it is important to validate this in your own environment 
 > 
 > Source: [https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf](https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf)
 
-More information about the HCL can be found here. [http://hcl.vmd.citrix.com/](http://hcl.vmd.citrix.com/)
+More information about the HCL can be found here. [http://hcl.vmd.citrix.com/](http://hcl.vmd.citrix.com)
 
 If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com).
 

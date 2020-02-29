@@ -11,7 +11,7 @@ On May 14th 2019 a group of security advisors, together with Intel, publicly ann
 
 ## MDS and your VDI environment
 
-A lot has been written and published about the MDS vulnerabilities. To learn more about these vulnerabilities, it is recommended to read [cpu.fail](https://cpu.fail/) or [mdsattacks.com](https://mdsattacks.com/).
+A lot has been written and published about the MDS vulnerabilities. To learn more about these vulnerabilities, it is recommended to read [cpu.fail](https://cpu.fail) or [mdsattacks.com](https://mdsattacks.com).
 
 For this research, it is important to understand the context and setup for these performance tests. The goal is to understand the impact of the MDS mitigations. In a VDI environment, this means patching at the hardware level, virtualization layer, and guest OS. Because at the time of testing there was no patch available for the hardware we used, we only tested the impact of patching the hypervisor (VMware vSphere) and the guest OS (Windows 10 build 1809).
 
@@ -38,7 +38,7 @@ In order to get a complete overview of the impact, five scenarios are required.
 | SCAv1	        | 17763.503 | ESXi670-201905001	| Includes vSphere and Windows patch |
 | SCAv2	        | 17763.503 | ESXi670-201905001 | Includes vSphere and Windows patch |
 
-As always the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+As always the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Expectations and results
 It is expected that MDS and enabling the Side Channel Aware Scheduler will have an impact on user density and user experience. Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The Login VSI VSImax is one of the best metrics to see the difference in user capacity. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).

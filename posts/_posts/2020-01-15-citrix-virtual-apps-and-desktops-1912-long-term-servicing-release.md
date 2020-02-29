@@ -12,7 +12,7 @@ December 18th 2019, Citrix released the new Citrix Virtual Apps and Desktops 7 1
 ## The 1912 Long-Term Servicing Release
 As mentioned before, Citrix has released the new Long-Term Servicing release 1912 on December 18th, 2019. There are many blog posts out there that will address the new features. We recommend starting with the following post to understand what’s new in this release.
 
-[https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr/](https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr/)
+[https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr/](https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr)
 
 For a full feature by feature comparison for the different release, Citrix has provided a complete feature overview for each version, which can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
 
@@ -124,7 +124,7 @@ Another key indicator is the round trip time, also known as RTT. RTT is the dela
   <i>Lower is better</i>
 </p>
 
-The pattern is overall similar but showing an increasing RTT during the video content for all 7.15 CU versions. A higher RTT, will have a negative impact on the user experience. As we have learned in previous researches, the Login VSI progress bar will have an effect on these results, therefore for this research it was removed. More information about this can be found [here](https://www.go-euc.com/important-influence-of-citrix-login-vsi-on-the-results/).
+The pattern is overall similar but showing an increasing RTT during the video content for all 7.15 CU versions. A higher RTT, will have a negative impact on the user experience. As we have learned in previous researches, the Login VSI progress bar will have an effect on these results, therefore for this research it was removed. More information about this can be found [here](https://www.go-euc.com/important-influence-of-citrix-login-vsi-on-the-results).
 
 These results show that there are numerous protocol improvements made in recent CRs that have also been included in the latest 1912 release.
 
@@ -234,7 +234,7 @@ Whether you choose for long-term supportability or looking ahead for new functio
 
 Based on this and previous researches, in either case, upgrading will benefit the user experience, performance and scalability.
 
-Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at our [Slack channel](https://{{site.title}}.slack.com/).
+Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at our [Slack channel](https://{{site.title}}.slack.com).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let us know what version of Citrix Virtual Apps and Desktops you are running in the poll below <a href="https://twitter.com/hashtag/Citrix?src=hash&amp;ref_src=twsrc%5Etfw">#Citrix</a> <a href="https://twitter.com/hashtag/CitrixSummit2020?src=hash&amp;ref_src=twsrc%5Etfw">#CitrixSummit2020</a></p>&mdash; G0-EUC (@g0_euc) <a href="https://twitter.com/g0_euc/status/1217448627628584960?ref_src=twsrc%5Etfw">January 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

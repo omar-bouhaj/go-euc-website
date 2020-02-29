@@ -38,7 +38,7 @@ More information about the infrastructure can be found [here]({{site.baseurl}}/a
 
 In order to ensure the page file is used during the tests, enough applications need to be started. The Login VSI memory footprint is approximately 1.5GB – 2GB which is not enough for our configuration. Therefore, a memory eater tool is introduced to the workload to ensure enough memory is allocated during the tests. For this purpose, we used [Testlimit](https://docs.microsoft.com/en-us/sysinternals/downloads/testlimit) by Mark Russinovich which allows the allocation of a certain amount (2GB) of memory.
 
-Besides the small workload modification, the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+Besides the small workload modification, the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Results
 Our initial expectation in case of the page file was the bigger, the better. So, a large page file configuration should lead to a capacity improvement as there is enough room to use in the page file. We also expected to break Windows 10 in the configuration without a page file when there was no memory left.
@@ -92,6 +92,6 @@ As this research shows, it is not recommended to disable the page file, as this 
 
 We have not seen any difference in the other configuration and, therefore, it is recommended to leave it system managed. When using other storage accelerators like Citrix MCS I/O or [Citrix PVS](https://www.carlstalhood.com/pvs-master-device-preparation/#pagefile), we strongly recommend using a small page file to reduce the size on disk footprint.
 
-We would like to know the sizing used in your environment. Share them in the comments below or join the interaction on our Slack channel [here](https://{{site.title}}.slack.com/). And as always, please confirm any findings in your own environment before going live.
+We would like to know the sizing used in your environment. Share them in the comments below or join the interaction on our Slack channel [here](https://{{site.title}}.slack.com). And as always, please confirm any findings in your own environment before going live.
 
 Photo by [Patrick Lindenberg](https://unsplash.com/@heapdump?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

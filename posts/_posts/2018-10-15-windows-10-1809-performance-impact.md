@@ -11,7 +11,7 @@ This month (2nd October 2018) Microsoft has officially released Windows 10 1809 
 > **Please note:** There are known issues with the upgrade path to Windows 10 1809.
 >
 > “We have paused the rollout of the Windows 10 October 2018 Update (version 1809)* for all users as we investigate isolated reports of users missing some files after updating.
-> For the latest information on this issue please see [John Cable’s blog](https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/).”
+> For the latest information on this issue please see [John Cable’s blog](https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders).”
 >
 > Source: [https://support.microsoft.com/en-us/help/4464619/windows-10-update-history](https://support.microsoft.com/en-us/help/4464619/windows-10-update-history)
 
@@ -32,7 +32,7 @@ With each release of Windows 10, Microsoft adds a lot of new functionally and im
 More information regarding the new features and improvements can be found [here](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1809).
 
 ## Infrastructure and configuration
-The {{site.title}} platform is used for this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). We applied the same testing methodology where all results are average of multiple runs. For more information please read the following [post]({{site.baseurl}}/insight-in-the-testing-methodology/). The default desktop delivery solution is Citrix Virtual Desktop as this is a commonly used solution and supports Windows 10 1809 right from the release day which is described [here](https://support.citrix.com/article/CTX224843).
+The {{site.title}} platform is used for this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). We applied the same testing methodology where all results are average of multiple runs. For more information please read the following [post]({{site.baseurl}}/insight-in-the-testing-methodology). The default desktop delivery solution is Citrix Virtual Desktop as this is a commonly used solution and supports Windows 10 1809 right from the release day which is described [here](https://support.citrix.com/article/CTX224843).
 
 To understand the performance impact of Windows 10 1809 the results needs to be compared to previous releases. In this case, the following 3 scenarios are tested:
 

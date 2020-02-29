@@ -9,7 +9,7 @@ image: assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix
 Microsoft acquired the FSLogix solutions in November 2018. The FSLogix acquisition dovetails with Microsoft’s announced Windows Virtual Desktop (WVD), a cloud-based service that offers a Windows 10 experience “optimized” for virtual desktop infrastructure (VDI) and Office 365 ProPlus. But what is the impact of using FSLogix Profile Containers in a VDI scenario? This research will focus on the performance impact and user experience of FSLogix Profile Containers in a VDI scenario.
 
 ## The different Windows User profile types
-Before we start, it is important to understand the different Windows profile types. The user profile is a very important part of managing and delivering a virtual desktop. In a previous {{site.title}} research the different profiles types were researched and can be found [here]({{site.baseurl}}/performance-difference-between-user-profiles/). Go read [this](https://james-rankin.com/features/the-history-of-the-windows-user-profile-in-euc-environments-1994-2019/) article, author James Rankin, if you need a history into Windows profiles.
+Before we start, it is important to understand the different Windows profile types. The user profile is a very important part of managing and delivering a virtual desktop. In a previous {{site.title}} research the different profiles types were researched and can be found [here]({{site.baseurl}}/performance-difference-between-user-profiles). Go read [this](https://james-rankin.com/features/the-history-of-the-windows-user-profile-in-euc-environments-1994-2019) article, author James Rankin, if you need a history into Windows profiles.
 
 Some of the challenges associated with user profiles that may occur are:
 
@@ -28,7 +28,7 @@ FSLogix is a simple, easy basic profile management solution to roam user profile
 
 For more information about FSLogix I recommended to read the following articles: FSLogix website [here](https://fslogix.com/products/profile-containers) and Microsoft’s website [here](https://docs.microsoft.com/en-us/fslogix/overview).
 
-More articles can be found here: [Aaron Parker’s stealthpuppy.com](https://stealthpuppy.com/) (search for “FSLogix” in the post sections) and [james-rankin.com](https://james-rankin.com/category/fslogix/).
+More articles can be found here: [Aaron Parker’s stealthpuppy.com](https://stealthpuppy.com) (search for “FSLogix” in the post sections) and [james-rankin.com](https://james-rankin.com/category/fslogix).
 
 ## Configuration and infrastructure
 The goal of the research is to validate the impact of a default Windows roaming versus a default FSLogix installation. And because the size of the user profile impacts the results of the test, we tested with different sizes of user profiles.
@@ -47,7 +47,7 @@ The size of the user profiles in each scenario is:
   * Each Windows roaming profile large is approximately 1.17GB in size, with 4.386 Files and 175 Folders;
   * Each FSLogix Profile Container large is approximately 1.44GB in VHDX file size.
 
-The virtual desktops are configured with 2 vCPUs and 4GB memory, delivered using Citrix, running Windows 10 1809 and are fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded after each session’s logoff or during each reboot process. More about the {{site.title}} lab environment can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The virtual desktops are configured with 2 vCPUs and 4GB memory, delivered using Citrix, running Windows 10 1809 and are fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded after each session’s logoff or during each reboot process. More about the {{site.title}} lab environment can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 > **Please note** that these are standard basic setups without exception on certain folders and/or files. It is recommended and a common practice to include exclusions. This approach is similar to other profile management solutions; the same types of exclusions will apply.
 
@@ -166,6 +166,6 @@ Logon times are an important part of user experience and FSLogix shows a big imp
 
 To summarize, FSLogix is not a performance booster and focusses specific on use-cases like indexing of Office 365, OneDrive and other profile type applications. Based on these results it is important to validate the impact in your own environment to avoid unexpected capacity issues when implementing FSLogix.
 
-If you want to share your insights on using FSLogix Profile Container or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.title}}.slack.com/).
+If you want to share your insights on using FSLogix Profile Container or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.title}}.slack.com).
 
 Photo by [Sergei Akulich](https://unsplash.com/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

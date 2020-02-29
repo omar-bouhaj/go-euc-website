@@ -30,7 +30,7 @@ Since we are located in the EU, we suspected the brokering from the Citrix Cloud
 ## Configuration and infrastructure
 The goal of this research is to validate the most common Citrix Cloud scenario’s we have seen at customers. This will be a minimal Citrix Cloud implementation for Citrix Virtual Apps and Desktops Service. The Citrix Delivery Controllers will be used from Citrix Cloud but the StoreFront services will be running on-premises. This way the brokering will be done through Citrix Cloud. The NetScaler services are out of scope for this specific research as the launchers are in the same datacenter. This also allows us to fully focus on the brokering times by Citrix Cloud.
 
-This research took place in our lab which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). In order to connect with Citrix Cloud, a so called Cloud Connector is required. Two separate machines were created on the infrastructure host with the Cloud Connector roles installed and a dedicated Resource location was created in Citrix Cloud. The Cloud Connectors have been installed and configured with the Citrix recommended settings:
+This research took place in our lab which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). In order to connect with Citrix Cloud, a so called Cloud Connector is required. Two separate machines were created on the infrastructure host with the Cloud Connector roles installed and a dedicated Resource location was created in Citrix Cloud. The Cloud Connectors have been installed and configured with the Citrix recommended settings:
 
 [https://docs.citrix.com/en-us/citrix-cloud/citrix-cloud-resource-locations/citrix-cloud-connector/installation.html](https://docs.citrix.com/en-us/citrix-cloud/citrix-cloud-resource-locations/citrix-cloud-connector/installation.html)
 
@@ -42,10 +42,10 @@ As the initial Cloud instance was created in the US, this allowed us to incorpor
 
 Tests are running in a stateless VDI scenario using Windows 10 1809 configured with 2vCPU and 4GB memory. It is important to understand VDI’s are running on a dedicated host in the GO-EUC lab, not in Citrix Cloud itself.
 
-The default testing methodology is used which is described in full detail [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The default testing methodology is used which is described in full detail [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Unexpected encountering
-All tests are fully automated and because of Citrix Cloud, it required some additional modification in the scripts. It took a while as some functions like Get-DesktopMachine are not working from the central management server. All the details regarding the issues with Citrix Cloud Remote PowerShell SDK are described at Ryan’s personal blog which you can read here.
+All tests are fully automated and because of Citrix Cloud, it required some additional modification in the scripts. It took a while as some functions like Get-DesktopMachine are not working from the central management server. All the details regarding the issues with Citrix Cloud Remote PowerShell SDK are described at Ryan’s personal blog which you can read [here](https://www.logitblog.com/inconsistencies-with-citrix-cloud-remote-powershell-sdk).
 
 As a Cloud offering, Citrix Cloud is an evergreen solution. Functionality will be added to Citrix Cloud first and will be added to the Virtual Apps and Desktop solution afterward. This means that Citrix Cloud is continuously updated.
 
@@ -114,7 +114,7 @@ As mentioned in the introduction there will be an expected impact on the user lo
 
 There is an apparent impact on the user logon times. It is expected the Citrix Cloud US scenario takes a bit longer as the distance to the datacenter is way further from our own datacenter.
 
-With the average latency to Azure measured from [http://www.azurespeed.com/](http://www.azurespeed.com/) being around 150 ms to 200 ms to the West US and West Central US regions and the average latency to the West Europe latency averaging around 30 ms some delay might be inevitable and the 12 and 16 percent increase in logon times are understandable.
+With the average latency to Azure measured from [http://www.azurespeed.com/](http://www.azurespeed.com) being around 150 ms to 200 ms to the West US and West Central US regions and the average latency to the West Europe latency averaging around 30 ms some delay might be inevitable and the 12 and 16 percent increase in logon times are understandable.
 
 When we shift focus to the launchers, it will become obvious that from the client perspective there is no performance penalty in choosing Citrix Cloud over an on-premises environment.
 
@@ -133,7 +133,7 @@ For the network data transferred from the launcher to the VDI, it makes no diffe
 Connections from the launchers are local due to the fact that the VDI’s are also in the same datacenter and therefore are in very close proximity to the launchers. When using external launchers (or clients) in that are not local to the datacenter where the VDI’s are hosted in contrast, all connections and data between the client and the VDI will flow from the client to Citrix Cloud (Netscaler-Storefront) and then to the VDI’s in the datacenter through the Cloud Connectors. In that use case, the logon time penalty will most likely be much more significantly higher.
 
 Conclusion
-Using Citrix Cloud comes with pros and cons. During this research, we experienced some unexpected behavior using the Citrix Cloud remote PowerShell SDK. More information can be found on [Logit Blog](https://www.logitblog.com/inconsistencies-with-citrix-cloud-remote-powershell-sdk/).
+Using Citrix Cloud comes with pros and cons. During this research, we experienced some unexpected behavior using the Citrix Cloud remote PowerShell SDK. More information can be found on [Logit Blog](https://www.logitblog.com/inconsistencies-with-citrix-cloud-remote-powershell-sdk).
 
 As expected, when moving the Delivery Controller in the Cloud will impact the logon times. There is no real capacity impact as the VDI component are still on-premises the XML communication is done via the Cloud Connectors.
 

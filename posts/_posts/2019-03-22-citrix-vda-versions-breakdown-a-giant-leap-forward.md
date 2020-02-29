@@ -8,7 +8,7 @@ image: assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forwar
 ---
 With each iteration of the Citrix Virtual Delivery Agent (VDA) software Citrix always treats us to new features and functionalities. For the Current Releases (CR) Citrix is constantly adding new features and functionalities while also improving the performance of the HDX protocol itself. This should, in theory, result in a better user experience, coupled with a higher user density and less strain on the system.
 
-> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results/).
+> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results).
 
 The Long Term Service Release (LTSR) program provides stability and long-term support for XenApp and XenDesktop releases. XenApp and XenDesktop LTSRs are currently available for Versions 7.6 and 7.15. Cumulative Update 3 (CU3) is the most recent update to the 7.15 LTSR.
 
@@ -45,7 +45,7 @@ To get some context for the different VDA versions here is a small breakdown of 
 <i> **Note:** from version 7.17 and onward, a new higher compression ratio MDRLE encoder has been added. The Citrix reworked the MDRLE codec so that it consumes less bandwidth in typical desktop sessions when compared with 2DRLE. More information on the Lossless Compression Codec (MDRLE) can be found here: [https://support.citrix.com/article/CTX232041](https://support.citrix.com/article/CTX232041) </i>
 
 ## Configuration and infrastructure
-As always, the tests were conducted by the standard testing methodology, an in-depth look into the methodology can be found [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+As always, the tests were conducted by the standard testing methodology, an in-depth look into the methodology can be found [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 The tests were configured to use non-persistent desktops delivered using Citrix Virtual Desktops (MCS) running Microsoft Windows 10 build 1809 and are configured with 2 vCPU and 4 GB RAM. Both Windows and Office are fully patched. Windows Defender was disabled, as this may influence the metrics and result in unreliable data. The image was fully optimized with Citrix Optimizer version 2 with the Citrix supplied ‘Windows 10 1809’ template.
 
@@ -205,9 +205,9 @@ Citrix has done a tremendous amount of work on the VDA and HDX protocol fronts. 
 
 More information on the continual improvements in the HDX Protocol can be found here:
 
-[https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1/](https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1/)
+[https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1/](https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1)
 
-[https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2/](https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2/)
+[https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2/](https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2)
 
 In a more real-world scenario’s where multimedia content is becoming more and more common, the impact of these improvements will only be even higher than in our lab environment. The Login VSI workload is configured with moderately static content and with a workload that is a bit outdated in terms that it only uses SD content, whereas multimedia content nowadays is typically 1080p or even 4k in resolution.
 

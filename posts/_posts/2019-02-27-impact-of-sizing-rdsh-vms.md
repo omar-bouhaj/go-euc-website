@@ -12,7 +12,7 @@ It’s been more than 10 years since we started to virtualize RDSH-based workloa
 The most commonly used products in the RDSH-space are Citrix Virtual Apps (AKA XenApp) and VMware Horizon Apps. What are these vendors recommending when it comes to sizing the RDSH VMs?
 
 ### Citrix
-The latest recommendation from Citrix professional services which I could find is documented here: [https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017/](https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017/)
+The latest recommendation from Citrix professional services which I could find is documented here: [https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017/](https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017)
 
 One advice I would like to quote:
 
@@ -33,9 +33,9 @@ Getting the most users on a server isn’t the only thing to consider when it co
 By default, Spectre and Meltdown mitigations are not enabled on Windows server 2016 (even though the patches are installed). As the investigation about the impact of enabling those mitigations is an interesting topic by itself, we decided to not enable it during these tests. The L1TF mitigation on ESXi (by enabling the ESXi Side-Channel-Aware Scheduler) was also not performed. These settings will be tested in an upcoming research.
 
 ## Configuration and infrastructure
-The tests for this research were performed on a Nutanix-lab environment. The node on which the tests were performed is part of a 4-node cluster. Usually, a controller VM (CVM) is present on each Nutanix node, but for these tests this CVM was powered off. The storage of the other nodes in the cluster was accessed by the test-node over NFS. The node is a dual socket CPU and is an Intel E5-2680 v4 @ 2.40GHz processor. This CPU is based on a Broadwell architecture, containing 14 cores. That means a total of 28 physical CPU cores are present and with Hyperthreading enabled 56 logical CPU cores are available. VMware ESXi 6.7U1 was used during these tests. You can read more about this Nutanix-lab infrastructure [here]({{stite.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019/).
+The tests for this research were performed on a Nutanix-lab environment. The node on which the tests were performed is part of a 4-node cluster. Usually, a controller VM (CVM) is present on each Nutanix node, but for these tests this CVM was powered off. The storage of the other nodes in the cluster was accessed by the test-node over NFS. The node is a dual socket CPU and is an Intel E5-2680 v4 @ 2.40GHz processor. This CPU is based on a Broadwell architecture, containing 14 cores. That means a total of 28 physical CPU cores are present and with Hyperthreading enabled 56 logical CPU cores are available. VMware ESXi 6.7U1 was used during these tests. You can read more about this Nutanix-lab infrastructure [here]({{stite.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019).
 
-The Login VSI workload knowledgeworker is modified as described [here]({{site.baseurl}}/insight-in-the-testing-methodology/) and used during these tests. The Remote Desktop Analyzer (RDA) data capture was disabled due to the overhead of RDA on RDSH and the PDF-printer was not disabled. SBC timer was not enabled.
+The Login VSI workload knowledgeworker is modified as described [here]({{site.baseurl}}/insight-in-the-testing-methodology) and used during these tests. The Remote Desktop Analyzer (RDA) data capture was disabled due to the overhead of RDA on RDSH and the PDF-printer was not disabled. SBC timer was not enabled.
 
 ### RDSH VM configurations
 

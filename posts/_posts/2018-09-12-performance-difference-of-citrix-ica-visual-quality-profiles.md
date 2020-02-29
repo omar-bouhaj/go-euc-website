@@ -139,7 +139,7 @@ Another important metric is the Round Trip Time also known as the latency. Even 
   <i>Lower is better</i>
 </p>
 
-The difference between the High, Medium and Low scenarios are minimal but switching to UDP result in a higher RTT. As these tests are done within the same datacenter the effect is not noticeable for a human, but in a WAN scenario, the impact can be higher. These findings are interesting as it conflicts with Citrix [publications](https://www.citrix.com/blogs/2018/01/02/improving-the-citrix-user-experience/). This may be worth to investigate further, what do you think?
+The difference between the High, Medium and Low scenarios are minimal but switching to UDP result in a higher RTT. As these tests are done within the same datacenter the effect is not noticeable for a human, but in a WAN scenario, the impact can be higher. These findings are interesting as it conflicts with Citrix [publications](https://www.citrix.com/blogs/2018/01/02/improving-the-citrix-user-experience). This may be worth to investigate further, what do you think?
 
 During an open session, it will consume bandwidth in order to send and receive data between the session and the endpoint. Lower bandwidth will have an effect on the user experience as there is less room to send and receive information.
 

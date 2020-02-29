@@ -38,9 +38,9 @@ The goal of the research is to validate the impact of the different profile type
   * Using a mandatory user profile from a share;
   * Using a mandatory user profile stored locally.
 
-The temporary user profile is not included as this only occurs when there is something wrong that prevents the user’s profile from loading. In this research, no folder redirection is used. As always, the default infrastructure is used which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/).
+The temporary user profile is not included as this only occurs when there is something wrong that prevents the user’s profile from loading. In this research, no folder redirection is used. As always, the default infrastructure is used which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
 
-All VM’s are configured with 2vCPU’s with 4GB memory delivered using Citrix running Windows 10 1809 and is fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded. The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+All VM’s are configured with 2vCPU’s with 4GB memory delivered using Citrix running Windows 10 1809 and is fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded. The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## The expectation and results
 It is known roaming profiles is not recommended in a virtual desktop use-case. All settings will be synchronized to the central location which can grow over time. This is all depending on the number of applications and data stored in the profile. By default, there is limited control, so this will result in a higher load of the copy action and slower logon times. Using a local or mandatory profile should be the most efficient way for a virtual desktop scenario.

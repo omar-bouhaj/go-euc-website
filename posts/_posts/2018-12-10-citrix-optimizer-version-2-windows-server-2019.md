@@ -8,7 +8,7 @@ image: assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/01
 ---
 Optimizing and tuning your environment is one of the best practices for any virtual desktop environment. This applies both to desktop and server operating systems like Windows 10 and Windows Server 2019. In the previous research, we had the opportunity to test with the new Citrix Optimizer tool (CTXO) which also contain a template for Windows Server 2019. As promised, we did another research using CTXO running Windows Server 2019 in a Virtual Apps & Desktops (XenApp) scenario. 
 
-More details regarding the new release of CTXO are described in the previous [post]({site.baseurl}}/citrix-optimizer-version-2-windows-10-1809/)
+More details regarding the new release of CTXO are described in the previous [post]({site.baseurl}}/citrix-optimizer-version-2-windows-10-1809)
 
 For this research we ran the following scenarios: 
 
@@ -18,7 +18,7 @@ For this research we ran the following scenarios:
 ![optimizer]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-optimizer.png)
 
 ## Infrastructure and configuration 
-This research has taken place on the {{site.title}} platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology/).
+This research has taken place on the {{site.title}} platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 The default desktop delivery solution is Citrix Virtual Desktop running the latest available version, 1808.2. The virtual machines are created using Citrix Machine Creation Service (MCS) with a stateless configuration using local profiles. All virtual machines are configured with 6vCPU’s and 32GB memory. 
 

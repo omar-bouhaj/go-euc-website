@@ -41,7 +41,7 @@ The following cumulative releases are included in this research:
 
 Each cumulative update will be compared in the own build version, with the oldest update as the baseline. This way it shows if there is an impact with newer updates. The updates have been downloaded and installed individually on a clean Windows 10 release. As the cumulative updates include previous updates, only the latest cumulative update is installed. No additional updates for Microsoft Office 2016 have been installed.
 
-The desktops are delivered using Citrix Virtual Desktops version 1811 using VM’s with 2 vCPUs and 4GB memory. This research has taken place in the {{site.title}} lab environment, described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/), using our default testing methodology described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The desktops are delivered using Citrix Virtual Desktops version 1811 using VM’s with 2 vCPUs and 4GB memory. This research has taken place in the {{site.title}} lab environment, described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018), using our default testing methodology described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Expectations and results
 As the changes in the cumulative updates contain fixes, improvements and security related patches it is expected there is only a minimal impact. This is very important for an enterprise environment, as big capacity changes can have a huge influence on the services.

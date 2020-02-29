@@ -40,9 +40,9 @@ Login VSI provides offline websites to simulate web-based behavior. As the adver
   * BrianMadden.com;
   * 3 YouTube videos.
 
-As Internet Explorer does not allow to use an ad blocker plugin the default browser has been switched to Google Chrome. The default KnowledgeWorker workload is used with some modifications to use Google Chrome and the real internet sites. This workload represents “normal” working behavior where the impact of ads can be measured besides using the default applications. When using internet content only the impact would be different. The workload and testing methodology are both described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+As Internet Explorer does not allow to use an ad blocker plugin the default browser has been switched to Google Chrome. The default KnowledgeWorker workload is used with some modifications to use Google Chrome and the real internet sites. This workload represents “normal” working behavior where the impact of ads can be measured besides using the default applications. When using internet content only the impact would be different. The workload and testing methodology are both described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
-This research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/).
+This research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
 
 ## Expectation and results
 Advertisements need to be transferred to the client and often includes animations which require resources to process. Therefore, it is expected to see an improvement in load when blocking the advertisements.

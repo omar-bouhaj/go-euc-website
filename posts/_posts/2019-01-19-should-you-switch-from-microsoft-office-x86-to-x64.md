@@ -20,15 +20,15 @@ Once you click install from the Office365 portal it will now install the x64 ver
 The advantage using x64 bit version of Office is the amount of memory that can be consumed. When using extreme large Excel sheets there is probably a preference for the x64 version. Of course, there is also a downside. In many organizations, there are many applications and specific plugins that integrate with Office. There is a chance some of these integrations or plugins may not work. When migrating it is recommended to validate if all those plugins and integrations still work.
 
 ## Configuration and infrastructure
-This research has taken place on our infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/). The goal is to see the impact switching from x86 to x64 bit version of Office. This resulted in the following scenarios:
+This research has taken place on our infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). The goal is to see the impact switching from x86 to x64 bit version of Office. This resulted in the following scenarios:
 
   * Microsoft Office 2016 x86 as the baseline test;
   * Microsoft Office 2016 x64.
 
-As shown in our previous Microsoft Office compare [post]({{site.baseurl}}/office-2019-performance-impact/), we have specifically chosen for Microsoft Office 2016 as these provide reliable results. This has nothing to do with Microsoft Office but with the benchmarking tool used in {{site.title}} named Login VSI.
+As shown in our previous Microsoft Office compare [post]({{site.baseurl}}/office-2019-performance-impact), we have specifically chosen for Microsoft Office 2016 as these provide reliable results. This has nothing to do with Microsoft Office but with the benchmarking tool used in {{site.title}} named Login VSI.
 
 Both test scenarios have been tested on Windows 10 1809 configured with 2vCPU and 4GB memory. The desktop delivery solution is Citrix Virtual Apps & Desktops running version 1808.2. The desktops are running in a stateless scenario, so all changes within the desktop are discarded before the next test.
-Our default testing methodology is applied which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+Our default testing methodology is applied which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
 
 ## Results
 When testing scenarios like these there is always an expectation of the outcome. For this research, the expected result is a slightly higher load using x64. As this architecture has the capabilities to consume more resources.
