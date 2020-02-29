@@ -78,7 +78,8 @@ post_class: post-template
                         {% if tag != "posts" and tag != "events" %}
 
                         <li>
-                            <a href="{{ site.baseurl }}/category/{{ tag | slugify }}/">{{ tag }}</a>
+                            <div class="tag">{{ tag }}</div>
+                            <!-- <a href="{{ site.baseurl }}/category/{{ tag | slugify }}/">{{ tag }}</a> -->
                         </li>
                         {% endif %}
 
