@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Optimizer version 2 – Windows Server 2019"
 authors: [ryan, eltjo]
-categories: [ 'citrix', 'CTXO', 'W2K19', 'microsoft' ]
+categories: [ 'citrix', 'windows server 2019' ]
+tags: [ 'citrix', 'microsoft', 'windows 10' ]
 image: assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-feature-image.png
 ---
 Optimizing and tuning your environment is one of the best practices for any virtual desktop environment. This applies both to desktop and server operating systems like Windows 10 and Windows Server 2019. In the previous research, we had the opportunity to test with the new Citrix Optimizer tool (CTXO) which also contain a template for Windows Server 2019. As promised, we did another research using CTXO running Windows Server 2019 in a Virtual Apps & Desktops (XenApp) scenario. 

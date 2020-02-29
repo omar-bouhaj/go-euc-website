@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix SD-WAN performance benefits with Office 365 optimization"
 authors: [bas, ruud]
-categories: [ 'citrix', 'office 365', 'SD-WAN', 'microsoft'  ]
+categories: [ 'citrix', 'microsoft', 'office' ]
+tags: [ 'citrix', 'office 365', 'SD-WAN', 'microsoft'  ]
 image: assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-feature-image.png
 ---
 With the rise of cloud, new challenges arise to maintain and improve user experience. Citrix SD-WAN promises great improvement of user experience compared to using the traditional WAN and networking infrastructure. In this research the impact of Citrix SD-WAN will be compared to traditional networking.

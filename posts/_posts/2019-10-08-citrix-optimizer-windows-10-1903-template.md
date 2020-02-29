@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Optimizer Windows 10 1903 Template"
 authors: [ryan]
-categories: [ 'windows 10', '1809', '1903', 'CTXO' ]
+categories: [ 'citrix', 'microsoft', 'windows 10' ]
+tags: [ 'windows 10', '1809', '1903', 'CTXO', 'citrix' ]
 image: assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-feature-image.png
 ---
 A couple of months ago we did a research with the new Windows 10 1903 build. While the new Windows build was already released the Citrix Optimizer template was not available yet. In this research the new Citrix Optimizer Windows 10 1903 template will be validated from a performance perspective.

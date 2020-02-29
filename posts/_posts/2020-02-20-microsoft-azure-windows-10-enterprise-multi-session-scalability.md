@@ -2,7 +2,8 @@
 layout: post
 title:  "Microsoft Azure Windows 10 Enterprise multi-session scalability"
 authors: [ryan]
-categories: [ '1909', 'azure', 'd2_v2', 'WVD', 'windows 10 multi-session' ]
+categories: [ 'microsoft', 'azure' ]
+tags: [ '1909', 'azure', 'd2_v2', 'WVD', 'windows 10 multi-session' ]
 image: assets/images/posts/054-azure-windows10-multi-session-scalability/054-azure-windows10-multi-session-feature-image.png
 ---
 With the introduction of Windows Virtual Desktop (WVD) there is an increase in demand for the Windows 10 Enterprise multi-session edition. As the name states, this edition allows having multiple remote sessions on a single Windows 10 machine. This research will focus on the scalability of Windows 10 Enterprise multi-session on various Azure machines.

@@ -2,7 +2,8 @@
 layout: post
 title:  "The true power of VMware OSOT in VDI"
 authors: [omar]
-categories: [ 'internet explorer', 'edge', 'firefox', 'chrome', 'browers']
+categories: [ 'browsers' ]
+tags: [ 'internet explorer', 'edge', 'firefox', 'chrome', 'browsers']
 image: assets/images/posts/008-browser-performance-impact/008-brswr-feature-image.png
 ---
 If you search for browser performance comparisons on the web, their main focus are usually the available features and performance from a physical dedicated machine. But what if the desktop is a virtual one?

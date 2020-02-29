@@ -2,7 +2,8 @@
 layout: post
 title:  "Windows 10 1809 performance impact"
 authors: [ryan]
-categories: [ 'microsoft', 'windows 10', '1809', '1709', '1803' ]
+categories: [ 'microsoft', 'windows 10' ]
+tags: [ 'microsoft', 'windows 10', '1809', '1709', '1803' ]
 image: assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-feature-image.png
 ---
 This month (2nd October 2018) Microsoft has officially released Windows 10 1809 also known as Redstone 5. This is the semi-annual targeted release which is scheduled biannual. With the new release, a lot of organizations are preparing to migrate to the new 1809 edition. But what is the impact migrating to Windows 1809 in a virtual environment?  This blog post shows the performance impact of Windows 10 1809 in a virtual desktop infrastructure (VDI) scenario.

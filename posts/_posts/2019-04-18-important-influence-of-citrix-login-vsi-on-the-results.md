@@ -2,7 +2,8 @@
 layout: post
 title:  "Important: Influence of Citrix & Login VSI on the results"
 authors: [ryan, eltjo]
-categories: [ 'citrix', 'Login VSI', 'FPS' ]
+categories: [ 'infrastructure' ]
+tags: [ 'citrix', 'Login VSI', 'FPS' ]
 image: assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-influence-citrix-loginvsi-feature-image.png
 ---
 Over the last couple of months, a lot of new insights have been shared on GO-EUC. After publishing one of our results, we received some feedback regarding these results within our slack channel. It appears that some of the test results were affected by a specific setting, in the OS, which means the results may vary between product versions. This blog post will explain the insights, analysis, and effected results.

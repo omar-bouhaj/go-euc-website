@@ -2,7 +2,8 @@
 layout: post
 title:  "The Impact of Spectre, Meltdown and L1TF in a virtualized RDSH environment"
 authors: [sven]
-categories: [ 'L1TF', 'spectre', 'meltdown', 'RDSH', 'foreshadow' ]
+categories: [ 'vulnerabilities' ]
+tags: [ 'L1TF', 'spectre', 'meltdown', 'RDSH', 'foreshadow' ]
 image: assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-feature-image.jpg
 ---
 In 2018 the CPU hardware vulnerabilities Spectre, Meltdown and later L1 Terminal Fault (L1TF, also known as ForeShadow) made headlines. Hardware and software vendors released firmware updates and software patches to mitigate these vulnerabilities. Unfortunately, depending on the workload, these mitigations come with a performance impact. This GO-EUC research focusses on the impact on the performance of enabling the mitigations on the Windows server OS in an RDSH environment.

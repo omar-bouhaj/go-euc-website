@@ -2,7 +2,8 @@
 layout: post
 title:  "Impact of sizing RDSH VMs"
 authors: [sven]
-categories: [ 'numa', 'RDSH', 'sizing' ]
+categories: [ 'microsoft', 'windows server 2016' ]
+tags: [ 'microsoft', 'numa', 'RDSH', 'sizing' ]
 image: assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-feature-image.png
 ---
 It’s been more than 10 years since we started to virtualize RDSH-based workloads and over the years the most discussed topic is how to size the RDSH VMs. In an RDSH environment, the CPU will most likely be your first bottleneck. To get the highest user density (which is the reason to use RDSH instead of VDI in the first place) you need to know what the best CPU configuration is for your RDSH-based VMs. “Best practices” differ from 4 vCPU VMs to 8 vCPU VMs or half the size of a NUMA node. And then you must decide how many VMs per host and what the total amount of vCPUs you’ll use. And should you overcommit on CPU and if so, how much? This research will focus on the performance impact of the different sizing options of RDSH VMs.

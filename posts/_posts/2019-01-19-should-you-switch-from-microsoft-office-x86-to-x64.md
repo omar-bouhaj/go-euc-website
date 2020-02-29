@@ -2,7 +2,8 @@
 layout: post
 title:  "Should you switch from Microsoft Office x86 to x64?"
 authors: [ryan]
-categories: [ 'microsoft', 'office', 'x86', 'x64' ]
+categories: [ 'microsoft', 'office' ]
+tags: [ 'microsoft', 'office', 'x86', 'x64' ]
 image: assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-to-x64-feature-image.png
 ---
 A couple weeks ago Microsoft announced the switch for the default installation of Office from x86 to x64. Within VDI deployments it has always been common to deploy an x86 version of Office. What is the difference between these architecture versions and is there any impact? This research will cover the performance impact difference between x86 and x64 of Microsoft Office.

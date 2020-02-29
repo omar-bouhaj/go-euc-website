@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix XenServer 7.1 LTSR vs. Citrix Hypervisor 8.0 CR"
 authors: [krishan]
-categories: [ '7.1', '8.0', 'citrix hypervisor', 'xenserver', 'LTSR', 'CR' ]
+categories: [ 'citrix' ]
+tags: [ '7.1', '8.0', 'citrix hypervisor', 'xenserver', 'LTSR', 'CR', 'citrix' ]
 image: assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-feature-image.png
 ---
 Hypervisors are a commodity for SBC and VDI infrastructures. Citrix also has a hypervisor in their product line, which, until recently, used to be called Citrix XenServer and Citrix changed the name to Citrix Hypervisor. As the latest version is based on a new Linux kernel, it is good to know what the performance impact is of the different versions on a SBC or VDI environment.

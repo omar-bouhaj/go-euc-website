@@ -2,7 +2,8 @@
 layout: post
 title:  "Using Citrix Cloud from a performance perspective"
 authors: [eltjo, ryan]
-categories: [ 'citrix', 'cloud' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'cloud' ]
 image: assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-feature-image.png
 ---
 It is almost two years that Citrix is offering their Cloud solution and they are really pushing the envelope. While the adoption is still a bit sparse, there are some customer that are already migrated but there are many organizations that are still postponing the migration. There are various reason to or not to migrate to Citrix Cloud, but this research will focus on the performance impact using Citrix Cloud.

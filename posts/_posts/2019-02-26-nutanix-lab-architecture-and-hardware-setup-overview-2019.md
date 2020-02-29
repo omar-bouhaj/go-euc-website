@@ -2,7 +2,8 @@
 layout: post
 title:  "Nutanix lab architecture and hardware setup overview 2019 – Current"
 authors: [sven]
-categories: [ 'infra', 'nutanix' ]
+categories: [ 'infrastructure' ]
+tags: [ 'infrastructure', 'nutanix' ]
 image: assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-architecture-and-hardware-setup-overview-2019-feature-image.png
 ---
 Next to the infrastructure used by {{site.title}} that is rented at an external hosting company, we are now able to occasionally perform tests on hardware that is available at one of the labs at Nutanix. When available, we can use the {{site.title}} automation to run Login VSI tests on this hardware and use the results in our research.

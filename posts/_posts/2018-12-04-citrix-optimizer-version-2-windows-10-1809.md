@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Optimizer version 2 – Windows 10 1809"
 authors: [eltjo, ryan]
-categories: [ 'citrix', 'CTXO', 'windows 10', 'microsoft' ]
+categories: [ 'citrix', 'windows 10' ]
+tags: [ 'citrix', 'CTXO', 'windows 10', 'microsoft' ]
 image: assets/images/posts/011-citrix-optimizer-version-2-windows-10-1809/011-ctxo-win10-feature-image.png
 ---
 Recently, there has been considerable interest in the field of image optimization. One of the most commonly used tools is the Citrix Optimizer (CTXO). CTXO is a free to use image optimization tool from Citrix for VDI and SBC environment. CTXO uses various templates for instructions of what to do. Right now, all templates are provided by Citrix themselves and are focused solely on OS optimizations. At the moment of writing version, 1.2.0.67 is the latest available version and can be downloaded from the Citrix [website](https://support.citrix.com/article/CTX224676).

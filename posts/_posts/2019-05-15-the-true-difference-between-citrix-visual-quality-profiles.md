@@ -2,7 +2,8 @@
 layout: post
 title:  "The true difference between Citrix Visual Quality profiles"
 authors: [ryan]
-categories: [ 'citrix', 'visual quality', 'allways lossless', 'build to lossless', 'VDA' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'visual quality', 'allways lossless', 'build to lossless', 'VDA' ]
 image: assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-feature-image.png
 ---
 The visual quality of a Citrix session has a huge influence on the user experience. Last year we published a research about the Citrix visual quality profiles with interesting results. This research is an updated version covering the true difference between the Citrix visual quality profiles including always lossless and build to lossless.

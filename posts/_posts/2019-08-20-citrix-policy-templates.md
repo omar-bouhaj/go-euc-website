@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Policy Templates"
 authors: [eltjo]
-categories: [ 'citrix', 'policy', 'template' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'policy', 'template' ]
 image: assets/images/posts/031-citrix-policy-templates/031-citrix-policy-feature-image.png
 ---
 Citrix ships Citrix Virtual Apps and Desktops (CVAD) with several built-in policy templates that can be used as a starting point for setting up the polices in a CVAD environment. These policy templates can be used to optimize the environment and user experience. When using these templates, it is important to have a solid insight into the performance and scalability impact of these templates.

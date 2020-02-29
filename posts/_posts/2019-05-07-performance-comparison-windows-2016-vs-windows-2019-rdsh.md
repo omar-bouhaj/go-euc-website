@@ -2,7 +2,8 @@
 layout: post
 title:  "Performance comparison Windows 2016 vs Windows 2019 RDSH"
 authors: [sven]
-categories: [ 'microsoft', 'windows server 2016', 'windows server 2019', 'RDSH', 'Office' ]
+categories: [ 'microsoft', 'windows server 2016', 'windows server 2019' ]
+tags: [ 'microsoft', 'windows server 2016', 'windows server 2019', 'RDSH', 'Office' ]
 image: assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-feature-image.png
 ---
 If you are thinking about updating your Remote Desktop Session Host (RDSH) environment from Windows Server 2016 to Windows Server 2019, one of the considerations is the impact this change has on user density and performance. There are other considerations as well, application compatibility and support for example, but this research will focus on the impact on performance and capacity.

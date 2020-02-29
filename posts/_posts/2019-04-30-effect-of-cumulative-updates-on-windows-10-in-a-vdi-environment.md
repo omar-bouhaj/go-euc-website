@@ -2,7 +2,8 @@
 layout: post
 title:  "Effect of cumulative updates on Windows 10 in a VDI environment"
 authors: [ryan]
-categories: [ '1709', '1803', '1809', 'cumulative updates', 'windows 10' ]
+categories: [ 'microsoft', 'windows 10' ]
+tags: [ '1709', '1803', '1809', 'cumulative updates', 'windows 10', 'microsoft' ]
 image: assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-feature-image.png
 ---
 Every month Microsoft releases a cumulative update for Windows 10 and other supported operating systems. These updates contain improvements and fixes that will improve the quality of Windows 10. But do these updates have an impact on the performance in a VDI context? This research will compare different cumulative updates on different Windows 10 builds.

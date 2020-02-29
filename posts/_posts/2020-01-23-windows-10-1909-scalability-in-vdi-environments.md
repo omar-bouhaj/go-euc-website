@@ -2,7 +2,8 @@
 layout: post
 title:  "Windows 10 1909 Scalability in VDI environments"
 authors: [omar, ryan]
-categories: [ 'microsoft', 'windows 10', '1803', '1809', '1903', '1909' ]
+categories: [ 'microsoft', 'windows 10' ]
+tags: [ 'microsoft', 'windows 10', '1803', '1809', '1903', '1909' ]
 image: assets/images/posts/044-windows-10-1909-scalability-in-vdi-environments/044-windows-1909-feature-image.png
 ---
 Two months ago, Microsoft released the autumn edition of Windows 10. Also known as Windows 10 1909. This release is a Semi-Annual Channel (SAC) version and is therefore often implemented by enterprise companies. We take this opportunity to verify the impact of Windows 10 1909 in a VDI environment.

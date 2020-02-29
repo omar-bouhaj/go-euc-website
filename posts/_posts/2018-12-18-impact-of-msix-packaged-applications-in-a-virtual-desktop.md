@@ -2,7 +2,8 @@
 layout: post
 title:  "Impact of MSIX packaged applications in a virtual desktop"
 authors: [ryan]
-categories: [ 'App-V', 'MSIX', 'Microsoft' ]
+categories: [ 'microsoft', 'MSIX' ]
+tags: [ 'App-V', 'MSIX', 'Microsoft' ]
 image: assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-feature-image.png
 ---
 When delivering a virtual desktop environment, it’s not about the desktop itself, it is all about the applications. There are different packaging and distribution solutions to ensure the applications are delivered to the users. Microsoft is investing in a new packaging format called MSIX. With the Windows 10 1809 release, you can use MSIX packages. But what is the impact using MSIX packages in a VDI scenario? This research will cover the performance impact of MSIX in a virtual desktop environment.

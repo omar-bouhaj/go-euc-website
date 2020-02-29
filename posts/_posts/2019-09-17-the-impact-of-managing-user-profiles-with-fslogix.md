@@ -2,7 +2,8 @@
 layout: post
 title:  "The impact of managing user profiles with FSLogix"
 authors: [omar]
-categories: [ 'FSLogix', 'microsoft' ]
+categories: [ 'microsoft', 'profiles' ]
+tags: [ 'FSLogix', 'microsoft', 'profiles' ]
 image: assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-feature-image.png
 ---
 Microsoft acquired the FSLogix solutions in November 2018. The FSLogix acquisition dovetails with Microsoft’s announced Windows Virtual Desktop (WVD), a cloud-based service that offers a Windows 10 experience “optimized” for virtual desktop infrastructure (VDI) and Office 365 ProPlus. But what is the impact of using FSLogix Profile Containers in a VDI scenario? This research will focus on the performance impact and user experience of FSLogix Profile Containers in a VDI scenario.

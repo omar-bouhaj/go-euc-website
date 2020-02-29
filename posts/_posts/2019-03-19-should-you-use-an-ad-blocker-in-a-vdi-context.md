@@ -2,7 +2,8 @@
 layout: post
 title:  "Should you use an ad blocker in a VDI context?"
 authors: [ryan]
-categories: [ 'adblock', 'ads', 'pfsense', 'PiHole' ]
+categories: [ 'browsers' ]
+tags: [ 'adblock', 'ads', 'pfsense', 'PiHole' ]
 image: assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-feature-image.png
 ---
 Nowadays most websites use all kind of advertisements on their pages. A lot of consumers use plugins to block these advertisements but this not very common in enterprise environments. Should enterprise organizations use an ad blocker in a VDI environment? This research will cover the true performance benefit using an ad blocker in a VDI environment.

@@ -2,7 +2,8 @@
 layout: post
 title:  "Performance difference between user profiles"
 authors: [ryan]
-categories: [ 'profiles', 'microsoft', 'local', 'mandatory', 'roaming' ]
+categories: [  'microsoft', 'profiles' ]
+tags: [ 'profiles', 'microsoft', 'local', 'mandatory', 'roaming' ]
 image: assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-feature-image.png
 ---
 The user profile is a very important part for delivering a virtual desktop. It can have a huge impact on the overall user experience. But what are the options and are there any performance differences between the different profile methods? This research will focus on the performance impact of the different profile types available on Windows 10.

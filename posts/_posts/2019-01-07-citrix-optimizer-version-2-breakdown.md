@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Optimizer version 2 – Breakdown"
 authors: [eltjo]
-categories: [ 'citrix', 'CTXO', 'citrix optimizer' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'CTXO', 'citrix optimizer' ]
 image: assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-feature-image.png
 ---
 Last year we covered the performance results of the Citrix Optimizer (CTXO) version 2 Beta on [Windows 10]({{site.baseurl}}/citrix-optimizer-version-2-windows-10-1809/) and [Windows Server 2019]({{site.baseurl}}citrix-optimizer-version-2-windows-server-2019/).

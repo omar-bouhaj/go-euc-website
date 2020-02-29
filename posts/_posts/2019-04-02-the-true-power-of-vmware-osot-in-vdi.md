@@ -2,7 +2,8 @@
 layout: post
 title:  "The true power of VMware OSOT in VDI"
 authors: [ryan]
-categories: [ 'VMware', 'OSOT', 'windows 10']
+categories: [ 'VMware', 'microsoft', 'windows 10' ]
+tags: [ 'VMware', 'OSOT', 'windows 10']
 image: assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-feature-image.png
 ---
 Optimizing the golden image is one of the best practices when creating a VDI environment. There are multiple tools available that can help you out with applying all these optimizations. This research will take a closer look at the VMware Operating System Optimization Tool (OSOT) and the performance benefits when using it.

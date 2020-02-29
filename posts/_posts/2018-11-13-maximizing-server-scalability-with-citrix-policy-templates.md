@@ -2,7 +2,8 @@
 layout: post
 title:  "Maximizing server scalability with Citrix Policy templates"
 authors: [eltjo]
-categories: [ 'citrix', 'ICA' ]
+categories: ['citrix']
+tags: [ 'citrix', 'ICA', 'RDA' ]
 image: assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-feature-image.png
 ---
 Citrix delivers XenApp and XenDesktop with several built-in policy templates that can be used as a starting point for setting up the polices in a XenApp or XenDesktop deployment. These policy templates can be used to optimize the environment and the user experience.

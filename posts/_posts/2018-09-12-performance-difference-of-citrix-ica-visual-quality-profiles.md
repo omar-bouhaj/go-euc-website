@@ -2,7 +2,8 @@
 layout: post
 title:  "Performance difference of Citrix ICA Visual Quality profiles"
 authors: [ryan]
-categories: [ 'citrix', 'ICA', 'visual quality', 'protocol' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'ICA', 'visual quality', 'protocol' ]
 image: assets/images/posts/001-performance-difference-of-citrix-ica-visual-quality-profiles/001-visual-quality-profiles-feature-image.png
 ---
 When delivering a virtual desktop environment, a great user experience has a huge effect on the success of your environment. There are many settings and optimization that can improve the overall performance and user experience. There are also many optimizations that can be applied within the remoting protocol. Within Citrix ICA there is a setting called Visual Quality. Which options are available and what is the effect of the various options? This research is focused on the performance difference between the Visual Quality settings within the Citrix ICA protocol.

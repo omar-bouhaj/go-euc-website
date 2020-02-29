@@ -2,7 +2,8 @@
 layout: post
 title:  "Office 2019 performance impact"
 authors: [omar]
-categories: [ 'microsoft', 'office', '2016', '2019' ]
+categories: [ 'microsoft', 'office' ]
+tags: [ 'microsoft', 'office', '2016', '2019' ]
 image: assets/images/posts/004-office-2019-performance-impact/004-office2019-feature-image.png
 ---
 Microsoft Office is by far the most used productivity suite used by enterprises around the world. According to the latest #VDILIKEAPRO State of the Union survey, enterprises are using Office 2016 with an adoption of 30%. Office 2013 is not far behind with 25% and Office 2010 is still used in 15% of the environments.
@@ -42,7 +43,7 @@ While adding new features can improve the work productivity and user experience 
 More information can be found [here](https://products.office.com/en-us/office-system-requirements?ms.officeurl=systemrequirement).
 
 # Infrastructure and configuration
-The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/) and uses {{{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
+The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018/) and uses {{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology/).
 
 Three different scenarios were tested:
 

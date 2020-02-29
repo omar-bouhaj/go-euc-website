@@ -2,7 +2,8 @@
 layout: post
 title:  "Moore’s law of Windows 10 1903"
 authors: [ryan, omar]
-categories: [ '1709', '1803', '1809', '1903', 'microsoft', 'windows 10' ]
+categories: [ 'microsoft', 'windows 10' ]
+tags: [ '1709', '1803', '1809', '1903', 'microsoft', 'windows 10' ]
 image: assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-feature-image.png
 ---
 Every 6 months Microsoft releases a new version of Windows 10. Last month Microsoft has released version 1903 with plenty of new features and improvements. But based on previous researches we have seen a Moore’s law of Windows 10. This research will focus on the performance and user experience impact of Windows 10 1903 in a virtual desktop infrastructure (VDI) scenario.

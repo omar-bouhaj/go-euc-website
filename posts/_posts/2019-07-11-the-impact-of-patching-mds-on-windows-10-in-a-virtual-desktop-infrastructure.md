@@ -2,7 +2,8 @@
 layout: post
 title:  "The impact of patching MDS on Windows 10 in a virtual desktop infrastructure"
 authors: [sven, ryan]
-categories: [ 'MDS', 'citrix', 'mitigations', 'RIDL', 'Zombieload', 'windows 10' ]
+categories: [ 'vulnerabilities', 'microsoft', 'windows 10' ]
+tags: [ 'MDS', 'citrix', 'mitigations', 'RIDL', 'Zombieload', 'windows 10' ]
 image: assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-feature-image.png
 ---
 

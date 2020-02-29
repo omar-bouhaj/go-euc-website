@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix Virtual Apps and Desktops 1912 Long-Term Servicing Release"
 authors: [ryan, eltjo]
-categories: [ 'citrix', '1912', '7.15', 'CR', 'LTSR', 'CVAD' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', '1912', '7.15', 'CR', 'LTSR', 'CVAD' ]
 image: assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-breakdown-feature-image.png
 ---
 December 18th 2019, Citrix released the new Citrix Virtual Apps and Desktops 7 1912 Long-Term Servicing Release (LTSR). This is the updated edition of the previous 7.15. This research will take a closer look at any performance improvements this latest LTSR version provides regarding the previous LTSR releases.

@@ -2,7 +2,8 @@
 layout: post
 title:  "Windows 7 vs Windows 10 VDI Performance Test"
 authors: [sven]
-categories: [ 'windows 10', 'windows 7' ]
+categories: [ 'microsoft', 'windows 10', 'windows 7' ]
+tags: [ 'windows 10', 'windows 7', 'microsoft' ]
 image: assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-feature-image.png
 ---
 Windows 7 is almost end of support but still, there are VDI environments running Windows 7. What would the impact on performance be if you migrate from Windows 7 to Windows 10? In this research, we investigated the impact on performance when comparing Windows 7 and Windows 10 in a VDI-context.

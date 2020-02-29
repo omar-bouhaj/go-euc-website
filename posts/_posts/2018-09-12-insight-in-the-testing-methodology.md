@@ -2,7 +2,8 @@
 layout: post
 title:  "Insight in the testing methodology"
 authors: [ryan]
-categories: [ 'infra', 'testing', 'data' ]
+categories: [ 'infastructure' ]
+tags: [ 'infastructure', 'testing', 'data' ]
 image: assets/images/posts/000-insight-in-the-testing-methodology/000-insight-in-the-testing-methodology-feature-image.png
 ---
 When doing different performance researches it is important to have a clear understanding of the testing methodology used. With all the information available you must be able to reproduce the exact same results. In case of a performance research, we use various tools to measure the impact from the performance perspective. The reproducibility is very important to publish reliable and consistent results. The following section will describe some details about the tooling, data sources, and automation.

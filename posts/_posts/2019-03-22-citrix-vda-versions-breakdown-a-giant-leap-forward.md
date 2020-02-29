@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix VDA versions breakdown, a giant leap forward"
 authors: [eltjo]
-categories: [ 'citrix', 'VDA' ]
+categories: [ 'citrix' ]
+tags: [ 'citrix', 'VDA' ]
 image: assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-feature-image.png
 ---
 With each iteration of the Citrix Virtual Delivery Agent (VDA) software Citrix always treats us to new features and functionalities. For the Current Releases (CR) Citrix is constantly adding new features and functionalities while also improving the performance of the HDX protocol itself. This should, in theory, result in a better user experience, coupled with a higher user density and less strain on the system.

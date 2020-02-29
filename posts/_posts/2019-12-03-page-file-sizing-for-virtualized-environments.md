@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Impact MCEPSC vulnerability patch on VDI"
+title:  "Page file sizing for virtualized environments"
 authors: [marcel]
-categories: [ 'page file', 'citrix', 'windows 10' ]
+categories: [ 'microsoft', 'windows 10']
+tags: [ 'page file', 'citrix', 'windows 10', 'microsoft' ]
 image: assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-feature-image.png
 ---
 In Q2 2019, a colleague asked what my best practices were for page file sizing in a provisioned environment. I wasn’t quite sure what to answer, because I had used different setups in the past (depending on the environment) with good results. For Windows in general there is enough [documentation](https://docs.microsoft.com/en-us/windows/client-management/determine-appropriate-page-file-size) around, but not for VDI. So, we decided to test it once and for all.

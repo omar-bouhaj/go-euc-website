@@ -2,7 +2,8 @@
 layout: post
 title:  "Citrix VDA version breakdown update"
 authors: [eltjo, ryan]
-categories: [ '1808', '1811', '1906', '1909', 'CR', 'LTSR', 'citrix', 'VDA' ]
+categories: [ 'citrix' ]
+tags: [ '1808', '1811', '1906', '1909', 'CR', 'LTSR', 'citrix', 'VDA' ]
 image: assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-feature-image.png
 ---
 In September this year Citrix released version 7 1909 for the Current Release (CR) branch of Citrix Virtual Apps and Desktops (CVAD) to the world. During that time Citrix also released two new Cumulative Updates, tentatively called CU4 and CU5 for the Long Term Service Release (LTSR) 7.15.

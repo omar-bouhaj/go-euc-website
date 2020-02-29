@@ -2,7 +2,8 @@
 layout: post
 title:  "SD-WAN & network architecture setup 2019 – current"
 authors: [ruud, bas]
-categories: [ 'citrix', 'architecture', 'SD-WAN' ]
+categories: [ 'infrastructure' ]
+tags: [ 'citrix', 'architecture', 'SD-WAN' ]
 image: assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-sd-wan-network-architecture-setup-2019-feature-image.png
 ---
 This post is meant as an introductory breakdown describing the high-level architecture and hardware setup of the basic components that are being used in the Citrix SD-WAN lab.
