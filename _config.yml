@@ -26,6 +26,7 @@ authors:
     linkedin: https://www.linkedin.com/in/ryanbijkerk
     github: https://github.com/RyanBijkerk
     reddit: https://www.reddit.com/u/ryanbijkerk
+    page: ryan-ververs-bijkerk
     description: "Ryan is currently a Technical Evangelist at ICT-Partners focused on the End-User Computing area. Ryan is primarily focusing on the user experience in centralized desktop environments."
   eltjo:
     name: Eltjo
@@ -36,6 +37,7 @@ authors:
     web: https://www.netwerkhelden.nl/cms/
     twitter: https://twitter.com/eltjovg
     linkedin: https://www.linkedin.com/in/eltjovangulik/
+    page: eltjo-van-gulik
     description: "Eltjo van Gulik is a Workspace Consultant and enthusiast. In 2019 Eltjo was one of the 21 new Citrix Technology Advocate (CTA) awardees."
   omar:
     name: Omar
@@ -45,6 +47,7 @@ authors:
     picture: 'assets/images/authors/omar.png'
     twitter: https://twitter.com/omar_bouhaj
     linkedin: https://www.linkedin.com/in/omarbouhaj/
+    page: omar-bouhaj
     description: "Dedicated, passionate and innovative IT professional. Omar is an enthusiastic and driven technical consultant and currently a consultant at ICT-Partners West, focused on the End-User Computing (EUC) area. With the primary focus on the user experience in centralized desktop environments."
   sven:
     name: Sven
@@ -55,6 +58,7 @@ authors:
     web: https://svenhuisman.com/
     twitter: https://twitter.com/svenh
     linkedin: https://www.linkedin.com/in/svenhuisman/
+    page: sven-huisman
     description: "Sven is working as a solutions architect at Nutanix with the focus on End User Computing. The opinions expressed here represent his own and not those of his employer."
   krishan:
     name: Krishan
@@ -63,6 +67,7 @@ authors:
     title: Consultant
     picture: 'assets/images/authors/krishan.png'
     linkedin: https://www.linkedin.com/in/kvkhoesial/
+    page: krishan-khoesial
     description: "Krishan is a consultant at KPN ICT Consulting. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international."
   marcel:
     name: Marcel
@@ -71,6 +76,7 @@ authors:
     title: Workspace Consultant
     picture: 'assets/images/authors/marcel.png'
     linkedin: https://www.linkedin.com/in/msbeck/
+    page: marcel-beck
     description: "Marcel is a full-time Workspace Consultant/Architect and part-time beer drinker from the north of The Netherlands."
   ruud:
     name: Ruud
@@ -80,6 +86,7 @@ authors:
     picture: 'assets/images/authors/ruud.png'
     twitter: https://twitter.com/RuudHund
     linkedin: https://www.linkedin.com/in/ruudhund/
+    page: ruud-hund
     description: "Ruud is a Thought Leader Connected Workspace at KPN ICT Consulting. Ruud has over 10+ years experience in designing and building network infrastructures."
   bas:
     name: Bas
@@ -90,6 +97,7 @@ authors:
     web: http://www.basstapelbroek.com/
     twitter: https://twitter.com/hapster84
     linkedin: https://www.linkedin.com/in/basstapelbroek/
+    page: bas-stapelbroek
     description: "Bas Stapelbroek is a workspace consultant and works for KPN in the Netherlands. Within the consulting services he is responsible for designing and implementing enterprise workspace solutions for the largest KPN customers"
    
 
