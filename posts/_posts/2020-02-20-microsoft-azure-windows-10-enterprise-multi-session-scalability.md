@@ -15,7 +15,7 @@ Windows 10 Enterprise multi-session, versions 1809 and later are supported and a
 
 Windows 10 Enterprise multi-session can’t run in on-premises production environments because it’s optimized for the Windows Virtual Desktop service for Azure. It’s against the licensing agreement to run Windows 10 Enterprise multi-session outside of Azure for production purposes. Windows 10 Enterprise multi-session won’t activate against on-premises Key Management Services (KMS).
 
-Source: [https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq](https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq)
+Source: [https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq](https://docs.microsoft.com/en-us/azure/virtual-desktop/windows-10-multisession-faq){:target="_blank"}
 
 ## Infrastructure and configuration
 As Windows 10 Enterprise multi-session is only supported on Microsoft Azure, the setup and approach are a bit different compared to standard researches. The easiest way to test Windows 10 Enterprise multi-session running in Azure, is to create a hybrid-cloud configuration. This is realized using a site-to-site VPN which allows using both on-premises as cloud resources. Besides the Gateway VPN, a single Windows 10 Enterprise multi-session VM is hosted in Azure. All other required infrastructure components, like Active Directory, DNS and DHCP, Login VSI and file servers are hosted on-premises. The on-premises infrastructure is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
