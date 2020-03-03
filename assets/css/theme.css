@@ -201,7 +201,7 @@ section.recent-posts {
 }
 .listfeaturedtag h2.card-title a:hover,.listrecent h2.card-title a:hover {
 	color:rgba(0,0,0,.6);
-	text-decoration:none;
+	text-decoration:underline;
 }
 .listfeaturedtag h4.card-text,.listrecent h4.card-text {
     color: #666;
@@ -471,6 +471,9 @@ span.post-name a,span.post-read-more a:hover {
 
 .social-button-member a {color:none; box-shadow:none;}
 .social-button-member a:hover {box-shadow:none; text-decoration:none;}
+
+.post-title a {color:none; box-shadow:none;}
+.post-title a:hover {box-shadow:none; text-decoration:underline;}
 
 blockquote {
 	border-left:4px solid #6FD350;
