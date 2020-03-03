@@ -15,13 +15,13 @@ Build 1909 was released roughly 9 months after version 1811.1, which was the lat
 In our previous research, we concluded that based on those results, that CR would be the better choice in terms of performance, scalability and feature richness.
 
 ## Citrix VDA Current Release (CR) versus Long Term Service Release (LTSR)
-The Long Term Service Release (LTSR) program provides stability and long-term support for Citrix Virtual Apps and Desktops releases. CVAD LTSRs are currently available for versions 7.6 and 7.15 at the moment, but Citrix is targeting to release the next LTSR version (version 1912) this quarter. LTSR 1912 will be based on the lasted CR version, version 1909, which has served for Citrix as the base platform for the 1912 release. More information on the new 1912 LTSR can be found [here](https://www.citrix.com/blogs/2019/10/28/ltsr-1912-preparing-for-the-next-long-term-service-release).
+The Long Term Service Release (LTSR) program provides stability and long-term support for Citrix Virtual Apps and Desktops releases. CVAD LTSRs are currently available for versions 7.6 and 7.15 at the moment, but Citrix is targeting to release the next LTSR version (version 1912) this quarter. LTSR 1912 will be based on the lasted CR version, version 1909, which has served for Citrix as the base platform for the 1912 release. More information on the new 1912 LTSR can be found [here](https://www.citrix.com/blogs/2019/10/28/ltsr-1912-preparing-for-the-next-long-term-service-release){:target="_blank"}.
 
 The current LTSR version, version 7.15 was released almost two years ago, and in the meantime Citrix released 8 CRs up until the lasted 1909 CR release.
 
 CR Version 1909 of the VDA for Windows Desktop OS brought AMD GPU hardware support and Enhanced session reliability logging capability among other things. With Enhanced session reliability logging, Citrix VDAs will now report more information to the Windows Eventlog for diagnostic purposes.
 
-More information on version 1909 can be found in the following [blogpost](https://www.citrix.com/blogs/2019/09/19/whats-new-with-citrix-virtual-apps-and-desktops-september-2019) and in the ‘Virtual Delivery Agents (VDAs) 1909’ paragraph of the ‘whats new’ section of the Citrix Documentation [website](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/whats-new.html#virtual-delivery-agents-vdas-1909).
+More information on version 1909 can be found in the following [blogpost](https://www.citrix.com/blogs/2019/09/19/whats-new-with-citrix-virtual-apps-and-desktops-september-2019){:target="_blank"} and in the ‘Virtual Delivery Agents (VDAs) 1909’ paragraph of the ‘whats new’ section of the Citrix Documentation [website](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/whats-new.html#virtual-delivery-agents-vdas-1909){:target="_blank"}.
 
 Based on recent poll that we conducted on Twitter where we asked if respondents preferred to deploy CR over LTSR, the results couldn’t be more evenly divided with a clean split through the middle.
 
@@ -30,7 +30,7 @@ Based on recent poll that we conducted on Twitter where we asked if respondents 
 A similar poll in the CTA Slack channel was biased a little more towards LTSR with 63% and 38% for CR.
 
 ## Configuration and infrastructure
-This research has taken place on the {{site.title}} environment which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018). Like previous research a similar configuration is used which has 2vCPU’s and 4GB memory. In this case, Windows 10 1809 is the default operating system including Microsoft Office 2016 and the required Login VSI applications. All Windows and Office updates are installed as this is a best practice. For optimizations the Citrix Optimizer is applied with the recommended template.
+This research has taken place on the {{site.title}} environment which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. Like previous research a similar configuration is used which has 2vCPU’s and 4GB memory. In this case, Windows 10 1809 is the default operating system including Microsoft Office 2016 and the required Login VSI applications. All Windows and Office updates are installed as this is a best practice. For optimizations the Citrix Optimizer is applied with the recommended template.
 
 For this research the following scenarios are defined:
 
@@ -44,7 +44,7 @@ As you may have noticed the latest Cumulative Update, 7.15 CU5 is not listed as 
 
 Compared to previous research we did apply the Login VSI progress modification to avoid any influence in FPS. More information can be found here.
 
-All scenarios are tested using our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology).
+All scenarios are tested using our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Results
 Based on the results of our previous research we suspect that the new Current Release VDA versions would have an improvement in performance and scalability within our lab. With progressive insight it is expected that version 1909 would have the best result. But based on the release notes on the other hand we suspected this would only be a minimal increase.
@@ -151,6 +151,6 @@ On that note we would like to thank Martin Rowan and Muhammad Dawood for their h
 
 ![conclusion]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-conclusion.png)
 
-Questions or comment about this research? Leave them below in the comments or ask them on our [Slack channel](https://{{site.title}}.slack.com).
+Questions or comment about this research? Leave them below in the comments or ask them on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Lindsay Henwood](https://unsplash.com/@lindsayhenwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/step?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Lindsay Henwood](https://unsplash.com/@lindsayhenwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/step?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

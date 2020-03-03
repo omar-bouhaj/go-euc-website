@@ -11,10 +11,10 @@ A couple of months ago we did a research with the new Windows 10 1903 build. Whi
 ## The Citrix Optimizer Windows 10 1903 template
 For those who don’t know what the Citrix Optimizer is, it is recommend reading the following articles.
 
-  * [https://www.citrix.com/blogs/2017/12/05/citrix-optimizer/](https://www.citrix.com/blogs/2017/12/05/citrix-optimizer)
-  * [https://www.go-euc.com/citrix-optimizer-version-2-breakdown/]({{stite.baseurl}}/citrix-optimizer-version-2-breakdown)
+  * [https://www.citrix.com/blogs/2017/12/05/citrix-optimizer/](https://www.citrix.com/blogs/2017/12/05/citrix-optimizer){:target="_blank"}
+  * [https://www.go-euc.com/citrix-optimizer-version-2-breakdown/]({{stite.baseurl}}/citrix-optimizer-version-2-breakdown){:target="_blank"}
 
-Because the 1903 template wasn’t available at the time writing [previous research]({{stite.baseurl}}/moores-law-of-windows-10-1903), Citrix advised to use the 1809 template. The results from that research showed a big impact on user density. Before reviewing the results, it is important to understand what has changed in the template.
+Because the 1903 template wasn’t available at the time writing [previous research]({{stite.baseurl}}/moores-law-of-windows-10-1903){:target="_blank"}, Citrix advised to use the 1809 template. The results from that research showed a big impact on user density. Before reviewing the results, it is important to understand what has changed in the template.
 
 Comparing to the previous template, Windows 10 1809,  we noticed nothing is removed and the following items are added.
 
@@ -27,10 +27,10 @@ Comparing to the previous template, Windows 10 1809,  we noticed nothing is remo
 | UWP  | Microsoft.WebpImageExtension	     | Adds support for image format WebP.                                                                   |
 | UWP  | Microsoft.ScreenSketch	Removes      | “Snip & Sketch” application. Provides functionality of Snipping Tool with additional improvements.    |
 
-The table shows only UWP apps included in the template that will be removed from the operating system. Based on [this research]({{stite.baseurl}}/citrix-optimizer-version-2-breakdown) we already learned removing the UWP apps have a big impact on capacity, so we should see an improvement in user density.
+The table shows only UWP apps included in the template that will be removed from the operating system. Based on [this research]({{stite.baseurl}}/citrix-optimizer-version-2-breakdown){:target="_blank"} we already learned removing the UWP apps have a big impact on capacity, so we should see an improvement in user density.
 
 ## Infrastructure & configuration
-This research has taken place on the {{site.title}} lab environment which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018). The default configuration is used which is 2vCPU’s with 4GB memory. Citrix Virtual Apps & Desktops 1906 is used for both the infrastructure and the VDA’s. The desktops are created using Citrix MCS. All Login VSI required applications are installed including Microsoft Office 2016 x64 with the latest Windows updates.
+This research has taken place on the {{site.title}} lab environment which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. The default configuration is used which is 2vCPU’s with 4GB memory. Citrix Virtual Apps & Desktops 1906 is used for both the infrastructure and the VDA’s. The desktops are created using Citrix MCS. All Login VSI required applications are installed including Microsoft Office 2016 x64 with the latest Windows updates.
 
 For this research two scenarios are defined:
 
@@ -39,7 +39,7 @@ For this research two scenarios are defined:
 
 Both scenarios are optimized using the Citrix Optimizer version 2.5 with the recommended templates. The Windows 10 1903 template is not included in this Citrix Optimizer version but can be downloaded from the marketplace. The upcoming 2.6 release will include the template by default.
 
-Each scenario is tested according our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology).
+Each scenario is tested according our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results
 Before covering the new results, it is important to understand the difference from previous research. Comparing the same data showed a signification impact comparing Windows 10 1809 with 1903.
@@ -49,7 +49,7 @@ Before covering the new results, it is important to understand the difference fr
   <i>Higher is better</i>
 </p>
 
-The results from this research showed that deploying Windows 10 1903 and optimized with the Windows 10 1809 template will not result in an optimal user density. You can find the full research [here]({{site.baseurl}}/moores-law-of-windows-10-1903).
+The results from this research showed that deploying Windows 10 1903 and optimized with the Windows 10 1809 template will not result in an optimal user density. You can find the full research [here]({{site.baseurl}}/moores-law-of-windows-10-1903){:target="_blank"}.
 
 As more UWP apps are removed using the new template it is expected so see an improvement in the results. Both researches use a fully updated Windows 10 but as this research has been executed more recent the latest cumulative updates are applied. This could make a difference as Microsoft is continuously adding security and bug fixes including improvements.
 
@@ -119,12 +119,12 @@ We already know that each Windows 10 version requires specific optimizations to 
 
 In the meantime, Citrix has released a new template for Windows 10 1903 with promising results. There is still a small impact but not as huge as with the previous research.
 
-[Martin Zugec](https://twitter.com/MartinZugec) shared additional optimization will be included in an upcoming template update and they are continuing to improve existing templates.
+[Martin Zugec](https://twitter.com/MartinZugec){:target="_blank"} shared additional optimization will be included in an upcoming template update and they are continuing to improve existing templates.
 
 One of the best practices is to ensure all the latest Windows update are installed. Yes, this template does provide an improvement, but we do believe the performance benefits could be attributed to Windows updates. Maybe we should do another cumulative update research to validate this, what do you think?
 
 This research does confirm that you should be very careful applying the right optimizations, as it can make a big difference in user density and perceived user experience. The trend, Moore’s law of Windows 10, continues as each Windows 10 builds still requires more resources.
 
-Are you already trying out Windows 10 1903 in your environment? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com).
+Are you already trying out Windows 10 1903 in your environment? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Luca Micheli](https://unsplash.com/@lucamicheli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Luca Micheli](https://unsplash.com/@lucamicheli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

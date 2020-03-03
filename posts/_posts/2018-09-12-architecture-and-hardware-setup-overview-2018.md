@@ -13,7 +13,7 @@ Because {{site.title}} is a startup we’ve chosen to rent dedicated hardware in
 
 To that end for the hardware setup, we’ve partnered up with a hosting company called OVH. OVH is hosting company with 28 datacenters in 8 countries and over 1.4 million customers worldwide. They are a well-known player in the market and offer competitive pricing for their offerings.
 
-For more information on OVH, please visit their website at [https://www.ovh.com](https://www.ovh.com).
+For more information on OVH, please visit their website at [https://www.ovh.com](https://www.ovh.com){:target="_blank"}.
 
 As of writing, we are renting two dedicated servers from their Western European datacenter in Germany.
 
@@ -21,13 +21,13 @@ As of writing, we are renting two dedicated servers from their Western European 
 
 The two hosts are broken down in an Infrastructure Host, the esx-01 and a separate host dedicated for the workloads surprisingly called esx-02. Because we’ve separated out the infrastructure platform from the host hosting the VDI’s we can assure that spikes in the infrastructure host will never interfere with the actual workloads and influence our results.
 
-First off the infrastructure hosts is a midrange EG-128 Server. This model has a single Intel® Xeon® Processor E5-1660 processor and 128GB of internal memory. See [https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml](https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml) for additional specifications.
+First off the infrastructure hosts is a midrange EG-128 Server. This model has a single Intel® Xeon® Processor E5-1660 processor and 128GB of internal memory. See [https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml](https://www.ovh.com/world/dedicated-servers/infra/1801eg04.xml){:target="_blank"} for additional specifications.
 
 ![esx-01]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-esx-01.png)
 
 As the name implies, the infrastructure host, houses al the infrastructural components such as the AD, databases and Citrix components as well as our management jump host. The Login VSI launchers are also installed on the infra host.
 
-For the dedicated workloads host, we’ve chosen the EG-384-H model ([https://www.ovh.com/world/dedicated-servers/infra/1801eg09.xml](https://www.ovh.com/world/dedicated-servers/infra/1801eg09.xml)).
+For the dedicated workloads host, we’ve chosen the EG-384-H model ([https://www.ovh.com/world/dedicated-servers/infra/1801eg09.xml](https://www.ovh.com/world/dedicated-servers/infra/1801eg09.xml){:target="_blank"}).
 
 This configuration has two Intel® Xeon® E5-2687W v4 processors with 12 cores each, totaling to 48 hyperthreading cores and is equipped with 384 Gigabytes of internal memory.
 
@@ -65,13 +65,13 @@ Because we can assume that the entire environment will be available when startin
 
 LHC in particular will have a negative effect on the performance of the delivery controllers and can impact the testing results.
 
-More info on the LHC: [https://docs.citrix.com/en-us/categories/solution_content/implementation_guides/local-host-cache-sizing-scaling.html](https://docs.citrix.com/en-us/categories/solution_content/implementation_guides/local-host-cache-sizing-scaling.html)
+More info on the LHC: [https://docs.citrix.com/en-us/categories/solution_content/implementation_guides/local-host-cache-sizing-scaling.html](https://docs.citrix.com/en-us/categories/solution_content/implementation_guides/local-host-cache-sizing-scaling.html){:target="_blank"}
 
-The VDI’s are optimized with the current version of the Citrix Optimizer tool ([https://support.citrix.com/article/CTX224676](https://support.citrix.com/article/CTX224676)) with the default settings enabled.
+The VDI’s are optimized with the current version of the Citrix Optimizer tool ([https://support.citrix.com/article/CTX224676](https://support.citrix.com/article/CTX224676){:target="_blank"}) with the default settings enabled.
 
 ## Update: June 2019
 Since June 2019 the {{site.title}} lab environment has been expanded with an additional infrastructure server to evenly spread the load of infrastructure roles and the Login VSI launcher. The server specifications are exactly the same as the existing infra server, model EG-128.
 
 VMware vSphere is updated to version 6.7 and Citrix Virtual Apps & Desktop are to version 1906.
 
-Photo by [Thomas Kvistholt](https://unsplash.com/photos/oZPwn40zCK4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/878944/server-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Thomas Kvistholt](https://unsplash.com/photos/oZPwn40zCK4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/collections/878944/server-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

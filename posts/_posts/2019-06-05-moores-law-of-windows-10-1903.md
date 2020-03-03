@@ -22,10 +22,10 @@ Microsoft also added an acrylic effect, which is part of the fluent design, with
 ### Enhanced search indexing options
 By default, Windows Search indexes the contents of all the data folders in your personal profile and in any libraries you create. Often power users and developers require more control over what’s searchable. Under the settings app, search and searching Windows, you’ll find a new enhanced option that indexes your entire Windows 10 machine. Since the search and index feature in a VDI environment is often disabled due to a potential performance hit, this new feature can provide a potential performance advantage because exclusions can now be configured.
 
-For the complete list and all the details of the new features and improvements please see this blog post found [here](https://pureinfotech.com/windows-10-1903-19h1-april-2019-update-features).
+For the complete list and all the details of the new features and improvements please see this blog post found [here](https://pureinfotech.com/windows-10-1903-19h1-april-2019-update-features){:target="_blank"}.
 
 ## Infrastructure and configuration
-The research has taken place in the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). Based on the requirements of Windows 10, a VM configuration of 2vCPU, 4GB memory, and a 64GB disk are used. The desktops are delivered using Citrix Virtual Apps and Desktops using MCS running with the Citrix VDA version 1811.1. As Login VSI requires a Microsoft Office, version 2016 x64 is installed within the VM.
+The research has taken place in the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. Based on the requirements of Windows 10, a VM configuration of 2vCPU, 4GB memory, and a 64GB disk are used. The desktops are delivered using Citrix Virtual Apps and Desktops using MCS running with the Citrix VDA version 1811.1. As Login VSI requires a Microsoft Office, version 2016 x64 is installed within the VM.
 
 In order to compare Windows 10 1903, the following scenarios are executed:
 
@@ -34,7 +34,7 @@ In order to compare Windows 10 1903, the following scenarios are executed:
   * Windows 10 1809, build 17763.437;
   * Windows 10 1903, build 18162.
 
-Each scenario is tested using the default testing methodology which is described in detail [here]({{site.baseurl}}/insight-in-the-testing-methodology). As it is a best practice, each deployment is fully updated and optimized using the Citrix Optimizer with the correct template. As Windows 10 1903 template is not yet available within the Citrix Optimizer the 1809 template is used, as this is the recommendation from Citrix.
+Each scenario is tested using the default testing methodology which is described in detail [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. As it is a best practice, each deployment is fully updated and optimized using the Citrix Optimizer with the correct template. As Windows 10 1903 template is not yet available within the Citrix Optimizer the 1809 template is used, as this is the recommendation from Citrix.
 
 ## Expectations and results
 The title of this research gives a clear indication of what you can expect. The Moore’s law of Windows 10 is every release will consume more compute resources. Therefore, it is expected to see a bigger impact on user density with Windows 10 1903.
@@ -102,7 +102,7 @@ The Citrix Optimizer disables various services, scheduled tasks and removes the 
 
 ![services-tasks-apps]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-windows-task-services-apps.png)
 
-The new features come with new services and scheduled tasks. Although there is a decrease in the built-in apps, which is good, we still see the increase in the logon time. Based on [previous research]({{site.baseurl}}/citrix-optimizer-version-2-breakdown) we have learned the built-in apps have a major influence on the logon times. This is worth a for a future investigation.
+The new features come with new services and scheduled tasks. Although there is a decrease in the built-in apps, which is good, we still see the increase in the logon time. Based on [previous research]({{site.baseurl}}/citrix-optimizer-version-2-breakdown){:target="_blank"} we have learned the built-in apps have a major influence on the logon times. This is worth a for a future investigation.
 
 Another important user experience metric is application start times. Where high start times are experienced as slow, annoying and bad.
 
@@ -129,6 +129,6 @@ In general, it is important to take this trend in account, so you don’t get su
 
 If you decided to deploy Windows 10 1903 ensure to validate the impact in your environment to avoid capacity or performance problems.
 
-Are you planning to deploy Windows 10 1903 in your VDI environment? Get involved and share you experience in our [Slack channel](https://{{site.title}}.slack.com).
+Are you planning to deploy Windows 10 1903 in your VDI environment? Get involved and share you experience in our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Fabrizio Verrecchia](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Fabrizio Verrecchia](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

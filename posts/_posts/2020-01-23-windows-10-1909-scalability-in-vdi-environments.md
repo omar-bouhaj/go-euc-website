@@ -40,10 +40,10 @@ An experimental implementation of TLS 1.3;
 Battery life has been improved for devices with certain processors, which may not apply for a VDI deployment or environment. However, if Microsoft improved battery life by lowering CPU usage, this also impacts VDI environments.
 A noticeable change that can have a computational improvement is the new processor rotation policy. Windows 10 1909 divides the work more fairly among the favorite cores (for better performance and reliability). It is not clear whether this applies to all processor types or whether it is also applied in a virtual environment.
 
-For more information please visit the following [blog](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1909/ba-p/1002699). This doc [blog](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-removed-features) includes which features and functionalities have been removed in the various Windows 10 builds.
+For more information please visit the following [blog](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1909/ba-p/1002699){:target="_blank"}. This doc [blog](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-removed-features){:target="_blank"} includes which features and functionalities have been removed in the various Windows 10 builds.
 
 ## Infrastructure and configuration
-This research has taken place on the {{site.title}} infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). The parent Windows 10 deployments are based upon MDT with identical task sequences. The only difference between the task sequences is the Windows 10 build. The machines are provided with Citrix Virtual Apps & Desktops version 1909 and the infrastructure uses VDA 7.15 CU5. The test machines are deployed using Citrix MCS with a default configuration of 2vCPU’s and 4GB of memory.
+This research has taken place on the {{site.title}} infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. The parent Windows 10 deployments are based upon MDT with identical task sequences. The only difference between the task sequences is the Windows 10 build. The machines are provided with Citrix Virtual Apps & Desktops version 1909 and the infrastructure uses VDA 7.15 CU5. The test machines are deployed using Citrix MCS with a default configuration of 2vCPU’s and 4GB of memory.
 
 The Windows 10 machines have been optimized using the Citrix Optimizer (CTXO) with the recommended template. Because the Windows 10 1909 optimization template is not yet available in the Citrix Optimizer, the Windows 10 1903 template has been used.
 
@@ -57,7 +57,7 @@ Additionally, it is also interesting to see what the difference between a defaul
 
   * Windows 10 1909, 18363.476, default, as the baseline;
   * Windows 10 1909, 18363.476, optimized with CTXO 1903 template.
-All tests are done using our standardized testing methodology, which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+All tests are done using our standardized testing methodology, which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results
 When executing these kinds of researches there is always an expectation. Based upon our previous Windows 10 researches it is expected that Windows 10 1909 will result in a lower user capacity, caused by a higher resource utilization, because of the continuously added new features and functionalities.
@@ -216,6 +216,6 @@ There is also a shift when comparing these results to previous researches. The u
 
 Never use an out-of-the-box deployment of any Windows 10 build in your VDI environment. The results proved that applying the right optimizations is still a best practice.
 
-Are you preparing to deploy Windows 10 1909 in your environment? Let us know in the comments below or tell us on our [Slack channel](https://{{site.title}}.slack.com).
+Are you preparing to deploy Windows 10 1909 in your environment? Let us know in the comments below or tell us on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Andrew Mantarro](https://unsplash.com/@andymant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/microsoft?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Andrew Mantarro](https://unsplash.com/@andymant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/microsoft?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

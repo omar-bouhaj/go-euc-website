@@ -12,7 +12,7 @@ This research focuses on the differences in performance of the two hypervisor ve
 
 Citrix introduces with their Current Release cycle, each trimester an updated version of their software. For the Long Time Service Release (LTSR) Citrix releases once in a while a Cumulative Update (CU) version. Citrix released Citrix XenServer 7.1 LTSR CU2 in December 2018 and Citrix Hypervisor 8.0 in April 2019. As mentioned earlier, common usage of this hypervisor is in an SBC or a VDI platform. Based on knowledge and experience, these changes and updates could have performance impact on a SBC or VDI environment. Without conducting performance tests it would be an educated guess and therefore making an assumption.
 
-More information regarding lifecycle of Citrix products can be found on the Citrix website: [https://www.citrix.com/support/product-lifecycle/milestones/citrix-hypervisor.html](https://www.citrix.com/support/product-lifecycle/milestones/citrix-hypervisor.html)
+More information regarding lifecycle of Citrix products can be found on the Citrix website: [https://www.citrix.com/support/product-lifecycle/milestones/citrix-hypervisor.html](https://www.citrix.com/support/product-lifecycle/milestones/citrix-hypervisor.html){:target="_blank"}
 
 ## Citrix XenServer 7.1 LTSR vs Citrix Hypervisor 8.0 CR
 Citrix XenServer 7.1 version is based on LTSR. Meaning security updates are released in CU and no new functionality is added. On the contrary for Citrix Hypervisor 8.0 Current Release (CR), the release cycle is each trimester. To have support on a CR release it is mandatory to update within the next two CR releases. Each CR comes with new (security) updates and most of all new functionality. Here is a short summary of some of the features:
@@ -20,7 +20,7 @@ Citrix XenServer 7.1 version is based on LTSR. Meaning security updates are rele
   * New Linux kernel
   * Updated guest operating system support
   * Create VDI’s with disk larger than 2 TiB
-More information regarding Citrix Hypervisor 8.0 can be found on the Citrix website: [https://docs.citrix.com/en-us/citrix-hypervisor.html](https://docs.citrix.com/en-us/citrix-hypervisor.html)
+More information regarding Citrix Hypervisor 8.0 can be found on the Citrix website: [https://docs.citrix.com/en-us/citrix-hypervisor.html](https://docs.citrix.com/en-us/citrix-hypervisor.html){:target="_blank"}
 
 Besides improvements and new added functionality, a major change has been done under the hood for Citrix Hypervisor 8.0 in comparison to Citrix XenServer 7.1 LTSR CU2. The kernel version has been updated, as well as the OS of DOM0. In the table below the differences on kernel, hypervisor version and DOM0 operating system is elaborated.
 
@@ -34,17 +34,17 @@ Besides improvements and new added functionality, a major change has been done u
 DOM0 is an abbrevation for “Domain 0 or Control Domain” and is a special VM that has access to the underlaying hardware. Without DOM0 the Citrix Hypervisor is useless. Via DOM0 it is possible to manage and configure networking, VM’s, storage, configuration etc. The usual day-to-day administration is not performed directly via DOM0, but instead this is done through a central management interface called Citrix XenCenter. This is the management tool that is used to manage a Citrix XenServer / Citrix Hypervisor environment with.
 
 ## Configuration and infrastructure
-This research has taken place on the {{site.title}} platform which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018). All the VDI’s are delivered using Citrix Virtual Desktop version 1906 and contains 2 vCPU’s with 4GB memory. The operating system is Windows 10 1809 and is optimized using the Citrix Optimizer with the recommended template. It is worth to mention that both hypervisors are clean installed. There has not been an upgrade from Citrix XenServer 7.1 CU2 to Citrix Hypervisor 8.0. The variety of conducted tests are summarized below.
+This research has taken place on the {{site.title}} platform which is described [here]({{stite.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. All the VDI’s are delivered using Citrix Virtual Desktop version 1906 and contains 2 vCPU’s with 4GB memory. The operating system is Windows 10 1809 and is optimized using the Citrix Optimizer with the recommended template. It is worth to mention that both hypervisors are clean installed. There has not been an upgrade from Citrix XenServer 7.1 CU2 to Citrix Hypervisor 8.0. The variety of conducted tests are summarized below.
 
   * Citrix XenServer 7.1 LTSR CU2, as the baseline;
   * Citrix Hypervisor 8.0.
 
-All scenarios are tested using the default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology).
+All scenarios are tested using the default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectation and Results
 It is expected that there will be a performance impact when using Citrix Hypervisor 8.0, because of a newer kernel. Besides the newer kernel there are a lot of security updates on CPU level. Most of the time a security update has (a slight) negative performance impact. Also based on personal experience with newer versions that sometimes could have a performance impact.This should result in a lower Login VSI VSImax compared to Citrix XenServer 7.1 CU2, essentially meaning that Citrix Hypervisor 8.0 could host less users.
 
-The Login VSI VSImax is one of the best metrics to see if there is a performance impact on capacity. More information about he VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+The Login VSI VSImax is one of the best metrics to see if there is a performance impact on capacity. More information about he VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -88,9 +88,9 @@ Comparing the results of both hypervisors results in a major difference between 
 
 The allocated memory to the DOM0 has been increased with the recent Citrix Hypervisor 8.0 release and is able to allocate more memory. For more information it is recommended to read the documentation.
 
-Citix XenServer 7.1 LTSR documentation: [https://docs.citrix.com/en-us/xenserver/7-1/downloads/administrators-guide.pdf](https://docs.citrix.com/en-us/xenserver/7-1/downloads/administrators-guide.pdf)
+Citix XenServer 7.1 LTSR documentation: [https://docs.citrix.com/en-us/xenserver/7-1/downloads/administrators-guide.pdf](https://docs.citrix.com/en-us/xenserver/7-1/downloads/administrators-guide.pdf){:target="_blank"}
 
-Citrix Hypervisor 8.0 documentation: [https://docs.citrix.com/en-us/citrix-hypervisor/memory-usage.html](https://docs.citrix.com/en-us/citrix-hypervisor/memory-usage.html)
+Citrix Hypervisor 8.0 documentation: [https://docs.citrix.com/en-us/citrix-hypervisor/memory-usage.html](https://docs.citrix.com/en-us/citrix-hypervisor/memory-usage.html){:target="_blank"}
 
 Nowadays storage resources are not a challenge as an SSD provides more IOPS ever. But it is still important to take any storage differences into account especially using shared storage.
 
@@ -141,10 +141,10 @@ Based on these results it is important to validate this in your own environment 
 
 > The kernel device drivers have also been updated to newer versions. Some hardware that was supported in previous releases might not work with the newer drivers.
 > 
-> Source: [https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf](https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf)
+> Source: [https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf](https://docs.citrix.com/en-us/citrix-hypervisor/citrix-hypervisor-8.0.pdf){:target="_blank"}
 
-More information about the HCL can be found here. [http://hcl.vmd.citrix.com/](http://hcl.vmd.citrix.com)
+More information about the HCL can be found here. [http://hcl.vmd.citrix.com/](http://hcl.vmd.citrix.com){:target="_blank"}
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com).
+If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Ramin Khatibi](https://unsplash.com/@raminix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/foundation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Ramin Khatibi](https://unsplash.com/@raminix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/foundation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

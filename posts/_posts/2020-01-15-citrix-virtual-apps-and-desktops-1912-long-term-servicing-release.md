@@ -12,9 +12,9 @@ December 18th 2019, Citrix released the new Citrix Virtual Apps and Desktops 7 1
 ## The 1912 Long-Term Servicing Release
 As mentioned before, Citrix has released the new Long-Term Servicing release 1912 on December 18th, 2019. There are many blog posts out there that will address the new features. We recommend starting with the following post to understand what’s new in this release.
 
-[https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr/](https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr)
+[https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr/](https://www.citrix.com/blogs/2019/12/18/announcing-the-citrix-virtual-apps-and-desktops-1912-ltsr){:target="_blank"}
 
-For a full feature by feature comparison for the different release, Citrix has provided a complete feature overview for each version, which can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
+For a full feature by feature comparison for the different release, Citrix has provided a complete feature overview for each version, which can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}.
 
 ## Configuration & infrastructure
 This research has taken place on the GO-EUC lab environment which is specified here. The following scenarios are included in this research:
@@ -31,7 +31,7 @@ As there is a never-ending debate whether to choose for the current release or l
 
 The VDA 7.15 CU3 is supported on Windows 10 1809 and below. Therefore, the default operating system in this research is Windows 10 1809. All required Login VSI applications are installed including Microsoft Office 2016 x64. Optimizations are applied using the Citrix Optimizer version 2.6, with the recommended template.
 
-All scenarios have been performed according to our default testing methodology, which is described in detail [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+All scenarios have been performed according to our default testing methodology, which is described in detail [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results of Long-Term Servicing Release
 
@@ -234,8 +234,8 @@ Whether you choose for long-term supportability or looking ahead for new functio
 
 Based on this and previous researches, in either case, upgrading will benefit the user experience, performance and scalability.
 
-Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at our [Slack channel](https://{{site.title}}.slack.com).
+Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let us know what version of Citrix Virtual Apps and Desktops you are running in the poll below <a href="https://twitter.com/hashtag/Citrix?src=hash&amp;ref_src=twsrc%5Etfw">#Citrix</a> <a href="https://twitter.com/hashtag/CitrixSummit2020?src=hash&amp;ref_src=twsrc%5Etfw">#CitrixSummit2020</a></p>&mdash; G0-EUC (@g0_euc) <a href="https://twitter.com/g0_euc/status/1217448627628584960?ref_src=twsrc%5Etfw">January 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/speed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/speed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

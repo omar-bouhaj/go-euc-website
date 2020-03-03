@@ -11,9 +11,9 @@ This month (2nd October 2018) Microsoft has officially released Windows 10 1809 
 > **Please note:** There are known issues with the upgrade path to Windows 10 1809.
 >
 > “We have paused the rollout of the Windows 10 October 2018 Update (version 1809)* for all users as we investigate isolated reports of users missing some files after updating.
-> For the latest information on this issue please see [John Cable’s blog](https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders).”
+> For the latest information on this issue please see [John Cable’s blog](https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders){:target="_blank"}.”
 >
-> Source: [https://support.microsoft.com/en-us/help/4464619/windows-10-update-history](https://support.microsoft.com/en-us/help/4464619/windows-10-update-history)
+> Source: [https://support.microsoft.com/en-us/help/4464619/windows-10-update-history](https://support.microsoft.com/en-us/help/4464619/windows-10-update-history){:target="_blank"}
 
 ## What’s new in Windows 10 1809
 With each release of Windows 10, Microsoft adds a lot of new functionally and improvements. This shows Windows 10 is in continuous development. The following list contains some features from the Windows 10 1809 release:
@@ -29,10 +29,10 @@ With each release of Windows 10, Microsoft adds a lot of new functionally and im
   * Web sign-in to Windows 10
   * Dark theme
 
-More information regarding the new features and improvements can be found [here](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1809).
+More information regarding the new features and improvements can be found [here](https://docs.microsoft.com/en-us/windows/whats-new/whats-new-windows-10-version-1809){:target="_blank"}.
 
 ## Infrastructure and configuration
-The {{site.title}} platform is used for this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). We applied the same testing methodology where all results are average of multiple runs. For more information please read the following [post]({{site.baseurl}}/insight-in-the-testing-methodology). The default desktop delivery solution is Citrix Virtual Desktop as this is a commonly used solution and supports Windows 10 1809 right from the release day which is described [here](https://support.citrix.com/article/CTX224843).
+The {{site.title}} platform is used for this research which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. We applied the same testing methodology where all results are average of multiple runs. For more information please read the following [post]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. The default desktop delivery solution is Citrix Virtual Desktop as this is a commonly used solution and supports Windows 10 1809 right from the release day which is described [here](https://support.citrix.com/article/CTX224843){:target="_blank"}.
 
 To understand the performance impact of Windows 10 1809 the results needs to be compared to previous releases. In this case, the following 3 scenarios are tested:
 
@@ -40,12 +40,12 @@ To understand the performance impact of Windows 10 1809 the results needs to be 
   * Windows 10 1803
   * Windows 10 1809
 
-All scenarios contain the latest Windows Updates for Office and Windows itself. Within a VDI environment tuning is mandatory and for this scenario, the Citrix Optimizer is used. In order to compare the Windows 10 1709 template from the Citrix Optimizer is used for all scenarios. Please note, the Windows 10 1809 template is not available and is expected in the upcoming weeks. The default VM configuration is used which is 2vCPUs with 4GB of memory which is enough based on the following [requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications). The default deployment contains Office 2016 and Ctirix VDA 7.18.
+All scenarios contain the latest Windows Updates for Office and Windows itself. Within a VDI environment tuning is mandatory and for this scenario, the Citrix Optimizer is used. In order to compare the Windows 10 1709 template from the Citrix Optimizer is used for all scenarios. Please note, the Windows 10 1809 template is not available and is expected in the upcoming weeks. The default VM configuration is used which is 2vCPUs with 4GB of memory which is enough based on the following [requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications){:target="_blank"}. The default deployment contains Office 2016 and Ctirix VDA 7.18.
 
 ## The results
 Unfortunately, the VSImax metric cannot be used. Windows 10 1809 is not fully optimized where Login VSI reported a VSImax of 1. Therefore this research only uses the baseline metric.
 
-The baseline is a valuable metric. The baseline contains the lowest response times of the tests. A higher baseline indicates a slower response time which results in a lower VSImax. More information about the baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax#VSImax_Baseline).
+The baseline is a valuable metric. The baseline contains the lowest response times of the tests. A higher baseline indicates a slower response time which results in a lower VSImax. More information about the baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax#VSImax_Baseline){:target="_blank"}.
 
 ![baseline]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-baseline.png)
 <p align="center" style="margin-top: -30px;" >
@@ -87,4 +87,4 @@ With the new release of Windows 10 1809, a lot of organization are preparing the
 
 If you have any comments or questions, please leave them below.
 
-Photo by [Scott Webb](https://unsplash.com/photos/myFsTTkub9E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Scott Webb](https://unsplash.com/photos/myFsTTkub9E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText{:target="_blank"}) on [Unsplash](https://unsplash.com/search/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

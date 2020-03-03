@@ -48,9 +48,9 @@ VMware OSOT can be fully automated using the command line interface. This is req
 
 ![vmware-osot-command]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-command-line.png)
 
-VMware OSOT is a free tool which can be downloaded right here: [https://labs.vmware.com/flings/vmware-os-optimization-tool](https://labs.vmware.com/flings/vmware-os-optimization-tool)
+VMware OSOT is a free tool which can be downloaded right here: [https://labs.vmware.com/flings/vmware-os-optimization-tool](https://labs.vmware.com/flings/vmware-os-optimization-tool){:target="_blank"}
 
-> Please note, the technical preview license applies to VMware OSOT which states no support services and use at own risk. Also “Flings” are experimental and should not be run on production systems. All details can be found here: [https://labs.vmware.com/flings/vmware-os-optimization-tool/license](https://labs.vmware.com/flings/vmware-os-optimization-tool/license)
+> Please note, the technical preview license applies to VMware OSOT which states no support services and use at own risk. Also “Flings” are experimental and should not be run on production systems. All details can be found here: [https://labs.vmware.com/flings/vmware-os-optimization-tool/license](https://labs.vmware.com/flings/vmware-os-optimization-tool/license){:target="_blank"}
 
 ## Scenarios and Configuration
 The goal of this research is to see the performance benefit when using VMware OSOT. Therefore, this research contains three scenarios:
@@ -63,7 +63,7 @@ The default detected template is used for both scenarios which is the VMware Win
 
 To get consistent and reliable results Windows Defender was disabled and OneDrive removed in all scenarios.
 
-The research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). All scenarios are tested using the default testing methodology which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+The research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. All scenarios are tested using the default testing methodology which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Results
 It is expected there is a performance gain using an optimizer. This should result in a higher VSImax and lower host resource utilization on any level.
@@ -185,11 +185,11 @@ Right now, there is one universal template for Windows 10 and not for each indiv
 
 
 
-> <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-hilko-lantinga.png"/> A special thanks to [Hilko Lantinga](https://twitter.com/HilkoLantinga) from VMware for the time to review and share thoughts about these results. The results has been shared with VMware and they will further investigate the storage behaviour.
+> <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-hilko-lantinga.png"/> A special thanks to [Hilko Lantinga](https://twitter.com/HilkoLantinga){:target="_blank"} from VMware for the time to review and share thoughts about these results. The results has been shared with VMware and they will further investigate the storage behaviour.
 > 
 > 
 >  	&nbsp;
 
-Share your thought about these results in the comments below or get involved by joining our public Slack channel right [here](https://{{site.title}}.slack.com).
+Share your thought about these results in the comments below or get involved by joining our public Slack channel right [here](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Steven Erixon](https://unsplash.com/photos/LOvpejk4nZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Steven Erixon](https://unsplash.com/photos/LOvpejk4nZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

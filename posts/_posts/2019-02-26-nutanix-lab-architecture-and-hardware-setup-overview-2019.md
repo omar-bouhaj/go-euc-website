@@ -46,6 +46,6 @@ In the Nutanix-lab Citrix Virtual Apps and Desktops 7 version 1811 is installed.
 
 Availability of the VDI’s is set to 100%, and peak hours are set to 24-7 so that all desktops will be instantly available at any time.
 
-The VDI’s are optimized with the current version of the Citrix Optimizer tool ([https://support.citrix.com/article/CTX224676](https://support.citrix.com/article/CTX224676)) with the default settings enabled.
+The VDI’s are optimized with the current version of the Citrix Optimizer tool ([https://support.citrix.com/article/CTX224676](https://support.citrix.com/article/CTX224676){:target="_blank"}) with the default settings enabled.
 
-If you want more information about this infrastructure, please feel free to ask questions on our [Slack channel](https://{{site.title}}.slack.com).
+If you want more information about this infrastructure, please feel free to ask questions on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.

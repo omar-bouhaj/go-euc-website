@@ -19,7 +19,7 @@ For all organizations using centralized virtual desktop environments to provide 
 > 
 > The Login VSI is the complete solution to optimize and protect the performance of business-critical applications running in SBC and VDI infrastructures such as VMware Horizon View, Citrix XenDesktop, Citrix XenApp, and Microsoft Remote Services (RDS), previously Terminal Services.
 > 
-> For more information about Login VSI please visit: [https://www.loginvsi.com](https://www.loginvsi.com)
+> For more information about Login VSI please visit: [https://www.loginvsi.com](https://www.loginvsi.com){:target="_blank"}
 
 Login VSI contains a set of workloads that represents various user types. By default, we use the Knowledge Worker Workload as this is known as the facto standard. The Knowledge Worker is designed for 2(v)CPU environments. This is a well-balanced intensive workload that stresses the system smoothly, resulting in higher CPU, RAM and IO usage.
 
@@ -36,9 +36,9 @@ The Knowledge Worker workload uses the following applications:
 
 It also uses native Windows apps (Notepad and 7-Zip) to complete the print and zip actions used by the workload metafunctions.
 
-For more information about the available workloads please visit: [https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Workloads](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Workloads) or [https://www.loginvsi.com/blog/login-vsi/665-simulating-vdi-users-introduction-to-login-vsi-workloads](https://www.loginvsi.com/blog/login-vsi/665-simulating-vdi-users-introduction-to-login-vsi-workloads)
+For more information about the available workloads please visit: [https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Workloads](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Workloads){:target="_blank"} or [https://www.loginvsi.com/blog/login-vsi/665-simulating-vdi-users-introduction-to-login-vsi-workloads](https://www.loginvsi.com/blog/login-vsi/665-simulating-vdi-users-introduction-to-login-vsi-workloads){:target="_blank"}
 
-Login VSI comes with a default set of various resources, including documents, websites, and videos. Login VSI provides an additional Pro library to extend the default set of resources. The Login VSI Pro library is applied to the {{site.title}} environment. More information about the Login VSI Pro library can be found here: [https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Pro_Library](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Pro_Library).
+Login VSI comes with a default set of various resources, including documents, websites, and videos. Login VSI provides an additional Pro library to extend the default set of resources. The Login VSI Pro library is applied to the {{site.title}} environment. More information about the Login VSI Pro library can be found here: [https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Pro_Library](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_Pro_Library){:target="_blank"}.
 
 The default Login VSI settings do not always suit our needs. Consequently, we’ve made some changes to the test runs. The default PDF printer is DoroPDF which is not always reliable under maximum load which results in stuck sessions. As this effect the results we decided to disable PDF printing by default to ensure smooth execution of the workload.
 
@@ -804,4 +804,4 @@ VSI_Buffer("Workload", 30)
 
 We hope this provides enough insights into the testing methodology used in the {{site.title}} lab environment. If you have any comments or question please leave them below.
 
-Photo by [Veri Ivanova](https://unsplash.com/photos/p3Pj7jOYvnM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/stopwatch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Veri Ivanova](https://unsplash.com/photos/p3Pj7jOYvnM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/stopwatch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

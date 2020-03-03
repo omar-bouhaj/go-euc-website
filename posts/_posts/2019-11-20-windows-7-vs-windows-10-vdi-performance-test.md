@@ -14,7 +14,7 @@ On January 14 2020, support will end for Windows 7. This shouldn’t come as a s
 Nonetheless, there are still (VDI) environments that haven’t been upgraded to Windows 10 (or 8) and are still running Windows 7. For those environments, it’s interesting to know what the performance impact will be when they migrate to Windows 10. We’ve already seen that with every new feature release of Windows 10, there is an impact on user density and application response times. We’ve also seen that vulnerability mitigations for Spectre, Meltdown, L1TF, and MDS also have an impact. Therefore it would be interesting to see what the performance differences are between Windows 7 SP1 without updates versus Windows 7 SP1 that is fully updated. Then we compare these results to Windows 10 build 1809 fully updated.
 
 ## Infrastructure & configuration
-This research has taken place on [the Nutanix lab environment]({{site.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019). The host for the desktops has the following specifications:
+This research has taken place on [the Nutanix lab environment]({{site.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019){:target="_blank"}. The host for the desktops has the following specifications:
 
   * 2x CPU: Intel Xeon Gold 5220, 18 cores @ 2.20GHz
   * 768GB Memory
@@ -37,10 +37,10 @@ For this research three scenarios are defined:
   * Windows 7 SP1, fully updated until October 13th as the baseline, set at 100% in the charts.
   * Windows 10 build 1809 (build 17763.805), fully updated until October 13th.
 
-All scenarios are optimized using the VMware OSOT (version b1110) with the recommended templates. Each scenario is tested according to our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology).
+All scenarios are optimized using the VMware OSOT (version b1110) with the recommended templates. Each scenario is tested according to our default testing methodology which is described [here]({{stite.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results
-I remember a couple of years ago that Login VSI tests showed an impact of 30% when upgrading from Windows 7 to Windows 10 in a VDI-context. Previous **research** LINK showed that the individual feature builds of Windows 10 (1709 vs 1803 vs 1809, etc) already show a big impact in performance. And let’s not forget all the vulnerability mitigations that cause a huge impact. I expect that these mitigations will have an impact on Windows 7 as well and that there is an impact between a fully updated Windows 7 environment and a fully updated Windows 10 environment.
+I remember a couple of years ago that Login VSI tests showed an impact of 30% when upgrading from Windows 7 to Windows 10 in a VDI-context. Previous [research]({{site.baseurl}}/moores-law-of-windows-10-1903/){:target="_blank"} showed that the individual feature builds of Windows 10 (1709 vs 1803 vs 1809, etc) already show a big impact in performance. And let’s not forget all the vulnerability mitigations that cause a huge impact. I expect that these mitigations will have an impact on Windows 7 as well and that there is an impact between a fully updated Windows 7 environment and a fully updated Windows 10 environment.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -131,6 +131,6 @@ Another concern is the lower response times (33% lower Login VSI baseline) and s
 
 As a final word of advice, always validate the performance and user experience in your own environment before moving to production.
 
-Is your VDI environment still on Windows 7? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com).
+Is your VDI environment still on Windows 7? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Alex Mertz](https://unsplash.com/@alexmertz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Alex Mertz](https://unsplash.com/@alexmertz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

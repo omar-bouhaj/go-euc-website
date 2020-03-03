@@ -20,7 +20,7 @@ Microsoft has always piqued the interests of its users by offering new features 
   * PowerPoint; Zoom capabilities for ordering of slides within presentations, morph transition feature and the ability to insert and manage icons, SVG, and 3D models
   * Outlook; Updated contact cards, focused inbox and travel and delivery summary cards
 
-More information can be found [here](https://support.microsoft.com/en-us/help/4133312/office-2019-commercial-for-windows-and-mac-frequently-asked-questions).
+More information can be found [here](https://support.microsoft.com/en-us/help/4133312/office-2019-commercial-for-windows-and-mac-frequently-asked-questions){:target="_blank"}.
 
 ## Office 2019 requirements
 It is important to comply with the requirements specified by the vendor in order to make use of the latest features and functionalities. For Office 2019 the requirements are:
@@ -40,10 +40,10 @@ Microsoft’s announcement regarding Office 2019 is, it will only work on SAC (S
 
 While adding new features can improve the work productivity and user experience of the end-user, it might also impact compute resources. The software requirements are therefore important to note and used for sizing calculations.
 
-More information can be found [here](https://products.office.com/en-us/office-system-requirements?ms.officeurl=systemrequirement).
+More information can be found [here](https://products.office.com/en-us/office-system-requirements?ms.officeurl=systemrequirement){:target="_blank"}.
 
 # Infrastructure and configuration
-The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018) and uses {{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+The infrastructure used for the different scenarios are described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"} and uses {{site.title}}’s testing methodology posted [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 Three different scenarios were tested:
 
@@ -173,4 +173,4 @@ The results prove it is recommended to validate the impact of Office with each u
 
 If you have any comments or questions, please leave them below.
 
-Photo by [Nastuh Abootalebi](https://unsplash.com/photos/yWwob8kwOCk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/workspace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Nastuh Abootalebi](https://unsplash.com/photos/yWwob8kwOCk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/workspace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

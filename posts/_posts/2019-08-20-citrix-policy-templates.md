@@ -11,7 +11,7 @@ Citrix ships Citrix Virtual Apps and Desktops (CVAD) with several built-in polic
 This post serves as an updated version to the original post, revised with the new insights.
 
 Back in 2018, we published a prior research about the impact of these different Citrix scalability templates.
-Following the Login VSI post mention [here]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results), that research was also impacted by the Login VSI progress bar. This also gave us the opportunity to update the research with a new Windows 10 build and VDA version.
+Following the Login VSI post mention [here]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results){:target="_blank"}, that research was also impacted by the Login VSI progress bar. This also gave us the opportunity to update the research with a new Windows 10 build and VDA version.
 
 ## Configuration and infrastructure
 Since the original post, the infrastructure used was updated with the latest Windows 10 updates and the VDA versions.
@@ -24,9 +24,9 @@ Below is a breakdown of the components that have been changed since the original
 | VDA version 7.15 CU2	                | VDA version 7 1811                         |
 | Full Login VSI Progress bar visible   | Login VSI modification on the progress bar | 
 
-More information on the testing platform can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). For more insights into the testing methodology please review the following [post]({{site.baseurl}}/insight-in-the-testing-methodology).
+More information on the testing platform can be found [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. For more insights into the testing methodology please review the following [post]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
-The built-in Citrix scalability templates can be used as a starting point to configure the Citrix Virtual Apps and Desktops environment for specific uses cases. More information about all the different built-in template can be found [here](https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html).
+The built-in Citrix scalability templates can be used as a starting point to configure the Citrix Virtual Apps and Desktops environment for specific uses cases. More information about all the different built-in template can be found [here](https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html){:target="_blank"}.
 
 In this research, just like in the original post, we’ve focused on the ‘High Server Scalability’ policy template and the ‘Very High Definition User Experience’ policy template. Both represent two opposite sides of the spectrum; the ‘High Server Scalability’  template focuses on maximizing the server’s scalability while the ‘Very High User Definition’ template will ensure maximum user experience.
 
@@ -68,7 +68,7 @@ If ‘Use when preferred’ is selected, the system dynamically decides on which
 
 The ‘High Server Scalability’ template, on the other hand, does not use a video codec. In this case, a combination of still image compression and bitmap caching is used. ‘Do not use’ is generally applied to environments where there is a need to optimize for server CPU load and for cases that do not have a lot of server-rendered video or other graphically intense applications.
 
-The ‘Very High Definition User Experience’ template is based on the default settings except for the ‘Visual Quality’ settings and the ‘Video codec for compression’. For an in-depth look into the impact with using the Visual Quality settings please review the corresponding research [here]({{site.baseurl}}/the-true-difference-between-citrix-visual-quality-profiles).
+The ‘Very High Definition User Experience’ template is based on the default settings except for the ‘Visual Quality’ settings and the ‘Video codec for compression’. For an in-depth look into the impact with using the Visual Quality settings please review the corresponding research [here]({{site.baseurl}}/the-true-difference-between-citrix-visual-quality-profiles){:target="_blank"}.
 
 With the ‘Very High Definition User Experience’ policy template, the codec is set to ‘For the entire screen’. Here the video codec will be applied as the default codec for all content (some small images and text can be optimized and sent losslessly).
 
@@ -159,7 +159,7 @@ Citrix states the following about bandwidth usage for the ‘Very High User Defi
 
 > As mentioned in the built-in policy description, applying this template may consume more bandwidth and reduce user density per server.
 > 
-> Source: [https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html](https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html)
+> Source: [https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html](https://docs.citrix.com/en-us/advanced-concepts/implementation-guides/hdx-policy-templates.html){:target="_blank"}
 
 Instead, the metric shows a significant decrease in bandwidth consumption when using the ‘Very High Definition User Experience’ template.
 
@@ -170,7 +170,7 @@ Sending over the bitmaps (note that no encoding method is used) with the ‘High
   <i>Lower is better</i>
 </p>
 
-![rtt-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-comparison)
+![rtt-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-comparison.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -229,8 +229,8 @@ From both a host and the perspective of an end-point, delivering the highest def
 The most common alleviation, using server GPUs, can potentially limit the overall impact at the datacenter side. The HDX policy setting ‘Use hardware encoding for video codec’ is selected by default. Using endpoints with faster CPUs and GPUs that can decode H.264, like the Raspberry Pi, can enhance the user experience from the end-points side of the equation.
 
 As per best practice, if you don’t need to delivery 3D of CAD workloads, keep everything at default if you use a VDA 7.18 or later and let the system decide. You get the best balance between user experience and scalability. 
-Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when)
+Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when){:target="_blank"}
 
-If you want to share your insights on using the built-in policy templates or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.tile}}.slack.com).
+If you want to share your insights on using the built-in policy templates or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.tile}}.slack.com){:target="_blank"}.
 
-Photo by [Victor Rodriguez](https://unsplash.com/@vimarovi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/metro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Photo by [Victor Rodriguez](https://unsplash.com/@vimarovi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/metro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

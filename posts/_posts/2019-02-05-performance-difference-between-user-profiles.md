@@ -22,7 +22,7 @@ This profile type is stored locally on the hard disk of the computer or virtual 
 ### Roaming user profile
 The roaming profile is a copy of the local profile that is copied to another, usually central location. The profile is downloaded to any computer that a user logs onto on a network. The changes that are made to the roaming user profile are synchronized to the central location when the user logs off. Using another computer or virtual machine will contain the same changes that are made within the user profile as the profile is synchronized at user logon. Important note, version of the roaming user profile changes with the different versions of Windows. More information can be found here.
 
-[https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information)
+[https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information){:target="_blank"}
 
 ### Mandatory user profile
 The mandatory user profile is a type of profile that administrators can use to apply a specific setting to the users. Only administrators can make changes to the mandatory user profile. All changes that are made by the user will be lost at user logoff as the profile will be discarded.
@@ -38,9 +38,9 @@ The goal of the research is to validate the impact of the different profile type
   * Using a mandatory user profile from a share;
   * Using a mandatory user profile stored locally.
 
-The temporary user profile is not included as this only occurs when there is something wrong that prevents the user’s profile from loading. In this research, no folder redirection is used. As always, the default infrastructure is used which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
+The temporary user profile is not included as this only occurs when there is something wrong that prevents the user’s profile from loading. In this research, no folder redirection is used. As always, the default infrastructure is used which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}.
 
-All VM’s are configured with 2vCPU’s with 4GB memory delivered using Citrix running Windows 10 1809 and is fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded. The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+All VM’s are configured with 2vCPU’s with 4GB memory delivered using Citrix running Windows 10 1809 and is fully optimized using the Citrix Optimizer. It is very important to know this research is done in a stateless environment which means all changes are discarded. The default testing methodology is used for this research which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## The expectation and results
 It is known roaming profiles is not recommended in a virtual desktop use-case. All settings will be synchronized to the central location which can grow over time. This is all depending on the number of applications and data stored in the profile. By default, there is limited control, so this will result in a higher load of the copy action and slower logon times. Using a local or mandatory profile should be the most efficient way for a virtual desktop scenario.
@@ -52,9 +52,9 @@ Before covering the results, it is important to understand the different profile
   * Roaming profile on a share: 46MB;
   * Mandatory profile: 376KB.
 
-The mandatory profile is created using the Sysprep method which is described on the Microsoft website [here](https://docs.microsoft.com/en-us/windows/client-management/mandatory-user-profile). The profile is stripped as much as possible till the size is the 376KB.
+The mandatory profile is created using the Sysprep method which is described on the Microsoft website [here](https://docs.microsoft.com/en-us/windows/client-management/mandatory-user-profile){:target="_blank"}. The profile is stripped as much as possible till the size is the 376KB.
 
-The Login VSI VSImax results represent the overall capacity of the scenarios. The VSImax is the defacto industry standard metric and is calculated a score to detriment the saturation point of the virtual desktop environment. More information about the VSImax is explained [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+The Login VSI VSImax results represent the overall capacity of the scenarios. The VSImax is the defacto industry standard metric and is calculated a score to detriment the saturation point of the virtual desktop environment. More information about the VSImax is explained [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -128,4 +128,4 @@ These results are not as expected and show a roaming user profile is the best pr
 
 In this research, the mandatory profile is the worst performing profile type. This has to do with small mandatory profile used for this research. It shows it is important to validate if the profile is complete with all the required files which are interesting to further investigate in another research. There is no difference if the profile is stored locally or on a share, but keep in mind this is lab environment and will be different in a production environment.
 
-Photo by [Val Vesa](https://unsplash.com/photos/ihFWKicceNk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/silhouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Val Vesa](https://unsplash.com/photos/ihFWKicceNk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/silhouette?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

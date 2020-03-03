@@ -8,7 +8,7 @@ image: assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forwar
 ---
 With each iteration of the Citrix Virtual Delivery Agent (VDA) software Citrix always treats us to new features and functionalities. For the Current Releases (CR) Citrix is constantly adding new features and functionalities while also improving the performance of the HDX protocol itself. This should, in theory, result in a better user experience, coupled with a higher user density and less strain on the system.
 
-> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results).
+> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results){:target="_blank"}.
 
 The Long Term Service Release (LTSR) program provides stability and long-term support for XenApp and XenDesktop releases. XenApp and XenDesktop LTSRs are currently available for Versions 7.6 and 7.15. Cumulative Update 3 (CU3) is the most recent update to the 7.15 LTSR.
 
@@ -35,23 +35,23 @@ To get some context for the different VDA versions here is a small breakdown of 
 | 7.18 | Battery icon notification | While not necessarily performance related a very much requested feature nonetheless |
 | 7.18 | Enhanced server VDA webcam functionality | Thinwire enhancements (‘Build to lossless’ preference of the Visual quality policy setting is now H.264 instead of JPEG for moving images) | 
 | 7.18 | H.264 | Build-to-Lossless |
-| 1808.2 | Better network throughput over high latency connection | [https://support.citrix.com/article/CTX125027](https://support.citrix.com/article/CTX125027) |
+| 1808.2 | Better network throughput over high latency connection | [https://support.citrix.com/article/CTX125027](https://support.citrix.com/article/CTX125027){:target="_blank"} |
 | 1808.2 | Chrome enhancement to browser content redirection | Browser content redirection now supports the Chrome browser in addition to the previously supported Internet Explorer browser |
 | 1808.2 | NVENC video encoding support on Server OS VDAs | NVENC video encoding support on Server OS VDAs. The XenApp and XenDesktop 7.17 release introduced Desktop VDA support for selective H.264/H.265 encoding with NVIDIA NVENC GPUs. In this release, the similar capabilities have now been extended to Server OS VDAs equipped with NVIDIA NVENC GPUs |
 | 1811.1 | Graphics status indicator | The Graphics status indicator policy has been updated to replace the display lossless indicator policy |
 | 1811.1 |DPI matching on Windows 10 | DPI matching allows the Windows 10 desktop session to match the DPI of the endpoint when using Citrix Workspace app for Windows. |
 | 1811.1 | HDX adaptive throughput | HDX adaptive throughput intelligently fine-tunes the peak throughput of the ICA session by adjusting output buffers. The number of output buffers is initially set at a high value. This high value allows data to be transmitted to the client more quickly and efficiently, especially in high latency networks. Providing better interactivity, faster file transfers, smoother video playback, higher framerate and resolution results in an enhanced user experience. |
 
-<i> **Note:** from version 7.17 and onward, a new higher compression ratio MDRLE encoder has been added. The Citrix reworked the MDRLE codec so that it consumes less bandwidth in typical desktop sessions when compared with 2DRLE. More information on the Lossless Compression Codec (MDRLE) can be found here: [https://support.citrix.com/article/CTX232041](https://support.citrix.com/article/CTX232041) </i>
+<i> **Note:** from version 7.17 and onward, a new higher compression ratio MDRLE encoder has been added. The Citrix reworked the MDRLE codec so that it consumes less bandwidth in typical desktop sessions when compared with 2DRLE. More information on the Lossless Compression Codec (MDRLE) can be found here: [https://support.citrix.com/article/CTX232041](https://support.citrix.com/article/CTX232041){:target="_blank"} </i>
 
 ## Configuration and infrastructure
-As always, the tests were conducted by the standard testing methodology, an in-depth look into the methodology can be found [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+As always, the tests were conducted by the standard testing methodology, an in-depth look into the methodology can be found [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 The tests were configured to use non-persistent desktops delivered using Citrix Virtual Desktops (MCS) running Microsoft Windows 10 build 1809 and are configured with 2 vCPU and 4 GB RAM. Both Windows and Office are fully patched. Windows Defender was disabled, as this may influence the metrics and result in unreliable data. The image was fully optimized with Citrix Optimizer version 2 with the Citrix supplied ‘Windows 10 1809’ template.
 
 ## Host Results
 Based on the improvements outlined above we should expect an improvement in scalability, performance and network throughput.
-As usual, the first metric that we use to evaluate the scalability of the scenario’s is the Login VSI VSImax value. More information about the VSImax can be found on the Login VSI [website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+As usual, the first metric that we use to evaluate the scalability of the scenario’s is the Login VSI VSImax value. More information about the VSImax can be found on the Login VSI [website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -205,14 +205,14 @@ Citrix has done a tremendous amount of work on the VDA and HDX protocol fronts. 
 
 More information on the continual improvements in the HDX Protocol can be found here:
 
-[https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1/](https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1)
+[https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1/](https://www.citrix.com/blogs/2018/10/30/turbo-charging-ica-part-1){:target="_blank"}
 
-[https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2/](https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2)
+[https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2/](https://www.citrix.com/blogs/2018/12/17/turbo-charging-ica-part-2){:target="_blank"}
 
 In a more real-world scenario’s where multimedia content is becoming more and more common, the impact of these improvements will only be even higher than in our lab environment. The Login VSI workload is configured with moderately static content and with a workload that is a bit outdated in terms that it only uses SD content, whereas multimedia content nowadays is typically 1080p or even 4k in resolution.
 
 If your Life cycle management process fits within the 6 months release timeframe of CR and performance and user experience are key in your environment, based on these findings we can only recommend using CR instead of LTSR.
 
-If you want to comment on this research and its findings, please feel free reach out. Alternatively, you can [join](https://{{site.title}}.slack.com) our slack channel and discuss with the {{site.title}} community.
+If you want to comment on this research and its findings, please feel free reach out. Alternatively, you can [join](https://{{site.title}}.slack.com){:target="_blank"} our slack channel and discuss with the {{site.title}} community.
 
-Photo by [Joshua Earle](https://unsplash.com/photos/s00F6-W_OQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/jump?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Joshua Earle](https://unsplash.com/photos/s00F6-W_OQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/jump?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

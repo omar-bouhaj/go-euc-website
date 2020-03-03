@@ -12,7 +12,7 @@ It’s been more than 10 years since we started to virtualize RDSH-based workloa
 The most commonly used products in the RDSH-space are Citrix Virtual Apps (AKA XenApp) and VMware Horizon Apps. What are these vendors recommending when it comes to sizing the RDSH VMs?
 
 ### Citrix
-The latest recommendation from Citrix professional services which I could find is documented here: [https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017/](https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017)
+The latest recommendation from Citrix professional services which I could find is documented here: [https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017/](https://www.citrix.com/blogs/2017/11/22/xenapp-scalability-v2017){:target="_blank"}
 
 One advice I would like to quote:
 
@@ -21,9 +21,9 @@ One advice I would like to quote:
 It’s an interesting recommendation as our tests are performed on an Intel E5-2680 v4 CPU.
 
 ### VMware
-In the Architecture planning guide, the suggested configuration of the RDSH VM is 4 vCPUs: [https://docs.vmware.com/en/VMware-Horizon-7/7.7/horizon-architecture-planning/GUID-C653B8FB-BCB5-4E33-BA0B-44B5FCAA2762.html](https://docs.vmware.com/en/VMware-Horizon-7/7.7/horizon-architecture-planning/GUID-C653B8FB-BCB5-4E33-BA0B-44B5FCAA2762.html)
+In the Architecture planning guide, the suggested configuration of the RDSH VM is 4 vCPUs: [https://docs.vmware.com/en/VMware-Horizon-7/7.7/horizon-architecture-planning/GUID-C653B8FB-BCB5-4E33-BA0B-44B5FCAA2762.html](https://docs.vmware.com/en/VMware-Horizon-7/7.7/horizon-architecture-planning/GUID-C653B8FB-BCB5-4E33-BA0B-44B5FCAA2762.html){:target="_blank"}
 
-In the VMware Horizon sizing limits and recommendations knowledgebase article, the recommendation for the number of CPUs is 8-64 vCPUs: [https://kb.vmware.com/s/article/2150348](https://kb.vmware.com/s/article/2150348)
+In the VMware Horizon sizing limits and recommendations knowledgebase article, the recommendation for the number of CPUs is 8-64 vCPUs: [https://kb.vmware.com/s/article/2150348](https://kb.vmware.com/s/article/2150348){:target="_blank"}
 
 So, VMware doesn’t give a straight answer, which could be a good thing because the sizing may depend on the type of applications, type of CPU or other variables.
 
@@ -33,9 +33,9 @@ Getting the most users on a server isn’t the only thing to consider when it co
 By default, Spectre and Meltdown mitigations are not enabled on Windows server 2016 (even though the patches are installed). As the investigation about the impact of enabling those mitigations is an interesting topic by itself, we decided to not enable it during these tests. The L1TF mitigation on ESXi (by enabling the ESXi Side-Channel-Aware Scheduler) was also not performed. These settings will be tested in an upcoming research.
 
 ## Configuration and infrastructure
-The tests for this research were performed on a Nutanix-lab environment. The node on which the tests were performed is part of a 4-node cluster. Usually, a controller VM (CVM) is present on each Nutanix node, but for these tests this CVM was powered off. The storage of the other nodes in the cluster was accessed by the test-node over NFS. The node is a dual socket CPU and is an Intel E5-2680 v4 @ 2.40GHz processor. This CPU is based on a Broadwell architecture, containing 14 cores. That means a total of 28 physical CPU cores are present and with Hyperthreading enabled 56 logical CPU cores are available. VMware ESXi 6.7U1 was used during these tests. You can read more about this Nutanix-lab infrastructure [here]({{stite.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019).
+The tests for this research were performed on a Nutanix-lab environment. The node on which the tests were performed is part of a 4-node cluster. Usually, a controller VM (CVM) is present on each Nutanix node, but for these tests this CVM was powered off. The storage of the other nodes in the cluster was accessed by the test-node over NFS. The node is a dual socket CPU and is an Intel E5-2680 v4 @ 2.40GHz processor. This CPU is based on a Broadwell architecture, containing 14 cores. That means a total of 28 physical CPU cores are present and with Hyperthreading enabled 56 logical CPU cores are available. VMware ESXi 6.7U1 was used during these tests. You can read more about this Nutanix-lab infrastructure [here]({{stite.baseurl}}/nutanix-lab-architecture-and-hardware-setup-overview-2019){:target="_blank"}.
 
-The Login VSI workload knowledgeworker is modified as described [here]({{site.baseurl}}/insight-in-the-testing-methodology) and used during these tests. The Remote Desktop Analyzer (RDA) data capture was disabled due to the overhead of RDA on RDSH and the PDF-printer was not disabled. SBC timer was not enabled.
+The Login VSI workload knowledgeworker is modified as described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"} and used during these tests. The Remote Desktop Analyzer (RDA) data capture was disabled due to the overhead of RDA on RDSH and the PDF-printer was not disabled. SBC timer was not enabled.
 
 ### RDSH VM configurations
 
@@ -153,6 +153,6 @@ As expected, Read and Write IO are not a bottleneck with the Login VSI workload 
 
 In an upcoming research, we will focus on the impact of Spectre, Meltdown and Foreshadow on Windows server 2016 and 2019 RDSH.
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com).
+If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Laura Ockel](https://unsplash.com/photos/pGVr8YRtQ80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Laura Ockel](https://unsplash.com/photos/pGVr8YRtQ80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

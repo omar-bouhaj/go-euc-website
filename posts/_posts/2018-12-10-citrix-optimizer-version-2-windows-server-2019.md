@@ -8,7 +8,7 @@ image: assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/01
 ---
 Optimizing and tuning your environment is one of the best practices for any virtual desktop environment. This applies both to desktop and server operating systems like Windows 10 and Windows Server 2019. In the previous research, we had the opportunity to test with the new Citrix Optimizer tool (CTXO) which also contain a template for Windows Server 2019. As promised, we did another research using CTXO running Windows Server 2019 in a Virtual Apps & Desktops (XenApp) scenario. 
 
-More details regarding the new release of CTXO are described in the previous [post]({site.baseurl}}/citrix-optimizer-version-2-windows-10-1809)
+More details regarding the new release of CTXO are described in the previous [post]({site.baseurl}}/citrix-optimizer-version-2-windows-10-1809){:target="_blank"}
 
 For this research we ran the following scenarios: 
 
@@ -18,7 +18,7 @@ For this research we ran the following scenarios:
 ![optimizer]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-optimizer.png)
 
 ## Infrastructure and configuration 
-This research has taken place on the {{site.title}} platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology).
+This research has taken place on the {{site.title}} platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 The default desktop delivery solution is Citrix Virtual Desktop running the latest available version, 1808.2. The virtual machines are created using Citrix Machine Creation Service (MCS) with a stateless configuration using local profiles. All virtual machines are configured with 6vCPU’s and 32GB memory. 
 
@@ -27,7 +27,7 @@ Conforming Microsoft best practice the latest Windows Updates for both Windows a
 ## Results 
 When optimizing an operating system, the expected result is to have an improvement in resource utilization, e.g. a lower CPU utilization on the hypervisor and lower memory footprint for example. This will result in a higher VSImax and in GO-EUC’s case a lower CPU utilization.  
 
-More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -101,4 +101,4 @@ There have been multiple checks on both Windows Server 2016 and 2019 to ensure t
 
 All information gathered is shared with Martin Zugec to improve the template. If you have recommended settings to optimize, please share those in the comments so we can help Martin to improve the default template.
 
-Photo by [Glen Wheeler](https://unsplash.com/photos/gN3oQVVJDYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/f1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Glen Wheeler](https://unsplash.com/photos/gN3oQVVJDYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/f1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

@@ -6,7 +6,7 @@ categories: [ 'citrix' ]
 tags: [ 'citrix', 'CTXO', 'citrix optimizer' ]
 image: assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-feature-image.png
 ---
-Last year we covered the performance results of the Citrix Optimizer (CTXO) version 2 Beta on [Windows 10]({{site.baseurl}}/citrix-optimizer-version-2-windows-10-1809) and [Windows Server 2019]({{site.baseurl}}citrix-optimizer-version-2-windows-server-2019).
+Last year we covered the performance results of the Citrix Optimizer (CTXO) version 2 Beta on [Windows 10]({{site.baseurl}}/citrix-optimizer-version-2-windows-10-1809){:target="_blank"} and [Windows Server 2019]({{site.baseurl}}citrix-optimizer-version-2-windows-server-2019){:target="_blank"}.
 
 The final version of Citrix Optimizer (CTXO) version 2 was released on December 17th 2018. In this research we’ll present a more in-depth analysis of this version of CTXO, version v2.0.0.109.
 
@@ -28,16 +28,16 @@ Our hypothesis was that the removal of the built-in apps and the optimization of
 While the optimization of the first four groups are mostly self-explanatory, the last group ‘Miscellaneous’ might require some additional explanation. This group contains optimizations that generally don’t fall in one of the other categories such as optimizations for the Enhanced Write Filter (EWF) and the Native Image Generation.
 
 ## Infrastructure and configuration
-As always this research was done on the GO-EUC platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). This setup is identical as our previous two CTXO posts. Although the setups are identical we never compare these results to the results from the previous post due to a number of factors. The image is built from scratch for every research and is updated with both Windows and Office updates afterwards so this could result in a difference of the installed updates between the researches that can influence the results.
+As always this research was done on the GO-EUC platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. This setup is identical as our previous two CTXO posts. Although the setups are identical we never compare these results to the results from the previous post due to a number of factors. The image is built from scratch for every research and is updated with both Windows and Office updates afterwards so this could result in a difference of the installed updates between the researches that can influence the results.
 
 The desktop delivery solution is Citrix Virtual Desktop running the latest available version which is version 1808.2 as of writing. The virtual machines are created using Citrix Machine Creation Service (MCS) with a stateless configuration using local profiles. All virtual machines are configured with 2vCPU’s and 4GB memory. 
 
-In each scenario the tests were run multiple times as per default and after a scenario is completed the VDI’s were rolled back to their default state and the new optimization for the chosen scenario was applied. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology).
+In each scenario the tests were run multiple times as per default and after a scenario is completed the VDI’s were rolled back to their default state and the new optimization for the chosen scenario was applied. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Results 
 As with all {{site.title}} posts, we use the Login VSI VSImax as the main performance gauge. The VSImax is the defacto industry standard metric and is a calculated score to determine the saturation point of the VDI environment. The saturation point (VSImax) is defined as the session count before the threshold was reached.
 
-More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-feature-image.png)
 <p align="center" style="margin-top: -30px;" >
@@ -122,4 +122,4 @@ As always, your own mileage might vary. In our lab setup, we have the hosts set 
 
 Especially for the optimizations in the ‘Miscellaneous’ group like the Native Image Generation for the .NET framework, the impact might be higher if the image has just been updated with the latest Windows Updates. Without pre-optimizing the .NET framework for instance, the Host CPU usage and logon times could be severely impacted.
 
-Photo by [Ryoji Iwata](https://unsplash.com/photos/5siQcvSxCP8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/puzzle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Ryoji Iwata](https://unsplash.com/photos/5siQcvSxCP8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/puzzle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

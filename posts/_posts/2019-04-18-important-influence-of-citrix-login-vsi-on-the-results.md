@@ -10,7 +10,7 @@ Over the last couple of months, a lot of new insights have been shared on GO-EUC
 
 > When performing the analysis of data that we collect from the performance tests, no matter how objective we stay, we always have the tendency to interpret the data towards our initial hypotheses. This phenomenon is called confirmation bias. In our VDA post, we saw some exceptional results and performance gains when switching from VDA 7.18 to 1808.2 with an increase of 30% in VSImax. We expected an increase in performance, so we perceived an increase in performance based on previous tests and the collected data. And data doesn’t lie.
 
-Based on our recent research and blog post [Citrix VDA versions breakdown, a giant leap forward]({{site.baseurl}}/citrix-vda-versions-breakdown-a-giant-leap-forward) [Muhammad Dawood](https://www.linkedin.com/in/muhammad-dawood) (Principal Software Engineer at Citrix) and [Martin Rowan](https://www.linkedin.com/in/martinrowan) (Head of Engineering at Highlight, former Citrix employee) have joined our Slack channel to talk about our results. We got challenged by them, specifically on the FPS values of the older VDA versions. These numbers did not exhibit the behavior as Citrix would have expected them to be.
+Based on our recent research and blog post [Citrix VDA versions breakdown, a giant leap forward]({{site.baseurl}}/citrix-vda-versions-breakdown-a-giant-leap-forward){:target="_blank"} [Muhammad Dawood](https://www.linkedin.com/in/muhammad-dawood){:target="_blank"} (Principal Software Engineer at Citrix) and [Martin Rowan](https://www.linkedin.com/in/martinrowan){:target="_blank"} (Head of Engineering at Highlight, former Citrix employee) have joined our Slack channel to talk about our results. We got challenged by them, specifically on the FPS values of the older VDA versions. These numbers did not exhibit the behavior as Citrix would have expected them to be.
 
 Our test results show that both versions of Citrix VDA 7.15 and VDA 7.18 have an overall higher FPS. This is the part which is not as expected and should show a similar pattern as version 1808.2 and 1811.1 (lower FPS). Our analysis tells us that, in theory, something within the workload is continuously generating screen updates.
 
@@ -29,7 +29,7 @@ As the progress bar is always on top this will influence the FPS.
 
 
 
-Source: [https://youtu.be/FiVev7TkDbI](https://youtu.be/FiVev7TkDbI)
+Source: [https://youtu.be/FiVev7TkDbI](https://youtu.be/FiVev7TkDbI){:target="_blank"}
 
 The insight was that this behavior was not present in the later VDA versions (e.g. version 1808.2 and up). After further analysis, we discovered that Citrix applied some optimization in the VDA. Although we could not validate the exact setting, we did manage to get the same animation effects by disabling the “Animate controls and elements inside windows” setting in the operating system.
 
@@ -48,7 +48,7 @@ Not only the FPS is influenced by this change but also shows an impact on the ot
 ## Our point of view on these insights
 Well, data does not lie but because of the changes made to newer VDA versions (1808.2 and upwards), there wasn’t a level playing field anymore. The results would always be in favor of these newer versions in our comparison blog.
 
-We could not find the optimization change in the release notes of the [Citrix VDA releases](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/1808/whats-new.html). As this change is a form of OS optimizations, we believe this should be part of the “Citrix optimizer” instead of being a part of the VDA itself and therewith let us decide to apply this optimization as it influences the end-user experience.
+We could not find the optimization change in the release notes of the [Citrix VDA releases](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/1808/whats-new.html){:target="_blank"}. As this change is a form of OS optimizations, we believe this should be part of the “Citrix optimizer” instead of being a part of the VDA itself and therewith let us decide to apply this optimization as it influences the end-user experience.
 
 From a Login VSI perspective, we would expect it to only generate workload and not to be influencing the results from outside the workload itself, meaning the progress bar.
 
@@ -73,6 +73,6 @@ A couple of our published researches are affected by the differences in FPS beca
 
 Affected researches have been edited with a disclaimer containing a link to this post. Once the tests of the affected researches have been rerun, the posts will also be updated with a link to the new research post.
 
-We are thankful to Muhammad and, Martin for helping us understand our playground. If, in the meantime, you have any questions or remarks please feel free to reach out to us on our [Slack Channel](https://{{site.title}}.slack.com).
+We are thankful to Muhammad and, Martin for helping us understand our playground. If, in the meantime, you have any questions or remarks please feel free to reach out to us on our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Ivan Vranić](https://unsplash.com/photos/j9-2LIZ2_Rc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/broken?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Ivan Vranić](https://unsplash.com/photos/j9-2LIZ2_Rc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/broken?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

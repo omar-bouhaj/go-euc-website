@@ -11,22 +11,22 @@ On May 14th 2019 a group of security advisors, together with Intel, publicly ann
 
 ## MDS and your VDI environment
 
-A lot has been written and published about the MDS vulnerabilities. To learn more about these vulnerabilities, it is recommended to read [cpu.fail](https://cpu.fail) or [mdsattacks.com](https://mdsattacks.com).
+A lot has been written and published about the MDS vulnerabilities. To learn more about these vulnerabilities, it is recommended to read [cpu.fail](https://cpu.fail) or [mdsattacks.com](https://mdsattacks.com){:target="_blank"}.
 
 For this research, it is important to understand the context and setup for these performance tests. The goal is to understand the impact of the MDS mitigations. In a VDI environment, this means patching at the hardware level, virtualization layer, and guest OS. Because at the time of testing there was no patch available for the hardware we used, we only tested the impact of patching the hypervisor (VMware vSphere) and the guest OS (Windows 10 build 1809).
 
 You can read more about these mitigations in the following articles:
 
-VMware: [https://www.vmware.com/security/advisories/VMSA-2019-0008.html](https://www.vmware.com/security/advisories/VMSA-2019-0008.html)
+VMware: [https://www.vmware.com/security/advisories/VMSA-2019-0008.html](https://www.vmware.com/security/advisories/VMSA-2019-0008.html){:target="_blank"}
 
-Microsoft: [https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in](https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in)
+Microsoft: [https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in](https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in){:target="_blank"}
 
 In short: for the guest OS just install the required cumulative patch, containing the security update. For VMware vSphere, install the required update and enable the Side-Channel-Aware scheduler. The Side-Channel-Aware scheduler is an alternative to disabling Hyper-Threading (which is required to be fully protected). VMware introduced the Side-Channel-Aware scheduler in vSphere ESXi, which basically disables Hyper-Threading if there are no hardware mitigations in place. Newer processors will/could be introduced to protect the system at the hardware-level. VMware introduced in vSphere version 6.7U2 the Side-Channel-Aware scheduler version 2 mitigation, which should increase the performance while maintaining (almost) the same level of protection.
 
-Read about the Side Channel Aware scheduler V1 and V2 here: [https://www.vmware.com/techpapers/2018/scheduler-options-vsphere67u2-perf.html]( https://www.vmware.com/techpapers/2018/scheduler-options-vsphere67u2-perf.html)
+Read about the Side Channel Aware scheduler V1 and V2 here: [https://www.vmware.com/techpapers/2018/scheduler-options-vsphere67u2-perf.html](https://www.vmware.com/techpapers/2018/scheduler-options-vsphere67u2-perf.html){:target="_blank"}
 
 ## Configuration and infrastructure
-This research has taken place on the {{site.title}} platform which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). All the desktops are delivered using Citrix Virtual Desktop version 1906 and contain 2vCPU’s with 4GB memory. The operating system is Windows 10 1809 and is optimized using the Citrix Optimizer with the recommended template.
+This research has taken place on the {{site.title}} platform which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. All the desktops are delivered using Citrix Virtual Desktop version 1906 and contain 2vCPU’s with 4GB memory. The operating system is Windows 10 1809 and is optimized using the Citrix Optimizer with the recommended template.
 
 In order to get a complete overview of the impact, five scenarios are required.
 
@@ -38,10 +38,10 @@ In order to get a complete overview of the impact, five scenarios are required.
 | SCAv1	        | 17763.503 | ESXi670-201905001	| Includes vSphere and Windows patch |
 | SCAv2	        | 17763.503 | ESXi670-201905001 | Includes vSphere and Windows patch |
 
-As always the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+As always the default testing methodology is used which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results
-It is expected that MDS and enabling the Side Channel Aware Scheduler will have an impact on user density and user experience. Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The Login VSI VSImax is one of the best metrics to see the difference in user capacity. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+It is expected that MDS and enabling the Side Channel Aware Scheduler will have an impact on user density and user experience. Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The Login VSI VSImax is one of the best metrics to see the difference in user capacity. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -154,6 +154,6 @@ The key takeaway is to validate the appropriate sizing on your environment after
 
 If you don’t enable the mitigations, your environment is vulnerable to these exploits. We cannot decide for you if it is worth the risk of not enabling the mitigations. We can only advice you to test the mitigations and measure the impact on your environment and take the appropriate measures.
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com).
+If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Christian Wiediger](https://unsplash.com/@christianw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/cpu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Christian Wiediger](https://unsplash.com/@christianw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/cpu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

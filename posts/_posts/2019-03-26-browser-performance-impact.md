@@ -28,12 +28,12 @@ From a security standpoint. Each browser support decent security features that p
 Furthermore, the tested browsers are compatible with web standards. And all four browsers are much faster and leaner than those of a few years ago and become even more so with each new build. A casual user probably won’t notice a difference in the rendering speed between today’s modern browsers.
 
 ## Infrastructure and configuration
-The infrastructure used for this research is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018) and uses {{site.title}}’s testing methodology which is posted [here]({{site.baseurl}}/insight-in-the-testing-methodology). The default workload used in GO-EUC’s testing methodology was modified for the comparisons. Instead of having multiple stand-alone browser instances open, the workload has multiple tabs open in one instance. The workloads can be downloaded below, for your reference, were “Web_Start Random” has been replaced with a “App_Start” function:
+The infrastructure used for this research is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"} and uses {{site.title}}’s testing methodology which is posted [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. The default workload used in GO-EUC’s testing methodology was modified for the comparisons. Instead of having multiple stand-alone browser instances open, the workload has multiple tabs open in one instance. The workloads can be downloaded below, for your reference, were “Web_Start Random” has been replaced with a “App_Start” function:
 
-  * Workload [Microsoft Internet Explorer]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__IE.txt);
-  * Workload [Microsoft Edge]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__Edge.txt);
-  * Workload [Mozilla Firefox]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__FireFox.txt);
-  * Workload [Google Chrome]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__Chrome.txt).
+  * Workload [Microsoft Internet Explorer]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__IE.txt){:target="_blank"};
+  * Workload [Microsoft Edge]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__Edge.txt){:target="_blank"};
+  * Workload [Mozilla Firefox]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__FireFox.txt){:target="_blank"};
+  * Workload [Google Chrome]({{site.baseurl}}/assets/files/008-browser-performance-impact/KnowledgeWorker__Chrome.txt){:target="_blank"}.
 
 Four different scenarios were tested:
 
@@ -188,6 +188,6 @@ Internet Explorer scores best in terms of scalability and performance but does n
 
 Last but not least, it is very important to validate your own browser setup, testing different configurations with tools like Login VSI is advisable if you want to be sure that you use the best configuration in your own situation.
 
-If you have comments about this research or want to discuss other configurations, please [join](https://{{site.title}}.slack.com) us on our {{site.title}} Slack channel.
+If you have comments about this research or want to discuss other configurations, please [join](https://{{site.title}}.slack.com){:target="_blank"} us on our {{site.title}} Slack channel.
 
-Photo by [Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/html?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/html?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

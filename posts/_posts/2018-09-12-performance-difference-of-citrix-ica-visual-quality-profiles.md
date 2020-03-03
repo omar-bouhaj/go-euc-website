@@ -8,7 +8,7 @@ image: assets/images/posts/001-performance-difference-of-citrix-ica-visual-quali
 ---
 When delivering a virtual desktop environment, a great user experience has a huge effect on the success of your environment. There are many settings and optimization that can improve the overall performance and user experience. There are also many optimizations that can be applied within the remoting protocol. Within Citrix ICA there is a setting called Visual Quality. Which options are available and what is the effect of the various options? This research is focused on the performance difference between the Visual Quality settings within the Citrix ICA protocol.
 
-> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following post. **link**
+> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results){:target="_blank"}.
 
 ## What is the Visual Quality setting?
 The Visual Display section contains policy settings for controlling the quality of images sent from virtual desktops to the user device.
@@ -29,10 +29,10 @@ To specify the quality of images, choose one of the following options:
   * Build to lossless – Sends lossy images to the user device during periods of high network activity and lossless images after network activity reduces. This setting improves performance over bandwidth-constrained network connections
   * Always lossless – When preserving image data is vital, select Always lossless to ensure lossy data is never sent to the user device. For example, when displaying X-ray images where no loss of quality is acceptable.
 
-  Source: [https://docs.citrix.com/en-us/xenapp-and-xendesktop/current-release/policies/reference/ica-policy-settings/visual-display-policy-settings.html](https://docs.citrix.com/en-us/xenapp-and-xendesktop/current-release/policies/reference/ica-policy-settings/visual-display-policy-settings.html)
+  Source: [https://docs.citrix.com/en-us/xenapp-and-xendesktop/current-release/policies/reference/ica-policy-settings/visual-display-policy-settings.html](https://docs.citrix.com/en-us/xenapp-and-xendesktop/current-release/policies/reference/ica-policy-settings/visual-display-policy-settings.html){:target="_blank"}
 
 ## Infrastructure and configuration
-This research has taken place on the {{site.title}} platform which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). More information about the testing methodology is described [here]({{site.baseurl}}/insight-in-the-testing-methodology). The infrastructure components like Citrix Delivery Controller and Citrix Storefront are hosted on a separate server from the desktop pool. In this case, Citrix XenDesktop was used running Windows 10 1803 with the Citrix VDA 7.18. Each VM contains 2vCPU’s with 4GB of memory which is enough for the configured workload. The default Knowledge Worker workload is used including the small modifications as specified in the {{site.title}} infrastructure post.
+This research has taken place on the {{site.title}} platform which is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. More information about the testing methodology is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. The infrastructure components like Citrix Delivery Controller and Citrix Storefront are hosted on a separate server from the desktop pool. In this case, Citrix XenDesktop was used running Windows 10 1803 with the Citrix VDA 7.18. Each VM contains 2vCPU’s with 4GB of memory which is enough for the configured workload. The default Knowledge Worker workload is used including the small modifications as specified in the {{site.title}} infrastructure post.
 
 There are many settings within the Citrix Policies that influence the user experience. As a base the “Very High Defenition User Experience” template is used which contains the following settings.
 
@@ -139,7 +139,7 @@ Another important metric is the Round Trip Time also known as the latency. Even 
   <i>Lower is better</i>
 </p>
 
-The difference between the High, Medium and Low scenarios are minimal but switching to UDP result in a higher RTT. As these tests are done within the same datacenter the effect is not noticeable for a human, but in a WAN scenario, the impact can be higher. These findings are interesting as it conflicts with Citrix [publications](https://www.citrix.com/blogs/2018/01/02/improving-the-citrix-user-experience). This may be worth to investigate further, what do you think?
+The difference between the High, Medium and Low scenarios are minimal but switching to UDP result in a higher RTT. As these tests are done within the same datacenter the effect is not noticeable for a human, but in a WAN scenario, the impact can be higher. These findings are interesting as it conflicts with Citrix [publications](https://www.citrix.com/blogs/2018/01/02/improving-the-citrix-user-experience){:target="_blank"}. This may be worth to investigate further, what do you think?
 
 During an open session, it will consume bandwidth in order to send and receive data between the session and the endpoint. Lower bandwidth will have an effect on the user experience as there is less room to send and receive information.
 
@@ -185,10 +185,10 @@ The difference between the High, Medium and Low scenario is minimal except for t
 
 ## Conclusion
 
-> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following post. **link**
+> **Disclaimer:** These results have been affected by the Login VSI progress bar and results may be different in practice. For more information please read the following [post]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results){:target="_blank"}
 
 The Visual Quality Policy setting allows you to improve the quality of the image sent through the ICA protocol. The overall impact on capacity is none which means switching from a Low to High Visual Quality setting does not affect the overall user density on the servers. However, as there is no noticeable difference in the framerate it does have an effect on Round Trip Time and bandwidth. Using UDP result in less bandwidth send over the ICA protocol but during this research, the total traffic on the network adapter and the CPU utilization on the launcher (endpoint) increased. This is unexpected results and may require further investigation.
 
 As some results are not as expected I hope this research provides a bit more insight into the performance impact of the Visual Quality Policy. If you have any comment or questions please leave them below.
 
-Photo by [John Allen](https://unsplash.com/photos/QMaz1luQc24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [John Allen](https://unsplash.com/photos/QMaz1luQc24?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

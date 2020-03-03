@@ -23,7 +23,7 @@ Another method is central DNS based blocking from your firewall. This method wil
 
 Both methods use public filter lists that remove most advertisements from international webpages, including unwanted frames, images, and objects. These are maintained dynamically ensuring new advertisements are blocked. The most common and popular filter list is from Easylist.
 
-More information about ad blocking can be found [here](https://en.wikipedia.org/wiki/Ad_blocking).
+More information about ad blocking can be found [here](https://en.wikipedia.org/wiki/Ad_blocking){:target="_blank"}.
 
 ## Setup and scenarios
 The goal of this research is to see the performance benefits when using an ad blocker in a VDI environment. This includes the following scenarios:
@@ -40,14 +40,14 @@ Login VSI provides offline websites to simulate web-based behavior. As the adver
   * BrianMadden.com;
   * 3 YouTube videos.
 
-As Internet Explorer does not allow to use an ad blocker plugin the default browser has been switched to Google Chrome. The default KnowledgeWorker workload is used with some modifications to use Google Chrome and the real internet sites. This workload represents “normal” working behavior where the impact of ads can be measured besides using the default applications. When using internet content only the impact would be different. The workload and testing methodology are both described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+As Internet Explorer does not allow to use an ad blocker plugin the default browser has been switched to Google Chrome. The default KnowledgeWorker workload is used with some modifications to use Google Chrome and the real internet sites. This workload represents “normal” working behavior where the impact of ads can be measured besides using the default applications. When using internet content only the impact would be different. The workload and testing methodology are both described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
-This research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018).
+This research has taken place on the {{site.title}} lab environment which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}.
 
 ## Expectation and results
 Advertisements need to be transferred to the client and often includes animations which require resources to process. Therefore, it is expected to see an improvement in load when blocking the advertisements.
 
-A perfect indicator to see the capacity impact is the Login VSI VSImax. The VSImax represents the sweet spot before the server reaches the saturation point. More about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+A perfect indicator to see the capacity impact is the Login VSI VSImax. The VSImax represents the sweet spot before the server reaches the saturation point. More about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -134,6 +134,6 @@ The plugin-based ad blocking showed some improvements but is not as effective as
 
 > <div style="height: 115px;"> <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-erik-bakker.png"/> A special thanks to <a href="https://twitter.com/bakker_erik" target="_blank">Erik Bakker</a> as he helped out with this specific research. </div>
 
-Want to share your thought about this topic, leave them the comments below or get involved by joining the {{site.title}} community at our [Slack channel](https://{{site.title}}.slack.com).
+Want to share your thought about this topic, leave them the comments below or get involved by joining the {{site.title}} community at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Yucel Moran](https://unsplash.com/photos/XJGJh_d0y4g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/ads?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Yucel Moran](https://unsplash.com/photos/XJGJh_d0y4g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/ads?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

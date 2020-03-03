@@ -20,19 +20,19 @@ Once you click install from the Office365 portal it will now install the x64 ver
 The advantage using x64 bit version of Office is the amount of memory that can be consumed. When using extreme large Excel sheets there is probably a preference for the x64 version. Of course, there is also a downside. In many organizations, there are many applications and specific plugins that integrate with Office. There is a chance some of these integrations or plugins may not work. When migrating it is recommended to validate if all those plugins and integrations still work.
 
 ## Configuration and infrastructure
-This research has taken place on our infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). The goal is to see the impact switching from x86 to x64 bit version of Office. This resulted in the following scenarios:
+This research has taken place on our infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. The goal is to see the impact switching from x86 to x64 bit version of Office. This resulted in the following scenarios:
 
   * Microsoft Office 2016 x86 as the baseline test;
   * Microsoft Office 2016 x64.
 
-As shown in our previous Microsoft Office compare [post]({{site.baseurl}}/office-2019-performance-impact), we have specifically chosen for Microsoft Office 2016 as these provide reliable results. This has nothing to do with Microsoft Office but with the benchmarking tool used in {{site.title}} named Login VSI.
+As shown in our previous Microsoft Office compare [post]({{site.baseurl}}/office-2019-performance-impact){:target="_blank"}, we have specifically chosen for Microsoft Office 2016 as these provide reliable results. This has nothing to do with Microsoft Office but with the benchmarking tool used in {{site.title}} named Login VSI.
 
 Both test scenarios have been tested on Windows 10 1809 configured with 2vCPU and 4GB memory. The desktop delivery solution is Citrix Virtual Apps & Desktops running version 1808.2. The desktops are running in a stateless scenario, so all changes within the desktop are discarded before the next test.
-Our default testing methodology is applied which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+Our default testing methodology is applied which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Results
 When testing scenarios like these there is always an expectation of the outcome. For this research, the expected result is a slightly higher load using x64. As this architecture has the capabilities to consume more resources.
-As mentioned, Login VSI is used and one of the key metrics is the VSImax. More information about the VSImax can be found on the Login VSI website [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained).
+As mentioned, Login VSI is used and one of the key metrics is the VSImax. More information about the VSImax can be found on the Login VSI website [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -102,4 +102,4 @@ Microsoft Outlook x64 shows the biggest improvement in the application start tim
 ## Conclusion
 Microsoft shows x86 architecture is becoming legacy. First Windows 10 that is only available in x64 architecture and now the default installation of Microsoft Office as well. This research shows migrating from Microsoft Office x86 to x64 has no performance impact on capacity but shows a small improvement in the application start times. From a performance perspective, there is no reason to not migrate. There are always some plugins and integrations from other applications that might not work with x64. Therefore, it is very important to validate all those applications and plugins to ensure they work as expected.
 
-Photo by [Launde Morel](https://unsplash.com/photos/KzzrxritpVk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Launde Morel](https://unsplash.com/photos/KzzrxritpVk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

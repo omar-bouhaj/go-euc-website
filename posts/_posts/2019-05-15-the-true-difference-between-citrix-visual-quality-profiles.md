@@ -9,9 +9,9 @@ image: assets/images/posts/027-the-true-difference-between-citrix-visual-quality
 The visual quality of a Citrix session has a huge influence on the user experience. Last year we published a research about the Citrix visual quality profiles with interesting results. This research is an updated version covering the true difference between the Citrix visual quality profiles including always lossless and build to lossless.
 
 ## Reflecting on previous research
-Last year in September, the first research about the [visual quality profiles]({{site.baseurl}}/performance-difference-of-citrix-ica-visual-quality-profiles) had been published. There are a couple of reasons to redo the same research. The first research focused on the main settings, Low, Medium, High, and High with EDT. Both Always lossless and Build to lossless were not included to keep the scope of the research small. The new research allows us to include other options to provide a complete overview.
+Last year in September, the first research about the [visual quality profiles]({{site.baseurl}}/performance-difference-of-citrix-ica-visual-quality-profiles){:target="_blank"} had been published. There are a couple of reasons to redo the same research. The first research focused on the main settings, Low, Medium, High, and High with EDT. Both Always lossless and Build to lossless were not included to keep the scope of the research small. The new research allows us to include other options to provide a complete overview.
 
-An additional reason to redo this research is because due to the recent discoveries of Citrix and Login VSI, which are explained [here]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results). Although the Citrix VDA version is the same for all scenarios it is important to validate the results to ensure the previous conclusions remain the same. This also allows to validate the results using a more recent Citrix VDA version.
+An additional reason to redo this research is because due to the recent discoveries of Citrix and Login VSI, which are explained [here]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results){:target="_blank"}. Although the Citrix VDA version is the same for all scenarios it is important to validate the results to ensure the previous conclusions remain the same. This also allows to validate the results using a more recent Citrix VDA version.
 
 ## What is the visual quality setting?
 The visual quality setting is a Citrix user policy that allows controlling the quality of the images sent from the virtual desktop to the user device. There are five different visual quality settings:
@@ -22,10 +22,10 @@ The visual quality setting is a Citrix user policy that allows controlling the q
   * Build to lossless – Sends lossy images to the user device during periods of high network activity and lossless images after network activity reduces. This setting improves performance over bandwidth-constrained network connections;
   * Always lossless – When preserving image data is vital, select Always lossless to ensure lossy data is never sent to the user device. For example, when displaying X-ray images where no loss of quality is acceptable.
 
-For more information please see the Citrix documentation site: [https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/policies/reference/ica-policy-settings/visual-display-policy-settings.html](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/policies/reference/ica-policy-settings/visual-display-policy-settings.html)
+For more information please see the Citrix documentation site: [https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/policies/reference/ica-policy-settings/visual-display-policy-settings.html](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/policies/reference/ica-policy-settings/visual-display-policy-settings.html){:target="_blank"}
 
 ## Infrastructure and configuration
-This research has taken place on the {{site.title}} infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018). Windows 10 1809 was used with the Citrix Optimizer optimization using the default Windows 10 1809 template by Citrix. The default VM configuration is 2vCPU with 4GB of memory. The desktops are running Citrix VDA 1811.1 with Microsoft Office 2016. Besides the visual quality policies, there are no other Citrix policies configured which mean all settings are default.
+This research has taken place on the {{site.title}} infrastructure which is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. Windows 10 1809 was used with the Citrix Optimizer optimization using the default Windows 10 1809 template by Citrix. The default VM configuration is 2vCPU with 4GB of memory. The desktops are running Citrix VDA 1811.1 with Microsoft Office 2016. Besides the visual quality policies, there are no other Citrix policies configured which mean all settings are default.
 
 This research includes the following scenarios:
 
@@ -35,12 +35,12 @@ Visual quality high;
 Visual quality high with EDT;
 Visual quality always lossless;
 Visual quality build to lossless.
-More information about Citrix Enlightened Data Transport (EDT) can be found [here](https://docs.citrix.com/en-us/xenapp-and-xendesktop/7-15-ltsr/technical-overview/hdx/adaptive-transport.html). This research is done using our standard testing methodology which is described detail right [here]({{site.baseurl}}/insight-in-the-testing-methodology).
+More information about Citrix Enlightened Data Transport (EDT) can be found [here](https://docs.citrix.com/en-us/xenapp-and-xendesktop/7-15-ltsr/technical-overview/hdx/adaptive-transport.html){:target="_blank"}. This research is done using our standard testing methodology which is described detail right [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
 
 ## Expectations and results
 Previous research shows us the server capacity is not affected by using the different quality profiles. It is expected to see some effect of both always lossless and build to lossless from a capacity perspective. There should be a noticeable difference in the protocol and launcher perspective.
 
-To get an idea of the impact on capacity and overall responsiveness within the session the metrics VSImax and baseline are used which are provided by Login VSI. More information and details about the VSImax and baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax).
+To get an idea of the impact on capacity and overall responsiveness within the session the metrics VSImax and baseline are used which are provided by Login VSI. More information and details about the VSImax and baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax){:target="_blank"}.
 
 ![vsimax]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
@@ -158,7 +158,7 @@ The recommended way from Citrix is to leave the settings by default depending on
 > 
 > Yes: set the “Visual Quality” policy to “Build to Lossless”.
 > 
-> Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when/](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when)
+> Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when/](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when){:target="_blank"}
 
 The default visual quality setting from Citrix VDA version 7.18 and up is medium.
 
@@ -170,6 +170,6 @@ Both always lossless and build to lossless shows a clear distinction compared to
 
 In this research using EDT did not show a clear benefit. This may have a more positive effect in a real world or WAN scenario as our connections are within the datacenter without any bandwidth constraints.
 
-What do you use within your environment? Share them in the comments below or start the conversation at our [Slack channel](https://{{site.title}}.slack.com).
+What do you use within your environment? Share them in the comments below or start the conversation at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 
-Photo by [Agence Olloweb](https://unsplash.com/photos/9wYdW55NbnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/lens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Agence Olloweb](https://unsplash.com/photos/9wYdW55NbnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/lens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
