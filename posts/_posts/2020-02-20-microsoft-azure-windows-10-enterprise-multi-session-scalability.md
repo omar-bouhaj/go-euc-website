@@ -45,6 +45,8 @@ Source: [https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-g
 
 Our testing methodology, as described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}, applies to this research. Because of limited credits in Azure 4 test runs are configured. As the VM is a persistent machine, the first initial run is marked as a profile creation run. The profile creation run is not included in the data for this research.
 
+> **Beware**, the used setup and configuration running a hybrid-cloud scenario is not supported by the product Login VSI and might violate your license agreement. In order to research these kind of configurations it is recommended to consult [Login VSI](https://www.loginvsi.com/contact){:target="_blank"}.
+
 ## Expectations and results
 
 It is expected when increasing the resources of a VM, the user density increases as well. The estimated cost per month could make a big difference, so this will be interesting to take a look at.
