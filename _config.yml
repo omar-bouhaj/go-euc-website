@@ -9,7 +9,7 @@ paginate: 10
 baseurl: ''
 email: 'info@logitblog.com'
 slack: 'https://join.slack.com/t/go-euc/shared_invite/enQtNTQxNTUxMTk5MzE5LTA0NzIzMDUzYmZjMTFiMTc4YmQ4M2Y1MGRjYzkyNjk2ZjkzOGVhNDliZjVkZjM5MzlkNjVlNjVlZTYwYTVmNWE'
-google_analytics: ''
+google_analytics: 'UA-125461461-1'
 disqus: 'ict-r'
 permalink: /:title
 
