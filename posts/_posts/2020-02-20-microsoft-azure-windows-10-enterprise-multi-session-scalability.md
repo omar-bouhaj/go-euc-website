@@ -37,9 +37,9 @@ All specifications of the virtual machines can be found in the following table:
 | Type          | vCPUs         | Memory | Throughput IOPs | Estimated Cost a month |
 | ------------- |:-------------:| :-----:|:---------------:| :---------------------:|
 | D2_v2         | 2             | 6      | 8x500           | €85.33                 |
-| D2_v3         | 4             | 14     | 16x500          | €170.66                |
-| D2_v4         | 8             | 28     | 32x500          | €341.31                |
-| D2_v5         | 16            | 56     | 64x500          | €682                   |
+| D3_v2         | 4             | 14     | 16x500          | €170.66                |
+| D4_v2         | 8             | 28     | 32x500          | €341.31                |
+| D5_v2         | 16            | 56     | 64x500          | €682                   |
 
 Source: [https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general){:target="_blank"}
 
