@@ -46,10 +46,13 @@
         <div class="sidebar-section">
             <h5><span>Upcoming Events</span></h5>
 
-            {% for event in site.categories.events %}
+
+            {% assign events = site.categories.events | sort: "eventdate" %}
+
+            {% for event in events %}
                 
-                {% assign today_date = 'now' | date: "%b %d, %y" %}
-                {% assign event_date =  event.eventdate | date: "%b %d, %y" %}
+                {% assign today_date = 'now' | date: "%y %m %d" %}
+                {% assign event_date =  event.eventdate | date: "%y %m %d" %}
 
                 {% if event_date >= today_date %}
                 <a href="{{event.site}}" target="_blank"><div><img class="featured-image img-fluid" style="margin-bottom: 0px;" src="{{ site.baseurl }}/{{ event.image }}" alt="{{ event.title }}"></div>
