@@ -228,7 +228,7 @@ Even in the initial section of the video where there is only the Big Buck bunny 
   <i>Lower is better</i>
 </p>
 
-The GPU is able to offload most of the processing to the GPU. The metrics show only a minor increase in CPU usage for the 60FPS video compared to the Car Visualizer CPU data.
+The GPU is able to offload most of the processing. The metrics show only a minor increase in CPU usage for the 60FPS video compared to the Car Visualizer CPU data.
 
 The GPU utilization however, is much higher than for the Car Visualizer. The video relies heavily on the GPU to encode all the video frames in a H.264 stream that is send over to the client.
 
