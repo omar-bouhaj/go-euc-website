@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The Impact of Spectre, Meltdown and L1TF in a virtualized RDSH environment"
+hidden: false
 authors: [sven]
 categories: [ 'vulnerabilities' ]
 tags: [ 'L1TF', 'spectre', 'meltdown', 'RDSH', 'foreshadow' ]

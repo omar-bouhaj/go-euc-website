@@ -20,11 +20,10 @@ title: Home
 
             {% if post.categories contains "posts" %}
             
-            {% unless post.featured == true %}
-
+            {% if post.hidden == false %}
                 {% include postbox.html %}
+            {% endif %}
 
-            {% endunless %}
 
             {% endif %}
 

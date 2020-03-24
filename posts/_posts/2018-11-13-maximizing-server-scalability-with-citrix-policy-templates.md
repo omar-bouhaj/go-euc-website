@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Maximizing server scalability with Citrix Policy templates"
+hidden: false
 authors: [eltjo]
 categories: ['citrix']
 tags: [ 'citrix', 'ICA', 'RDA' ]

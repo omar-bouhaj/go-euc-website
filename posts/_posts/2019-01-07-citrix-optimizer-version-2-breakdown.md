@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Optimizer version 2 – Breakdown"
+hidden: false
 authors: [eltjo]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'CTXO', 'citrix optimizer' ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Page file sizing for virtualized environments"
+hidden: false
 authors: [marcel]
 categories: [ 'microsoft', 'windows 10']
 tags: [ 'page file', 'citrix', 'windows 10', 'microsoft' ]

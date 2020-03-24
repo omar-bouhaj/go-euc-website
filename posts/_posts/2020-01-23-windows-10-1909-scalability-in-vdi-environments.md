@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Windows 10 1909 Scalability in VDI environments"
+hidden: false
 authors: [omar, ryan]
 categories: [ 'microsoft', 'windows 10' ]
 tags: [ 'microsoft', 'windows 10', '1803', '1809', '1903', '1909' ]

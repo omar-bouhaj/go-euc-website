@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The true power of VMware OSOT in VDI"
+hidden: false
 authors: [ryan]
 categories: [ 'VMware', 'microsoft', 'windows 10' ]
 tags: [ 'VMware', 'OSOT', 'windows 10']

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Windows 7 vs Windows 10 VDI Performance Test"
+hidden: false
 authors: [sven]
 categories: [ 'microsoft', 'windows 10', 'windows 7' ]
 tags: [ 'windows 10', 'windows 7', 'microsoft' ]

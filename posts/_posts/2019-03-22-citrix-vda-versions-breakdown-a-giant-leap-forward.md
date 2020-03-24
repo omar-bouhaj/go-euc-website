@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix VDA versions breakdown, a giant leap forward"
+hidden: false
 authors: [eltjo]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'VDA' ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Optimizer version 2 – Windows Server 2019"
+hidden: false
 authors: [ryan, eltjo]
 categories: [ 'citrix', 'windows server 2019' ]
 tags: [ 'citrix', 'microsoft', 'windows 10' ]

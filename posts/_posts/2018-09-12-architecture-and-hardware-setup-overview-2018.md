@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Architecture and hardware setup overview 2018 – Current"
+hidden: false
 authors: [eltjo, ryan]
 categories: [ 'infastructure' ]
 tags: [ 'infastructure', 'OVH', 'VMware' ]

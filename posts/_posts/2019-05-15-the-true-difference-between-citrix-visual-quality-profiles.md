@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The true difference between Citrix Visual Quality profiles"
+hidden: false
 authors: [ryan]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'visual quality', 'allways lossless', 'build to lossless', 'VDA' ]

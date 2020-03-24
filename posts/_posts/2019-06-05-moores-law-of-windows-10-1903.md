@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Moore’s law of Windows 10 1903"
+hidden: false
 authors: [ryan, omar]
 categories: [ 'microsoft', 'windows 10' ]
 tags: [ '1709', '1803', '1809', '1903', 'microsoft', 'windows 10' ]

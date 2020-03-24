@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Optimizer Windows 10 1903 Template"
+hidden: false
 authors: [ryan]
 categories: [ 'citrix', 'microsoft', 'windows 10' ]
 tags: [ 'windows 10', '1809', '1903', 'CTXO', 'citrix' ]

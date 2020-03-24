@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Performance difference of Citrix ICA Visual Quality profiles"
+hidden: false
 authors: [ryan]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'ICA', 'visual quality', 'protocol' ]

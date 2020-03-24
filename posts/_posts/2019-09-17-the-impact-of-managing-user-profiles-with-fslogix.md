@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The impact of managing user profiles with FSLogix"
+hidden: false
 authors: [omar]
 categories: [ 'microsoft', 'profiles' ]
 tags: [ 'FSLogix', 'microsoft', 'profiles' ]

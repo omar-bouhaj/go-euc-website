@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Impact of sizing RDSH VMs"
+hidden: false
 authors: [sven]
 categories: [ 'microsoft', 'windows server 2016' ]
 tags: [ 'microsoft', 'numa', 'RDSH', 'sizing' ]

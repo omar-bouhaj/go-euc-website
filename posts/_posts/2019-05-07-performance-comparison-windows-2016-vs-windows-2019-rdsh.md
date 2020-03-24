@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Performance comparison Windows 2016 vs Windows 2019 RDSH"
+hidden: false
 authors: [sven]
 categories: [ 'microsoft', 'windows server 2016', 'windows server 2019' ]
 tags: [ 'microsoft', 'windows server 2016', 'windows server 2019', 'RDSH', 'Office' ]

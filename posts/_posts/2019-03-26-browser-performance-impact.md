@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The true power of VMware OSOT in VDI"
+hidden: false
 authors: [omar]
 categories: [ 'browsers' ]
 tags: [ 'internet explorer', 'edge', 'firefox', 'chrome', 'browsers']

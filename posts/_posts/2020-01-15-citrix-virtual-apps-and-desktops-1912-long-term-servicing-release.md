@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Virtual Apps and Desktops 1912 Long-Term Servicing Release"
+hidden: false
 authors: [ryan, eltjo]
 categories: [ 'citrix' ]
 tags: [ 'citrix', '1912', '7.15', 'CR', 'LTSR', 'CVAD' ]

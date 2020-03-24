@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Insight in the testing methodology"
+hidden: false
 authors: [ryan]
 categories: [ 'infastructure' ]
 tags: [ 'infastructure', 'testing', 'data' ]

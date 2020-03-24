@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Nutanix lab architecture and hardware setup overview 2019 – Current"
+hidden: false
 authors: [sven]
 categories: [ 'infrastructure' ]
 tags: [ 'infrastructure', 'nutanix' ]

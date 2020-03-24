@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "SD-WAN & network architecture setup 2019 – current"
+hidden: false
 authors: [ruud, bas]
 categories: [ 'infrastructure' ]
 tags: [ 'citrix', 'architecture', 'SD-WAN' ]

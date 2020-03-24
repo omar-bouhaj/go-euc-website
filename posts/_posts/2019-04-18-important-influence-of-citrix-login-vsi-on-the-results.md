@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Important: Influence of Citrix & Login VSI on the results"
+hidden: false
 authors: [ryan, eltjo]
 categories: [ 'infrastructure' ]
 tags: [ 'citrix', 'Login VSI', 'FPS' ]

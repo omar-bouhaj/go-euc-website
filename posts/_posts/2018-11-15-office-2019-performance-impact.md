@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Office 2019 performance impact"
+hidden: false
 authors: [omar]
 categories: [ 'microsoft', 'office' ]
 tags: [ 'microsoft', 'office', '2016', '2019' ]

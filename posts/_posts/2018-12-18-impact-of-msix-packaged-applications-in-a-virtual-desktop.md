@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Impact of MSIX packaged applications in a virtual desktop"
+hidden: false
 authors: [ryan]
 categories: [ 'microsoft', 'MSIX' ]
 tags: [ 'App-V', 'MSIX', 'Microsoft' ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Policy Templates"
+hidden: false
 authors: [eltjo]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'policy', 'template' ]

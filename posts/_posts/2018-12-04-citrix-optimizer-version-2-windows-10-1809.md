@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix Optimizer version 2 – Windows 10 1809"
+hidden: false
 authors: [eltjo, ryan]
 categories: [ 'citrix', 'windows 10' ]
 tags: [ 'citrix', 'CTXO', 'windows 10', 'microsoft' ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix XenServer 7.1 LTSR vs. Citrix Hypervisor 8.0 CR"
+hidden: false
 authors: [krishan]
 categories: [ 'citrix' ]
 tags: [ '7.1', '8.0', 'citrix hypervisor', 'xenserver', 'LTSR', 'CR', 'citrix' ]

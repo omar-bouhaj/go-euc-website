@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Should you use an ad blocker in a VDI context?"
+hidden: false
 authors: [ryan]
 categories: [ 'browsers' ]
 tags: [ 'adblock', 'ads', 'pfsense', 'PiHole' ]

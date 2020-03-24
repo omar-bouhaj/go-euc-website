@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix SD-WAN performance benefits with Office 365 optimization"
+hidden: false
 authors: [bas, ruud]
 categories: [ 'citrix', 'microsoft', 'office' ]
 tags: [ 'citrix', 'office 365', 'SD-WAN', 'microsoft'  ]

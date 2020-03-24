@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Effect of cumulative updates on Windows 10 in a VDI environment"
+hidden: false
 authors: [ryan]
 categories: [ 'microsoft', 'windows 10' ]
 tags: [ '1709', '1803', '1809', 'cumulative updates', 'windows 10', 'microsoft' ]

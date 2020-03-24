@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Using Citrix Cloud from a performance perspective"
+hidden: false
 authors: [eltjo, ryan]
 categories: [ 'citrix' ]
 tags: [ 'citrix', 'cloud' ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Performance difference between user profiles"
+hidden: false
 authors: [ryan]
 categories: [  'microsoft', 'profiles' ]
 tags: [ 'profiles', 'microsoft', 'local', 'mandatory', 'roaming' ]

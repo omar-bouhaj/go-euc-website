@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Microsoft Azure Windows 10 Enterprise multi-session scalability"
+hidden: false
 authors: [ryan]
 categories: [ 'microsoft', 'azure' ]
 tags: [ '1909', 'azure', 'd2_v2', 'WVD', 'windows 10 multi-session' ]

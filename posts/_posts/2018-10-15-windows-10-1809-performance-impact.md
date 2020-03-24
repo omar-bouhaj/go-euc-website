@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Windows 10 1809 performance impact"
+hidden: false
 authors: [ryan]
 categories: [ 'microsoft', 'windows 10' ]
 tags: [ 'microsoft', 'windows 10', '1809', '1709', '1803' ]

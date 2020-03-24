@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Citrix VDA version breakdown update"
+hidden: false
 authors: [eltjo, ryan]
 categories: [ 'citrix' ]
 tags: [ '1808', '1811', '1906', '1909', 'CR', 'LTSR', 'citrix', 'VDA' ]
