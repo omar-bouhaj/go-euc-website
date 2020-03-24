@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The delivered user experience of thin clients, the good, the bad and the ugly"
-hidden: true
+hidden: false
 authors: [eltjo, ryan]
 categories: [ 'citrix', 'azure' ]
 tags: [ '1909', 'azure', 'thin client', 'igel','thinclientspecialist' ]
@@ -65,7 +65,7 @@ From Citrix XenDesktop 7.18 and onwards, build lossless uses H.264 or H.265 inst
 
 The video codec is set to “For actively changing regions”. The end users benefit from lower bandwidth and better quality for video content combined with lossless text or high-quality images elsewhere. Please note that the target framerate is set to the maximum supported value of 60FPS and only focusing on H.264.
 
-A custom PowerShell based workload is used for this research. This workload is divided in four sections to simulate different types of behaviors. The following activities are included:
+A custom [PowerShell based workload]({{site.baseurl}}/assets/files/053-the-delivered-user-experience-of-thin-clients/powershell-workload.txt){:target="_blank"} is used for this research. This workload is divided in four sections to simulate different types of behaviors. The following activities are included:
 
   * Microsoft Word
   * Microsoft PowerPoint
@@ -76,13 +76,13 @@ The GPU intensity increases after each section of the workload, where the 60FPS 
 
 Thanks to the [ThinClientSpecialist](https://www.thinclientspecialist.com/){:target="_blank"} and [Igel](https://www.igel.com/){:target="_blank"} that provided following thin clients:
 
-  * New Igel UD3, as the baseline;
-  * Current Igel UD3;
-  * Lenovo v330;
-  * Atrust 176W;
-  * HP t530;
-  * Custom PC;
-  * Dell Wyse D7.
+  * New Igel UD3, as the baseline
+  * Current Igel UD3
+  * Lenovo v330
+  * Atrust 176W
+  * HP t530
+  * Custom PC
+  * Dell Wyse D7
 
 A complete overview with all the specifications can be found here:
 
