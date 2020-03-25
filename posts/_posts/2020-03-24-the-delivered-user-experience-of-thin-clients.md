@@ -7,7 +7,7 @@ categories: [ 'citrix', 'azure' ]
 tags: [ '1909', 'azure', 'thin client', 'igel','thinclientspecialist' ]
 image: assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-feature-image.png
 ---
-The last couple of years we've seen a steady increase in the GPU usage in VDI environments. With the changing landscape of GPU enabled applications, adding a GPU to a VDI environment is almost mandatory in order to deliver a great user experience. Often the connecting device is forgotten while building these GPU enabled VDI environment. In this research the focus is shifted from the VDI to the connecting device and show the importance the device for the user experience.
+The last couple of years we've seen a steady increase in the GPU usage in VDI environments. With the changing landscape of GPU enabled applications, adding a GPU to a VDI environment is almost mandatory in order to deliver a great user experience. Often the connecting device is forgotten while building these GPU enabled VDI environments. In this research the focus is shifted from the VDI to the connecting device and show the importance of the device for the user experience.
 
 ## Landscape of the GPU’s
 There are three major competitors in the VDI GPU market:
@@ -26,7 +26,7 @@ In a recent poll on Twitter we asked people the most important factor to conside
 The result showed that performance was considered the most important with almost half of the votes.
 
 ## Delivering a great user experience
-In our own experience we see that a considerable amount of VDI project fail because the end user experience is not in scope and is therefore often below par. Even though there is a huge focus on performance, this is often only done on a limited scope. This includes scalability on the hypervisor, tuning Windows on the VDI level and partially user experience by tuning the remoting protocol.
+In our own experience we see that a considerable amount of VDI projects fail because the end user experience is not in scope and is therefore often below par. Even though there is a huge focus on performance, this is often only done on a limited scope. This includes scalability on the hypervisor, tuning Windows on the VDI level and partially user experience by tuning the remoting protocol.
 
 This research shifts the focus from the VDI to the connecting device. Whereas the VDI environment is life cycled every three years or so, the thin client for example has a much longer lifespan. This longevity which was always the main selling point of these devices is now turning into its own Achilles heel.
 
@@ -35,7 +35,7 @@ The setup and configuration for this research is a bit different from the usual 
 
 In order to rule out any influence of the VDI on the performance and end user experience, it is important that the VDI was not a bottleneck in any way. For that reason, a NV-series VM running in Azure for the VDI is used.
 
-As in the previous research, a hybrid-cloud configuration. This is realized using a site-to-site VPN which allows using both on-premises as cloud resources. Besides the Gateway VPN, a single Standard_NV6 VM is hosted in Azure. All other required infrastructure components, like Active Directory, DNS and DHCP and file servers are hosted on-premises. The on-premises infrastructure is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}.
+As in the [previous research]({{site.baseurl}}/microsoft-azure-windows-10-enterprise-multi-session-scalability/){:target="_blank"}, a hybrid-cloud configuration is used. This is realized using a site-to-site VPN which allows using both on-premises as cloud resources. Besides the Gateway VPN, a single Standard_NV6 VM is hosted in Azure. All other required infrastructure components, like Active Directory, DNS, and DHCP and file servers are hosted on-premises. The on-premises infrastructure is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}.
 
 The Standard_NV6 has the following specifications:
 
@@ -48,7 +48,7 @@ The Standard_NV6 has the following specifications:
 More information on the NV6 machines can be found [here](https://docs.microsoft.com/en-us/azure/virtual-machines/nv-series
 ){:target="_blank"}.
 
-Windows 10 Enterprise 1909 is used as the default operating system using the Azure Marketplace. All required applications including, Microsoft Office 2016 x64 are installed using a post-OS installation task sequence in MDT. All Windows and Office updates are installed and optimized using Citrix Optimizer with the 1903 template. The brokering is provided by Citrix Virtual Apps & Desktops version 1909 with the 1912 LTSR VDA version installed on the VDI. The lasted NVIDIA Grid drivers are installed (version 441.66)
+Windows 10 Enterprise 1909 is used as the default operating system using the Azure Marketplace. All required applications including, Microsoft Office 2016 x64 are installed using a post-OS installation task sequence in MDT. All Windows and Office updates are installed and Windows is optimized using Citrix Optimizer with the 1903 template. The brokering is provided by Citrix Virtual Apps & Desktops version 1909 with the 1912 LTSR VDA version installed on the VDI. The lasted NVIDIA Grid drivers are installed (version 441.66)
 
 The following Citrix Graphics policies are set to ensure the best user experience:
 
@@ -74,7 +74,7 @@ A custom [PowerShell based workload]({{site.baseurl}}/assets/files/053-the-deliv
 
 The GPU intensity increases after each section of the workload, where the 60FPS Video is the highest consumed GPU section.
 
-Thanks to the [ThinClientSpecialist](https://www.thinclientspecialist.com/){:target="_blank"} and [Igel](https://www.igel.com/){:target="_blank"} that provided following thin clients:
+Thanks to the [ThinClientSpecialist](https://www.thinclientspecialist.com/){:target="_blank"} and [Igel](https://www.igel.com/){:target="_blank"} that provided the following thin clients:
 
   * New Igel UD3, as the baseline
   * Current Igel UD3
@@ -118,7 +118,7 @@ As expected, there is a minimal to no difference in the usage between the variou
 
 
 ## Microsoft PowerPoint
-There are slide transitions in the PowerPoint section, so it is expected to a minimal difference between the various devices.
+There are slide transitions in the PowerPoint section, so it is expected to see a minimal difference between the various devices.
 
 {% include youtube.html id="nwoOZlJV_E8" %}
 
@@ -160,7 +160,7 @@ This shows that the FPS is only a synthetic metric, and is, as such, not always 
 It is recommended to always validate the data based on ‘real’ output, by viewing the workload on the endpoint in real time or record the experience from and endpoints perspective with a video capture card.
 
 ## Car Visualizer
-In order to get a better overview in the difference in experience, the client devices are reduced to four devices for next two sections. In this case the best devices and worst performing devices are selected.
+In order to get a better overview in the difference in experience, the client devices are reduced to four devices for the next two sections. In this case the best devices and worst performing devices are selected.
 
 {% include youtube.html id="doH-DaW52b8" %}
 
@@ -206,7 +206,7 @@ Directly from the start of the video it’s very clear that the older devices ar
 
 ![big-buck-bunny-delay]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-delay.png)
 
-Even in the initial section of the video where there is only the Big Buck bunny Logo animation is shown, with only minimal sections of the screen that are changing, the Wyse is already 14 seconds behind.
+Even in the initial section of the video where there is only the Big Buck bunny Logo animation shown, with only minimal sections of the screen that are changing, the Wyse is already 14 seconds behind.
 
 ![big-buck-bunny-cpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-cpu.png)
 <p align="center" style="margin-top: -30px;" >
@@ -261,7 +261,7 @@ Their prolonged usage might seem valid from a cost perspective but if the endpoi
 
 The fact of the matter is that the connecting device plays a significant role in the overall user experience no matter what the workload is.
 
-For the task-worker like workloads the older thin clients can keep up just fine, but for the more graphics intensive workloads they fall behind. The new UD3 from Igel outperformances the other thin client and is, in our particular frame of reference, able to deliver a great user experience even with most intensive sections of the workload.
+For the task-worker like workloads the older thin clients can keep up just fine, but for the more graphics intensive workloads they fall behind. The new UD3 from Igel outperformance the other thin client and is, in our particular frame of reference, able to deliver a great user experience even with most intensive sections of the workload.
 
 How do you deal with your thin clients in your environment? Share your experience in the comment below or start the conversation at our Slack channel.
 
