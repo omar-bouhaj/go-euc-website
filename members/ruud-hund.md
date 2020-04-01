@@ -5,7 +5,7 @@ comments: false
 ---
 {% assign author = site.authors['ruud'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Ruud is a Thought Leader Connected Workspace at KPN ICT Consulting. Ruud has over 10+ years experience in designing and building network infrastructures. These range from small to large international networks.
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Ruud is a Thought Leader Connected Workspace at Cegeka. Ruud has over 10+ years experience in designing and building network infrastructures. These range from small to large international networks.
 
 He focuses on the SDN stack and optimizing networks for modern day cloud use. Besides SDN Ruud is also experienced in Citrix ADC, Identity and Access management.
 Ruud lives in the north of the Netherlands with his girlfriend and three children.

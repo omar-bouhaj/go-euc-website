@@ -63,12 +63,12 @@ authors:
   krishan:
     name: Krishan
     display_name: Krishan Khoesial
-    company: KPN ICT Consulting
+    company: Cegeka
     title: Consultant
     picture: 'assets/images/authors/krishan.png'
     linkedin: https://www.linkedin.com/in/kvkhoesial/
     page: krishan-khoesial
-    description: "Krishan is a consultant at KPN ICT Consulting. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international."
+    description: "Krishan is a consultant at Cegeka. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international."
   marcel:
     name: Marcel
     display_name: Marcel Beck
@@ -81,17 +81,17 @@ authors:
   ruud:
     name: Ruud
     display_name: Ruud Hund
-    company: KPN ICT Consulting
+    company: Cegeka
     title: Thought Leader Connected Workspace
     picture: 'assets/images/authors/ruud.png'
     twitter: https://twitter.com/RuudHund
     linkedin: https://www.linkedin.com/in/ruudhund/
     page: ruud-hund
-    description: "Ruud is a Thought Leader Connected Workspace at KPN ICT Consulting. Ruud has over 10+ years experience in designing and building network infrastructures."
+    description: "Ruud is a Thought Leader Connected Workspace at Cegeka. Ruud has over 10+ years experience in designing and building network infrastructures."
   bas:
     name: Bas
     display_name: Bas Stapelbroek
-    company: KPN ICT Consulting
+    company: Cegeka
     title: Workspace Consultant
     picture: 'assets/images/authors/bas.png'
     web: http://www.basstapelbroek.com/
