@@ -5,7 +5,7 @@ comments: false
 ---
 {% assign author = site.authors['krishan'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Krishan is a consultant at Cegeka. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international. Currently Krishan focuses on the Citrix Stack and primarily Citrix Virtual Apps and Desktops and Citrix Hypervisor. He has strong knowledge of these products including designing, implementing and maintaining complex infrastructures. Krishan holds several Microsoft and Citrix certifications and tries to keep up with the latest technologies.
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Krishan is a Workspace Consultant at Cegeka. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international. Currently Krishan focuses on the Citrix Stack and primarily Citrix Virtual Apps and Desktops and Citrix Hypervisor. He has strong knowledge of these products including designing, implementing and maintaining complex infrastructures. Krishan holds several Microsoft and Citrix certifications and tries to keep up with the latest technologies.
 
 Besides the business part I am a father of two and married. In essence, I don’t have a lot of spare time.
 
