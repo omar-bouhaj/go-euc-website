@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The true power of VMware OSOT in VDI"
+title:  "Browser Performance Impact"
 hidden: false
 authors: [omar]
 categories: [ 'browsers' ]
