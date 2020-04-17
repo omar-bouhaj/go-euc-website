@@ -7,7 +7,7 @@ categories: [ 'general' ]
 tags: [ 'foundation', 'sponsor', 'community' ]
 image: assets/images/posts/000-future-direction-of-go-euc/000-future-direction-of-go-euc-feature-image.png
 ---
-We thought and worked hard on the future direction of GO-EUC these last months. In order to get closer to the community we decided to change our current structure. This article will announce the next phase for GO-EUC and share some details with you and the community. Before sharing the announcement, lets first start with the vision and mission of GO-EUC.
+We thought and worked hard on the future direction of GO-EUC these last months. In order to get closer to the community we decided to change our current structure. This article will announce the future direction for GO-EUC and share some details with you and the community. The future direction also include some change in the sponsor program, where we need your help. Before sharing the announcement, lets first start with the vision and mission of GO-EUC.
 
 ## What is the vision and mission of GO-EUC?
 Our vision is “doing research is creating new knowledge”, which are the famous words of Neil Armstrong. 
