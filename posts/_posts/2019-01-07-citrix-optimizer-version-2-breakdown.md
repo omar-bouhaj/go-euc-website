@@ -40,7 +40,7 @@ As with all {{site.title}} posts, we use the Login VSI VSImax as the main perfor
 
 More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
-![vsimax]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-feature-image.png)
+![vsimax]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
