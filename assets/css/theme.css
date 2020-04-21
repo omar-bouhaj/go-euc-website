@@ -801,7 +801,6 @@ background-color: #fff;
 }
 .sidebar ul {list-style:none;padding-left:0;}
 .sidebar ul li a {
-    color: #999;
     border-bottom: 1px solid #f6f6f6;
     display: block;
     padding-bottom: 10px;
@@ -946,3 +945,21 @@ td, th {
     text-align: left;
     padding: 8px;
   }
+
+#search-container {
+    border: 1px black;
+}
+
+.search-results {
+    border-radius: 0px 0px 10px 10px;
+    width: 300px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2)
+}
+
+#results-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,5 +1,25 @@
 <div class="sidebar">
-        
+        <div class="sidebar-section">    
+            <h5><span><i class="fa fa-search"></i> Search</span></h5>
+
+            <div id="search-container">
+                <input class="form-control border-0" id="search-input" placeholder="search..." type="text">
+              <div class="search-results">
+                <ul id="results-container"></ul>
+              </div>
+            </div>
+
+            <!-- Configuration -->
+            <script>
+                var sjs = SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/search.json',
+                searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+                })
+            </script>
+        </div>
+
         <div class="sidebar-section">
             <h5><span>Join the community</span></h5>
             <div>Get involved by joining the {{site.title}} Slack channel.</div>
