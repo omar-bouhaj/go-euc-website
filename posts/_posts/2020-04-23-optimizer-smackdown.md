@@ -10,7 +10,7 @@ image: assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-featu
 Delivering the best user experience is a key factor when building virtual environments. To accomplish this, administrators use optimization tools, like VMware OS Optimization Tool (OSOT) or Citrix Optimizer (CTXO). This research focuses on the performance difference between both editions of OSOT and CTXO. 
 
 ## About the optimizers
-Both tools are free tools that can be downloaded [here (OSOT)](https://flings.vmware.com/vmware-os-optimization-tool){:target="_blank"} and [here (CTXO)](https://support.citrix.com/article/CTX224676){:target="_blank"}. The tools contain predefined and community templates that are intended for specific operating systems. The optimizations vary from disabling scheduled tasks, disabling services, to removing built-in applications. All templates are intendent to improve the performance and scalability in a virtualized environment. 
+Both tools are free tools that can be downloaded [here (OSOT)](https://flings.vmware.com/vmware-os-optimization-tool){:target="_blank"} and [here (CTXO)](https://support.citrix.com/article/CTX224676){:target="_blank"}. The tools contain predefined and community templates that are intended for specific operating systems. The optimizations vary from disabling scheduled tasks and services, to removing built-in applications. All templates are intendent to improve the performance and scalability in a virtualized environment. 
 
 Please note, this research is not comparing functionality between both tools. 
 
@@ -38,10 +38,10 @@ In this research the following versions of the optimizers are used:
   * VMware OSOTversion: b1120; 
   * Citrix Optimizerversion: 260118. 
 
-All tests were done using our standardized testing methodology, which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. 
+All tests were done using our standardized testing methodology, which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. 
 
 ## Results – templates compared to out-of-the-box Windows 
-It is expected that all templates provide an enormous performance boost relative to an out-of-the-box deployment. Simply because the base Windows image is not made for virtual environments. 
+It is expected that all templates provide an enormous performance boost relative to an out-of-the-box deployment, simply because the base Windows image is not made for virtual environments. 
 
 This can be validated using the Login VSI VSImax and baseline which represents the scalability and responsiveness of the environment. 
 
@@ -55,9 +55,9 @@ This can be validated using the Login VSI VSImax and baseline which represents t
   <i>Lower is better</i>
 </p>
 
-There are a couple of important conclusions to take away from the Login VSI VSImax and baseline results. First, optimizing definitely helps reaching the optimum number of users on a targeted environment. Secondly, both Citrix Optimizer and VMware OSOT have reached the same results, so from a performance and scalability perspective there is no difference. 
+There are a couple of important conclusions to take away from the Login VSI VSImax and baseline results. Firstly, optimizing definitely helps reaching the optimum number of users on a targeted environment. Secondly, both Citrix Optimizer and VMware OSOT have reached the same results, so from a performance and scalability perspective there is no difference. 
 
-It is important to validate these results with metrics from the hypervisor. Based on the results above it is expected to see a big difference compared to an out-of-the-box deployment. The difference between both VMware OSOT and Citrix Optimizer should be minimal to none. 
+It is important to validate these results with metrics from the hypervisor. Based on the results above, it is expected to see a big difference compared to an out-of-the-box deployment. The difference between both VMware OSOT and Citrix Optimizer should be minimal to none. 
 
 ![host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png)
 <p align="center" style="margin-top: -30px;" >
@@ -81,7 +81,7 @@ It is important to validate these results with metrics from the hypervisor. Base
 
 The metrics from the hypervisors perspective confirm both the Login VSI VSImax and baseline results.  
 
-With an out-of-the-box deployment, the big difference on storage is among other things, caused by indexing and processing data, as this is constantly running on the background. The main culprits impacting the performance are: Windows Update, .NET Runtime Optimization, MS Telemetry Service, Windows Defender and WSAPPX. So, too many services and programs that need to be disabled to still write about an “out-of-the-box image”. For this reason, the rest of the research compares the optimizers and their templates with each other and not with an out-of-the-box deployment. 
+With an out-of-the-box deployment, the big difference in storage is among other things, caused by indexing and processing data, as this is constantly running on the background. The main culprits impacting the performance are: Windows Update, .NET Runtime Optimization, MS Telemetry Service, Windows Defender and WSAPPX. So, too many services and programs that need to be disabled to still write about an “out-of-the-box image”. For this reason, the rest of the research compares the optimizers and their templates with each other and not with an out-of-the-box deployment. 
 
 This final chart shows a direct comparison between Citrix Optimizer and VMware OSOT. The differences are a lot smaller than first expected. 
 
@@ -152,6 +152,6 @@ It is recommended to review and understand every setting Citrix Optimizer and VM
 
 Citrix and VMware both [advice](https://communities.vmware.com/thread/616245){:target="_blank"} to be careful with using community templates. Our advice is to simply review and use Citrix Optimizer (supported for Citrix environments) for your Citrix image and VMware OSOT (community project, no support) for your VMware image without the use of a template. The combination of both optimizers does not seem to add any performance boost to the image. 
 
-What are you using in your environment? Please share it in the comments below or start the conversation in our Slack channel. 
+What are you using in your environment? Please share it in the comments below or start the conversation in our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}. 
 
 Photo by [Tim Gouw](https://unsplash.com/@punttim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/sprint?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
