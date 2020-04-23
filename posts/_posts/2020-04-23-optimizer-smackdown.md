@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Optimizer Smackdown"
-hidden: true
-authors: [marcel]
+hidden: false
+authors: [ marcel ]
 categories: [ 'VMware','Citrix' ]
 tags: [ 'VMware OSOT', 'Citrix Optimizer', 'Smackdown' ]
 image: assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-feature-image.png
