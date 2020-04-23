@@ -25,33 +25,32 @@ The Windows 10 1909 is the default operating system which is by default not opti
 
 Besides measuring what the performance difference is between Citrix Optimizer and VMware OSOT, we decided to throw their most used community templates in the mix as well. The following scenarios are defined: 
 
-- * Citrix Optimizer - Default settings; 
-- * Citrix Optimizer - With the template from https://wilkyit.com/; 
-- * VMware OSOT - Default settings; 
-- * VMware OSOT - With the template from LoginVSI (VDILIKEAPRO); 
-- * The combination between Citrix Optimizer and VMware OSOT. 
+  * Citrix Optimizer - Default settings; 
+  * Citrix Optimizer - With the template from https://wilkyit.com/; 
+  * VMware OSOT - Default settings; 
+  * VMware OSOT - With the template from LoginVSI (VDILIKEAPRO); 
+  * The combination between Citrix Optimizer and VMware OSOT. 
 
 > <b>Disclaimer</b>: The templates were selected by popularity in downloads and not by personal preference. 
 
 In this research the following versions of the optimizers are used: 
 
-- * VMware OSOTversion: b1120; 
-- * Citrix Optimizerversion: 260118. 
+  * VMware OSOTversion: b1120; 
+  * Citrix Optimizerversion: 260118. 
 
 All tests were done using our standardized testing methodology, which is described [here]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}. 
 
 ## Results – templates compared to out-of-the-box Windows 
 It is expected that all templates provide an enormous performance boost relative to an out-of-the-box deployment. Simply because the base Windows image is not made for virtual environments. 
 
- 
 This can be validated using the Login VSI VSImax and baseline which represents the scalability and responsiveness of the environment. 
 
- ![vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+ ![vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
- ![baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+ ![baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -60,22 +59,22 @@ There are a couple of important conclusions to take away from the Login VSI VSIm
 
 It is important to validate these results with metrics from the hypervisor. Based on the results above it is expected to see a big difference compared to an out-of-the-box deployment. The difference between both VMware OSOT and Citrix Optimizer should be minimal to none. 
 
-![host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-mem.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higer is better</i>
 </p>
 
-![host-cpu-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![host-cpu-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu-mem-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better / Higher is better </i>
 </p>
 
-![host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-storage-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -86,17 +85,17 @@ With an out-of-the-box deployment, the big difference on storage is among other 
 
 This final chart shows a direct comparison between Citrix Optimizer and VMware OSOT. The differences are a lot smaller than first expected. 
 
-![various-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![various-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-various-compare.png)
 
 ## Results – templates compared to each other 
 Both tools provide various templates including templates that are created by the community. As the optimizations in these templates vary, it is expected to see some differences. 
 
-![host-templates-vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-vsimax.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![host-templates-baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-baseline.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -105,41 +104,41 @@ The Login VSI VSImax and baseline results between the templates are minimal. The
 
 Again, it is important to validate these results using other metrics. 
 
-![host-templates-host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-templates-host-cpu-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-cpu-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The VDILIKEAPRO template had the highest Login VSI VSImax, which is caused by a lower CPU usage. But the quirkiest result was that the Citrix Optimizer and VMware OSOT combined, resulted in a slightly lower Login VSI VSImax compared to the two optimizers on their own.  
 
-![host-templates-host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-![host-templates-host-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 While using less CPU, the VDILIKEAPRO template uses more memory without load, but catches up after the users start logging on (or doesn’t claim as much as users start logging on). 
 
-![host-templates-host-reads]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-reads]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-reads.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-templates-host-writes]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-writes]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-writes.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-![host-templates-host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-*.png)
+![templates-host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-storage-compare.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
