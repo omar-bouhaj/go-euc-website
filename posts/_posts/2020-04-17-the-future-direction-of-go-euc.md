@@ -40,7 +40,7 @@ With the transformation to a non-profit foundation it is going to impact our cur
   * CPU: a minimum of 12 cores running at 3 GHz or higher
   * Memory: at least 384GB
   * Disk: Local NVME or SSD with a total capacity of 2TB or higher
-  * GPU: A NVIDIA or AMD GPU for VDI workloads
+  * GPU: <del>A NVIDIA or AMD GPU for VDI workloads</del> (Update: NVIDIA has commited to provide GPU's)
 
 We prefer this environment to be at least available for a minimum of 1 year and hosted in our own selected datacenter, so we can access the hardware at any given time. 
 
