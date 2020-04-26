@@ -63,7 +63,9 @@ The policy templates set the values below as following:
 
 The main difference for the templates is in the video codecs used. The default settings ‘Use video codec for compression’ is ‘Use when preferred’:
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-usevideocodecforcompression.png" data-lightbox="use-videocodec-for-compression">
 ![use-videocodec-for-compression]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-usevideocodecforcompression.png)
+</a>
 
 If ‘Use when preferred’ is selected, the system dynamically decides on which codec to use, based on various factors. The results may vary between versions as the selection method is enhanced by Citrix with each consequent VDA release.
 
@@ -76,26 +78,34 @@ With the ‘Very High Definition User Experience’ policy template, the codec i
 ## The results
 As is customary in our posts the first metric that we report on is the Login VSI VSImax.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 Right off the bat, and just like in the original post, the ‘High Server Scalability’ template delivers on its name and shows a 10 percent increase in scalability, whereas using the Very High Definition User Experience’ template, you will be delivering the best user experience for your users, but at a cost: a 16% decrease in server scalability.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 As we can see from the Login VSI Baseline there is no huge deviation in the overall responsiveness of the sessions.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcpu-comparison.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcpu-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,17 +116,23 @@ From 40 minutes and on for the ‘Very High Definition User Experience’ templa
 
 In the original post, we had some strange results for the storage metrics. For the updated runs the data is more consistent.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostreads-comparison.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostreads-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostwrites-comparison.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostwrites-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcommands-comparison.png" data-lightbox="commands-compare">
 ![commands-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-hostcommands-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -128,16 +144,24 @@ Within the Citrix ICA protocol, the metric framerate is reported. These are the 
 
 Consider that we applied the modification to the VSI progress bar as explained [here]({{site.baseurl}}/important-influence-of-citrix-login-vsi-on-the-results).
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-fps-comparison.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-fps-comparison.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-cpuforencoding.png" data-lightbox="cpu-encoding">
 ![cpu-encoding]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-cpuforencoding.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-cpuforencoding-comparison.png" data-lightbox="cpu-encoding-compare">
 ![cpu-encoding-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-cpuforencoding-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -152,9 +176,13 @@ Combined with the higher FPS settings this will result in the entire screen bein
 
 Because with the ‘High Server Scalability’ template no encoding is used, the CPU cycles needed are minimal compared to both other scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-bandwidth.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-bandwidth-comparison.png" data-lightbox="bandwidth-compare">
 ![bandwidth-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-bandwidth-comparison.png)
+</a>
 
 Citrix states the following about bandwidth usage for the ‘Very High User Definition’ template:
 
@@ -166,12 +194,16 @@ Instead, the metric shows a significant decrease in bandwidth consumption when u
 
 Sending over the bitmaps (note that no encoding method is used) with the ‘High Server Scalability’ template will result in a decrease in bandwidth consumption and a huge increase in ICA Round Trip Time.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-comparison.png" data-lightbox="rtt-compare">
 ![rtt-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -180,12 +212,16 @@ With the ‘Very High Definition User Experience’ template, there are some unu
 
 If we compare the first 20 minutes of the workload (when there is no CPU congestion for the ‘Very High Definition User Experience’ template scenario yet) the ICA round trip time data is more on par with the expectations.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-20min.png" data-lightbox="rtt-20min">
 ![rtt-20min]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-20min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-20min-comparison.png" data-lightbox="rtt-20min-compare">
 ![rtt-20min-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-rtt-20min-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -193,19 +229,25 @@ If we compare the first 20 minutes of the workload (when there is no CPU congest
 In the first 20 minutes of the workload, the Round Trip Time is significantly lower for the ‘Very High Definition User Experience’ template scenario. Using the ‘High Server Scalability’ template in this phase still results in a huge increase in Round Trip time. This will result in higher latency for the end-user and will negatively affect the user experience. In contrast to the original post where using the ‘High Server Scalability’ template “only” had an average increase of 30%, this time the average Round Trip Time has doubled to 61% compared to the default scenario.
 
 ### Launcher metrics
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu.png" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu-comparison.png" data-lightbox="launcher-cpu-compare">
 ![launcher-cpu-compare]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 In comparison to the default scenario and the ‘High Server Scalability’ template, switching to the ‘Very High Definition User Experience’ template has a 43% CPU impact on the endpoints. This is mostly noticeable throughout the multimedia part of the workload.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu-multimedia.png" data-lightbox="launcher-cpu-media">
 ![launcher-cpu-media]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-templates-launcher-cpu-multimedia.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -225,7 +267,9 @@ While we cannot directly compare the results from the original post and the upda
 
 From both a host and the perspective of an end-point, delivering the highest definition experience to users will impact the scalability significantly. To quantify that, switching from the ‘High Server Scalability’ template to the ‘Very High Definition User Experience’ template will decrease server scalability by 26%.
 
+<a href="{{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-conclusion.png" data-lightbox="conclusion">
 ![conclusion]({{site.baseurl}}/assets/images/posts/031-citrix-policy-templates/031-citrix-policy-conclusion.png)
+</a>
 
 The most common alleviation, using server GPUs, can potentially limit the overall impact at the datacenter side. The HDX policy setting ‘Use hardware encoding for video codec’ is selected by default. Using endpoints with faster CPUs and GPUs that can decode H.264, like the Raspberry Pi, can enhance the user experience from the end-points side of the equation.
 

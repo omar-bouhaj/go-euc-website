@@ -57,7 +57,9 @@ The mandatory profile is created using the Sysprep method which is described on 
 
 The Login VSI VSImax results represent the overall capacity of the scenarios. The VSImax is the defacto industry standard metric and is calculated a score to detriment the saturation point of the virtual desktop environment. More information about the VSImax is explained [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -66,7 +68,9 @@ The Login VSI VSImax shows roaming user profiles is the most optimal scenario fr
 
 It is important to validate if the VSImax score is reflected in the Login VSI baseline.
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -75,35 +79,47 @@ The Login VSI baseline shows a minimal to no difference between the scenario, wh
 
 Within {{site.title}} the saturation point is CPU related, so according to the VSImax there should be a difference in CPU load between the scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The CPU load between the scenarios corresponds with the VSImax results. There is an expected difference from a storage perspective as there are different copy methods used for each profile type.
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -112,12 +128,16 @@ It clearly shows having a small mandatory profile have a negative result on the 
 
 It makes sense the roaming user profiles have less storage impact. The profile is most complete compared to a new local and mandatory user profile. This would be different in a stateful environment. Another import factor is the logon time which has a huge influence on the user experience. At logon the user profile is loaded so a quick loading time will result in a better experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/010-performance-difference-between-user-profiles/010-profiles-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

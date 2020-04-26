@@ -86,7 +86,9 @@ Thanks to the [ThinClientSpecialist](https://www.thinclientspecialist.com/){:tar
 
 A complete overview with all the specifications can be found here:
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-overview.png" data-lightbox="thin-client-overview">
 ![thin-client-overview]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-overview.png)
+</a>
 
 ## Expectations and results
 It is expected to see a minimal to no difference in the first two sections of the workload. These sections are office oriented and low on frame updates and therefore even the older endpoint should be able to keep up. With the last two sections it is expected to see a big difference between various endpoints, as this contains GPU enabled applications.
@@ -99,17 +101,23 @@ As this scenario is focused on single user experience there are no scalability r
 
 In the video there is no visible difference between the various devices. This is as expected as there are minimal frame updates and therefore GPU usage.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-cpu.png" data-lightbox="word-cpu">
 ![word-cpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-gpu.png" data-lightbox="word-gpu">
 ![word-gpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-gpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-cpu-gpu-compare.png" data-lightbox="word-cpu-gpu-comparison">
 ![word-cpu-gpu-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-word-cpu-gpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -124,29 +132,39 @@ There are slide transitions in the PowerPoint section, so it is expected to see 
 
 Although not as expected, there is a clear difference in user experience. Especially the Dell Wyse D7 as this device is struggling to keep up with the animation.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-cpu.png" data-lightbox="powerpoint-cpu">
 ![powerpoint-cpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-gpu.png" data-lightbox="powerpoint-gpu">
 ![powerpoint-gpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-gpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-cpu-gpu-compare.png" data-lightbox="powerpoint-cpu-gpu-comparison">
 ![powerpoint-cpu-gpu-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-cpu-gpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The data still shows a minimal difference even for the Dell Wyse D7. As there is a clear difference in the frames this should be noticeable in the data.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-fps.png" data-lightbox="powerpoint-fps">
 ![powerpoint-fps]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-fps-compare.png" data-lightbox="powerpoint-fps-comparison">
 ![powerpoint-fps-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-powerpoint-fps-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -166,29 +184,39 @@ In order to get a better overview in the difference in experience, the client de
 
 When using GPU enabled applications like in the Car Visualizer video samples shown above, there is a huge difference in experience between the selected devices. While the video is lagging behind for the current UD3 and the Dell Wyse, the audio experience is even worse. The new UD3 is coping better and is performing almost as good as the custom pc. Visually the new UD3 is only lacking behind slightly and this will most probably impact the perceived user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-cpu.png" data-lightbox="car-visualizer-cpu">
 ![car-visualizer-cpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-gpu.png" data-lightbox="car-visualizer-gpu">
 ![car-visualizer-gpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-gpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-cpu-gpu-compare.png" data-lightbox="powerpoint-cpu-gpu-comparison">
 ![powerpoint-cpu-gpu-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-cpu-gpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The GPU metrics show a consistent line for the GPU and framebuffer usage in the linechart, whilst the metrics for the older devices are erratic and considerably lower than the newer devices.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-fps.png" data-lightbox="car-visualizer-fps">
 ![car-visualizer-fps]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-fps-compare.png" data-lightbox="car-visualizer-fps-comparison">
 ![car-visualizer-fps-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-car-visualizer-fps-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -204,26 +232,36 @@ In the last section of the workload a full HD 60 FPS video is shown, same as pre
 
 Directly from the start of the video it’s very clear that the older devices are unable to show the 60 FPS video.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-delay.png" data-lightbox="big-buck-bunny-delay">
 ![big-buck-bunny-delay]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-delay.png)
+</a>
 
 Even in the initial section of the video where there is only the Big Buck bunny Logo animation shown, with only minimal sections of the screen that are changing, the Wyse is already 14 seconds behind.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-cpu.png" data-lightbox="big-buck-bunny-cpu">
 ![big-buck-bunny-cpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-gpu.png" data-lightbox="big-buck-bunny-gpu">
 ![big-buck-bunny-gpu]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-gpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-gpu-framebuffer.png" data-lightbox="big-buck-bunny-framebuffer">
 ![big-buck-bunny-framebuffer]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-gpu-framebuffer.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-cpu-gpu-compare.png" data-lightbox="big-buck-bunny-gpu-cpu-comparison">
 ![big-buck-bunny-gpu-cpu-comparison]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-cpu-gpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -238,12 +276,16 @@ Remember that these tests are running as a single user test and in some sections
 
 Based on the results shown above, it is expected to see consistent 60 FPS stream from the remoting protocol.
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-fps.png" data-lightbox="big-buck-bunny-fps">
 ![big-buck-bunny-fps]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-fps-compare.png" data-lightbox="big-buck-bunny-fps-compare">
 ![big-buck-bunny-fps-compare]({{site.baseurl}}/assets/images/posts/053-the-delivered-user-experience-of-thin-clients/053-ux-thinclient-video-fps-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>

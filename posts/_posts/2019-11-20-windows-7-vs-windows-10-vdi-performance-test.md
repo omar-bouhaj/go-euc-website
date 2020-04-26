@@ -11,7 +11,9 @@ Windows 7 is almost end of support but still, there are VDI environments running
 
 ## Windows 7
 On January 14 2020, support will end for Windows 7. This shouldn’t come as a surprise to you, as Microsoft has been warning for this for the past couple of years:
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-end-of-support.jpg" data-lightbox="support">
 ![support]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-end-of-support.jpg)
+</a>
 Nonetheless, there are still (VDI) environments that haven’t been upgraded to Windows 10 (or 8) and are still running Windows 7. For those environments, it’s interesting to know what the performance impact will be when they migrate to Windows 10. We’ve already seen that with every new feature release of Windows 10, there is an impact on user density and application response times. We’ve also seen that vulnerability mitigations for Spectre, Meltdown, L1TF, and MDS also have an impact. Therefore it would be interesting to see what the performance differences are between Windows 7 SP1 without updates versus Windows 7 SP1 that is fully updated. Then we compare these results to Windows 10 build 1809 fully updated.
 
 ## Infrastructure & configuration
@@ -43,7 +45,9 @@ All scenarios are optimized using the VMware OSOT (version b1110) with the recom
 ## Expectations and results
 I remember a couple of years ago that Login VSI tests showed an impact of 30% when upgrading from Windows 7 to Windows 10 in a VDI-context. Previous [research]({{site.baseurl}}/moores-law-of-windows-10-1903/){:target="_blank"} showed that the individual feature builds of Windows 10 (1709 vs 1803 vs 1809, etc) already show a big impact in performance. And let’s not forget all the vulnerability mitigations that cause a huge impact. I expect that these mitigations will have an impact on Windows 7 as well and that there is an impact between a fully updated Windows 7 environment and a fully updated Windows 10 environment.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -52,7 +56,9 @@ The results from this research show that installing all the updates and mitigati
 
 Like the previous researches on GO-EUC using the Login VSI VSImax, it is possible to validate the user density between the scenarios. The Login VSI baseline provides an indication of the difference in the overall response times.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -61,19 +67,25 @@ All the patches after Windows 7 SP1 only have an impact of 5% on the Login VSI b
 
 Based on the Login VSI VSImax we should see a similar pattern in the CPU utilization as the lab environment is CPU constrained.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 A higher CPU utilization means fewer users can be hosted on the environment. There is a 6% increase in the CPU utilization when comparing Windows 10 to Windows 7, while the Login VSI VSImax results showed an impact of 16%.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util-compare-30min.png" data-lightbox="cpu-compare-30min">
 ![cpu-compare-30min]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-cpu-util-compare-30min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -82,22 +94,30 @@ Comparing just the first 30 minutes of the test shows a difference in CPU utiliz
 
 The next charts show the impact of the Login VSI workload on the storage. This is especially important if your current storage solution was designed for Windows 7 and you don’t have much overhead.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,19 +126,25 @@ This research shows that the impact of upgrading to Windows 10 is 50% more read 
 
 Logon times are important in a VDI environment and have a big effect on the first user experience. When the logon times are increasing it is likely to have a negative effect on the user’s experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 A 160% increase in logon time with Windows 10 compared to Windows 7 is not realistic because the test with Windows 10 was hitting the maximum capacity of the CPU at 28 minutes already. A better comparison is to compare the logons of only the first 25 minutes of the tests.
 
+<a href="{{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon-compare-25min.png" data-lightbox="logon-compare-25min">
 ![logon-compare-25min]({{site.baseurl}}/assets/images/posts/046-windows-7-vs-windows-10-vdi-performance-test/046-win7-vs-win10-logon-compare-25min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

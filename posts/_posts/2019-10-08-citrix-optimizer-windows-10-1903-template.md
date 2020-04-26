@@ -45,7 +45,9 @@ Each scenario is tested according our default testing methodology which is descr
 ## Expectations and results
 Before covering the new results, it is important to understand the difference from previous research. Comparing the same data showed a signification impact comparing Windows 10 1809 with 1903.
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-prev-vsimax.png" data-lightbox="vsimax-previous">
 ![vsimax-previous]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-prev-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -56,12 +58,16 @@ As more UWP apps are removed using the new template it is expected so see an imp
 
 Like the previous research using the Login VSI VSImax it is possible to validate the user density between both scenarios. The Login VSI baseline provides an indication of the difference in the overall response times.
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -72,12 +78,16 @@ It is always important to verify the Login VSI results using other metrics from 
 
 Based on the VSImax we should so similar pattern in the CPU utilization as the GO-EUC environment is CPU constrained.
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -86,17 +96,23 @@ A higher CPU utilization means less users can be hosted on the environment. Ther
 
 Although most environments already have SSDs it is still important to understand the impact on storage, especially running on shared storage. A big increase in load could result in catastrophic storage outages which should be avoided at any time.
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-storage-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -105,12 +121,16 @@ These results show there is small decrease in both reads and writes. Previous re
 
 Logon times are important in a VDI environment and have big effect on the first user experience. When the logon times are increasing it is likely to have a negative effect on the users experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-logon-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/040-citrix-optimizer-windows-10-1903-template/040-win1903-logon-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

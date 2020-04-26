@@ -43,12 +43,16 @@ Previous research shows us the server capacity is not affected by using the diff
 
 To get an idea of the impact on capacity and overall responsiveness within the session the metrics VSImax and baseline are used which are provided by Login VSI. More information and details about the VSImax and baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -57,29 +61,39 @@ It is good to see similar results compared to previous research. As expected, th
 
 Let’s validate these resulting using other metrics from the host perspective.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It shows the capacity is affected by the CPU resources confirming the VSImax results.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-storage-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -88,20 +102,28 @@ There is no difference from a storage perspective which is as expected. As all i
 
 To see the difference from a protocol perspective the tool Remote Display Analyzer is used. A key metric from a protocol perspective is the frames per second, also known as FPS. These are the number of images send over the protocol. A high amount of FPS generally results in a smooth experience but please note, from a protocol perspective it is a difficult metrics as it is depended on the amount of activity within the session.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-fps-compare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-fps-compare.png)
+</a>
 
 The results show small differences between the scenarios except for build to lossless which has a consistent higher FPS during the entire workload.
 
 In order to send the image of the protocol, it needs to be processed. This encoding process takes CPU resources. Please note, the following chart only contains the CPU usage for the encoding process.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-cpu.png" data-lightbox="cpu-encoding">
 ![cpu-encoding]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-cpu-compare.png" data-lightbox="cpu-encoding-compare">
 ![cpu-encoding-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -110,24 +132,32 @@ It is clear both always lossless and build to lossless requires more CPU to enco
 
 The round trip time (RTT), which is also known as latency will have an effect on the user experience. A high RTT will result in a delayed response which is also known as lag.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-rtt-compare.png" data-lightbox="rtt-compare">
 ![rtt-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-rtt-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The RTT shows a similar pattern as the previous metric were both always lossless and build to lossless have a higher RTT. Nowadays bandwidth should not be a real problem with the capacity in the modern world. Scenarios like branch offices come often with a lower bandwidth which makes this very important.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-bandwidth-compare.png" data-lightbox="bandwidth-compare">
 ![bandwidth-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-rda-bandwidth-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -136,12 +166,16 @@ Results show there is a difference in each scenario but again both always lossle
 
 Last research showed some important results from the launcher perspective, which reflects the endpoint. The most important metric is the CPU as the images require to be decoded on the endpoint to receive the images.
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-launcher-cpu.png" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-launcher-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-launcher-cpu-compare.png" data-lightbox="launcher-cpu-compare">
 ![launcher-cpu-compare]({{site.baseurl}}/assets/images/posts/027-the-true-difference-between-citrix-visual-quality-profiles/027-visual-quality-launcher-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

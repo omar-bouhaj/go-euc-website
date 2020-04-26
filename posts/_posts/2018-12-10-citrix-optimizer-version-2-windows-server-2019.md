@@ -16,7 +16,9 @@ For this research we ran the following scenarios:
   * Windows Server 2019 without any optimization as the baseline; 
   * Windows Server 2019 with optimizations using the CTXO template. 
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-optimizer.png" data-lightbox="optimizer">
 ![optimizer]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-optimizer.png)
+</a>
 
 ## Infrastructure and configuration 
 This research has taken place on the {{site.title}} platform that is described in the following [post]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"}. We applied the same testing methodology as the previous researches, where all results are average numbers of multiple runs. More information about the testing methodology can be found in the following [post]({{site.baseurl}}/insight-in-the-testing-methodology){:target="_blank"}.
@@ -30,36 +32,48 @@ When optimizing an operating system, the expected result is to have an improveme
 
 More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 According to the VSImax values, there is no improvement in user density which is not as expected. This means that optimizing Windows Server 2019 using the CTXO version 2 results in no capacity improvement to the server-side scalability. It is important to validate these results with the other metrics captured from the hypervisors and other sources. Based on the VSImax there should be no difference with the other host metrics. 
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-mem.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-host-mem.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 As expected, there is no noticeable difference in the host metrics, which confirms the previous VSImax results. Another important metric is the logon time. Logon times have a big impact on the overall user experience. 
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -68,17 +82,23 @@ As shown, there is no difference in the logon times for both scenarios.
 
 During the tests, additional protocol data is collected using Remote Display Analyzer. The optimizations can influence the protocol resulting in a better performance as shown in previous Windows 10 post.
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -90,7 +110,9 @@ Optimizing Windows Server 2019 using the CTXO version 2 in combination with the 
 
 There have been multiple checks on both Windows Server 2016 and 2019 to ensure the optimizations are applied including running additional tests but with the same results.
 
+<a href="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-rda-rtt.png" data-lightbox="rtt">
 > <img style="width: 200px; float: left; margin-right: 15px; margin-top: 5px" src="{{site.baseurl}}/assets/images/posts/012-citrix-optimizer-version-2-windows-server-2019/012-ctxo-w2k19-martin-zugec.png"/> Despite the limited results we still recommend to always optimize your operating system. A production workload is always different and may have some benefits of the applied optimizations.
+</a>
 > 
 > If we want to keep Citrix Optimizer as a supported tool, we have to be more conservative than we would like to. While there are many more optimizations that we could include, it would not be possible to test them all.
 > 

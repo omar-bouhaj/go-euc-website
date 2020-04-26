@@ -24,7 +24,9 @@ This blog post explores the performance differences between the two Citrix suppl
 ## Testing scenario
 We suspected that the “Use videocodec for compression” within the HDX Graphics Encoder policy setting would have the biggest impact on the server side scalability. This settings is enabled by default, and with the “Very high definition user experience” policy template, but is disabled in the “High Server scalability” policy template.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-policy-codec-compression.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-policy-codec-compression.png)
+</a>
 
 In order to confirm that theory we’ve tested three scenario’s:
 
@@ -105,14 +107,18 @@ In addition to other metrics outlined below, the first metric that we use to ben
 
 More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 When looking at the VSImax result in the graph please note that the conclusion shows a somewhat distored picture as we reached VSImax with the “Very high definition user experience” template at 69 session, but VSImax was not reached with the “High Server scalability” template. This means we could have fit more VDI’s on the host before saturation with the “High Server scalability” template.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -121,12 +127,16 @@ Compared to the “Very high definition user experience” template both the Def
 
 A congested CPU will lower the consolidation ratio and can degrade the overall of performance of the host resulting in a reduced user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -135,19 +145,25 @@ In the reads per second metric the “Very high definition user experience” te
 
 Because these two metrics cannot be reconciled with each other, this has to be investigated furhter to find out more about what caused this particular aspect of the scenario.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-fps-bar.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-fps-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 The Frames per second metric show a clear increase in FPS and average PFS both the default scenario and the “Very high definition user experience” template compared to the “High Server scalability” template.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-encoding.png" data-lightbox="cpu-encoding">
 ![cpu-encoding]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-encoding.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -160,7 +176,9 @@ Moreover the “Very high definition user experience” template is configured t
 
 Interestingly the bandwith metrics show a contrasting result:
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-bandwidth.png)
+</a>
 
 Here the “High Server scalability” has the highest overall bandwidth usage.
 
@@ -174,14 +192,18 @@ The ICA round trip time (RTT) is another important measurement for the user expe
 
 This metric can be thought of as a measurement of the screen lag that a user experiences while interacting with an application hosted in the VDI environment. A high RTT equals a high latency and this will negatively affect the user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-rda-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The ICA Round trip time spike around the 44 minute mark with the “Very high definition user experience” template, is most likely due to the videocontent being played at that time in the scenario, but on average the ICA RTT with the “Very high definition user experience” template has the highest ICA RTT with average an increase of 30% compared to the default settings. Surprisingly the “High Server scalability” template also incurs an 20% increase in the ICA RTT compared to the same default settings.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-launcher-cpu-util.png" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-launcher-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -195,7 +217,9 @@ High CPU usage on the endpoint can have a significant impact as this will result
 ## Conclusion
 When using the “High Server scalability”  instead of the “Very high definition user experience” policy template, the overall impact as measured in the VSImax score, there is a 6,7% increase in server scalability at the cost of a diminished user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-conclusion.png" data-lightbox="conclusion">
 ![conclusion]({{site.baseurl}}/assets/images/posts/003-maximizing-server-scalability-with-citrix-policy-templates/003-ctx-scalability-conclusion.png)
+</a>
 
 The host CPU statistics confirm these findings and show, on average, that there is a 11 percent drop in the hosts CPU usage with the “High Server scalability”  policy template. Most likely the difference will be in the CPU encoding of the h.264 encoding. We’ll dive into that in a follow up post in the near future (see “What’s next” for more details).
 

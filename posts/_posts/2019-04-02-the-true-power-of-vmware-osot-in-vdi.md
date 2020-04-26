@@ -14,7 +14,9 @@ VMware OSOT, which stands for OS Optimization Tool, is a free tool provided by V
 
 Each template contains optimizations like disabling services, scheduled tasks, removing built-in apps and other specific tweaks. With the GUI the appropriate template can be selected, and each individual optimization can be enabled or disabled. The tool also allows you to analyze all applied optimizations which are displayed in a chart in the top right corner.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot.png" data-lightbox="vmware-osot">
 ![vmware-osot]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot.png)
+</a>
 
 Out of the box it provides templates for multiple Microsoft operating systems:
 
@@ -43,11 +45,15 @@ It comes with various templates for specific use-cases and some default template
 
 Next to the default templates, there are various community templates available in the Public Templates tab.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-public-templates.png" data-lightbox="vmware-osot-public">
 ![vmware-osot-public]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-public-templates.png)
+</a>
 
 VMware OSOT can be fully automated using the command line interface. This is required when integrating the tool in a deployment solution like Microsoft MDT or System Center Configuration Manager. Details using the command line interface is in the screenshot below.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-command-line.png" data-lightbox="vmware-osot-command">
 ![vmware-osot-command]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-command-line.png)
+</a>
 
 VMware OSOT is a free tool which can be downloaded right here: [https://labs.vmware.com/flings/vmware-os-optimization-tool](https://labs.vmware.com/flings/vmware-os-optimization-tool){:target="_blank"}
 
@@ -71,48 +77,64 @@ It is expected there is a performance gain using an optimizer. This should resul
 
 The Login VSI VSImax is one of the best metrics to see if there is a capacity improvement. More information about the VSImax can be found here.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 As expected, there is a capacity gain when using VMware OSOT. When using the full optimization set there is a 16% improvement.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The baseline shows an improvement as well which results in quicker response time within the desktop.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It is clear when all optimizations are applied it show a stunning 25% improvement in the CPU utilization. Normally, the VSImax should reflect similar results in the CPU Utilization because this is the main bottleneck in the GO-EUC lab. This means there is another factor that has an impact in the VSImax results.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -123,12 +145,16 @@ All scenarios have been tested on Windows 10 1803 to ensure if there is not an i
 
 The logon times are an important factor to the user experience. This is the first impression of a user and if it takes longer it will have a negative experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -139,32 +165,44 @@ It is clear VMware OSOT has a positive impact on the logon times.
 
 Another factor of the user experience is the number of frames send over the protocol. During our tests, we collect the protocol information using Remote Display Analyzer. More information about Remote Display Analyzer can be found here.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-fps-compare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-fps-compare.png)
+</a>
 
 In general, a higher framerate is better, but in this case a lower framerate is also good. As the optimizations contains disabling visual elements in Windows it results in a lower FPS as there is a decrease in visual updates compared to the baseline.
 
 This behavior should also be reflected in the bandwidth as there is less data when all optimizations are applied.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-bandwidth-compare.png" data-lightbox="bandwidth-compare">
 ![bandwidth-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-bandwidth-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The results show an improvement in the bandwidth especially when all the optimizations are applied which is especially beneficial in a WAN scenario.
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-rtt-compare.png" data-lightbox="rtt-compare">
 ![rtt-compare]({{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-ica-rtt-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -186,7 +224,9 @@ Right now, there is one universal template for Windows 10 and not for each indiv
 
 
 
+<a href="https://twitter.com/HilkoLantinga" data-lightbox="Hilko Lantinga">
 > <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/022-the-true-power-of-vmware-osot-in-vdi/022-vmware-osot-hilko-lantinga.png"/> A special thanks to [Hilko Lantinga](https://twitter.com/HilkoLantinga){:target="_blank"} from VMware for the time to review and share thoughts about these results. The results has been shared with VMware and they will further investigate the storage behaviour.
+</a>
 > 
 > 
 >  	&nbsp;

@@ -54,7 +54,9 @@ We tested the four most popular browsers in the enterprise area, as described ab
 
 The VSImax value refers to user capacity.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-vsimax.jpg" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-vsimax.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -64,12 +66,16 @@ Compared to Internet Explorer, Firefox has the lowest impact on user capacity. C
 ### Host CPU usage
 Based on the VSImax results, the expectation is that the modern browsers will consume more CPU compared to Internet Explorer.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cpu.jpg" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cpu.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cpu-bar.jpg" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cpu-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -79,12 +85,16 @@ As expected, Internet Explorer is the most efficient in CPU utilization and has 
 ### Host Memory usage
 The memory footprint or consumption is also a very important key metric when comparing browsers.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-memory.jpg" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-memory.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-memory-bar.jpg" data-lightbox="memory-compare">
 ![memory-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-memory-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -94,7 +104,9 @@ Browsers can have either massive or frugal use of memory, even with multiple tab
 ### Host Disk IO usage
 On a physical device, e.g. dedicated machine, the browser disk usage is usually not affected that much or barely even noticed from the user’s perspective (newer devices). However, when sharing the disk usage over multiple desktops, it’s very important for VDI to use storage in the most efficient way to optimize virtual desktop performance and user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cmds.jpg" data-lightbox="commands">
 ![commands]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-cmds.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -103,21 +115,27 @@ Both Internet Explorer and Edge show similar overall disk usage trends. Firefox 
 
 Now it is really interesting and important to compare and see which specific disk command, read versus write, causes those differences.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-reads.jpg" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-reads.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Chrome shows that from 19 minutes in the workload the reads per second starts to increase and the trend seems to continue throughout the workloads run duration. Whereas Internet Explorer and Edge both match the total commands measured. Firefox measures a small rising trend, but this still doesn’t match the total commands measured, also the case with Chrome. This means that both Chrome and Firefox’s write footprint must be higher compared to Internet Explorer and Edge.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-writes.jpg" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-writes.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Check and confirmed. As expected, we see similar solid stable disk usage trends and results from both Microsoft products. Firefox measures more writes then reads, Chrome has the same write footprint as Firefox but shows a clear impact when it comes to read activity.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-disk-bar.jpg" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-disk-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -127,19 +145,25 @@ Microsoft browsers show better storage utilization trends. Firefox comes in a so
 ### Host Network usage
 Internet data, whether in the form of a web page, a downloaded file or an e-mail message, travels over a system known as a packet-switching network. Each data package, called a packet, is then sent off to its destination via the best available route. So, without a network a browser is useless, therefore it is interesting to see the network utilization from a browser perspective.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-packetsreceived.jpg" data-lightbox="nic-received">
 ![nic-received]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-packetsreceived.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-packetstransmitted.jpg" data-lightbox="nic-transmitted">
 ![nic-transmitted]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-packetstransmitted.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 All browsers roughly receive the same number of packets. But Edge stands strong transmitting packets. 34% more transition compared to Internet Explorer.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-network-bar.jpg" data-lightbox="nic-compare">
 ![nic-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-network-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -147,12 +171,16 @@ All browsers roughly receive the same number of packets. But Edge stands strong 
 ### Launcher CPU usage
 Another key metric when comparing browsers is the usage from the endpoint’s perspective. Because in the case where the endpoint is resource constrained, can result in a significant reduction in user experience. The endpoint runs multiple sessions, whereas a regular endpoint in a business scenario will typically only launch a single session.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchercpu.jpg" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchercpu.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchercpu-bar.jpg" data-lightbox="launcher-cpu-compare">
 ![launcher-cpu-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchercpu-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -162,12 +190,16 @@ Both Firefox and Chrome are more efficient in CPU utilization in comparison to I
 ### Launcher Network usage
 The following graph shows how the endpoints network usage is with the different browser workloads.
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchernetwork.jpg" data-lightbox="launcher-nic">
 ![launcher-nic]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchernetwork.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchernetwork-bar.jpg" data-lightbox="launcher-nic-compare">
 ![launcher-nic-compare]({{site.baseurl}}/assets/images/posts/008-browser-performance-impact/008-brswr-launchernetwork-bar.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

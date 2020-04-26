@@ -46,7 +46,9 @@ Our initial expectation in case of the page file was the bigger, the better. So,
 
 Differences in Login VSI VSImax give the best overview in capacity offset between the scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -55,12 +57,16 @@ The results show a big impact in Login VSI VSImax when using no page file. This 
 
 It is important to validate the Login VSI VSImax results performance metrics from the hypervisor. Based on the Login VSI VSImax, we expected to see a difference when using no page file.
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -69,17 +75,23 @@ The CPU Utilization results confirm the Login VSI VSImax results. The system cra
 
 As the page file produces reads and writes, it is important to include the storage usages for all scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-reads-writes-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/038-page-file-sizing-for-virtualized-environments/038-page-file-host-reads-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

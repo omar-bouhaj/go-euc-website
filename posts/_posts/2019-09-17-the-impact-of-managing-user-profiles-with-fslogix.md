@@ -57,12 +57,16 @@ FSLogix is known for improving the logon times which has a benefit for the user 
 
 In order to show the impact one of the used metrics is the Login VSI VSImax. This provides a clear indication of the user capacity of the environment. The Login VSI baseline provides insights into the user experience (responsiveness) of the session.
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -71,12 +75,16 @@ The Login VSI results show that the default Microsoft roaming scenarios consume 
 
 It is always important to confirm the Login VSI results using other metrics and therefore performance data from the hypervisor is collected. The GO-EUC lab environment is CPU limited and the CPU results should be similar to the Login VSI results.
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -87,17 +95,23 @@ The roaming profile functionality is a native feature within the Windows operati
 
 On the other hand, knowing that the FSLogix agent only needs to process its profile container once, whereas a Windows roaming scenario goes through the entire user profile ‘folder’, we should see a performance boost at the storage level when it comes to the large scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-strorage-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-strorage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,17 +120,23 @@ FSLogix shows a measurable boost in performance when it comes to storage resourc
 
 We should see similar results if we compare the scenarios from a network perspective. Namely, from a Windows roaming profile scenario: ‘copying’ and ‘receiving’ the entire profile from a network share will impact network resources. Whereas, FSLogix has less impact on receiving the container, as it is a copy of an entire profile in a single file (container).
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nice-received.png" data-lightbox="nic-received">
 ![nic-received]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nice-received.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nic-transmitted.png" data-lightbox="nic-transmitted">
 ![nic-transmitted]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nic-transmitted.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nic-compare.png" data-lightbox="nic-compare">
 ![nic-compare]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-host-nic-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -126,12 +146,16 @@ Nonetheless, both Windows and FSLogix also show a measurable increase in both re
 One of the first things that a user will notice when they launch their virtual desktop is the logon time. Slow logons are one of the most reported end-user issues when it comes to virtual desktops, which has a huge influence on the overall user experience. Therefore, the average logon time is a key metric to measure the performance of the virtual desktop from the standpoint of the end user. For an end user a slow logon almost always equals to a slow desktop experience, so it’s important to have the logon times as low as can be.
 At logon, the user profile is loaded. So, a quick loading time will result in a better user experience. The difference should be noticeable in logon times as mentioned in the introduction.
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -142,12 +166,16 @@ For large amounts of profile data, FSLogix Profile Container do a particularly g
 
 The logon times are negatively influenced if the server reaches its saturation point. Comparing the first 24 minutes provides a more realistic perspective.
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-24min.png" data-lightbox="logon-24min">
 ![logon-24min]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-24min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-24min-compare.png" data-lightbox="logon-24min-compare">
 ![logon-24min-compare]({{site.baseurl}}/assets/images/posts/026-the-impact-of-managing-user-profiles-with-fslogix/026-fslogix-logon-times-24min-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

@@ -11,7 +11,9 @@ A couple weeks ago Microsoft announced the switch for the default installation o
 
 ## Microsoft announcement
 As mentioned in the introduction Microsoft announced they are switching the default installation to x64 architecture.
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-default-installation-settings-microsoft.png" data-lightbox="office-installation">
 ![office-installation]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-default-installation-settings-microsoft.png)
+</a>
 
 Twitter message from Jesper Nielsen (MVP):
 
@@ -35,7 +37,9 @@ Our default testing methodology is applied which is described [here]({{site.base
 When testing scenarios like these there is always an expectation of the outcome. For this research, the expected result is a slightly higher load using x64. As this architecture has the capabilities to consume more resources.
 As mentioned, Login VSI is used and one of the key metrics is the VSImax. More information about the VSImax can be found on the Login VSI website [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -43,48 +47,64 @@ As mentioned, Login VSI is used and one of the key metrics is the VSImax. More i
 The VSImax results show there is no difference between Microsoft Office x86 and x64. This means when migrating there is no capacity impact.
 Another valuable metric is the Login VSI baseline. This show how responsive the desktop is in an optimal state with a minimal load.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The baseline also shows no difference between both scenarios. Based on the VSImax and baseline results we also expect there is no difference in the host CPU utilization as the capacity limitation is CPU bounded in the {{site.title}} lab.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 This confirms the VSImax results. One of the benefits of x64 is it can consume more memory, so this is also an interesting metric to validate.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-free-mem.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-free-mem.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-free-mem-compare.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-free-mem-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 The results show x64 consumes on average 23% more memory. It is interesting to see over time there is no difference between the scenarios. Other key metrics that are always covered are the storage metrics.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -92,7 +112,9 @@ The results show x64 consumes on average 23% more memory. It is interesting to s
 For both reads/sec and writes/sec there is a small improvement of 4%.
 An important factor in user experience are the applications start times. If an application takes longer to start it can result in negative user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-appstarts.png" data-lightbox="app-start-compare">
 ![app-start-compare]({{site.baseurl}}/assets/images/posts/017-should-you-switch-from-microsoft-office-x86-to-x64/017-office-x86-x64-appstarts.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

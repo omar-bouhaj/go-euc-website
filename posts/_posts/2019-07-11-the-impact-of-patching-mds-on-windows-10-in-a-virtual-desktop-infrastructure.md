@@ -44,12 +44,16 @@ As always the default testing methodology is used which is described [here]({{si
 ## Expectations and results
 It is expected that MDS and enabling the Side Channel Aware Scheduler will have an impact on user density and user experience. Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The Login VSI VSImax is one of the best metrics to see the difference in user capacity. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -58,12 +62,16 @@ As expected, applying the MDS mitigations will results in lower user capacity, b
 
 It is always important to confirm the Login VSI results using other metrics and therefore performance data from the hypervisor is collected. The {{site.title}} lab environment is CPU limited and therefore the CPU results should be similar to the Login VSI results.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -72,44 +80,60 @@ The CPU Utilization is similar to the Login VSI results where the SCAv1 has a si
 
 Next, we compared the storage performance when applying the patches and enabling the SCA. As the patches only should affect the CPU, we don’t expect huge differences between the scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands.png" data-lightbox="commands">
 ![commands]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-compare.png" data-lightbox="commands-compare">
 ![commands-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 When the patches are applied to both the hypervisor and the guest OS, we see an increase in both read and write IO, which is not as expected. The average host commands/sec decreases again when enabling SCAv1 but increases again when SCAv2 is enabled. It is interesting to see what the differences are when only the first 20 minutes of the tests are compared, when the host is not saturated in any scenario.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-20min.png" data-lightbox="commands-20min">
 ![commands-20min]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-20min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-20min-compare.png" data-lightbox="commands-20min-compare">
 ![commands-20min-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-host-commands-20min-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -118,12 +142,16 @@ When comparing only the first 20 minutes of the Login VSI tests, the average hos
 
 There are many factors that are part of the user experience. One of the first things that users will experience are the logon times. When the logon times are long it has a negative effect on the user experience. It is important to keep the logon time as short as possible.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -132,12 +160,16 @@ The impact on the logon times is huge when we compare the average logon time fro
 
 As the logon times are influenced by the server saturation comparing the first 20 minutes provides a more realistic perspective.
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-20min.png" data-lightbox="logon-20min">
 ![logon-20min]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-20min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-20min-compare.png" data-lightbox="logon-20min-compare">
 ![logon-20min-compare]({{site.baseurl}}/assets/images/posts/034-the-impact-of-patching-mds-on-windows-10-in-a-virtual-desktop-infrastructure/034-mds-logon-times-20min-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

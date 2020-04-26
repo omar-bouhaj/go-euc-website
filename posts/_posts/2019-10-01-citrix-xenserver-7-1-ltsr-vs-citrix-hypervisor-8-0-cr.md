@@ -47,12 +47,16 @@ It is expected that there will be a performance impact when using Citrix Hypervi
 
 The Login VSI VSImax is one of the best metrics to see if there is a performance impact on capacity. More information about he VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -61,12 +65,16 @@ As expected the usage of Citrix Hypervisor 8.0 has a slight negative performance
 
 It is important to validate the Login VSI results against metrics from the hypervisors themselves. Starting with the host CPU utilization, which should show a similar trend as the previous Login VSI VSImax results.
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -75,12 +83,16 @@ CPU is an important component when it comes to user experience within a session.
 
 Free Memory is a metric that shows how much free memory is available on the Citrix XenServer / Citrix Hypervisor.
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-free-mem.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-free-mem.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-free-mem-compare.png" data-lightbox="memory-compare">
 ![memory-compare]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-free-mem-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -95,22 +107,30 @@ Citrix Hypervisor 8.0 documentation: [https://docs.citrix.com/en-us/citrix-hyper
 
 Nowadays storage resources are not a challenge as an SSD provides more IOPS ever. But it is still important to take any storage differences into account especially using shared storage.
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-read-iops.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-read-iops.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-read-iops-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-read-iops-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-write-iops.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-write-iops.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-write-iops-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-write-iops-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -119,12 +139,16 @@ Read IOPS is slightly better with Citrix XenServer 7.1 as it shown on the line c
 
 Looking at the Write IOPS, there is a bigger impact compared to the read IOPS in the previous charts. Using Citrix Hypervisor 8.0 requires 16% more write IOPS than its precedessor Citrix XenServer 7.1. Most likely the reason for this could be the newer Linux kernel and the security updates that comes with it. Nonetheless the impact of 16% should be taken into account when using shared storage. Most likely when using local storage and SSD / Flashbased storage, the write IOPS increase will not be a bottleneck.
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-total-iops.png" data-lightbox="total-iops">
 ![total-iops]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-total-iops.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-total-iops-compare.png" data-lightbox="total-iops-compare">
 ![total-iops-compare]({{site.baseurl}}/assets/images/posts/036-citrix-xenserver-7-1-ltsr-vs-citrix-hypervisor-8-0-cr/036-citrix-xenserver-host-total-iops-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

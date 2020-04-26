@@ -43,7 +43,9 @@ As always, the default testing methodology is used which is described [here]({{s
 ## Results
 It is known from my previous publication at Project VRC that Microsoft App-V comes with an additional load on CPU which causes higher CPU utilization. As MSIX is based on the same technology it is expected to see a higher CPU utilization compared to a traditionally installed application.
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -52,12 +54,16 @@ As expected, there is a higher CPU utilization using App-V which is related to t
 
 The impact on storage should be minimal to none as there is no streaming or other distribution method used in any of the scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -68,24 +74,32 @@ Application start times are an important factor for the user experience as a slo
 
 Please note, the following chart is a combination of first time and second time application starts. Login VSI distributes the user over different segments in the workload. If an application is not closed in the previous segment it will be started without reporting the start times.
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-first.png" data-lightbox="app-start-first">
 ![app-start-first]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-first.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-first-bar.png" data-lightbox="app-start-first-compare">
 ![app-start-first-compare]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-first-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The results show there is a big difference between a locally installed application and both App-V and MSIX. Both App-V and MSIX are based on a container technology, also known as the bubble, which needs to be loaded. This will negatively impact the application start times.
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-second.png" data-lightbox="app-start-second">
 ![app-start-second]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-second.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-second-bar.png" data-lightbox="app-start-first-second">
 ![app-start-first-second]({{site.baseurl}}/assets/images/posts/007-impact-of-msix-packaged-applications-in-a-virtual-desktop/007-msix-vsi-appstart-second-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

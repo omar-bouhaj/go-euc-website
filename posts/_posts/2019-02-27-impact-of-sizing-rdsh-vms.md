@@ -54,7 +54,9 @@ All configurations used the same Windows server 2016 image with 32-bit Office 20
 ## The results (all tests)
 The Login VSI VSImax results represent the overall capacity between the scenarios. The VSImax is the defacto industry standard metric and is calculated score to detriment the saturation point of the virtual desktop environment. More information about the VSImax is explained here. The following graph shows an overview of the results of all configured tests:
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-vsimax-all.png" data-lightbox="vsimax-all">
 ![vsimax-all]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-vsimax-all.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -63,7 +65,9 @@ VSImax shows that on this specific hardware with the LoginVSI workload 8 VMs wit
 
 It is important to validate if the VSImax score is reflected in the Login VSI baseline.
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-baseline-all.png" data-lightbox="baseline-all">
 ![baseline-all]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-baseline-all.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -81,19 +85,25 @@ To get a better understanding between the different scenarios, we decided to sho
 
 The following chart shows the difference in VSImax and Login VSI baseline of these 5 scenarios:
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Within the Nutanix lab the saturation point is CPU related, so according to the VSImax there should be a difference in CPU load between the scenarios.
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -102,29 +112,39 @@ Using the 2 VMs with 14 vCPUs or 4 VMs with 7 vCPUs configurations consumes only
 
 The CPU load between the scenarios corresponds with the VSImax results.
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Knowing that the “8 VMs – 7 vCPUs” and the “8 VMs – 8 vCPUs” will result in comparable VSImax scores, based on the average CPU utilization, the “8 VMs – 7 vCPUs” scenario is slightly more preferable because of the lower CPU utilization.
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -135,12 +155,16 @@ On average, the Write IO pattern is similar. The configuration with 14 VMs has a
 
 The following chart shows the logon time of the first 150 users during each scenario. Only first 150 logons were used to calculate the average logon time, because with one of the test configurations, the VSImax was already reached at that point and that wouldn’t give a fair comparison:
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-logontimes.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-logontimes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-logontimes-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/014-impact-of-sizing-rdsh-vms/014-rdsh-sizing-logontimes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

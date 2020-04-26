@@ -41,7 +41,9 @@ Data files are created by a generator with random data. The files are of the fol
   * 128Mb
   * 512 Mb
   * 1 Gb
+
 For every file size there are 10 files of the same size in total and put within a corresponding folder on Microsoft OneDrive.
+
 ### Download method
 
 The downloading of files by the client is automated through PowerShell. The script will sign into Microsoft OneDrive, open the folder of one file sizes and start copying one of the data files. After every successful copy it will disconnect, sign into the file size folder and download the second data file. After this has been done for 10 times it will proceed to the next file size.
@@ -56,6 +58,7 @@ For every time a file is downloaded the following datapoints are collected withi
   * Downloadtime
   * Tenantid
   * RTT
+
 Only valid data will be used in the researches. This means without any download failures during the run. In the research the average outcome of these datapoints are used.
 
 Besides the above metrics also performance data is collected from the client.

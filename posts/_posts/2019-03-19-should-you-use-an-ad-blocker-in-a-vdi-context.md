@@ -14,9 +14,13 @@ For most companies, advertisements shown on their website are one of the income 
 
 > **Please note:** for some companies, the advertisements are the primary business model. If you want to support these companies, you should consider disabling the ads blocker on their websites
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-website-with-ad.png" data-lightbox="site-ads">
 ![site-ads]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-website-with-ad.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-website-without-ad.png" data-lightbox="site-without-ads">
 ![site-without-ads]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-website-without-ad.png)
+</a>
 
 There are multiple ways to block these advertisements where the most popular is a browser-based plugin, shown in the example above. The plugin will scan the webpage code and block all the elements from the advertisements on the website as it loaded.
 
@@ -50,14 +54,18 @@ Advertisements need to be transferred to the client and often includes animation
 
 A perfect indicator to see the capacity impact is the Login VSI VSImax. The VSImax represents the sweet spot before the server reaches the saturation point. More about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 The VSImax shows a huge improvement when using the DNS based ad blocking with a 47% as the browser based is only an 8% improvement. The huge difference between both ad blocking scenarios is a surprise because I expected similar results.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -66,34 +74,46 @@ The baseline shows also an improvement which makes sense. The baseline is based 
 
 Based on the VSImax results the CPU utilization should show a similar difference.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It clearly shows processing advertisements requires a lot of CPU resources. As browsers cache the website on disk there should be a difference from a storage perspective but not as huge as the CPU.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -102,22 +122,30 @@ It shows there is a small improvement but not as huge as with the CPU results, w
 
 As this scenario uses the internet as a source for the webpages and ads instead of static content local on the VDI it is also interesting to cover the network traffic results.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-transmitted.png" data-lightbox="nic-transmitted">
 ![nic-transmitted]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-transmitted.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-transmitted-compare.png" data-lightbox="nic-transmitted-compare">
 ![nic-transmitted-compare]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-transmitted-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-received.png" data-lightbox="nic-received">
 ![nic-received]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-received.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-received-compare.png" data-lightbox="nic-received-compare">
 ![nic-received-compare]({{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-received-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -133,7 +161,9 @@ It is important to understand the results are based on only two websites with th
 
 The plugin-based ad blocking showed some improvements but is not as effective as the DNS based blocking. A plugin-based blocker still needs to receive and process the advertisements as this is not required using the DNS method.
 
+<a href="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-host-nic-received-compare.png" data-lightbox="nic-received-compare">
 > <div style="height: 115px;"> <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-erik-bakker.png"/> A special thanks to <a href="https://twitter.com/bakker_erik" target="_blank">Erik Bakker</a> as he helped out with this specific research. </div>
+</a>
 
 Want to share your thought about this topic, leave them the comments below or get involved by joining the {{site.title}} community at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 

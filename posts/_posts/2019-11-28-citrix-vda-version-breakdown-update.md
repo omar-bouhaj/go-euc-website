@@ -52,12 +52,16 @@ Based on the results of our previous research we suspect that the new Current Re
 
 Like always, we start with the Login VSI VSImax and Baseline which reflects the scalability and responsiveness between all versions.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -70,12 +74,16 @@ The Login VSI baseline results are similar as the Login VSI VSImax which means  
 
 It is always important to validate the results using other metrics. Based on the aforementioned Login VSI VSImax results we should see similar results in the Host CPU Utilization.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -84,17 +92,23 @@ The Host CPU utilization data shows that compared to the LTSR versions, all CRâ€
 
 Another important factor is the storage load. When there is an unexpected increase in the storage load this could lead to potential issues, especially running on a shared storage solution.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-reads-writes-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-host-reads-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -103,12 +117,16 @@ The results do not look consistent between the various versions. Although based 
 
 When talking about user experience an important factor is the logon times. When logon times increase it probably will result in a negative experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -117,9 +135,13 @@ The logon times shows a similar pattern, which make sense. As the CPU Usage is h
 
 Another metric that provides an indication of the user experience is the FPS.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-fps-compare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-fps-compare.png)
+</a>
 
 Comparing with previous research, all versions show a similar line pattern, which is important. This means that the data is consistent not only across all runs in this research but also compared to previous research. This indicates that the Login VSI progress bar is not producing the continuous frame updates during the entire session.
 
@@ -127,9 +149,13 @@ Although the results within the individual runs are consistent; the FPS count is
 
 As a result, we still believe that the FPS metric is useful for measuring changes in the user experience but should not be solely relied on as a primary indicator for the perceived user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-bandwidth.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-bandwidth.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-bandwidth-compare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-session-bandwidth-compare.png)
+</a>
 
 In terms of metrics, FPS and bandwidth are the odd balls out. While for most metrics we can definitely state that either higher or lower is better. Take the Login VSI VSImax for example, a higher Login VSI VSImax will result in a higher scalability, and therefore we always assume that for the Login VSI VSImax higher is better. But for FPS and bandwidth this is not always the case. Generally speaking, a higher FPS count should result in a better and smoother user experience. But, in that case sending over more frames per second will also increase the bandwidth consumption. If there is ample bandwidth, the fact that more bandwidth is used will not be considered as a negative factor.
 
@@ -150,7 +176,9 @@ At this point Citrix has identified a change which may cause a small increase in
 
 On that note we would like to thank Martin Rowan and Muhammad Dawood for their help, effort and insights.
 
+<a href="{{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-conclusion.png" data-lightbox="conclusion">
 ![conclusion]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-conclusion.png)
+</a>
 
 Questions or comment about this research? Leave them below in the comments or ask them on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
 

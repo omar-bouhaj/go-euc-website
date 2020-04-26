@@ -49,17 +49,23 @@ As the changes in the cumulative updates contain fixes, improvements and securit
 
 One of the default metrics used in almost every research is the Login VSI VSImax which reflects the overall capacity. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}. As this research contains 12 scenarios, each Windows 10 version is compared in individual charts.
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-vsimax.png" data-lightbox="vsimax-1809">
 ![vsimax-1809]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-vsimax.png" data-lightbox="vsimax-1803">
 ![vsimax-1803]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-vsimax.png" data-lightbox="vsimax-1709">
 ![vsimax-1709]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -68,113 +74,155 @@ Overall, there is minimal change in the VSImax results in all versions. All the 
 
 The Login VSI baseline is an indicator if there is any change in the overall response times. A lower baseline reflects a more responsive experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-baseline.png" data-lightbox="baseline-1809">
 ![baseline-1809]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-baseline.png" data-lightbox="baseline-1803">
 ![baseline-1803]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-baseline.png" data-lightbox="baseline-1709">
 ![baseline-1709]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Windows 10 1809 has an improvement in the baseline, where the other version has minimal to no change. Overall this is positive as it shows when patching Windows 10 the response times remain stable where Windows 10 1809 even improves.
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-cpu.png" data-lightbox="cpu-1809">
 ![cpu-1809]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-cpu-compare.png" data-lightbox="cpu-1809-compare">
 ![cpu-1809-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-cpu.png" data-lightbox="cpu-1803">
 ![cpu-1803]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-cpu-compare.png" data-lightbox="cpu-1803-compare">
 ![cpu-1803-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-cpu.png" data-lightbox="cpu-1709">
 ![cpu-1709]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-cpu-compare.png" data-lightbox="cpu-1709-compare">
 ![cpu-1709-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Windows 10 1809 shows a consistent increase in CPU utilization as the other versions show a small difference. Although the increase is small it would be important to keep track to ensure it is not climbing with newer updates. This way capacity issues can be avoided.
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-reads.png" data-lightbox="reads-1809">
 ![reads-1809]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-reads-compare.png" data-lightbox="reads-1809-compare">
 ![reads-1809-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-reads.png" data-lightbox="reads-1803">
 ![reads-1803]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-reads-compare.png" data-lightbox="reads-1803-compare">
 ![reads-1803-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-reads.png" data-lightbox="reads-1709">
 ![reads-1709]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-reads-compare.png" data-lightbox="reads-1709-compare">
 ![reads-1709-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 There seems to be a big improvement in the storage reads/sec for both Windows 10 1809 and Windows 10 1803 except for Windows 10 1709. It is not clear what is causing the huge improvement. This shows the storage reads/sec are not consistent with each update. Something to take into account when updating the VDI environment.
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-writes.png" data-lightbox="writes-1809">
 ![writes-1809]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-writes-compare.png" data-lightbox="writes-1809-compare">
 ![writes-1809-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1809-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-writes.png" data-lightbox="writes-1803">
 ![writes-1803]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-writes-compare.png" data-lightbox="writes-1803-compare">
 ![writes-1803-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1803-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-writes.png" data-lightbox="writes-1709">
 ![writes-1709]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-writes-compare.png" data-lightbox="writes-1709-compare">
 ![writes-1709-compare]({{site.baseurl}}/assets/images/posts/023-effect-of-cumulative-updates-on-windows-10-in-a-vdi-environment/023-cu-update-1709-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

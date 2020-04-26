@@ -26,7 +26,9 @@ As the progress bar is always on top this will influence the FPS.
 
 </div>
 
+<a href="{{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-loginvsi-progress-bar.gif" data-lightbox="progress-bar">
 ![progress-bar]({{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-loginvsi-progress-bar.gif)
+</a>
 
 
 
@@ -34,15 +36,21 @@ Source: [https://youtu.be/FiVev7TkDbI](https://youtu.be/FiVev7TkDbI){:target="_b
 
 The insight was that this behavior was not present in the later VDA versions (e.g. version 1808.2 and up). After further analysis, we discovered that Citrix applied some optimization in the VDA. Although we could not validate the exact setting, we did manage to get the same animation effects by disabling the “Animate controls and elements inside windows” setting in the operating system.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-performance-options-animation.png" data-lightbox="perf-options">
 ![perf-options]({{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-performance-options-animation.png)
+</a>
 
 This setting disables the animation inside windows and therefore also within the Login VSI progress bar. Please note, the setting mention above only applies to the current user.
 
 As shown, this has a tremendous positive influence on the overall results.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-vda-compare-no-progress-bar-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-vda-compare-no-progress-bar-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-vda-compare-no-progress-bar-fps-compare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-vda-compare-no-progress-bar-fps-compare.png)
+</a>
 
 Not only the FPS is influenced by this change but also shows an impact on the other metrics from which the CPU metric is most notable. All this results in a higher VSImax value in favor of the VDA version 1808.2 and higher.
 
@@ -63,7 +71,9 @@ For our upcoming researches, we need to create a “level playing field” again
 
 > We believe that the first option is the way to go and this can be achieved by removing the progress bar entirely as this method does not require custom optimizations within the OS. Therefore, we decided to adopt this option for the upcoming researches. The removal does not influence the LoginVSI functionality in any way.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-loginvsi-progress-bar-removed.png" data-lightbox="progress-bar-remove">
 ![progress-bar-remove]({{site.baseurl}}/assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-loginvsi-progress-bar-removed.png)
+</a>
 
   * A third option would be to not compare the different versions between 7.18 (and lower) with 1808.2 (and higher). But this is not a real option now is it...
 

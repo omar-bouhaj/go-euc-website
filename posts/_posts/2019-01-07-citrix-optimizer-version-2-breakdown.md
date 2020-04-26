@@ -13,7 +13,9 @@ The final version of Citrix Optimizer (CTXO) version 2 was released on December 
 
 For this analysis we’ve broken down the optimization from the Citrix supplied optimization template for Windows 10 build 1809 based on the groups below into five scenarios:
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-ctxo1.png" data-lightbox="optimizer">
 ![optimizer]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-ctxo1.png)
+</a>
 
   * Windows 10 Build 1809 without any optimization. This will be our baseline run to which we’ll compare the result to the groups;
   * Windows 10 Build 1809 template with all default optimizations selected;
@@ -40,46 +42,62 @@ As with all {{site.title}} posts, we use the Login VSI VSImax as the main perfor
 
 More information about the VSImax can be found on the [Login VSI website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 All optimization scenarios show a performance increasement with a maximum of 17%. Comparing the ‘Full Optimized’ scenario to the ‘Remove Built-in Apps’ group has a mean percent drop of 2 percent whereas the ‘Disable Services’ and the ‘Miscellaneous’ groups both perform 11 percent worse than the ‘Full Optimized’ scenario and therefore have the least impact in terms of performance gain.
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-hostcpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-hostcpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-hostcpu.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-hostcpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 In the Host CPU usage there is a similar trend, the ‘Remove Built-in Apps’ has lowest CPU utilization on the hosts.
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-commands.png" data-lightbox="commands">
 ![commands]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-commands.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-commands.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-commands.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-memory.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-memory.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -88,12 +106,16 @@ The ‘Remove Built-in Apps’ group also scores best when it comes to disk usag
 
 Please be aware that the Commands/sec metric is not a simple addition of the Number of read/sec + Number of write/sec because the Commands/sec may also include SCSI reservations for instance. That being said, the Commands/sec should be relatively close to the IOPS.
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-bandwidth.png)
+</a>
 
 With the other metrics collected from Remote Display Analyzer (RDA) there is something strange noticeable in the data. Disabling unnecessary services shows the biggest reduction in bandwidth consumption, while the ICA Round Trip Time has the biggest reduction with the removal of the built-in Apps.
 
@@ -101,12 +123,16 @@ Data collection from RDA is a bit different than how we collect data from the ho
 
 As we did not measure the brokering time, the average logon time is a key metric to measure the performance of the Virtual Desktop from the standpoint of the end user. For an end user a slow logon almost always equals to a slow desktop experience so it’s important to have the logon times as low as can be.
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-logon.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/015-citrix-optimizer-version-2-breakdown/015-ctxo-breakdown-average-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

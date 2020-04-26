@@ -82,7 +82,9 @@ Windows 10 was optimized with the default Citrix Optimizer 1803 template.
 ## The results
 Office 2013, depicted in blue, is the baseline reference (100%) for comparison against Office 2016 and 2019. The VSImax value refers to user capacity, higher is better.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -97,7 +99,9 @@ The VSImax will be reached if the host usage is saturated by the generated (work
 ### CPU host usage
 The graph below shows how the test environment consumes host CPU resources with the different Office workloads.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,7 +110,9 @@ The CPU load of Office 2019 is the heaviest and Office 2016 the most efficient, 
 
 The bar chart below shows the CPU impact in percentages, lower is better.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-cpu-util-bar.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-cpu-util-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -116,12 +122,16 @@ Reviewing all the CPU results in comparison to Office 2013 the following conclus
 ### Disk IO host usage
 A change in your VDI environment can also have an impact on your disk usage. So, it’s important for VDI to use storage in the most efficient way to optimize virtual desktop performance and user experience. The following graphs will shed some light on the different Office versions from a storage point of view. On a side note, writes are more expensive and valuable for VDI environments.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -130,7 +140,9 @@ The disk usage graphs in comparison to Office 2013 show that Office 2019 is the 
 
 Let’s take a closer look at the numbers in the bar chart below, that shows the impact in percentages, lower is better. The Office 2016 workload is the most efficient in write usage, whereas Office 2019 is more efficient in read usage. Both Office 2016 and 2019 correspond with the disk usage graphs.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-disk-bar.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-host-disk-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -138,7 +150,9 @@ Let’s take a closer look at the numbers in the bar chart below, that shows the
 ### Office start times
 During the three scenario’s Office application start times are collected by the workload. The application start times provide an indication on user experience but also identify which applications limit performance and user capacity compared to Office 2013. The following graph shows the average user load and application start times in milliseconds for each Office scenario (combination of Excel, Outlook, PowerPoint, and Word).
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstarts.png" data-lightbox="app-start">
 ![app-start]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstarts.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -147,14 +161,18 @@ It is clear that upgrading to Office 2019 has a significant impact on Office app
 
 The bar chart below is the combination of Excel, Outlook, PowerPoint and Word start times in percentages, lower is better.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstarts-combined-bar.png" data-lightbox="app-start-compare">
 ![app-start-compare]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstarts-combined-bar.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 There are two applications, in the bar chart below, that have the biggest impact in the individual Office application start times, lower is better.
 
+<a href="{{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstat-bar-ind.png" data-lightbox="app-start-detail-compare">
 ![app-start-detail-compare]({{site.baseurl}}/assets/images/posts/004-office-2019-performance-impact/004-office2019-vsi-avg-appstat-bar-ind.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

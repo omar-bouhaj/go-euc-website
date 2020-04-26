@@ -37,67 +37,89 @@ In both Operation Systems, Spectre (CVE-2017-5715) and Meltdown (CVE-2017-5754) 
 ## The results
 Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The VSImax is one of the best metrics to see if there is a capacity (user density) improvement. More information about the VSImax can be found [here](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 Changing from Windows Server 2016 to 2019 in a RDSH-environment impacts the VSImax score with 18%, which basically translates to 18% lower user density. Keep in mind that the impact on user density depends on the workload
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The impact on the Login VSI baseline is 26% with Windows Server 2019, which means 26% higher response times of applications. That’s quite a high impact on the user experience!
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-cpu-util-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-cpu-util-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It’s interesting to see the impact on average CPU utilization is “only” 9%. That’s lower than the impact on the VSImax score.
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The average Reads/sec (15%) and Writes/sec (25%) are significantly lower using Windows Server 2019, but storage performance is never (or shouldn’t be) a bottleneck in RDSH-environments.
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The average logon times are similar when Windows Server 2016 and 2019 are compared.
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-running-task-services.png" data-lightbox="tasks-services">
 ![tasks-services]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-running-task-services.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,9 +128,13 @@ Looking at the difference in the average start times of the applications, we see
 
 Let’s take a look at the differences in installed services and scheduled tasks between the two operating systems. These number of services and scheduled tasks are the numbers after installing the required applications for the Login VSI tests (Office, Acrobat Reader, Citrix VDA).
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-installed-task-services.png" data-lightbox="installed-tasks">
 ![installed-tasks]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-installed-task-services.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-running-task-services.png" data-lightbox="running-tasks">
 ![running-tasks]({{site.baseurl}}/assets/images/posts/029-performance-comparison-windows-2016-vs-windows-2019-rdsh/029-rdsh-2016vs2019-running-task-services.png)
+</a>
 
 The lower results with Windows Server 2019 can be partially explained by the higher number of installed services and higher number of Scheduled Tasks. But after applying optimizations, the difference in running services and scheduled tasks is very little.
 

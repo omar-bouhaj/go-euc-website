@@ -13,7 +13,9 @@ When delivering a virtual desktop environment, fast storage is one of the key co
 Nowadays with all the fast solid state or NVMe storage drives, storage should not be a bottleneck anymore. Although these types of drives are fast, internal memory is still faster.
 Citrix’ Machine Creation Services (MCS) provides a functionality called MCSIO which stand for storage optimization. This functionality reduces the storage load, as it creates a cache in memory that can overflow when full to a disk. This is also known as a two-tier caching system. During the Machine Catalog creation, if configured, this overflow disk is created.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-catalog-setup.png" data-lightbox="catalog-setup">
 ![catalog-setup]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-catalog-setup.png)
+</a>
 
 MCSIO provisioned machines have an additional driver to intercept and manage storage operations. Since the Citrix Virtual Apps & Desktops version 1903, both Citrix Provisioning (PVS) and MCS share the same driver.
 For more information please visit the Citrix documentation [here](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/install-configure/machine-catalogs-create.html){:target="_blank"}.
@@ -36,12 +38,16 @@ As MCSIO is using a cache in memory, it is expected to see a reduction in storag
 
 This research is focusing on a single VM and user, however, the impact and differences from a host perspective should still be a noticeable.
  
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-cpu.png" data-lightbox="host-cpu">
  ![host-cpu]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-cpu-compare.png" data-lightbox="host-cpu-compare">
 ![host-cpu-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -49,17 +55,23 @@ This research is focusing on a single VM and user, however, the impact and diffe
 There is no noticeable difference on the CPU utilization. This shows the MCSIO filter driver has no impact on the CPU utilization. This will definitely have a positive impact on the overall user capacity.
 As MCSIO is a storage optimization technology, it is expected to see a difference on both reads and writes activities.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-reads.png" data-lightbox="host-reads">
 ![host-reads]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-writes.png" data-lightbox="host-writes">
 ![host-writes]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-storage-compare.png" data-lightbox="host-storage-compare">
 ![host-storage-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -68,12 +80,16 @@ This is where MCSIO truly shows the benefits. There is a big reduction on the re
 
 As this research has taken place with a single VM, this allowed to capture performance data within a VM.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-cpu.png" data-lightbox="vm-cpu-">
 ![vm-cpu-]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-cpu-compare.png" data-lightbox="vm-cpu-compare">
 ![vm-cpu-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -81,17 +97,23 @@ As this research has taken place with a single VM, this allowed to capture perfo
 Within the VM there is no noticeable difference, which is as expected based on the host CPU utilization.
 Based on the host storage metrics, it is expected to see a similar pattern from within the VM.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-reads.png" data-lightbox="vm-reads">
 ![vm-reads]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-writes.png" data-lightbox="hvm-writes">
 ![hvm-writes]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-storage-compare.png" data-lightbox="vm-compare">
 ![vm-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -102,12 +124,16 @@ Although the VM disk does not show any improvement the MCSIO cache and overflow 
 
 As MCSIO has an overflow to disk, it is interesting to see the difference in the used memory by the cache. Please note, the baseline is missing as this scenario does not contain MCSIO and therefore these performance counters.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-cache.png" data-lightbox="vm-ram-cache">
 ![vm-ram-cache]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-cache.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-cache-compare.png" data-lightbox="vm-ram-cache-compare">
 ![vm-ram-cache-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-cache-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -116,17 +142,23 @@ The charts show that the cache is used in both cases. It makes sense as the 512M
 
 Now it is possible to see both read and writes activities in the MCSIO memory cache.
  
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-reads.png" data-lightbox="vm-ram-reads">
 ![vm-ram-reads]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-writes.png" data-lightbox="vm-ram-writes">
 ![vm-ram-writes]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-compare.png" data-lightbox="vm-ram-compare">
 ![vm-ram-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-ram-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -137,17 +169,23 @@ The writes in the memory are almost identical. It is very clear when the file co
 
 Now the same metrics are available for the overflow disk.
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-reads.png" data-lightbox="vm-file-reads">
 ![vm-file-reads]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-writes.png" data-lightbox="vm-file-writes">
 ![vm-file-writes]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-compare.png" data-lightbox="vm-file-compare">
 ![vm-file-compare]({{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

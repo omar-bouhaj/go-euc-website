@@ -50,7 +50,10 @@ It is expected that, when Office 365 optimization is enabled, there is a decreas
 The distance between both sites and the Microsoft Office 365 Point of Presence (POP) is also around 140 km / 87 miles. This means that the path that the traffic will take is shortened by 140 km/ 87 miles when using the local breakout to the internet.
 
 ### Microsoft OneDrive West Europe
+
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-west-europe-download.png" data-lightbox="europe-download">
 ![europe-download]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-west-europe-download.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -59,28 +62,36 @@ As expected, there is a decrease in download time when enabling Office 365 optim
 For the two smaller files sizes the difference between backhauling traffic through a datacenter is smaller than expected. The reason for this is that every file is downloaded in a single session and in a single packet. After each download of the file, the client will create a new session to download the next file. It may be interesting to further investigate if “path” selection impacts the smaller downloads.
 
 For file sizes larger than 1MB we see a decrease of around 15% when Citrix SD-WAN Office 365 optimization is enabled.
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-west-europe-rtt.png" data-lightbox="europe-rtt">
 ![europe-rtt]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-west-europe-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 The RTT is significantly lower when using Citrix SD-WAN Office365 optimization. The improvement is higher than expected. This decrease in RTT is noticeable for end users, the interaction with files feels interactive instead of laggy.
 
 ### Microsoft OneDrive Canada East
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-canada-east-download.png" data-lightbox="canada-download">
 ![canada-download]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-canada-east-download.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 The Canada East tenant shows the same pattern as the West Europe tenant for downloading the data. The only small deviation is within the 1 KB and 1 MB files that score slightly better compared to the West Europe tenant. Within the data collected there is no obvious reason for this.
 
 Comparing the overall download time with the West Europe tenant, the Canada East tenant is slightly slower.
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-canada-east-rtt.png" data-lightbox="canada-rtt">
 ![canada-rtt]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-canada-east-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 The RTT improvement and thus user experience improvement is equal to that of the West Europe tenant.
 
 ### Microsoft OneDrive Southeast Asia
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-sourtheast-asia-download.png" data-lightbox="asia-download">
 ![asia-download]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-sourtheast-asia-download.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -89,7 +100,9 @@ The Southeast Asia tenant shows the same pattern and results as the West Europe 
 The only thing standing out is the drop of the 1 KB. There is no explanation within the data set collected.
 
 Comparing the overall download time with the Western Europe tenant and the Canada East tenant, the Southeast Asia tenant is slightly slower.
+<a href="{{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-sourtheast-asia-rtt.png" data-lightbox="asia-rtt">
 ![asia-rtt]({{site.baseurl}}/assets/images/posts/041-citrix-sd-wan-performance-benefits-with-office-365-optimization/041-citrix-sd-wan-sourtheast-asia-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

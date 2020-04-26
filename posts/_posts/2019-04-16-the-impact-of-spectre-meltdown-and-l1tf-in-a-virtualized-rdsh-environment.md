@@ -43,14 +43,18 @@ The following three scenarios were tested:
 ## The results
 It is expected that Spectre, Meltdown and L1TF will have an impact on user density and user experience. Using Login VSI we can measure the impact by comparing the Login VSI VSImax and the Login VSI baseline. The VSImax is one of the best metrics to see if there is a capacity (user density) improvement. More information about the VSImax can be found here.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 Enabling Spectre and Meltdown in a virtualized RDSH environment will decrease the VSImax with 9%. If the L1TF mitigation is also enabled, the VSImax will decrease with 50%! Enabling this mitigation (enabling the Side-Channel Aware scheduler on ESXi in this case) will result in not being able to leverage Hyperthreading, which partially explains this high impact.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -58,53 +62,71 @@ Enabling Spectre and Meltdown in a virtualized RDSH environment will decrease th
 The impact of enabling Spectre and Meltdown mitigations in the Windows server OS will cause the response times (Login VSI baseline) to go up with 9%. If you then enabled the Side-Channel Aware scheduler on ESXi as well, to mitigate the L1TF vulnerability, the response times will be back to almost the same level as before, only 2% difference from the baseline. This is probably because the VMs are now leveraging real CPU cores instead of hyperthreaded cores.
 The impact on the VSImax score and VSI baseline are most likely a result of a higher load on the CPU.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 On average, the CPU utilization is 5% higher with Spectre and Meltdown mitigations enabled, and with the Side-Channel Aware scheduler enabled 17% higher. The trend is similar as the Login VSI results, but the impact on CPU utilization is lower than expected. Other aspects might influence the results of Login VSI as well, like CPU ready times.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 As expected, there is no impact on reads enabling the mitigations. There is a small increase in writes when the average writes during the test are compared, but the chart of the Host writes/sec during the tests look very similar.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 An increase in logon times of 17% when enabling Spectre and Meltdown and 71% when also enabling the Side-Channel Aware scheduler does seem a lot. But this is also caused by the higher CPU utilization when the mitigations are enabled. In the next chart, the logon times during the first 20 minutes are compared.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times-compare-20min.png" data-lightbox="logon-20min-compare">
 ![logon-20min-compare]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-logon-times-compare-20min.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -117,28 +139,36 @@ Because the impact of enabling the mitigations against these vulnerabilities is 
 ### The alternative results
 In the following chart, the impact on Login VSI VSImax of enabling Spectre, Meltdown and L1TF in an RDSH environment is presented, when the number of sessions and VMs are adjusted for the test with L1TF mitigations.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-vsimax.png" data-lightbox="vsimax-alt">
 ![vsimax-alt]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 Lowering the number of launched sessions and VMs when the Side-Channel Aware scheduler is enabled on ESXi will improve the user density. Instead of a decrease of VSImax of 50%, it’s now “only” 34%.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-baseline.png" data-lightbox="baseline-alt">
 ![baseline-alt]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The Login VSI Baseline is now comparable to the Login VSI Baseline of the test without the mitigations for Spectre and Meltdown enabled (instead of the 2% increase in Login VSI baseline).
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-host-cpu.png" data-lightbox="cpu-alt">
 ![cpu-alt]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 As you can see, the CPU load is quite similar between the 3 configurations. The CPU utilization of the test with 4 VMs with L1TF enabled is lower during almost the entire test. This is caused by the lower number of launched sessions. In the end, the CPU still reaches 100% utilization.
 
+<a href="{{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-host-cpu-compare.png" data-lightbox="cpu-compare-alt">
 ![cpu-compare-alt]({{site.baseurl}}/assets/images/posts/024-the-impact-of-spectre-meltdown-and-l1tf-in-a-virtualized-rdsh-environment/024-w2k16-spectre-alt-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

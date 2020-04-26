@@ -40,12 +40,16 @@ Citrix has based the LTSR edition on the latest current release offering of CVAD
 
 In order to validate our expectations various sets of results are used. For scalability the Login VSI VSImax is a reliable metric. The Login VSI baseline is a good indication of the overall response time of the VDI session, which is a decent reflection of the user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -54,12 +58,16 @@ There is a clear difference in the Login VSI VSImax results. Upgrading to the la
 
 For the sake of consistency, it is important to validate the Login VSI results with other metrics to get the complete overview.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-cpu.png" data-lightbox="host-cpu">
 ![host-cpu]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-cpu-compare.png" data-lightbox="host-cpu-compare">
 ![host-cpu-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -68,12 +76,16 @@ Based on the CPU utilization metrics, we can confirm the Login VSI VSImax result
 
 During the analysis we did noticed a difference in the memory footprint. In most cases an environment is already sized to host a set number of users. When the environment is sized appropriately, memory scalability should not be an issue but, it is still beneficial to use memory efficiently. On the other hand, high memory usage might force memory swapping on the virtualization host and could have a negative effect on the performance of the VDI sessions.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-mem.png" data-lightbox="host-mem">
 ![host-mem]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-mem.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-mem-compare.png" data-lightbox="host-mem-compare">
 ![host-mem-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-mem-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -82,17 +94,23 @@ The metrics shown above are the available memory to the virtualization host, mea
 
 Next to memory usage it is important to take storage into account. Performance issues on storage could result in a very bad user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-reads.png" data-lightbox="host-reads">
 ![host-reads]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-writes.png" data-lightbox="host-writes">
 ![host-writes]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-storage-compare.png" data-lightbox="host-storage-compare">
 ![host-storage-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -101,12 +119,16 @@ This is a bit of a surprise. The previous 7.15 CU versions have fewer read activ
 
 User experience is key when delivering a virtual desktop environment. One of the primary indicators that is used to measure the user experience, is the frames per second metric.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-fps.png" data-lightbox="session-fps">
 ![session-fps]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-fps-compare.png" data-lightbox="session-fps-compare">
 ![session-fps-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-fps-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -115,12 +137,16 @@ The differences are negligible, resulting in a similar user experience. This con
 
 Another key indicator is the round trip time, also known as RTT. RTT is the delay between the user input and the action in the virtual desktop. When the RTT is increasing this may result in degradation of the user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-rtt.png" data-lightbox="session-rtt">
 ![session-rtt]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-rtt-compare.png" data-lightbox="session-rtt-compare">
 ![session-rtt-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-rtt-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -131,12 +157,16 @@ These results show that there are numerous protocol improvements made in recent 
 
 In our case, bandwidth is not a problem as all our testing scenarios and communications occur within the boundaries of the datacenter. Not only the VDIs are located in the datacenter, but the endpoints as well (also known as Login VSI Launchers). This differs from real-world cases where the endpoints always reside outside of the datacenter and are sometimes only connected via cellular networks where bandwidth consumption might very well be one of the biggest challenges.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-bandwidth.png" data-lightbox="session-bandwidth">
 ![session-bandwidth]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-bandwidth-compare.png" data-lightbox="session-bandwidth-compare">
 ![session-bandwidth-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-session-bandwidth-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -146,82 +176,110 @@ The new 1912 LTSR is more efficient compared to 7.15 CU versions. In most cases 
 ## Long-Term Servicing Release vs. Current Release
 Additionally, we compared the LTSR to the latest CR release, which is 1909 at time of this research. As explained at the beginning of the previous chapter, we know the 1912 LTSR is based on CR 1909. As there are some bug fixes and additional improvements, we do not expect to see much difference between both versions.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-vsimax.png" data-lightbox="cr-vsimax">
 ![cr-vsimax]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-baseline.png" data-lightbox="cr-baseline">
 ![cr-baseline]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The Login VSI VSImax difference is 4%. Although there was not an expectation of any scalability improvements, the results confirms the applied changes have a positive effect.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-cpu.png" data-lightbox="cr-host-cpu">
 ![cr-host-cpu]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-cpu-compare.png" data-lightbox="cr-host-cpu-compare">
 ![cr-host-cpu-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 The CPU utilization has a similar pattern and on average there is only a difference of 2%. It is 2% lower, but based on the Login VSI VSImax it was expected to have a slightly higher CPU Utilization.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-mem.png" data-lightbox="cr-host-mem">
 ![cr-host-mem]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-mem.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-mem-compare.png" data-lightbox="cr-host-mem-compare">
 ![cr-host-mem-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-mem-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 These results show 1909 CR has 8% more memory available compared to 1912 LTSR. At this point, based on the data we collected, it is not clear what is causing the difference.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-reads.png" data-lightbox="cr-host-reads">
 ![cr-host-reads]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-writes.png" data-lightbox="cr-host-writes">
 ![cr-host-writes]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-storage-compare.png" data-lightbox="cr-host-storage-compare">
 ![cr-host-storage-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 There is a noticeable difference in the reads/sec, which we have seen before in the LTSR comparison. The results of 1909 CR are on par with the previously shown storage metrics of 7.15 CU LTSR versions.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-fps.png" data-lightbox="cr-session-fps">
 ![cr-session-fps]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-fps.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-fps-compare.png" data-lightbox="cr-session-fps-compare">
 ![cr-session-fps-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-fps-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 The workload is divided in segments, which contains both static and more dynamic content, like videos and PowerPoint presentations. In the segments with the dynamic content, it is expected to see more spikes in the FPS charts. For the 1912 LTSR release these spikes are higher compared to 1909 CR, which results on average a lower FPS. Using the LTSR will results in a smoother user experience.
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-rtt.png" data-lightbox="cr-session-rtt">
 ![cr-session-rtt]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-bandwidth.png" data-lightbox="cr-session-bandwidth">
 ![cr-session-bandwidth]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-rtt-bandwidth-compare.png" data-lightbox="cr-session-rtt-bandwidth-compare">
 ![cr-session-rtt-bandwidth-compare]({{site.baseurl}}/assets/images/posts/049-citrix-virtual-apps-and-desktops-1912-long-term-servicing-release/049-citrix-ltsr-cr-session-rtt-bandwidth-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

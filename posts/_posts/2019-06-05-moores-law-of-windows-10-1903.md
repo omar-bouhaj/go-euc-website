@@ -42,12 +42,16 @@ The title of this research gives a clear indication of what you can expect. The 
 
 In order to prove the expectations, one of the used metrics is the Login VSI VSImax. This provides a clear indication of the user density of the environment. The Login VSI baseline provides insights into the responsiveness of the session.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -56,29 +60,39 @@ The Login VSI results confirm the expectations, each version of Windows 10 has a
 
 It is important to take other metrics in account to get a complete view of the impact.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-cpu-util-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-cpu-util-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It is clear Windows 10 1903 consumes more CPU resources, which confirms the Login VSI VSImax results. As most environments are CPU limited, it is important to take this into account to avoid capacity problems in your environment.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-storage-compare.png" data-lightbox="storage-compare">
 ![storage-compare]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-host-storage-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -87,12 +101,16 @@ From a storage perspective, the same trend continues, namely that Windows 10 190
 
 Good user experience is important in almost every environment. One of those experiences is the logon times, where a high logon time is often experienced as slow and annoying.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-logon-times.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-logon-times-compare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -101,18 +119,24 @@ There is a huge increase in the logon times when using Windows 10 1903. From a p
 
 The Citrix Optimizer disables various services, scheduled tasks and removes the built-in apps. It is interesting to see the differences between the various builds in a basic deployment, which includes Office.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-windows-task-services-apps.png" data-lightbox="services-tasks-apps">
 ![services-tasks-apps]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-windows-task-services-apps.png)
+</a>
 
 The new features come with new services and scheduled tasks. Although there is a decrease in the built-in apps, which is good, we still see the increase in the logon time. Based on [previous research]({{site.baseurl}}/citrix-optimizer-version-2-breakdown){:target="_blank"} we have learned the built-in apps have a major influence on the logon times. This is worth a for a future investigation.
 
 Another important user experience metric is application start times. Where high start times are experienced as slow, annoying and bad.
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-app-start-office.png" data-lightbox="app-office">
 ![app-office]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-app-start-office.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-app-start-other.png" data-lightbox="app-other">
 ![app-other]({{site.baseurl}}/assets/images/posts/030-moores-law-of-windows-10-1903/030-win10-1903-app-start-other.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

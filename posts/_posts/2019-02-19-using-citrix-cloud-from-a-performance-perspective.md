@@ -16,7 +16,9 @@ When you onboard onto Citrix Cloud and sign in for the first time, you have the 
   * European Union
   * Asia Pacific
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-region-select-v2.png" data-lightbox="region">
 ![region]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-region-select-v2.png)
+</a>
 
 While all Citrix Cloud services are globally available, be aware that not all services have a dedicated presence in each region and are US based only.
 
@@ -57,7 +59,9 @@ In the specified configuration it is not expected there is a huge difference in 
 
 Login VSI is our default tool to generate the load on the environment. A key metric produced by Login VSI is the VSImax which reflects the maximum capacity of the environment.
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
@@ -67,34 +71,46 @@ There is a small difference between the scenarios with a slight increase in the 
 To get a full overview of the performance impact not only the VSImax is important, but also the other hosts metrics that are collected need to be taken in to account.
 
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-cpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-cpu-compare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-cpu-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 There is no difference in the host CPU utilization.
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-reads-compare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-reads-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-writes-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-host-writes-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -103,12 +119,16 @@ There is a small difference from a storage perspective. It shows at the beginnin
 
 As mentioned in the introduction there will be an expected impact on the user logon as the brokering will be done by Citrix Cloud.
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-logon-times.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-logon-times.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-logon-times-compare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-logon-times-compare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -119,14 +139,18 @@ With the average latency to Azure measured from [http://www.azurespeed.com/](htt
 
 When we shift focus to the launchers, it will become obvious that from the client perspective there is no performance penalty in choosing Citrix Cloud over an on-premises environment.
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-launcher-cpu.png" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-launcher-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 For the network data transferred from the launcher to the VDI, it makes no difference if the connections are brokered via the Cloud Connectors to the Delivery Controllers at Citrix Cloud, or directly via the local on-premises Delivery Controllers.
 
+<a href="{{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-launcher-nic.png" data-lightbox="launcher-nic">
 ![launcher-nic]({{site.baseurl}}/assets/images/posts/013-using-citrix-cloud-from-a-performance-perspective/013-citrix-cloud-launcher-nic.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>

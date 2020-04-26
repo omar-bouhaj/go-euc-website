@@ -48,26 +48,34 @@ Unfortunately, the VSImax metric cannot be used. Windows 10 1809 is not fully op
 
 The baseline is a valuable metric. The baseline contains the lowest response times of the tests. A higher baseline indicates a slower response time which results in a lower VSImax. More information about the baseline can be found [here](https://www.loginvsi.com/documentation/index.php?title=Login_VSI_VSImax#VSImax_Baseline){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-baseline.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 It is interesting to see the difference between 1709 and 1803 release has a minimal impact on the Login VSI baseline, but Windows 10 1809 has an increase of 24%.
 
+<a href="{{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-cpu-util.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-cpu-util.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 This difference is also reflected in the CPU Utilization on the hypervisor which indicates Windows 10 1809 clearly consumes more resources from the CPU.
 
+<a href="{{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-reads.png" data-lightbox="reads">
 ![reads]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-reads.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-writes.png" data-lightbox="writes">
 ![writes]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-host-writes.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -77,7 +85,9 @@ From the storage perspective, the difference is small. There is a slight increas
 ### The difference in services, scheduled tasks, and apps
 Of course, there is a reason that Windows 10 1809 consumes more resources. Microsoft is continuously adding new functionality in Windows which results in more services, tasks, and apps.
 
+<a href="{{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-windows-services-tasks-apps.png" data-lightbox="services-tasks-apps">
 ![services-tasks-apps]({{site.baseurl}}/assets/images/posts/006-windows-10-1809-performance-impact/006-win10-1809-windows-services-tasks-apps.png)
+</a>
 
 Windows 10 1809 has more default services, scheduled tasks, and default apps compared to Windows 10 1709. This is the main reason the impact of Windows 10 1809 is higher. Please note, the chart above is based on the test deployment which includes VMware tools, Citrix VDA, and Adobe Reader.
 

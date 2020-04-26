@@ -22,7 +22,9 @@ As the name implies, the infrastructure cluster hosts all the infrastructure com
 
 The target cluster is a NX-3060-G5 cluster with nodes that consists two Intel® Xeon® E5-2680 v4 processors with 14 cores each, totaling to 56 hyperthreading cores. The nodes are equipped with 512 Gigabytes of internal memory.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-overview.png" data-lightbox="nutanix-overview">
 ![nutanix-overview]({{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-overview.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Infrastructure setup of Login VSI in the Nutanix-lab</i>
 </p>
@@ -30,7 +32,9 @@ The target cluster is a NX-3060-G5 cluster with nodes that consists two Intel® 
 
 In a Nutanix Hyperconverged infrastructure there will be a Controller VM running on each node in the cluster. The Nutanix Controller VM enables the pooling of local storage from all nodes in the cluster. When the hypervisor running on the nodes is VMware vSphere, this pool of storage is presented by NFS to the hosts. As mentioned, when testing for {{site.title}}, the Nutanix controller VM is turned off on the target-host. When the Nutanix CVM is powered off, the storage path will be redirected to one of the other CVMs over the 10 Gbe network over NFS.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-cvm-failure.jpg" data-lightbox="nutanix-cvm-failure">
 ![nutanix-cvm-failure]({{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-cvm-failure.jpg)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Storage path redirection when the Controller VM is offline</i>
 </p>
@@ -40,7 +44,9 @@ The only impact for the target VMs is that the storage is accessed over the netw
 ## Hypervisor platform
 Currently, VMware vSphere is used in the {{site.title}} infrastructure. Therefore, the tests performed for {{site.title}} in the Nutanix-lab will also be performed on vSphere.  VMware vSphere 6.7 U1 with build number 10302608 is installed.
 
+<a href="{{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-vmware.png" data-lightbox="nutanix-vmware">
 ![nutanix-vmware]({{site.baseurl}}/assets/images/posts/000-nutanix-lab-architecture-and-hardware-setup-overview-2019/000-nutanix-lab-vmware.png)
+</a>
 
 ## Desktop virtualization platform
 In the Nutanix-lab Citrix Virtual Apps and Desktops 7 version 1811 is installed. The Citrix infrastructure is based on the Citrix VDI Handbook and Best Practices and the design considerations therein, with a couple of changes and additions.

@@ -54,48 +54,64 @@ The tests were configured to use non-persistent desktops delivered using Citrix 
 Based on the improvements outlined above we should expect an improvement in scalability, performance and network throughput.
 As usual, the first metric that we use to evaluate the scalability of the scenario’s is the Login VSI VSImax value. More information about the VSImax can be found on the Login VSI [website](https://www.loginvsi.com/blog-alias/login-vsi/481-calculating-maximum-virtual-desktop-capacity-vsimax-explained){:target="_blank"}.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-vsimax.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
 All Current Release VDA versions show an overall improvement in scalability of the environment to both of the LTSR versions, but from 1808.2 onward the improvement is massive. An improvement of over 30% is really exceptional and our interpretation is that Citrix worked very hard to minimize the footprint of the VDA’s in the latest versions.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcpu.png" data-lightbox="cpu">
 ![cpu]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcpucompare.png" data-lightbox="cpu-compare">
 ![cpu-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcpucompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Because with most workloads the CPU usage is the main bottleneck, the CPU usage results are in line with the previously listed VSImax results.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostmemory.png" data-lightbox="memory">
 ![memory]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostmemory.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostmemorycompare.png" data-lightbox="memory-compare">
 ![memory-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostmemorycompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 Memory consumption, on the other hand, shows a slight increase across the newer versions compared to 7.15.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostreadscompare.png" data-lightbox="reads-compare">
 ![reads-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostreadscompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostwritescompare.png" data-lightbox="writes-compare">
 ![writes-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostwritescompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcommandscompare.png" data-lightbox="command-compare">
 ![command-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-hostcommandscompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -106,25 +122,35 @@ To get an idea of the user experience from a users perspective we use the tool R
 
 Within the HDX protocol, the metric framerate is reported and collected. The metric framerate is called FPS or Frames per second. In general the greater the FPS value is, the smoother the user experience will appear.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fps.png" data-lightbox="fps">
 ![fps]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fps.png)
+</a>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare.png" data-lightbox="fps-compare">
 ![fps-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare.png)
+</a>
 
 With the FPS there is an enormous drop in the average FPS during the workload with version 1808.2 and 1811.1. As stated earlier, in general, a higher framerate is favorable because this will result in a smoother user experience.
 
 In respect of the accuracy of the data, we validated the findings by examining the Remote Display Analyzer data for the second user:
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpsvalidation.png" data-lightbox="fps-validation">
 ![fps-validation]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpsvalidation.png)
+</a>
 
 Again we can see the same trend: an overall drop in FPS for 1808.2 and 1811.1. With this validation, we can conclude that the data is accurate and that we need to find a plausible explanation for the drop in FPS.
 
 On that account let’s focus on the FPS data for 7.18 and 1808.2:
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare7181808.png" data-lightbox="fps-vda-version">
 ![fps-vda-version]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare7181808.png)
+</a>
 
 During the first part of the workload which is mostly textbased we can see that the FPS count for 1808.2 is lower, but when the part of the workload that plays multimedia content is reached there is an increase in FPS for 1808.2. Specifically, the part of the workload starting from the 43-minute mark unto the 50-minute mark (the multimedia section):
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare7181808multimediasection.png" data-lightbox="fps-vda-version-compare">
 ![fps-vda-version-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-fpscompare7181808multimediasection.png)
+</a>
 
 Normally we would rate a low FPS count as disadvantageous because a higher FPS count would result in a better and smoother user experience. In the multimedia section of the workload, the FPS count increases in order to deal effectively with the increased screen output. Here we can see that in the 44, 46 and 48-minute marks during the workload we can see a bump in the FPS for version 1808.2.
 
@@ -134,7 +160,9 @@ The newer caching algorithms for the newer VDA’s result in a lower FPS and hav
 
 In order to render the frames sent to the endpoint, the VDA’s will require computing power. We can measure the impact of the computing power required with the ‘Average CPU for Encoding’ metric from Remote Display Analyzer.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-cpuforencodingcompare.png" data-lightbox="cpu-encoding-compare">
 ![cpu-encoding-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-cpuforencodingcompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -143,12 +171,16 @@ Because of the lower overall FPS count for the newer VDA version, the CPU for en
 
 With the drop in FPS we would expect a significant drop in bandwidth consumption as well. Fewer frames rendered means there is less to transmit over to the client.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-bandwidthcompare.png" data-lightbox="bandwidth-compare">
 ![bandwidth-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-bandwidthcompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -157,12 +189,16 @@ As foreseen, the overall bandwidth also benefits from the ICA improvements with 
 
 Perhaps the HDX adaptive throughput can also be attributed to the drop in bandwidth consumption. With adaptive throughput, the protocol intelligently fine-tunes the peak throughput of the ICA session by adjusting output buffers.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-rtt.png" data-lightbox="rtt">
 ![rtt]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-rtt.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-rttcompare.png" data-lightbox="rtt-compare">
 ![rtt-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-rttcompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
@@ -172,24 +208,32 @@ The ICA Roundtrip Time (RTT) which for a large part equals to the responsiveness
 ### Launcher results
 So far we’ve only looked at the data from the host perspective. As the endpoint (or the launchers in our case) need to process al information send from the VDA, their statistics are also key to take into account.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-launchercpu.png" data-lightbox="launcher-cpu">
 ![launcher-cpu]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-launchercpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-launcercpucompare.png" data-lightbox="launcher-cpu-compare">
 ![launcher-cpu-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-launcercpucompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
 As with the host metrics, the newer VDA versions have a significantly lower CPU impact on the launchers, but here the drop is 40% compared to 7.15. The increase in CPU utilization for the 7.18 version is unaccountable at the moment and warrants further investigation.
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-logon.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
+<a href="{{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-logoncompare.png" data-lightbox="logon-compare">
 ![logon-compare]({{site.baseurl}}/assets/images/posts/021-citrix-vda-versions-breakdown-a-giant-leap-forward/021-citrix-vda-compare-logoncompare.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
