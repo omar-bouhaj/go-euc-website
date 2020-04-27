@@ -952,7 +952,7 @@ td, th {
 
 .search-results {
     border-radius: 0px 0px 10px 10px;
-    width: 300px;
+    width: 256px;
     position: absolute;
     z-index: 999;
     background-color: white;
