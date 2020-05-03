@@ -18,7 +18,7 @@ authors:
   ryan:
     name: Ryan
     display_name: Ryan Ververs-Bijkerk
-    company: ICT-Partners
+    company: RawWorks
     title: 'Technical Evangelist'
     picture: 'assets/images/authors/ryan.png'
     web: https://www.logitblog.com
@@ -27,7 +27,7 @@ authors:
     github: https://github.com/RyanBijkerk
     reddit: https://www.reddit.com/u/ryanbijkerk
     page: ryan-ververs-bijkerk
-    description: "Ryan is currently a Technical Evangelist at ICT-Partners focused on the End-User Computing area. Ryan is primarily focusing on the user experience in centralized desktop environments."
+    description: "Ryan is currently a Technical Evangelist at RawWorks focused on the End-User Computing area. Ryan is primarily focusing on the user experience in centralized desktop environments."
   eltjo:
     name: Eltjo
     display_name: Eltjo van Gulik
@@ -102,7 +102,7 @@ authors:
   tom:
     name: Tom 
     display_name: Tom de Jong
-    company: ICT-Partners
+    company: RawWorks
     title: Workspace Consultant
     picture: 'assets/images/authors/tom.png'
     linkedin: https://www.linkedin.com/in/tom-de-jong-5131809a/
