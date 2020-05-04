@@ -9,7 +9,7 @@ image: assets/images/posts/000-insight-in-the-testing-methodology-2020/000-insig
 ---
 One of the key components in the GO-EUC researches is the testing methodology. This methodology allows us to produce consistent and reliable results that are used to publish the researches. Describing the testing methodology also allows you to reproduce and challenge our results. This article describes the details, sources and methods used for the GO-EUC researches. 
 
-## Performance product: LoadGen
+## Performance solution: LoadGen
 Our goal is to see the behavior of a solution in an environment that is under load. To achieve this, a load simulation solution is used. The primary solution used at GO-EUC is LoadGen. LoadGen makes it possible to simulation user behavior on virtual environments. LoadGen is the default solution in the researches, unless stated otherwise.
 
 > LoadGen offers customers and service providers a complete software solution to test, and maintain the optimal performance, user experience, scalability, and availability of (virtual) desktop environments including all of your business applications. 
