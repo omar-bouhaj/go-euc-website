@@ -96,6 +96,7 @@ If you have comments, questions, or suggestions, please feel free to share those
 
 ## Change log
 <b>04-20-2020: version 2004.01</b> – Initial release
+<br>
 <b>05-01-2020: version 2005.01</b> – Extended the Excel block
 
 Photo by [Isaac Smith](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_bank"} on [Unsplash](https://unsplash.com/s/photos/measure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
