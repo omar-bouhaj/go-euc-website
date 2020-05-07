@@ -7,18 +7,18 @@ categories: [ 'citrix' ]
 tags: [ 'citrix', 'cvad', '1912', '2003', '1909', '1906', 'LTSR', 'CR' ]
 image: assets/images/posts/056-performance-impact-of-citrix-cvad-2003/056-citrix-cvad-2003-feature-image.png
 ---
-Not so long ago, Citrix released version 7.2003 of Citrix Virtual Apps and Desktops (CVAD). This version is the first Current Release (CR) release after the release of the 7.1912 Long-Term Servicing Release (LTSR) release in December 2019. As such, this version marks a fork in the road for IT decisionmakers and administrators. This research will focus on the performance difference of CVAD 2003.
+Not so long ago, Citrix released version 7.2003 of Citrix Virtual Apps and Desktops (CVAD). This version is the first Current Release (CR) released after the release of the 7.1912 Long-Term Servicing Release (LTSR) released in December 2019. As such, this version marks a fork in the road for IT decisionmakers and administrators. This research will focus on the performance difference of CVAD 2003.
 
 ## What is new in CVAD 2003
-As always, with this version begin a CR release, CVAD version 2003 is only supported for 6 months from its release date. If a longer support cycle is required, LTSR is the way to go.
+As always, with this version being a CR release, CVAD version 2003 is only supported for 6 months from its release date. If a longer support cycle is required, LTSR is the way to go.
 
-One of the most surprising changes in this new CR release is the deprecation of support for workloads running in public clouds. This means a site running on CVAD 2003 or higher with workloads in public clouds configuration. CVAD 1912 LTSR will continue to support public cloud workloads.
+One of the most surprising changes in this new CR release is the deprecation of support for workloads running in public clouds. This means a site running on CVAD 2003 or higher with workloads in public clouds configuration will be an unsupported. CVAD 1912 LTSR will continue to support public cloud workloads.
 
 While this might not come as a surprise, the fact remains, however, that Citrix clearly pushes its Citrix Cloud offering in this regard.
 
-Next that that, Citrix deprecated the use of the NVIDIA GRID version 9 display drivers for the hardware encoding with NVIDIA GPUs.
+Next to that, Citrix deprecated the use of the NVIDIA GRID version 9 display drivers for the hardware encoding with NVIDIA GPUs.
 
-Apart from the public cloud support deprecation, Citrix has also added quite a few improvements to the functionality of the product. 
+Apart from the public cloud support deprecation, Citrix has also added quite a few improvements to the functionalities of the product. 
 
   * Citrix Scout data masking;
   * Updated browser content redirection routing with new proxy capabilities;
@@ -29,7 +29,7 @@ Apart from the public cloud support deprecation, Citrix has also added quite a f
 Citrix also added support for Electron based applications like Teams and Slack to the Server OS VDA.
 As a preview function, Citrix also released support for the dragging and dropping of files from and to a Citrix session. 
 
-For a full description of the new functionality please see the what’s new page [here](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/whats-new.html){:target="_blank"}. 
+For a full description of the new functionalities please see the what’s new page [here](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/whats-new.html){:target="_blank"}. 
 
 ## Setup and Configuration
 This research is focused on how this CR release stacks up against its LTSR counterpart, release 1912, and predecessors CR 1906 and 1909.
@@ -103,9 +103,9 @@ Next to the CPU utilization it is important to validate other host metrics, like
   <i>Lower is better</i>
 </p>
 
-There is minimal difference in the writes per second between the scenarios. For the reads, there is a slight increase for 2003 compared to the other VDA versions, including 1912.
+There is minimal difference in the reads per second between the scenarios. For the writes, there is a slight increase for 2003 compared to the other VDA versions, including 1912.
 
-In addition to the host metrics, it is also important to take give thought the protocol metrics.
+In addition to the host metrics, it is also important to take give thought to the protocol metrics.
 
 <a href="{{site.baseurl}}/assets/images/posts/056-performance-impact-of-citrix-cvad-2003/056-citrix-cvad-2003-session-fps.png" data-lightbox="session-fps">
  ![session-fps]({{site.baseurl}}/assets/images/posts/056-performance-impact-of-citrix-cvad-2003/056-citrix-cvad-2003-session-fps.png)
@@ -154,7 +154,7 @@ As with the other metrics, there is only a minimal difference in the reported FP
 We do see a slightly increase in RTT with VDA 2003 in comparison to the previous VDA versions, something that we cannot account for at this point. 
 
 ## Conclusion
-One of the biggest shifts of Citrix CVAD 2003 is the deprecation of the public cloud support. This strategy of Citrix could have a major effect some Citrix customers. A hybrid public cloud configuration is still possible using the LTSR edition of Citrix. Besides the bug fixes you are going to miss out on added features that are only available in the CR editions.
+One of the biggest shifts of Citrix CVAD 2003 is the deprecation of the public cloud support. This strategy of Citrix could have a major effect to some Citrix customers. A hybrid public cloud configuration is still possible using the LTSR edition of Citrix. Besides the bug fixes you are going to miss out on added features that are only available in the CR editions.
 
 When maintaining a virtualized environment is it important to be in control. Every change, update or upgrade could potentially have a negative effect on the scalability and user experience.
 
