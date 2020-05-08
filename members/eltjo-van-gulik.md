@@ -5,15 +5,14 @@ comments: false
 ---
 {% assign author = site.authors['eltjo'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Citrix aficionado. Wannabee PowerShell buff. Blogger. Father and husband. Social, a tad pedantic and suitably lazy.
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Citrix aficionado. 
+Citrix aficionado. Wannabee PowerShell buff. Blogger. Father and husband. Social, a tad pedantic and suitably lazy. Citrix CTP, PTEC member and SME.
 
-Eltjo van Gulik is a Workspace Consultant and enthusiast from the rural North of Alkmaar where he lives with his wife and eleven year old son. He holds multiple certifications from Citrix and Microsoft. Among the most recent are CC-XAD-CC, CCE-V, and MCSE: Cloud Platform and Infrastructure (Charter member). He has more than 18 years of experience in the field of end user computing and Application and Desktop Delivery.
+Eltjo van Gulik is a Workspace Consultant and enthusiast from the rural North of Heerhugowaard where he lives with his wife and thirteen year old son. He holds multiple certifications from Citrix and Microsoft. Among the most recent are CC-XAD-CC, CCE-V, and MCSE: Cloud Platform and Infrastructure (Charter member). He has more than 20 years of experience in the field of End User Computing and Application and Desktop Delivery.
 
-In 2019 Eltjo was one of the 21 new Citrix Technology Advocate (CTA) awardees: [https://www.citrix.com/blogs/2019/03/05/announcing-the-new-2019-citrix-technology-advocate-awardees/](https://www.citrix.com/blogs/2019/03/05/announcing-the-new-2019-citrix-technology-advocate-awardees/){:target="_blank"}
+In 2020 Eltjo was one of the new CTP awardees: [https://www.citrix.com/blogs/2020/02/11/welcome-to-the-2020-class-of-citrix-technology-professionals/](https://https://www.citrix.com/blogs/2020/02/11/welcome-to-the-2020-class-of-citrix-technology-professionals/){:target="_blank"}
 
 Besides his profession, he is a self-proclaimed beer and coffee geek. If anyone asks for the specifics, his favorite beers are Russian Imperial Stouts and for coffee, he prefers Brasil/Costa Rica Arabica blends.
-
-Eltjo regularly shares his knowledge, insights and experience on his personal blog, [www.netwerkhelden.nl](www.netwerkhelden.nl){:target="_blank"} and on the ICT-Partners blog at [www.ict-partners.nl/blogs](www.ict-partners.nl/blogs){:target="_blank"}.
 
 Feel free to contact him on Twitter or Linkedin.
 
