@@ -45,23 +45,15 @@ It is expected that all templates provide an enormous performance boost relative
 
 This can be validated using the Login VSI VSImax and baseline which represents the scalability and responsiveness of the environment. 
 
-<a href="{{site.baseurl}}/assets/images/posts/039-the-real-impact-of-citrix-mcsio/039-citrix-mcsio-vm-file-compare.png" data-lightbox="vm-file-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-vsimax.png" data-lightbox="vsimax">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-vsimax.png" data-lightbox="vsimax">
 ![vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-vsimax.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-vsimax.png" data-lightbox="vsimax">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-baseline.png" data-lightbox="baseline">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-baseline.png" data-lightbox="baseline">
 ![baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-baseline.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -71,45 +63,29 @@ There are a couple of important conclusions to take away from the Login VSI VSIm
 
 It is important to validate these results with metrics from the hypervisor. Based on the results above, it is expected to see a big difference compared to an out-of-the-box deployment. The difference between both VMware OSOT and Citrix Optimizer should be minimal to none. 
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-baseline.png" data-lightbox="baseline">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png" data-lightbox="host-cpu">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png" data-lightbox="host-cpu">
 ![host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu.png" data-lightbox="host-cpu">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-mem.png" data-lightbox="host-mem">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-mem.png" data-lightbox="host-mem">
 ![host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-mem.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higer is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-mem.png" data-lightbox="host-mem">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu-mem-compare.png" data-lightbox="host-cpu-mem-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu-mem-compare.png" data-lightbox="host-cpu-mem-compare">
 ![host-cpu-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu-mem-compare.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better / Higher is better </i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-cpu-mem-compare.png" data-lightbox="host-cpu-mem-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-storage-compare.png" data-lightbox="host-storage-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-storage-compare.png" data-lightbox="host-storage-compare">
 ![host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-storage-compare.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -121,34 +97,22 @@ With an out-of-the-box deployment, the big difference in storage is among other 
 
 This final chart shows a direct comparison between Citrix Optimizer and VMware OSOT. The differences are a lot smaller than first expected. 
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-host-storage-compare.png" data-lightbox="host-storage-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-various-compare.png" data-lightbox="various-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-various-compare.png" data-lightbox="various-compare">
 ![various-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-various-compare.png)
-</a>
 </a>
 
 ## Results – templates compared to each other 
 Both tools provide various templates including templates that are created by the community. As the optimizations in these templates vary, it is expected to see some differences. 
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-various-compare.png" data-lightbox="various-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-vsimax.png" data-lightbox="templates-vsimax">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-vsimax.png" data-lightbox="templates-vsimax">
 ![templates-vsimax]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-vsimax.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-vsimax.png" data-lightbox="templates-vsimax">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-baseline.png" data-lightbox="templates-baseline">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-baseline.png" data-lightbox="templates-baseline">
 ![templates-baseline]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-baseline.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -158,23 +122,15 @@ The Login VSI VSImax and baseline results between the templates are minimal. The
 
 Again, it is important to validate these results using other metrics. 
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-baseline.png" data-lightbox="templates-baseline">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu.png" data-lightbox="templates-host-cpu">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu.png" data-lightbox="templates-host-cpu">
 ![templates-host-cpu]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu.png" data-lightbox="templates-host-cpu">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu-compare.png" data-lightbox="templates-host-cpu-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu-compare.png" data-lightbox="templates-host-cpu-compare">
 ![templates-host-cpu-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu-compare.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -182,23 +138,15 @@ Again, it is important to validate these results using other metrics.
 
 The VDILIKEAPRO template had the highest Login VSI VSImax, which is caused by a lower CPU usage. But the quirkiest result was that the Citrix Optimizer and VMware OSOT combined, resulted in a slightly lower Login VSI VSImax compared to the two optimizers on their own.  
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-cpu-compare.png" data-lightbox="templates-host-cpu-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem.png" data-lightbox="templates-host-mem">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem.png" data-lightbox="templates-host-mem">
 ![templates-host-mem]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem.png" data-lightbox="templates-host-mem">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem-compare.png" data-lightbox="templates-host-mem-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem-compare.png" data-lightbox="templates-host-mem-compare">
 ![templates-host-mem-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem-compare.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
@@ -206,34 +154,22 @@ The VDILIKEAPRO template had the highest Login VSI VSImax, which is caused by a 
 
 While using less CPU, the VDILIKEAPRO template uses more memory without load, but catches up after the users start logging on (or doesn’t claim as much as users start logging on). 
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-mem-compare.png" data-lightbox="templates-host-mem-compare">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-reads.png" data-lightbox="templates-host-reads">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-reads.png" data-lightbox="templates-host-reads">
 ![templates-host-reads]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-reads.png)
 </a>
-</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-reads.png" data-lightbox="templates-host-reads">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-writes.png" data-lightbox="templates-host-writes">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-writes.png" data-lightbox="templates-host-writes">
 ![templates-host-writes]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-writes.png)
 </a>
-</a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-writes.png" data-lightbox="templates-host-writes">
-<a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-storage-compare.png" data-lightbox="templates-host-storage-compare">
-</a>
 <a href="{{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-storage-compare.png" data-lightbox="templates-host-storage-compare">
 ![templates-host-storage-compare]({{site.baseurl}}/assets/images/posts/048-optimizer-smackdown/048-optimizer-smackdown-templates-host-storage-compare.png)
-</a>
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
