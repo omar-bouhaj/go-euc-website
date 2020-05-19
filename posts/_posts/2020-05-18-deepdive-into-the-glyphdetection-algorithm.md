@@ -146,9 +146,6 @@ However, in this particular test for the entirety of the workload, we saw a 1% i
 <a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison-excel.png" data-lightbox="fps-compare-excel">
 ![fps-compare-excel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison-excel.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-  <i>Lower is better</i>
-</p>
 
 For the Excel block of the workload there is an opposite effect with a decrease in FPS. Because of this small decrease, using the glyph detection will very slightly hinder the user performance in the Excel block of the workload.
 
