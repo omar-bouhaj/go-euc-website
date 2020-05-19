@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deepdive into the glyphdetection algorithm"
-hidden: true
+hidden: false
 authors: [eltjo]
 categories: [ 'Citrix' ]
 tags: [ 'glyph', 'hdx', 'cvad', '1912' ]
@@ -12,10 +12,12 @@ Since Citrix Virtual Apps and Desktop version 7.12 , Citrix is using  Glyph dete
 ## Introduction to glyph detection
 The Glyph detection algorithm that Citrix uses is based on the detection of glyphs, or alphabetical or numerical characters, to determine if a portion of the screen is character based. The algorithm uses a form of OCR (Optical Character Recognition) to accomplish this. The basic idea employs real-time OCR, and the re-use of the character glyphs as and when they appear in the Citrix session. 
 
-<a align="center" href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-glyph-example.png" data-lightbox="glyph-example">
-![glyph-example]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-glyph-example.png)
+<div align="center">
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-glyph-example.png" data-lightbox="glyph-example">
+<img src="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-glyph-example.png" alt="glyph-example">
 </a>
-<p align="center" style="margin-top: -30px;" >
+</div>
+<p align="center" >
   <i>Example of various glyphs</i>
 </p>
 
@@ -121,6 +123,7 @@ As explained earlier, the tradeoff for the use of glyph detection is a CPU penal
 From a hypervisor host CPU perspective however, there is no noticeable difference between the two scenarios.
 
 A closer look to the data shows a marginal higher CPU usage for the scenario with the glyph detection turned on:
+
 | GlyphCacheBehaviourOff | GlyphCacheBehaviourOn |
 | :--------------------: |:---------------------:|
 | 100%                   | 99,87%                |
