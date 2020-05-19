@@ -52,41 +52,62 @@ Two scenarios have been defined for the analysis of glyph detection algorithm:
 
 The key metrics for this research are the network bandwidth consumption along with CPU utilization. 
 
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth.png" data-lightbox="bandwidth">
 ![bandwidth]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
-![bandwidthcomparison]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison.png" data-lightbox="bandwidth-compare">
+![bandwidth-compare]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
 The primary goal of the algorithm is to reduce bandwidth usage. As expected, the caching algorithm results in a reduction in bandwidth and can deliver a reduction of 9% during the entirety of workload.
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison-excel.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison-excel.png" data-lightbox="bandwidth-excel-compare">
+![bandwidth-excel-compare]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-bandwidth-comparison-excel.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
 The reduction is most prominent in the Excel block of the workload, where the algorithm achieves a 38% bandwidth reduction compared to the scenario where the Glyph detection is explicitly disabled.
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency.png" data-lightbox="latency">
+![latency]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency-comparison.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency-comparison.png" data-lightbox="latency-compare">
+![latency-compare]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-latency-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
 Using glyph detection additionally has a positive effect on the network latency. This decreased latency result in a snappier and more responsive session.
 
 As explained earlier, the tradeoff for the use of glyph detection is a CPU penalty.
 
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-host-cpu.png" data-lightbox="host-cpu">
 ![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-host-cpu.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-host-cpu-comparison.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-host-cpu-comparison.png" data-lightbox="host-cpu">
+![host-cpu-compare]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-host-cpu-comparison.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
 From a hypervisor host CPU perspective however, there is no noticeable difference between the two scenarios.
 
@@ -100,20 +121,22 @@ The user density, or overall scalability of the system, is mostly dependent on t
 
 As an additional drawback, the algorithm might have an impact on the user experience when it comes to the amount number of frames that is send to the client device. A reduction in FPS might result in a degradation of the perceived user experience. 
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps.png)
-<p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps.png" data-lightbox="fps">
+![fps]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps.png)
+</a>
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison.png)
-<p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
-
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison.png" data-lightbox="fps-compare">
+![fps-compare]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison.png)
+</a>
 
 However, in this particular test for the entirety of the workload, we saw a 1% increase in FPS. Because of this small increase, the likelihood is that this will be not noticeable to an end user.
 
-![bandwidthcomparisonexcel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison-excel.png)
+<a href="{{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison-excel.png" data-lightbox="fps-compare-excel">
+![fps-compare-excel]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-fps-comparison-excel.png)
+</a>
 <p align="center" style="margin-top: -30px;" >
-  <i>lower is better</i>
+  <i>Lower is better</i>
+</p>
 
 For the Excel block of the workload there is an opposite effect with a decrease in FPS. Because of this small decrease, using the glyph detection will very slightly hinder the user performance in the Excel block of the workload.
 
