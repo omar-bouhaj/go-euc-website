@@ -2,7 +2,7 @@
 layout: post
 title:  "Deepdive into the glyphdetection algorithm"
 hidden: true
-authors: [Eltjo]
+authors: [eltjo]
 categories: [ 'Citrix' ]
 tags: [ 'glyph', 'hdx', 'cvad', '1912' ]
 image: assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-GlyphCacheDetection-feature-image.png
