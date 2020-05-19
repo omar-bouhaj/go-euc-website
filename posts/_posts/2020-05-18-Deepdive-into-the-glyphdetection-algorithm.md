@@ -15,12 +15,14 @@ The Glyph detection algorithm that Citrix uses is based on the detection of glyp
 ![glyphexample]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-glyph-example.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Example of various glyphs</i>
+</p>
 
 The goal of the Glyph detection algorithm is to cache and re-use these character glyphs in order to save bandwidth, especially in task worker workloads. It has a huge benefit in reducing bandwidth in text heavy workloads, due to the fact that these types of workloads often consist of Excel spreadsheet work for example, which features a lot of, in this case numerical characters, that usually repeat frequently.
  
 ![glyphexample]({{site.baseurl}}/assets/images/posts/058-deepdive-into-the-glyphdetection-algorithm/058-citrix-glyphdetection-excel-block-workload.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Excel example in the GO-EUC workload</i>
+</p>
 
 But there is a tradeoff; because the algorithm uses OCR, it will consume additional CPU cycles in order to analyze portions of the screen to function. This may have a negative effect on the performance and scalability as a drawback.
 
@@ -41,7 +43,7 @@ As mentioned earlier, the default value for glyph detection in CVAD 2003 is `1`,
 
 This research has taken place on the GO-EUC infrastructure, which is described here. Windows 10 1809 is used as the default deployment, configured with 2vCPU’s and 4GB memory. The VDIs are delivered using Citrix MCS, running version 2003. The default applications are installed, including Microsoft Office 2016. The image is fully patched and optimized with Citrix Optimizer, using the default template and recommended settings.
 
-GO-EUC uses a custom workload and content library, that are described in detail [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020){:target="_blank"}
+GO-EUC uses a custom workload and content library, that are described in detail [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020){:target="_blank"}.
 
 Two scenarios have been defined for the analysis of glyph detection algorithm:
 
