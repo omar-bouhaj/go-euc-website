@@ -29,13 +29,14 @@ Microsoft has built its Edge browser from scratch, taking the most basic form of
 
 In the context of innovation and a glance at the future, it is a great move by Microsoft.
 
-<p align="center" >
-  <i>"If you can't beat them, you join them"</i>
-  
-  <i>"CEO Satya Nadella, Microsoft"</i>
-  
-  <i>“Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.”</i>
-</p>
+> <div style="text-align:center;">
+> If you can't beat them, you join them
+>   
+> CEO Satya Nadella, Microsoft
+>   
+> Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.
+> </div>
+
 
 For a complete list of features, check out the continuously updated page [here](https://www.microsoftedgeinsider.com/en-us/whats-new){:target="_blank"}.
 Make also sure to get familiar with the tips given at this [link](https://microsoftedgetips.microsoft.com/en-us/all/?source=support){:target="_blank"}.
