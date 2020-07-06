@@ -193,7 +193,7 @@ The frames per second (FPS) metric is also used to measure the user experience. 
 ![session-fps-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-fps.png)
 </a>
 
-There is a higher difference in the reported FPS for the Firefox scenario. As a consequence, the variance in RTT, latency and bandwidth consumption is also higher.
+There is a high difference in the reported FPS for the Firefox scenario. As a consequence, the variance in RTT, latency and bandwidth utilization is also higher.
 
 Round Trip Time (RTT) is the elapsed time from when the user hits a key until the response is displayed back at the endpoint. The difference between the RTT and Session Latency is the application processing time on the (session) host. When both the RTT and Session Latency increases, this will lead to a deterioration of the user experience.
 
@@ -227,7 +227,7 @@ Session Latency is the time from when a user executes a keystroke or mouse click
   <i>Lower is better</i>
 </p>
 
-The total latency for both Chrome and Firefox is higher compared to Edge. Even if the (session) host CPU utilization is not saturated.
+The total latency for both Chrome and Firefox are higher compared to Edge. Even if the (session) host CPU utilization is not saturated.
 
 Less bandwidth will still work, but the session performance may suffer because of it. More bandwidth will provide a better user experience.
 
@@ -239,7 +239,7 @@ Less bandwidth will still work, but the session performance may suffer because o
 ![session-bw-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-bw.png)
 </a>
 
-A high bandwidth network generally can deliver more information than a low bandwidth network given the same amount of a time. Low bandwidth scenarios can result in different compressions. For example, compression of the image quality delivered on the endpoint. This would impact the end user, as often the protocol becomes blurry or exhibits types of artifacts. Thus, in a WAN scenario where bandwidth is limited, the effect will affect the user experience, higher bandwidth consumption is not the best option.
+A high bandwidth network generally can deliver more information than a low bandwidth network given the same amount of a time. Low bandwidth scenarios can result in different compressions. For example, compression of the image quality delivered on the endpoint. This would impact the end user experience, as often the protocol becomes blurry or exhibits types of artifacts. Thus, in a WAN scenario where bandwidth is limited, the effect will influence the user experience, higher bandwidth consumption is not the best option.
 
 ### Endpoint perspective
 Utilization from the perspective of the endpoint is also important to take into account. If the endpoint is limited in resource use, this can lead to a significant reduction in user experience.
