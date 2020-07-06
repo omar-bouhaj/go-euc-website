@@ -162,7 +162,7 @@ In most cases a browser, unlike a website developer, is useless without a networ
 ![host-nic-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-host-nic.png)
 </a>
 
-The results of Firefox are clearly lower. Edge is again strong in both receiving as sending packets.
+The results of Firefox are clearly lower. Edge is strong in both receiving as sending packets.
 
 *Note:* that this includes all network traffic to and from the LoadGen share, the Citrix Storefront connections etc. from multiple sessions. Although there is internet access, all used websites are located in the datacenter and the results shown is included in that traffic.
 
