@@ -32,13 +32,14 @@ In the context of innovation and a glance at the future, it is a great move by M
 > <div style="text-align:center;">
 > If you can't beat them, you join them
 > </div>
-> <div style="text-align:center;">
-> CEO Satya Nadella, Microsoft
-> </div>
+
+<div style="text-align:center;">
+CEO Satya Nadella, Microsoft
+</div>
+
 > <div style="text-align:center;">
 > Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.
 > </div>
-
 
 For a complete list of features, check out the continuously updated page [here](https://www.microsoftedgeinsider.com/en-us/whats-new){:target="_blank"}.
 Make also sure to get familiar with the tips given at this [link](https://microsoftedgetips.microsoft.com/en-us/all/?source=support){:target="_blank"}.
@@ -150,21 +151,14 @@ In most cases a browser, unlike a website developer, is useless without a networ
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-host-nic-packets-received.png" data-lightbox="host-nic-packets-received">
 ![host-nic-packets-received]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-host-nic-packets-received.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-host-nic-packets-transmitted.png" data-lightbox="host-nic-packets-transmitted">
 ![host-nic-packets-transmitted]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-host-nic-packets-transmitted.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-host-nic.png" data-lightbox="host-nic-compare">
 ![host-nic-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-host-nic.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
-
 
 The results of Firefox are clearly lower. Edge is again strong in both receiving as sending packets.
 
@@ -178,15 +172,10 @@ A primary indicator used to measure the user experience when rich 'media' are di
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-cpu-encoding.png" data-lightbox="session-cpu-encoding">
 ![session-cpu-encoding]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-cpu-encoding.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-cpu-encoding.png" data-lightbox="session-cpu-encoding-compare">
 ![session-cpu-encoding-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-cpu-encoding.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
-
 
 With the emergence of rich media, encoding and transcoding are becoming increasingly important, also in VDI environments and especially in the guest OS. CPU encoding is focused on quality, with the goal of highest possible quality at lowest possible bitrate at a cost of encoding time.
 
@@ -197,15 +186,10 @@ The frames per second (FPS) metric is also used to measure the user experience. 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-fps.png" data-lightbox="session-fps">
 ![session-fps]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-fps.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-fps.png" data-lightbox="session-fps-compare">
 ![session-fps-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-fps.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
-
 
 There is a higher difference in the reported FPS for the Firefox scenario. As a consequence, the variance in RTT, latency and bandwidth consumption is also higher.
 
@@ -248,15 +232,10 @@ Less bandwidth will still work, but the session performance may suffer because o
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-bw.png" data-lightbox="session-bw">
 ![session-bw]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-session-bw.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-bw.png" data-lightbox="session-bw-compare">
 ![session-bw-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-bw.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
-
 
 A high bandwidth network generally can deliver more information than a low bandwidth network given the same amount of a time. Low bandwidth scenarios can result in different compressions. For example, compression of the image quality delivered on the endpoint. This would impact the end user, as often the protocol becomes blurry or exhibits types of artifacts. Thus, in a WAN scenario where bandwidth is limited, the effect will affect the user experience, higher bandwidth consumption is not the best option.
 
@@ -301,15 +280,10 @@ Utilization from the perspective of the endpoint is also important to take into 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-endpoint-nic.png" data-lightbox="endpoint-nic">
 ![endpoint-nic]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-endpoint-nic.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-endpoint-nic.png" data-lightbox="endpoint-nic-compare">
 ![endpoint-nic-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-endpoint-nic.png)
 </a>
-<p align="center" style="margin-top: -30px;" >
-</p>
-
 
 Both the endpoint’s CPU and storage utilization the differences are negligible, resulting in a similar user experience.
 
