@@ -31,9 +31,11 @@ In the context of innovation and a glance at the future, it is a great move by M
 
 > <div style="text-align:center;">
 > If you can't beat them, you join them
->   
+> </div>
+> <div style="text-align:center;">
 > CEO Satya Nadella, Microsoft
->   
+> </div>
+> <div style="text-align:center;">
 > Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.
 > </div>
 
