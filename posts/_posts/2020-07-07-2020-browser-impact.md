@@ -24,33 +24,36 @@ The aim of this research is still the same as the previous research which can be
 For more information on Microsoft’s Edge Chromium, Mozilla’s Firefox and Google’s Chrome browsers feature list and comparisons, please check out the vendors website listed below.
 
 **Microsoft Edge Chromium**
+
 Microsoft has built its Edge browser from scratch, taking the most basic form of Chromium as its starting point. With that change, now both of the leading enterprise browsers run on the same engine. Which could accelerate progress for enterprise- and mobile sites, as developers can devote their resources in a more concentrated way. That change appears to be focused on the enterprise area, providing interoperability with enterprise-centric software. Hopefully, Microsoft, doesn't rely on advertising in comparison to Google.
 
 In the context of innovation and a glance at the future, it is a great move by Microsoft.
 
 <p align="center" >
-
->*"If you can't beat them, you join them"*
->*CEO Satya Nadella Microsoft*
-
->*“Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.”*
+  <i>"If you can't beat them, you join them"</i>
+  
+  <i>"CEO Satya Nadella, Microsoft"</i>
+  
+  <i>“Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.”</i>
 </p>
 
 For a complete list of features, check out the continuously updated page [here](https://www.microsoftedgeinsider.com/en-us/whats-new){:target="_blank"}.
 Make also sure to get familiar with the tips given at this [link](https://microsoftedgetips.microsoft.com/en-us/all/?source=support){:target="_blank"}.
 
 **Google Chrome**
+
 For a complete list of features, check out this page [here](https://chromeenterprise.google/browser){:target="_blank"}.
 
 **Mozilla Firefox**
+
 For a complete list of features, check out this page [here](https://www.mozilla.org/en-US/firefox/enterprise){:target="_blank"}.
 
 ## Infrastructure and configuration
 The infrastructure used for this research is described [here]({{site.baseurl}}/architecture-and-hardware-setup-overview-2018){:target="_blank"} and uses the testing methodology of GO-EUC that has been described [here]({{site.baseurl}}/insight-in-the-testing-methodology-2020){:target="_blank"}. The default workload used in GO-EUC’s testing methodology was modified to support the different browsers. The workloads can be downloaded below:
 
-  * Workload [Microsoft Edge Chromium]({{site.baseurl}}/assets/files/052-2020-browser-impact/){:target="_blank"};
-  * Workload [Google Chrome]({{site.baseurl}}/assets/files/052-2020-browser-impact/){:target="_blank"};
-  * Workload [Mozilla Firefox]({{site.baseurl}}/assets/files/052-2020-browser-impact/){:target="_blank"}.
+  * Workload [Microsoft Edge Chromium](https://github.com/RyanBijkerk/go-euc-workloads/raw/master/KnowledgeWorker_v2005.1_edge.lgs){:target="_blank"};
+  * Workload [Google Chrome](https://github.com/RyanBijkerk/go-euc-workloads/raw/master/KnowledgeWorker_v2005.1_chrome.lgs){:target="_blank"};
+  * Workload [Mozilla Firefox](https://github.com/RyanBijkerk/go-euc-workloads/raw/master/KnowledgeWorker_v2005.1_firefox.lgs){:target="_blank"}.
 
 Three different scenarios were tested:
 
@@ -159,6 +162,7 @@ In most cases a browser, unlike a website developer, is useless without a networ
 <p align="center" style="margin-top: -30px;" >
 </p>
 
+
 The results of Firefox are clearly lower. Edge is again strong in both receiving as sending packets.
 
 *Note:* that this includes all network traffic to and from the LoadGen share, the Citrix Storefront connections etc. from multiple sessions. Although there is internet access, all used websites are located in the datacenter and the results shown is included in that traffic.
@@ -180,6 +184,7 @@ A primary indicator used to measure the user experience when rich 'media' are di
 <p align="center" style="margin-top: -30px;" >
 </p>
 
+
 With the emergence of rich media, encoding and transcoding are becoming increasingly important, also in VDI environments and especially in the guest OS. CPU encoding is focused on quality, with the goal of highest possible quality at lowest possible bitrate at a cost of encoding time.
 
 The CPU for encoding tasks focuses on these important scenarios. Using GPU technology may reduce the encoding on the CPU as these tasks can be offloaded to GPU.
@@ -197,6 +202,7 @@ The frames per second (FPS) metric is also used to measure the user experience. 
 </a>
 <p align="center" style="margin-top: -30px;" >
 </p>
+
 
 There is a higher difference in the reported FPS for the Firefox scenario. As a consequence, the variance in RTT, latency and bandwidth consumption is also higher.
 
@@ -247,6 +253,7 @@ Less bandwidth will still work, but the session performance may suffer because o
 </a>
 <p align="center" style="margin-top: -30px;" >
 </p>
+
 
 A high bandwidth network generally can deliver more information than a low bandwidth network given the same amount of a time. Low bandwidth scenarios can result in different compressions. For example, compression of the image quality delivered on the endpoint. This would impact the end user, as often the protocol becomes blurry or exhibits types of artifacts. Thus, in a WAN scenario where bandwidth is limited, the effect will affect the user experience, higher bandwidth consumption is not the best option.
 
@@ -299,6 +306,7 @@ Utilization from the perspective of the endpoint is also important to take into 
 </a>
 <p align="center" style="margin-top: -30px;" >
 </p>
+
 
 Both the endpoint’s CPU and storage utilization the differences are negligible, resulting in a similar user experience.
 
