@@ -30,11 +30,13 @@ Microsoft has built its Edge browser from scratch, taking the most basic form of
 In the context of innovation and a glance at the future, it is a great move by Microsoft.
 
 <p align="center" >
-  <i>"If you can't beat them, you join them"</i>
   
-  <i>"CEO Satya Nadella, Microsoft"</i>
+  >"If you can't beat them, you join them"
   
-  <i>“Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business.”</i>
+  CEO Satya Nadella, Microsoft
+  
+  >"Microsoft Edge is on a mission to create the best browser for enterprises: rock-solid fundamentals, intelligent security, the most productive and secure end-user experience, flexible manageability; and deep integration with Microsoft 365. The new Chromium based version of Microsoft Edge is ready for business."
+
 </p>
 
 For a complete list of features, check out the continuously updated page [here](https://www.microsoftedgeinsider.com/en-us/whats-new){:target="_blank"}.
@@ -160,8 +162,8 @@ In most cases a browser, unlike a website developer, is useless without a networ
 ![host-nic-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-host-nic.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
+<i></i>
 </p>
-
 
 The results of Firefox are clearly lower. Edge is again strong in both receiving as sending packets.
 
@@ -182,8 +184,8 @@ A primary indicator used to measure the user experience when rich 'media' are di
 ![session-cpu-encoding-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-cpu-encoding.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
+<i></i>
 </p>
-
 
 With the emergence of rich media, encoding and transcoding are becoming increasingly important, also in VDI environments and especially in the guest OS. CPU encoding is focused on quality, with the goal of highest possible quality at lowest possible bitrate at a cost of encoding time.
 
@@ -201,8 +203,8 @@ The frames per second (FPS) metric is also used to measure the user experience. 
 ![session-fps-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-fps.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
+<i></i>
 </p>
-
 
 There is a higher difference in the reported FPS for the Firefox scenario. As a consequence, the variance in RTT, latency and bandwidth consumption is also higher.
 
@@ -252,8 +254,8 @@ Less bandwidth will still work, but the session performance may suffer because o
 ![session-bw-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-session-bw.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
+<i></i>
 </p>
-
 
 A high bandwidth network generally can deliver more information than a low bandwidth network given the same amount of a time. Low bandwidth scenarios can result in different compressions. For example, compression of the image quality delivered on the endpoint. This would impact the end user, as often the protocol becomes blurry or exhibits types of artifacts. Thus, in a WAN scenario where bandwidth is limited, the effect will affect the user experience, higher bandwidth consumption is not the best option.
 
@@ -305,8 +307,8 @@ Utilization from the perspective of the endpoint is also important to take into 
 ![endpoint-nic-compare]({{site.baseurl}}/assets/images/posts/052-2020-browser-impact/052-2020-browser-impact-comparison-endpoint-nic.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
+<i></i>
 </p>
-
 
 Both the endpoint’s CPU and storage utilization the differences are negligible, resulting in a similar user experience.
 
