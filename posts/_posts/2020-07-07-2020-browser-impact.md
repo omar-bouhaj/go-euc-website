@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Browser Performance Impact 2020"
-hidden: true
+hidden: false
 authors: [omar]
 categories: [ 'browsers' ]
 tags: [ 'microsoft edge chromium', 'mozilla firefox', 'google chrome', 'browsers']
