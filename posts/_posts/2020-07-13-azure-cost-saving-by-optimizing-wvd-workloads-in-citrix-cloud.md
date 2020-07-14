@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Azure cost saving by optimizing WVD workloads in Citrix Cloud."
-hidden: true
+hidden: false
 authors: [ryan, eltjo]
 categories: [ 'Azure' ]
 tags: [ 'WVD', 'Azure', 'Citrix Cloud', 'Windows 10 multi-session']
-image: assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-feature-image.png
+image: assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-feature-image.png
 ---
 At GO-EUC, we've already written about the benefits of VDI optimizations from a performance perspective in the past. With the current buzz and increased interest in cloud workspaces such as WVD, are these optimizations still relevant and are there other benefits or caveats that need to be taken into consideration for those environments?
 With this research the focus is on the benefit from optimizing when using the new Windows 10 multi-session OS.
@@ -32,8 +32,8 @@ The estimated compute running costs for this VM are around €360 euros per mont
 
 062-azure-cost-saving-vm-details.png
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png" data-lightbox="vm-size-details">
-![vm-size-details]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png" data-lightbox="vm-size-details">
+![vm-size-details]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png)
 </a>
 
 More information about VM sizes can be found [here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general){:target="_blank"}. Please be aware the listed VM sizes may not be available in your region. 
@@ -56,8 +56,8 @@ The results were, not surprisingly, very biased toward performance with almost h
 
 As per usual, this research will start with evaluating the scalability. In this case the user density is defined by the CPU utilization within the VM, because for the Dv2 SKUs the expected bottleneck is the CPU.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-user-density.png" data-lightbox="user-density">
-![user-density]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-user-density.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-user-density.png" data-lightbox="user-density">
+![user-density]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-user-density.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Higher is better</i>
@@ -65,15 +65,15 @@ As per usual, this research will start with evaluating the scalability. In this 
 
 Applying optimizations is a best practice, and these results show this also applies in the cloud. With the optimized scenario there is a potential for a 30% increase in overall user density. It is expected to see a similar difference in other metrics like the VM CPU utilization.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu.png" data-lightbox="cpu-util">
-![cpu-util]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu.png" data-lightbox="cpu-util">
+![cpu-util]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu-compare.png" data-lightbox="cpu-util-compare">
-![cpu-util-compare]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu-compare.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu-compare.png" data-lightbox="cpu-util-compare">
+![cpu-util-compare]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-cpu-compare.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -83,22 +83,22 @@ The metrics show a significant difference in the CPU utilization between both sc
 
 As mentioned in the introduction, from a storage perspective standard SSDs are used. In Azure the IOPs limit for the Standard_D4_v2 SKU is 500 IOPs per disk with maximum of 32 disks totaling 32x500 IOPs in total. 
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-read.png" data-lightbox="reads">
-![reads]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-read.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-read.png" data-lightbox="reads">
+![reads]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-read.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-writes.png" data-lightbox="writes">
-![writes]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-writes.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-writes.png" data-lightbox="writes">
+![writes]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-writes.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-storage-compare.png" data-lightbox="storage-compare">
-![storage-compare]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-storage-compare.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-storage-compare.png" data-lightbox="storage-compare">
+![storage-compare]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-storage-compare.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -107,8 +107,8 @@ As mentioned in the introduction, from a storage perspective standard SSDs are u
 The optimized images show a solid reduction in both read and write operations, and neither of the scenarios is hitting the upper limit of 500 IOPs. 
 From an end user perspective the time it takes to load their VDI desktop is their first interaction with the VDI. For that reason it is important to give the end user the lowest logon time possible.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-logon-times.png" data-lightbox="logon-times">
-![logon-times]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-logon-times.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-logon-times.png" data-lightbox="logon-times">
+![logon-times]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-logon-times.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -118,8 +118,8 @@ Optimizing the image has a hugely positive effect on the logon times, which will
 
 The cost model associated with cloud environments like Microsoft Azure or AWS is, without exception, always pay per use. With this in mind, not only performance is an important factor to consider but it is also important to evaluate the associated cost that comes with the VM.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-hosting-vms.png" data-lightbox="hosting-vms">
-![hosting-vms]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-hosting-vms.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-hosting-vms.png" data-lightbox="hosting-vms">
+![hosting-vms]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-hosting-vms.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -129,8 +129,8 @@ To put this into perspective, the data that is collected is extrapolated to roun
 
 With the amount of VMs determined, it is also possible to make a cost estimate for the total amount of running cost for the required amount of VMs needed.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-247.png" data-lightbox="running-cost-247">
-![running-cost-247]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-247.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-247.png" data-lightbox="running-cost-247">
+![running-cost-247]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-247.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -150,8 +150,8 @@ Due to the reduction of VMs required to host the 1000 users, € 4.462 on runnin
 
 Based on experience it estimated a VM in a virtualized environment is used for 300 hours per month. As user might start early in the morning and some working late, it is expected to have the VM running for 15 hours per working day as it is a multi-session operating system.
 
-<a href="{{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-300hours.png" data-lightbox="running-cost-300hrs">
-![running-cost-300hrs]({{site.baseurl}}/assets/images/posts/62-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-300hours.png)
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-300hours.png" data-lightbox="running-cost-300hrs">
+![running-cost-300hrs]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-estimated-running-cost-300hours.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
@@ -173,6 +173,10 @@ This research did not focus on any specific Windows 10 multi session optimizatio
 By optimizing the Window 10 multi session VMs there is not only an increase in performance, but also an increase in user density. Cost reduction on the compute costs is achieved by cutting down on the amount of VMs needed to host users. When setting up a business case this may be a strong motivator for migrating to a cloud workspace or DaaS solution.
 
 For these platforms, significant savings in running costs can be realized by optimizing and with that reducing the amount of VMs that are needed to accommodate the users. In our particular frame of reference 24% cost reduction can be achieved by only optimizing the VM.
+
+<a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-conclusion.png" data-lightbox="conclusion">
+![conclusion]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-conclusion.png)
+</a>
 
 When you combine the optimizations with technologies such as [Citrix Autoscale](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/manage-deployment/autoscale.html){:target="_blank"} to shutdown or even remove unused resources, even greater cost reductions can be achieved without sacrificing performance or user experience.
 
