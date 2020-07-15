@@ -109,6 +109,25 @@ authors:
     page: tom-de-jong
     description: "Tom de Jong is working as a EUC consultant on the Citrix portfolio. He is based in the most beautiful part from the Netherlands, which is the West-Friesland region."
 
+# Sponsors
+sponsors:
+  loadgen:
+    name: LoadGen
+    level: 2
+    date: 2021-06-31
+    logo-light: 'assets/images/sponsor/loadgen/logo-white.png'
+    logo: 'assets/images/sponsor/loadgen/logo.png'
+    page: 'loadgen'
+    site: 'https://www.loadgen.com'
+  ict-p:
+    name: ICT-Partners
+    level: 2
+    date: 2022-05-30
+    logo-light: 'assets/images/sponsor/ict-partners/logo.png'
+    logo: 'assets/images/sponsor/ict-partners/logo.png'
+    page: 'ict-partners'
+    site: 'https://www.ict-partners.nl'
+
 # Plugins
 plugins: 
   - jekyll-paginate

@@ -75,6 +75,10 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/sponsors">Sponsors</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="{{ site.baseurl }}/presentations">Presentations</a>
                 </li>
 
@@ -138,12 +142,24 @@
                 <div class="col-sm-4">
                     <div class="footer-widget">
                         <h5 class="title">Sponsored by</h5>
-                        <div>
-                            <a href="https://www.loadgen.com" target="_blank"><img width="200" src="{{ site.baseurl }}/assets/images/sponsor/logo-loadgen-white.png" style="max-width: 100%; height: auto; margin-bottom: 30px;" sizes="(max-width: 200px) 100vw, 200px"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.ict-partners.nl" target="_blank"><img width="134" height="61" src="{{ site.baseurl }}/assets/images/sponsor/logo-ictp.png" style="max-width: 100%; height: auto; margin-bottom: 30px" sizes="(max-width: 200px) 100vw, 200px"></a>
-                        </div>
+
+                        {% for sponsor in site.sponsors %}
+
+                            {% assign sponsorName = sponsor[0] %}
+                            {% assign sponsorInfo = site.sponsors[sponsorName] %}
+                            {% assign today_date = 'now' | date: "%y %m %d" %}
+                            {% assign contract_date =  sponsorInfo.date | date: "%y %m %d" %}                          
+        
+                            {% if sponsorInfo.level <= 2 %}
+                                {% if contract_date >= today_date %}
+                                    <div>
+                                        <a href="{{sponsorInfo.site}}" target="_blank"><img width="200" src="{{ site.baseurl }}/{{sponsorInfo.logo-light}}" style="max-width: 100%; height: auto; margin-bottom: 30px;" sizes="(max-width: 200px) 100vw, 200px"></a>
+                                    </div>
+                                {% endif %}
+                            {% endif %} 
+                
+                        {% endfor %}
+
                     </div>
                 </div>
 

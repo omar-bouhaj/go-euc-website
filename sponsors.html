@@ -1,0 +1,28 @@
+---
+layout: page
+title: Sponsors
+comments: false
+---
+
+<div class="sponsor-container">
+
+    {% for sponsor in site.sponsors %}
+
+    {% assign name = sponsor[0] %}
+    {% assign info = site.sponsors[name] %}
+
+    <div class="sponsor-info-box">
+
+        <div>
+            <a style="box-shadow: none;" href="{{site.baseurl}}/sponsors/{{info.page}}">
+                <img class="sponsor-box-logo" src="{{ site.baseurl }}/{{ info.logo }}" alt="{{ info.name }}">
+            </a>
+        </div>
+        <div>
+            <b>{{ info.name }}</b>
+        </div>   
+    </div>
+
+    {% endfor %}
+
+</div>
