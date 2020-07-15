@@ -11,6 +11,11 @@ comments: false
     {% assign name = sponsor[0] %}
     {% assign info = site.sponsors[name] %}
 
+    {% assign today_date = 'now' | date: "%y %m %d" %}
+    {% assign contract_date =  info.date | date: "%y %m %d" %}  
+
+
+    {% if contract_date >= today_date %}
     <div class="sponsor-info-box">
 
         <div>
@@ -22,6 +27,7 @@ comments: false
             <b>{{ info.name }}</b>
         </div>   
     </div>
+    {% endif %} 
 
     {% endfor %}
 
