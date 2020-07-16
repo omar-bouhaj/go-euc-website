@@ -22,15 +22,13 @@ Windows 10 1909 multi-session is used as the default operating system from the A
 
 The machines used are created using Citrix Virtual Apps and Desktops Service from the Citrix Cloud offering, running in a non-persistent scenario. MSCIO is not part of this research and therefore the MCSIO driver installation was omitted. To channel the communication between Citrix Cloud and the Azure resource location, two Cloud Connectors are deployed, using the Standard D2_v3 SKU in Azure. The on-premises GO-EUC AD is leveraged for authentication by using a site-to-site VPN.
 
-One of the most used Azure SKU for VDI workloads is the Standard_D4_v2. This is an 8 vCPU machine with 28GB of memory.  The Standard_D4_v2 comes equipped with a standard SSD as the premium storage is not supported on the D-Series. In this research the VM for the VDI workloads is equipped with a single data disk.
+One of the most used Azure SKU for VDI workloads is the Standard_D4_v2. This is an 8 vCPU machine with 28GB of memory. The Standard_D4_v2 comes equipped with a standard SSD as the premium storage is not supported on the D-Series. In this research the VM for the VDI workloads is equipped with a single data disk.
 
-Dv2 series Azure VMs follow-on to the original D-series but have more powerful CPUs. The Dv2-series is about 35% faster than the D-series according to Microsoft. The Dv2 series VMs use the Intel Xeon  8171M 2.1 GHz (Skylake),  the Intel Xeon E5-2673 v4 2.3 GHz (Broadwell) or the Intel Xeon E5-2673 v3 2.4 GHz (Haswell) processors.
+Dv2-series Azure VMs follow-on to the original D-series but have more powerful CPUs. The Dv2-series is about 35% faster than the D-series according to Microsoft. The Dv2-series VMs use the Intel Xeon  8171M 2.1 GHz (Skylake),  the Intel Xeon E5-2673 v4 2.3 GHz (Broadwell) or the Intel Xeon E5-2673 v3 2.4 GHz (Haswell) processors.
 
-According to the Azure Compute Unit (ACU) concept, the DV2 series has an ACU in the range of 210-250. More information on the ACU: https://docs.microsoft.com/nl-nl/azure/virtual-machines/acu
+According to the Azure Compute Unit (ACU) concept, the DV2 series has an ACU in the range of 210-250. More information on the ACU can be found [here](https://docs.microsoft.com/nl-nl/azure/virtual-machines/acu){:target="_blank"}.
 
 The estimated compute running costs for this VM are around €360 euros per month according to Microsoft own Azure estimates.
-
-062-azure-cost-saving-vm-details.png
 
 <a href="{{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png" data-lightbox="vm-size-details">
 ![vm-size-details]({{site.baseurl}}/assets/images/posts/062-azure-cost-saving-by-optimizing-wvd-workloads-in-citrix-cloud/062-azure-cost-saving-vm-details.png)
