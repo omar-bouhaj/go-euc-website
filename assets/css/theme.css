@@ -972,7 +972,7 @@ td, th {
 .sponsor-info-box {
     vertical-align: middle; 
     text-align: center; 
-    max-width: 45%; 
+    max-width: 340px; 
     height: 150px; 
     margin: 10px;
 }
