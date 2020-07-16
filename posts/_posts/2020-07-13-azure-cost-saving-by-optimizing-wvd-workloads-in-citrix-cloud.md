@@ -41,7 +41,7 @@ For this research the following two scenarios are specified:
   * Standard_D4_v2 SKU, without optimizations, as the baseline;
   * Standard_D4_v2 SKU, optimized using Citrix Optimizer with the 1909 template.
 
-Our testing methodology, as described [here]({{site.baseurl}}/nsight-in-the-testing-methodology-2020/), applies to this research. Because of limited credits available in our Azure subscription, only 4 test runs are configured instead of the normal 10 runs.
+Our testing methodology, as described [here]({{site.baseurl}}/insight-in-the-testing-methodology-2020/), applies to this research. Because of limited credits available in our Azure subscription, only 4 test runs are configured instead of the normal 10 runs.
 
 More information on the various Citrix Optimizer optimizations can be found in another research [here]({{site.baseurl}}/microsoft-azure-windows-10-enterprise-multi-session-scalability/){:target="_blank"}. 
 
