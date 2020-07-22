@@ -108,6 +108,17 @@ authors:
     linkedin: https://www.linkedin.com/in/tom-de-jong-5131809a/
     page: tom-de-jong
     description: "Tom de Jong is working as a EUC consultant on the Citrix portfolio. He is based in the most beautiful part from the Netherlands, which is the West-Friesland region."
+  patrick:
+    name: Patrick 
+    display_name: Patrick van den Born
+    company: van den Born IT Consultancy
+    title: Senior IT Consultant | IT Architect
+    picture: 'assets/images/authors/patrick.png'
+    web: https://patrickvandenborn.blogspot.com/
+    twitter: https://twitter.com/pvdnborn
+    linkedin: https://www.linkedin.com/in/patrick-van-den-born-2b3567a/
+    page: patrick-van-den-born
+    description: "Patrick van den Born is an independent senior consultant and IT architect focussed on Citrix End User Computing, NVIDIA GRID Technology and cloud computing."
 
 # Sponsors
 sponsors:
