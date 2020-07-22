@@ -74,7 +74,7 @@ For on-premises sizing there are different calculations for VDI- or SBC workload
 | DS3_v2 | € 167,44 | 4 | 2300 MHz | 14 GB | 10 | vMEM | 
 | F4S_v2 | € 119,43 | 4 | 2300 MHz | 8 GB | 4 | vMEM |
 
-<div>&ast;</div> Please note CPU speed can vary due to host placement in the Azure platform. 
+\* Please note CPU speed can vary due to host placement in the Azure platform. 
 
 **Rule of thumb explained: Number of users based on CPU (multi-session)**
 
