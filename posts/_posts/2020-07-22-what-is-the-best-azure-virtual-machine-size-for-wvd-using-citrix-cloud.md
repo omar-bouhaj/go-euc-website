@@ -24,7 +24,7 @@ With the Azure lock-in of Windows 10 multi-session, the choice of hardware resou
 ### D4s_v3
 The Dsv3-series VM is, from a vCPU and vMEM-ratio, a good candidate for EUC workloads. The number of cores compared to the virtual memory is in balance and usable for a EUC workloads. This virtual machine is using hyperthreading, so all the vCores are scheduled on the lCores of the physical CPU. There is a vCore to core overcommit ratio of 2 vCPUs to 1 Core. 
 
-> The Dsv3-series support premium storage and run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors with Intel Turbo Boost Technology 2.0 and feature Intel® Hyper-Threading Technology. The Dsv3-series sizes offer a combination of vCPU(s), memory, and temporary storage well suited for most production workloads.
+> The Dsv3-series support premium storage and run on the Intel® Xeon® Platinum 8272CL processor (second generation Intel® Xeon® Scalable processors), Intel® Xeon® 8171M 2.1GHz (Skylake), Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors with Intel Turbo Boost Technology 2.0 and **feature Intel® Hyper-Threading Technology**. The Dsv3-series sizes offer a combination of vCPU(s), memory, and temporary storage well suited for most production workloads.
 > 
 > [Source](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/){:target="_blank"}
 
@@ -52,6 +52,8 @@ No overcommit ratio for Bs-series VMs is documented by Microsoft.
 > 
 > [Source](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/){:target="_blank"}
 
+For more information about Azure Compute Units see the [Microsoft documentation](https://docs.microsoft.com/en-US/azure/virtual-machines/acu){:target="_blank"}.
+
 ## Microsoft Guidelines
 According to the [Microsoft sizing guidelines](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/virtual-machine-recs?context=/azure/virtual-desktop/context/context){:target="_blank"} for Windows 10 multi-session, Microsoft recommends the following SKU-sizes for multi session operating systems: D2-4s_v3, F2-4s_v3 or NV6. Most of this SKUs are covered in this research.
 
@@ -72,7 +74,7 @@ For on-premises sizing there are different calculations for VDI- or SBC workload
 | DS3_v2 | € 167,44 | 4 | 2300 MHz | 14 GB | 10 | vMEM | 
 | F4S_v2 | € 119,43 | 4 | 2300 MHz | 8 GB | 4 | vMEM |
 
-&ast; Please note CPU speed can vary due to host placement in the Azure platform. 
+<div>&ast;</div> Please note CPU speed can vary due to host placement in the Azure platform. 
 
 **Rule of thumb explained: Number of users based on CPU (multi-session)**
 
@@ -113,7 +115,7 @@ Based on the expectations the user density can be validated based on CPU or MEM 
   <i>Higher is better</i>
 </p>
 
-When investigating the user density, the rule of thumb for on-premises SBC-sizing still applies to Windows 10 multi-session on Azure. There is a little difference between the calculated density and the measured density on the Dsv3-series and B-series VMs. The D4s v3 and B4ms can host two users less than expected. There is a possibility this is caused by fact that the Dsv3-series and B-series VMs are using hyperthreading.  The F4s v2 VM is the only one hitting the virtual memory bottleneck and not CPU, which is as expected.
+When investigating the user density, the rule of thumb for on-premises SBC-sizing still applies to Windows 10 multi-session on Azure. There is a little difference between the calculated density and the measured density on the Dsv3-series and B-series VMs. The D4s_v3 and B4ms can host two users less than expected. There is a possibility this is caused by fact that the Dsv3-series and B-series VMs are using hyperthreading.  The F4s_v2 VM is the only one hitting the virtual memory bottleneck and not CPU, which is as expected.
 
 There is an expectation to see inconsistency between the runs. As multiple runs are executed, performance consistency can be investigated by comparing the CPU usage over multiple runs.
 
@@ -124,7 +126,7 @@ There is an expectation to see inconsistency between the runs. As multiple runs 
   <i>Same pattern means consistency</i>
 </p>
 
-During this research there the CPU performance is consistent between the different runs.
+During this research the CPU performance is consistent between the different runs.
 
 Citrix MCS will power off and destroy the VM after each run and will rebuild and power on the VM at a new run. In theory the VM could be started on different virtualization hosts with different type of CPUs in the Azure West Europe datacenter. 
 
@@ -150,7 +152,7 @@ The F4s_v2 VM is the only SKU which has a bottleneck on the memory resources. It
 
 The cost model for Microsoft Azure in is in this case pay per use. Performance is an important factor, but it is also important to evaluate the associated cost that comes with the VM. It is possible to calculate the costs for a 1000 user scenario on Azure, since the amount of users per VM is known.
 
-The total IaaS cost for a Citrix MCS VM, will consist of VM compute and storage costs. Since Citrix MSC is using an Identity Disk (P1), this should be added besides the operating system disk (P10) cost. The disks used in this calculation are based on Azure Managed Disk Premium SSD. Please note, the prices are collected form the Azure pricing list, for both compute and storage. These prices can vary per region and over time.
+The total IaaS cost for a Citrix MCS VM, will consist of VM compute and storage costs. Since Citrix MSC is using an Identity Disk (P1), this should be added besides the operating system disk (P10) cost. The disks used in this calculation are based on Azure Managed Disk Premium SSD. Please note, the prices are collected form the Azure pricing list, for both [compute](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/){:target="_blank"} and [storage](https://azure.microsoft.com/en-us/pricing/details/managed-disks/){:target="_blank"}. These prices can vary per region and over time.
 
 <a href="{{site.baseurl}}/assets/images/posts/060-what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/060-best-azure-vm-size-cost-247.png" data-lightbox="cost-247">
 ![cost-247]({{site.baseurl}}/assets/images/posts/060-what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/060-best-azure-vm-size-cost-247.png)
