@@ -73,23 +73,27 @@ For on-premises sizing there are different calculations for VDI- or SBC workload
 * Please note CPU speed can vary due to host placement in the Azure platform. 
 
 **Rule of thumb explained: Number of users based on CPU (multi-session)**
+
 Medium-Heavy user weight = 800 MHz per user.
 Number of users is = vCPU * CPU-speed / user-weight. 
 
 Example: D4S_v3 = 4 vCPU * 2300 MHz / 800 Mhz = 11,5 users (rounded: 11 users)
 
 **Rule of thumb explained: Number of users based on memory (multi-session)**
+
 Medium-Heavy user 1 GB per user.
 Number of users = (Total MEM – 4 GB OS reservation) / user-weight. 
 
 Example: D4S_v3 = (16 GB – 4 GB OS reservation) / 1 = 12 users
 
 **Lower user density due to hyperthreading and CPU exploit mitigation's**
+
 The expectation is that the overcommit ratio of 2 vCPU to 1 Core will have an impact on the user density on the Dsv3-series and Fsv2-series VMs. 
 
 The Dsv2-series VM has a 1 vCPU to 1 Core overcommit ratio and is not using hyperthreading. The expectation is that the user density on the Dsv2-series VM is higher from a CPU perspective.
 
 **Expectation of inconsistency in performance**
+
 There is also an expectation of inconsistency in performance between the different runs. Each different SKU mentions that a virtual machine can run on different type of physical CPUs. Due to this, there is no control on what type of physical CPU the VM will run. Each physical CPU differs from a performance perspective and can have influence on the load test in this research.
 
 See Microsoft Azure Virtual Machine SKU Sizes listed above.
