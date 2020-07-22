@@ -75,6 +75,7 @@ For on-premises sizing there are different calculations for VDI- or SBC workload
 **Rule of thumb explained: Number of users based on CPU (multi-session)**
 
 Medium-Heavy user weight = 800 MHz per user.
+
 Number of users is = vCPU * CPU-speed / user-weight. 
 
 Example: D4S_v3 = 4 vCPU * 2300 MHz / 800 Mhz = 11,5 users (rounded: 11 users)
@@ -82,6 +83,7 @@ Example: D4S_v3 = 4 vCPU * 2300 MHz / 800 Mhz = 11,5 users (rounded: 11 users)
 **Rule of thumb explained: Number of users based on memory (multi-session)**
 
 Medium-Heavy user 1 GB per user.
+
 Number of users = (Total MEM – 4 GB OS reservation) / user-weight. 
 
 Example: D4S_v3 = (16 GB – 4 GB OS reservation) / 1 = 12 users
