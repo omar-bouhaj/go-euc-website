@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is the best Azure Virtual Machine size for WVD using Citrix Cloud?"
-hidden: true
+hidden: false
 authors: [patrick]
 categories: [ 'Azure' ]
 tags: [ 'WVD', 'Azure', 'Citrix Cloud', 'Windows 10 multi-session']
