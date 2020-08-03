@@ -122,6 +122,14 @@ authors:
 
 # Sponsors
 sponsors:
+  tricerat:
+    name: Tricerat
+    level: 2
+    date: 2021-07-31
+    logo-light: 'assets/images/sponsor/tricerat/logo-white.png'
+    logo: 'assets/images/sponsor/tricerat/logo.png'
+    page: 'tricerat'
+    site: 'https://www.tricerat.com'
   loadgen:
     name: LoadGen
     level: 2
