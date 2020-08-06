@@ -981,3 +981,8 @@ td, th {
     max-width: 100%;
     max-height: 145px;
 }
+
+.follow-social-icon {
+    width: 32px;
+    margin: 6px;
+}
