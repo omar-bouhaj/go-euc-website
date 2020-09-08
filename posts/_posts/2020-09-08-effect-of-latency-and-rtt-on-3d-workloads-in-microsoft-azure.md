@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The effect of latency and RTT on 3D workloads in Microsoft Azure"
-hidden: true
+hidden: false
 authors: [ryan]
 categories: [ 'NVIDIA' ]
 tags: [ 'NVIDIA', 'Azure', 'Citrix Cloud', 'Windows 10', 'AMD Radeon']
