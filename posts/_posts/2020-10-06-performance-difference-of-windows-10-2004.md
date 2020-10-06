@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The performance difference of Windows 10 2004"
-hidden: false
+hidden: true
 authors: [krishan, marcel]
 categories: [ 'Windows 10' ]
 tags: [ 'Windows 10 2004', 'Windows 10 1909', 'Windows 10 1903', 'Windows 10 1809', 'Citrix']
@@ -56,7 +56,7 @@ For more information please visit the following [blog](https://techcommunity.mic
 ### Infrastructure and configuration
 This research has taken place on the GO-EUC infrastructure which is described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2018/){:target="_blank"}. The parent Windows 10 deployments are based upon MDT with identical task sequences. The only difference between the task sequences is the Windows 10 build. The machines are provided with Citrix Virtual Apps & Desktops version 1912 and the infrastructure uses VDA 1912. The test machines are deployed using Citrix MCS with a default configuration of 2 vCPU’s and 4GB of memory.
 
- > <b>Please note:</b> there are some known issues with Citrix CVAD 1912 in combination with Windows 10 2004, which are described here.
+ > <b>Please note:</b> there are some known issues with Citrix CVAD 1912 in combination with Windows 10 2004, which are described [here](https://support.citrix.com/article/CTX255870){:target="_blank"}.
 
 The Windows 10 machines have been optimized using the Citrix Optimizer with the recommended template for Windows 10 2004.
 The following scenarios are defined for this research:
@@ -113,7 +113,7 @@ Concerning CPU Utilization Windows 10 2004 looks slightly more promising than th
 </p>
 
 <a href="{{site.baseurl}}/assets/images/posts/064-performance-difference-of-windows-10-2004/064-windows-10-2004-host-writes.png" data-lightbox="host-writes">
-![host-writes]({{site.baseurl}}/assets/images/posts/064-performance-difference-of-windows-10-2004/064-windows-10-2004-host-reads.png)
+![host-writes]({{site.baseurl}}/assets/images/posts/064-performance-difference-of-windows-10-2004/064-windows-10-2004-host-writes.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
