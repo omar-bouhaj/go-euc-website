@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The performance difference of Windows 10 2004"
-hidden: true
+hidden: false
 authors: [krishan, marcel]
 categories: [ 'Windows 10' ]
 tags: [ 'Windows 10 2004', 'Windows 10 1909', 'Windows 10 1903', 'Windows 10 1809', 'Citrix']
