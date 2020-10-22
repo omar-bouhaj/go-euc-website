@@ -58,7 +58,8 @@ This research has taken place on the GO-EUC infrastructure which is described [h
 
  > <b>Please note:</b> there are some known issues with Citrix CVAD 1912 in combination with Windows 10 2004, which are described [here](https://support.citrix.com/article/CTX255870){:target="_blank"}.
 
-The Windows 10 machines have been optimized using the Citrix Optimizer with the recommended template for Windows 10 2004.
+The Windows 10 machines have been optimized using the Citrix Optimizer with the recommended template for Windows 10 2004. Please note, the template can be downloaded form the template marketplace in the Citrix Optimizer.
+
 The following scenarios are defined for this research:
 
  * Windows 10 1809, 17763.864, as the baseline;
