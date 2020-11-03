@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is the performance value of Memory Compression for Citrix CVAD?"
-hidden: true
+hidden: false
 authors: [tom, ryan]
 categories: [ 'RDSH' ]
 tags: [ 'Windows Server 2016', 'Windows 10', 'Memory Compression', 'Citrix']
