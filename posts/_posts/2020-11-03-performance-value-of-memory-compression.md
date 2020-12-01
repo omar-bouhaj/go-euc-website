@@ -130,7 +130,7 @@ In order to validate if paging is taking place the hypervisor storage metrics is
 
 When enabling memory compression there is a difference in both reads/sec and writes/sec. It is hard to pinpoint the exact cause of this behavior, but this might due to the page file on the disk. As memory is compressed in the enabled scenario, the page file probably is not used and therefore results in a lower storage load.
 
-In order to proof this hypothesis, it is possible to leverage Performance Monitor to capture the page file usage. Page file usage is the amount of the <i>"Page File instance in use in percent"</i>.
+In order to prove this hypothesis, it is possible to leverage Performance Monitor to capture the page file usage. Page file usage is the amount of the <i>"Page File instance in use in percent"</i>.
 
 <a href="{{site.baseurl}}/assets/images/posts/066-performance-value-of-memory-compression/066-memory-compression-vm-pagefile.png" data-lightbox="vm-pagefile">
 ![vm-pagefile]({{site.baseurl}}/assets/images/posts/066-performance-value-of-memory-compression/066-memory-compression-vm-pagefile.png)
