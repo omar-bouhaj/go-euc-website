@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The performance impact of Citrix session watermark"
-hidden: true
+hidden: false
 authors: [eltjo]
 categories: [ 'Citrix' ]
 tags: [ 'Citrix', 'CVAD', 'watermark']
