@@ -25,9 +25,9 @@ The current research environment consists of five dedicated servers located in o
 | Worker | HPE DL380 Gen 9 | 2x Intel Xeon E5-2640 v3 (2.60 GHz) | 256GB | 1.46TB SSD | NA |  
 | Worker | SuperMicro SYS-6029U-TR4 | 2x Intel Xeon Gold 6148 (2.40 GHz) | 512GB | 1TB SSD | 4x Tesla T4 |  
 
-![hardware-overview]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2020/)
+![hardware-overview]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2020/hardware-servers-overview.png)
 
-**updated**
+**Update: January 2021**
 
 Since January 2021, the SuperMicro worker has been added to the GO-EUC environment. 
 Thanks to NVIDIA provided the GPU capabilities in the form of four Tesla T4 and one Tesla M10 GPU boards as of January 2021.
@@ -40,7 +40,7 @@ LoadGen is the primary solution for generating load on the environment, which us
 ## Workers
 The workers are dedicated servers that will be used for hosting the VDI or RDS scenarios. As shown in the hardware overview table, one worker server does not have GPU capabilities. Depending on the research the appropriate worker is used for the research, by default, this is the one without the GPU.
 
-**updated**
+**Update: January 2021**
 
 Since January 2021, the default worker has been moved to the SuperMicro server as this was added to the GO-EUC environment.
 
