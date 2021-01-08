@@ -91,14 +91,14 @@ authors:
   bas:
     name: Bas
     display_name: Bas Stapelbroek
-    company: Cegeka
-    title: Workspace Consultant
+    company: Citrix
+    title: Sales Engineer
     picture: 'assets/images/authors/bas.png'
     web: http://www.basstapelbroek.com/
     twitter: https://twitter.com/hapster84
     linkedin: https://www.linkedin.com/in/basstapelbroek/
     page: bas-stapelbroek
-    description: "Bas Stapelbroek is a workspace consultant and works for Cegeka in the Netherlands. Within the consulting services he is responsible for designing and implementing enterprise workspace solutions for the largest Cegeka customers"
+    description: "Bas Stapelbroek is a sales engineer and works for Citrix in the Netherlands. 
   tom:
     name: Tom 
     display_name: Tom de Jong
