@@ -24,8 +24,11 @@ The current research environment consists of five dedicated servers located in o
 | Infrastructure | HPE DL380 Gen 9 | 2x Intel Xeon E5-2667 v4 (3.20 GHz) | 256GB | 1.46TB SSD | Tesla M10 |   
 | Worker | HPE DL380 Gen 9 | 2x Intel Xeon E5-2640 v3 (2.60 GHz) | 256GB | 1.46TB SSD | NA |  
 | Worker | SuperMicro SYS-6029U-TR4 | 2x Intel Xeon Gold 6148 (2.40 GHz) | 512GB | 1TB SSD | 4x Tesla T4 |  
-
+<br>
 ![hardware-overview]({{site.baseurl}}/assets/images/posts/000-architecture-and-hardware-setup-overview-2020/hardware-servers-overview.png)
+<p align="center" style="margin-top: -30px;" >
+  <i>GO-EUC hardware</i>
+</p>
 
 **Update: January 2021**
 
