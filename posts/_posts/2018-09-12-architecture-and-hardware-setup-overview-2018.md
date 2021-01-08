@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Architecture and hardware setup overview 2018 – Current"
+title:  "Architecture and hardware setup overview 2018 – 2020"
 hidden: false
 authors: [eltjo, ryan]
-categories: [ 'infastructure' ]
-tags: [ 'infastructure', 'OVH', 'VMware' ]
+categories: [ 'infrastructure' ]
+tags: [ 'infrastructure', 'OVH', 'VMware' ]
 image: assets/images/posts/000-architecture-and-hardware-setup-overview-2018/000-architecture-and-hardware-setup-overview-2018-feature-image.png
 ---
 This post is meant as an introductory breakdown describing the high-level architecture and hardware setup of the basic components that we are currently using in the {{site.title}} lab as of August 2018. We’ve setup {{site.title}} as an independent and open community platform and therefore we mean to be completely open about the hardware and setup that we use during our researches. This way everyone has the opportunity to replicate our lab setup and confirm or challenge our findings.
