@@ -5,7 +5,7 @@ comments: false
 ---
 {% assign author = site.authors['bas'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Bas Stapelbroek is a workspace consultant and works for Cegeka in the Netherlands. Within the consulting services he is responsible for designing and implementing enterprise workspace solutions for the largest Cegeka customers. Experienced in connecting data, applications, devices and the required (cloud) infrastructure in a safe way. Bas has worked with Citrix/Microsoft products for over 10 years and has had several roles: from technical support in the past to solution architect now.
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Bas Stapelbroek is a sales engineer and works for Citrix in the Netherlands. Experienced in connecting data(centers), applications, devices and the required (cloud) infrastructure in a safe way. Likes to focus on Network side within GO-EUC besides the 'workspace' related researches. 
 
 <div class="social-button-member">
 {% if author.linkedin %}
