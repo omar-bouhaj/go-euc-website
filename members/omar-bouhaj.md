@@ -5,7 +5,7 @@ comments: false
 ---
 {% assign author = site.authors['omar'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">Dedicated, passionate and innovative IT professional. Omar is an enthusiastic and driven technical consultant and currently a consultant at ICT-Partners West, focused on the End-User Computing (EUC) area. With the primary focus on the user experience in centralized desktop environments.
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">Omar works as a Solutions Architect End User Computing at SLTN Inter Access. In his role, he helps customers design, describe and manage solution engineering in relation to specific business problems. Because in a rapidly changing technology environment, organizations are faced with the need to transform their processes and systems to meet emerging business requirements. Therefore, aligning business focus with technology solutions is a demanding phase.
 
 <div class="social-button-member">
 {% if author.linkedin %}
